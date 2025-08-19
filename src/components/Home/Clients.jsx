@@ -51,8 +51,8 @@ export const Clients = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 fintech-2-content-grid mt-20">
                 <div className="bg-white  border-radius-primary  p-6 fintech-2-content-grid-card_small ">
                     <div className="flex items-center gap-2">
-                        <span className="number-style text-5xl font-medium countclients">50</span>
-                        <span className="number-style text-5xl font-medium countclients">+</span>
+                        <span className="number-style  ">50</span>
+                        <span className="number-style  ">+</span>
                     </div>
                     <p className="mt-2 text-gray-600">
                         UX/UI, brand, motion designers, and research experts on board
@@ -60,7 +60,7 @@ export const Clients = () => {
                 </div>
 
                 <div className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
-                    <div className="number-style text-5xl font-medium countclients">25</div>
+                    <div className="number-style ">25</div>
                     <p className="mt-2 text-gray-600">
                         Countries with fintech clients represented
                     </p>
@@ -166,8 +166,8 @@ export const Clients = () => {
                     className="fintech-2-content-grid-card_small border-radius-primary"
                 >
                     <div className="flex gap-4">
-                        <div className="number-style text-5xl font-medium countclients">$2.7</div>
-                        <div className="number-style text-5xl font-medium countclients">B+</div>
+                        <div className="number-style ">$2.7</div>
+                        <div className="number-style ">B+</div>
                     </div>
                     <div className="paragraph-style-body text-lg">
                         Raised in investments by our fintech startup clients

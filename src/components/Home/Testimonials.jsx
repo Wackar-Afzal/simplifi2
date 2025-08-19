@@ -23,9 +23,6 @@ const slides = [
   "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
   "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
   "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
-  "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
-  "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
-  "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
 ];
 
 export default function Testimonials() {
@@ -33,25 +30,30 @@ export default function Testimonials() {
   const nextRef = useRef(null);
 
   return (
-    <div className="w-full testimonials py-[100px] mx-auto px-10">
+    <div className="w-full testimonials py-[100px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10">
       <h2 className="heading-style-h2_fintech text-color-inverted text-center mb-8">
         Our clients say
       </h2>
 
       <div className="relative w-full mx-auto">
-        {/* Custom Nav Buttons with SVG Arrows */}
+        {/* Left Button */}
         <button
           ref={prevRef}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-4 text-white hover:text-gray-300 transition"
+          className="absolute top-1/2 -translate-y-1/2 z-10 p-2 sm:p-4 text-white hover:text-gray-300 transition left-[-15px] sm:left-2"
         >
-          <LeftArrow />
+          <div className="w-6 h-6 sm:w-8 sm:h-8">
+            <LeftArrow />
+          </div>
         </button>
 
+        {/* Right Button */}
         <button
           ref={nextRef}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-4 text-white hover:text-gray-300 transition"
+          className="absolute top-1/2 -translate-y-1/2 z-10 p-2 sm:p-4 text-white hover:text-gray-300 transition right-[-10px] sm:right-2"
         >
-          <RightArrow />
+          <div className="w-6 h-6 sm:w-8 sm:h-8">
+            <RightArrow />
+          </div>
         </button>
 
         <Swiper
@@ -71,13 +73,13 @@ export default function Testimonials() {
           {slides.map((src, i) => (
             <SwiperSlide
               key={i}
-              className="!w-[550px] overflow-hidden transition-all duration-500"
+              className="!w-[280px] sm:!w-[400px] md:!w-[500px] lg:!w-[550px] overflow-hidden transition-all duration-500"
             >
               {({ isActive }) => (
                 <img
                   src={src}
                   alt={`Slide ${i}`}
-                  className={`rounded-2xl shadow-lg w-full h-full object-cover transition-all border-radius-primary duration-500 ${
+                  className={`border-radius-primary shadow-lg w-full h-full object-cover transition-all duration-500 ${
                     isActive ? "opacity-100 scale-100" : "opacity-50 scale-90"
                   }`}
                 />

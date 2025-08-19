@@ -66,12 +66,9 @@ export default function WhatWeDo() {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`p-4   text-left transition-all ${activeTab === tab.id
-                                    ? "active-tabs-btn"
-                                    : "tabs-btn"
-                                    }`}
+                                className={`p-4 text-left transition-all ${activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"}`}
                             >
-                                {tab.subtitle && (
+                                {tab.subtitle?.trim() && (
                                     <p className="paragraph-style-body text-color-inverted">
                                         {tab.subtitle}
                                     </p>
@@ -91,13 +88,13 @@ export default function WhatWeDo() {
                     {tabs.map(tab => (
                         <motion.div
                             key={tab.id}
-                            className="bg-gray-900 rounded-2xl p-6 space-y-4"
+                            className="  space-y-4"
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h3 className="text-xl font-bold">{tab.title}</h3>
-                            <p className="text-gray-300">{tab.subtitle}</p>
+                            <p className="paragraph-style-body text-color-inverted">{tab.subtitle}</p>
+                            <h3 className="heading-style-h3 text-color-inverted">{tab.title}</h3>
                             <motion.img
                                 src={tab.img}
                                 alt={tab.alt}
@@ -108,6 +105,7 @@ export default function WhatWeDo() {
                             />
                         </motion.div>
                     ))}
+                    <button className="contained-button  w-full" >Get Qoute</button>
                 </div>
 
 
