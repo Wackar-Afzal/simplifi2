@@ -4,7 +4,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
+// Custom SVG Arrow Components
+const LeftArrow = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M31 14.1608V17.8392H7.54203L16.4898 26.6592L14.1263 29L1 16L14.1263 3L16.4898 5.29903L7.54203 14.1608H31Z" fill="currentColor"></path>
+  </svg>
+);
+
+const RightArrow = () => (
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 14.1608V17.8392H24.458L15.5102 26.6592L17.8737 29L31 16L17.8737 3L15.5102 5.29903L24.458 14.1608H1Z" fill="currentColor"></path>
+  </svg>
+);
 
 const slides = [
   "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
@@ -14,8 +26,6 @@ const slides = [
   "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
   "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
   "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
- 
- 
 ];
 
 export default function Testimonials() {
@@ -24,25 +34,24 @@ export default function Testimonials() {
 
   return (
     <div className="w-full testimonials py-[100px] mx-auto px-10">
-    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-white text-center mb-12 sm:mb-16 md:mb-20">
-  Our clients say
-</h2>
+      <h2 className="heading-style-h2_fintech text-color-inverted text-center mb-8">
+        Our clients say
+      </h2>
 
-
-      <div className="relative w-full  mx-auto">
-        {/* Custom Nav Buttons */}
+      <div className="relative w-full mx-auto">
+        {/* Custom Nav Buttons with SVG Arrows */}
         <button
           ref={prevRef}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-4 rounded-full bg-white text-black shadow-lg hover:bg-gray-200 transition"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-4 text-white hover:text-gray-300 transition"
         >
-          <ChevronLeft className="w-6 h-6" />
+          <LeftArrow />
         </button>
 
         <button
           ref={nextRef}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-4 rounded-full bg-white text-black shadow-lg hover:bg-gray-200 transition"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-4 text-white hover:text-gray-300 transition"
         >
-          <ChevronRight className="w-6 h-6" />
+          <RightArrow />
         </button>
 
         <Swiper
@@ -68,7 +77,7 @@ export default function Testimonials() {
                 <img
                   src={src}
                   alt={`Slide ${i}`}
-                  className={`rounded-2xl shadow-lg w-full h-full object-cover transition-all duration-500 ${
+                  className={`rounded-2xl shadow-lg w-full h-full object-cover transition-all border-radius-primary duration-500 ${
                     isActive ? "opacity-100 scale-100" : "opacity-50 scale-90"
                   }`}
                 />

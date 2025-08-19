@@ -112,17 +112,17 @@ export default function ProductOverview() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <motion.div variants={itemVariants} className="max-w-xl">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-normal leading-tight tracking-tight">
+            <h1 className="heading-style-h2_fintech">
               Leverage our fintech-focused design expertise
             </h1>
           </motion.div>
 
           <motion.div variants={itemVariants} className="max-w-md flex flex-col gap-6">
-            <p className="text-lg leading-relaxed text-gray-300">
+            <p className="paragraph-style-body text-color-inverted">
               As a multidisciplinary team, we're all about speed and innovation, creating groundbreaking product
               hypotheses and quickly testing them.
             </p>
-            <p className="text-lg leading-relaxed text-gray-300">
+            <p className="paragraph-style-body text-color-inverted">
               Humbleteam is specifically geared for this, aiming to boost your product from within, not just on the
               surface.
             </p>

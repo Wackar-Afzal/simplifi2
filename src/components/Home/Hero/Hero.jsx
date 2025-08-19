@@ -226,9 +226,9 @@ export default function Hero() {
             repeat={Infinity}
           />
         </motion.h2>
-        <motion.p className="text-black text-xl mix-blend-difference cursor-none mb-6">
-          Rewriting the Way Money Moves Smart <br /> Finance Starts Simple From Code to
-          Card
+        <motion.p className="text-black  paragraph-style-body   mix-blend-difference cursor-none mb-6">
+         Humbleteam has designed interfaces for 56 digital products <br /> launched by startups and enterprises in all areas of fintech. <br />
+        <span className="text-color-secondary">(You’ve probably used one of them.)</span>
         </motion.p>
         <button className="contained-button">Get Started</button>
       </motion.div>

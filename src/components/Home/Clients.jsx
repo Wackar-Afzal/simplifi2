@@ -5,7 +5,7 @@ export const Clients = () => {
         <div className="container-fluid px-6 py-20">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
                 <div className="md:col-span-6">
-                    <h2 className="text-4xl md:text-6xl font-medium leading-tight">
+                    <h2 className="heading-style-h2_fintech">
                         Since 2019 we elevate digital products and skyrocket clients’
                         returns
                     </h2>
@@ -34,7 +34,7 @@ export const Clients = () => {
                                     className="inline-block size-10 rounded-full ring-2 ring-gray-900"
                                 />
                             </div>
-                            <p className="text-md">
+                            <p className="paragraph-style-body">
                                 Design team <br /> specifically tailored <br /> for your needs
                             </p>
                         </div>
@@ -51,8 +51,8 @@ export const Clients = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 fintech-2-content-grid mt-20">
                 <div className="bg-white  border-radius-primary  p-6 fintech-2-content-grid-card_small ">
                     <div className="flex items-center gap-2">
-                        <span className="text-5xl font-medium countclients">50</span>
-                        <span className="text-5xl font-medium">+</span>
+                        <span className="number-style text-5xl font-medium countclients">50</span>
+                        <span className="number-style text-5xl font-medium countclients">+</span>
                     </div>
                     <p className="mt-2 text-gray-600">
                         UX/UI, brand, motion designers, and research experts on board
@@ -60,7 +60,7 @@ export const Clients = () => {
                 </div>
 
                 <div className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
-                    <div className="text-5xl font-medium countcountries">25</div>
+                    <div className="number-style text-5xl font-medium countclients">25</div>
                     <p className="mt-2 text-gray-600">
                         Countries with fintech clients represented
                     </p>
@@ -78,13 +78,13 @@ export const Clients = () => {
             </div>
             <div className=" fintech-2-content-grid-2 py-[150px]">
                 <div className=" border-radius-primary text-white   fintech-2-content-grid-card_big background-color-primary">
-                    <div className="mb-6 p-10">
-                        <h3 className="text-4xl font-medium leading-tight">
+                    <div className="card-title-block">
+                        <h3 className="heading-style-h3 text-color-inverted">
                             Long-term <br />
                             design support
                         </h3>
-                        <p className="mt-2 text-lg">
-                            We’re here for you if you need to strengthen <br />
+                        <p className="mt-3 paragraph-style-body text-color-inverted">
+                            We’re here for you if you need to strengthen  
                             your team with extra pros for a long period of time.
                         </p>
                     </div>
@@ -97,10 +97,10 @@ export const Clients = () => {
                 </div>
                 <div className="border-radius-primary text-black fintech-2-content-grid-card_big  ">
                     <div className="mb-6 text-center p-10">
-                        <h3 className="text-4xl  font-medium">
+                        <h3 className="heading-style-h3  ">
                             Relaunch existing fintech product
                         </h3>
-                        <p className="mt-2">
+                        <p className="mt-3 paragraph-style-body  ">
                             We'll revamp your fintech product, whether it's an internet
                             banking platform with 2M active users or a small MVP.
                         </p>
@@ -113,11 +113,11 @@ export const Clients = () => {
                     />
                 </div>
                 <div className="border-radius-primary text-white   fintech-2-content-grid-card_big  background-color-primary">
-                    <div className="mb-6 p-10">
-                        <h3 className="text-4xl font-medium leading-tight">
+                    <div className="card-title-block">
+                        <h3 className="heading-style-h3 text-color-inverted">
                             Invent and design new <br /> digital products
                         </h3>
-                        <p className="mt-2 leading-tight ">
+                        <p className="mt-3 paragraph-style-body text-color-inverted">
                             From idea to MVP and scalable product, we design everything from
                             banking backend systems to mobile and Apple Watch apps for
                             convenient banking on the go.

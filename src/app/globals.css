@@ -342,10 +342,20 @@ body {
 .misc_grid-offset-image-3 {
   z-index: 3;
   pointer-events: none;
-  width: 75%;
+  width: 70%;
   max-width: none;
   position: absolute;
   inset: auto -10% -40% auto;
+}
+.card-title-block {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  flex-flow: column;
+  max-width: 24rem;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  display: flex;
 }
 
 .cases-grid-item.is-horizontal {
@@ -356,7 +366,7 @@ body {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  min-height: 20rem;
+  min-height: 27rem;
   display: grid;
 }
 
@@ -429,6 +439,17 @@ body {
   font-weight: 400;
   line-height: 29px;
 }
+.heading-style-h2_fintech {
+  font-family: var(--suisse-intl);
+  letter-spacing: -.04em;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.06em;
+}
+.whatwedo{
+    background-color: var(--grey--100);
+
+}
 
 .heading-style-h2_big {
   font-size: 3.25rem;
@@ -447,17 +468,7 @@ body {
   color: var(--white);
 }
 
-.misc_grid-offset-image-3 {
-  z-index: 3;
-  pointer-events: none;
-  width: 67%;
-  max-width: none;
-  position: absolute;
-  top: auto;
-  bottom: -61%;
-  left: auto;
-  right: -8%;
-}
+ 
 
 #w-node-_79ace377-de97-5a8e-5bbf-1b133cd74f4c-2da5785d {
   grid-area: span 2 / span 2 / span 2 / span 2;
@@ -474,6 +485,127 @@ body {
   grid-auto-columns: 1fr;
   display: grid;
   position: relative;
+}
+
+.paragraph-style-body {
+
+  letter-spacing: -.02em;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+.heading-style-h2_fintech {
+ 
+  letter-spacing: -.04em;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.06em;
+}
+.heading-style-h3 {
+  font-family: var(--suisse-intl);
+  letter-spacing: -.04em;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+@media screen and (min-width: 1280px) {
+  .button-primary_large {
+    box-shadow: 0 2px 5px #0003;
+  }
+
+  .button-primary_small.is-desktop-plus {
+    display: block;
+  }
+
+  .heading-style-h2_big {
+    font-size: 3.25rem;
+  }
+
+  .heading-style-h2_big.is-cta-title {
+    max-width: 25rem;
+  }
+
+  .paragraph-style-body {
+    font-size: 1.125rem;
+  }
+
+  .navbar-links-block {
+    display: flex;
+  }
+
+  .border-radius-primary {
+    border-radius: 3.75rem;
+  }
+
+  .heading-style-h2_fintech {
+    font-size: 4rem;
+  }
+
+  .number-style {
+    font-size: 3.25rem;
+  }
+
+  .paragraph-style-table {
+    font-size: 1rem;
+  }
+
+  .is-link_alt.text-color-accent {
+    color: var(--primary--main);
+  }
+
+  .cta-radioset-block {
+    justify-content: space-between;
+  }
+
+  .navbar-button {
+    display: none;
+  }
+
+  .mobile-menu-links-block {
+    display: flex;
+  }
+
+
+  .paragraph-style-caption {
+    font-size: .875rem;
+  }
+
+  .tab-pane {
+    padding-right: 8rem;
+  }
+
+
+  .cases-card-item-content-wrapper {
+    padding-right: 4.5rem;
+  }
+
+
+  .heading-style-h2_small {
+    font-size: 2rem;
+  }
+
+
+
+  .global-overlay {
+    position: fixed;
+  }
+
+  .misc_grid-offset-image-5 {
+    right: 40%;
+  }
+
+  .button-secondary_small.is-desktop-plus {
+    display: block;
+  }
+
+  .paragraph-style-large {
+    font-size: 1.125rem;
+  }
+
+  .checkbox:active {
+    border-color: var(--primary--secondary);
+    background-color: var(--white);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -654,7 +786,8 @@ body {
     top: auto;
     position: static;
   }
+
   .border-radius-primary {
     border-radius: 1.75rem !important;
-}
+  }
 }
