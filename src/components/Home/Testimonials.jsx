@@ -24,9 +24,10 @@ export default function Testimonials() {
 
   return (
     <div className="w-full testimonials py-[100px] mx-auto px-10">
-      <h2 className="text-6xl font-medium leading-tight text-white text-center mb-20">
-        Our clients say
-      </h2>
+    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight text-white text-center mb-12 sm:mb-16 md:mb-20">
+  Our clients say
+</h2>
+
 
       <div className="relative w-full  mx-auto">
         {/* Custom Nav Buttons */}

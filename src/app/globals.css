@@ -502,7 +502,7 @@ body {
   .fintech-2-content-grid-card_small,
   .fintech-2-content-grid-card_big,
   .fintech-2-content-grid-card_button {
-    padding: 2rem;
+    /* padding: 2rem; */
     aspect-ratio: auto;
   }
 
@@ -543,7 +543,8 @@ body {
   #w-node-a6880751-85a1-73d5-6223-157ab81a55ac-2da5785d,
   #w-node-_4db10948-35de-fb69-d336-d47d74bf6e08-2da5785d,
   #w-node-_79ace377-de97-5a8e-5bbf-1b133cd74f4c-2da5785d,
-  #w-node-_7e987338-224d-0c79-cc0a-ea6ba2e3df19-2da5785d {
+  #w-node-_7e987338-224d-0c79-cc0a-ea6ba2e3df19-2da5785d,
+  #w-node-f2b7e96f-74c9-3841-6d31-90a3264e6b88-2da5785d {
     grid-area: auto;
   }
 
@@ -596,7 +597,7 @@ body {
   .fintech-2-content-grid-card_small,
   .fintech-2-content-grid-card_big,
   .fintech-2-content-grid-card_button {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     width: 100%;
     aspect-ratio: auto;
   }
