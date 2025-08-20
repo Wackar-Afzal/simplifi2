@@ -16,7 +16,10 @@ export const ContactUs = () => {
     ];
 
     return (
-        <div className="py-16 px-6">
+        <div className="py-16 px-6" style={{
+            borderBottom: "1px solid #0000001a"
+
+        }}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
                     <h1 className="heading-style-h2_big is-cta-title">
