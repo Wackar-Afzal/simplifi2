@@ -64,6 +64,7 @@ body {
   --grey--90: #333;
   overflow-x: hidden !important;
   --black: black;
+  --medium-grey: #979797;
 }
 
 
@@ -397,7 +398,7 @@ body {
   padding-bottom: 2.5rem;
 }
 
- 
+
 
 .misc_grid-offset-image-4 {
   z-index: 3;
@@ -782,12 +783,218 @@ body {
   font-size: .75rem;
   font-weight: 400;
   line-height: 1.36em;
-}.heading-style-h1_fintech {
+}
+
+.heading-style-h1_fintech {
   font-family: var(--suisse-intl);
   letter-spacing: -.04em;
   font-size: 6.75rem;
   font-weight: 400;
   line-height: .9em;
+}
+
+.h1 {
+  letter-spacing: -.04em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hero-heading {
+  max-width: 56.25rem;
+}
+
+.hero-img-wrapper {
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.hero-scroll-lottie {
+  width: 4rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.hero-video {
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: 100%;
+  height: 48vw;
+  display: flex;
+  overflow: clip;
+}
+
+.w-embed:before,
+.w-embed:after {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-embed:after {
+  clear: both;
+}
+
+.feed-img-wrapper {
+    overflow: hidden;
+    border-radius: 12px; /* optional rounding */
+    height: 250px; /* adjust height */
+    width: 100%;
+}
+
+.feed-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Optional hover zoom effect */
+.feed-img-wrapper:hover .feed-img {
+    transform: scale(1.05);
+}
+
+.feed-img {
+  aspect-ratio: 1 / 1.2;
+  object-fit: cover;
+  width: 100%;
+}
+
+.feed-tag {
+  color: var(--medium-grey);
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.splide__arrow.splide__arrow--prev {
+  background-color: var(--white);
+  border-radius: 10rem;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 2.5rem;
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: .2s;
+  display: flex;
+  position: static;
+  box-shadow: inset 0 0 0 1px #0000001a;
+}
+
+.splide__arrow.splide__arrow--next {
+  background-color: var(--white);
+  border-radius: 10rem;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 2.5rem;
+  padding: 0;
+  transition-property: background-color;
+  transition-duration: .2s;
+  display: flex;
+  position: static;
+  box-shadow: inset 0 0 0 1px #0000001a;
+}
+
+.feed-title {
+  margin-bottom: .75rem;
+}
+
+.case-button {
+  border-radius: 2rem;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.3;
+  transition: background-color .2s;
+  box-shadow: 0 1px 2px #00000026, inset 0 0 0 1px #0000001a;
+}
+
+.hero-video {
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  width: 100%;
+  height: 48vw;
+  display: flex;
+  overflow: clip;
+}
+
+.hero-video.is-mobile {
+  display: none;
+}
+
+.feed-link {
+  grid-column-gap: .375rem;
+  grid-row-gap: .375rem;
+  letter-spacing: 0;
+  flex-flow: column;
+  max-width: 20.25rem;
+  height: 100%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+}
+
+.body-medium {
+  letter-spacing: -.02em;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.case-name {
+  grid-column-gap: .875rem;
+  grid-row-gap: .875rem;
+  letter-spacing: -.04em;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 1.1;
+  display: flex;
+}
+
+.case-img-wrapper {
+  border-radius: 2rem;
+  overflow: clip;
+}
+
+.case-img {
+  width: 100%;
+}
+
+/* Add this to your global CSS or a module */
+.case-img-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height:400px;
+  /* adjust height as needed */
+}
+
+.case-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.case-img-wrapper:hover .case-img {
+  transform: scale(1.05);
+  /* optional hover zoom effect */
 }
 
 @media screen and (min-width: 1280px) {
@@ -889,12 +1096,14 @@ body {
     background-color: var(--white);
   }
 }
-@media (max-width:992px){
-      .contained-button {
-        padding: 1rem 2rem 1.125rem;
-        font-size: 1.125rem;
-    }
+
+@media (max-width:992px) {
+  .contained-button {
+    padding: 1rem 2rem 1.125rem;
+    font-size: 1.125rem;
+  }
 }
+
 @media (max-width: 1024px) {
 
   /* Grids stack fewer columns */
@@ -999,9 +1208,11 @@ body {
   .footer-grid {
     grid-template-columns: 1fr;
   }
- .heading-style-h1_fintech {
+
+  .heading-style-h1_fintech {
     font-size: 4.5rem;
   }
+
   .footer-grid-card {
     margin-top: 0;
     margin-bottom: 0;
