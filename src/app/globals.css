@@ -65,6 +65,19 @@ body {
   overflow-x: hidden !important;
   --black: black;
   --medium-grey: #979797;
+  --black: #222;
+  --dark-blue: #06121e;
+  --white: white;
+  --primary: #ff490c;
+  --medium-grey: #979797;
+  --beige: #fff0de;
+  --cyan: #30cfe4;
+  --light-gray: #f4f4f4;
+  --red: #e55775;
+  --dark-purple: #011051;
+  --blue: #3735f3;
+  --purple: #5e13bd;
+  --secondary: #ea3b01
 }
 
 
@@ -843,22 +856,24 @@ body {
 }
 
 .feed-img-wrapper {
-    overflow: hidden;
-    border-radius: 12px; /* optional rounding */
-    height: 250px; /* adjust height */
-    width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  /* optional rounding */
+  height: 350px;
+  /* adjust height */
+  width: 100%;
 }
 
 .feed-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 /* Optional hover zoom effect */
 .feed-img-wrapper:hover .feed-img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .feed-img {
@@ -979,7 +994,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height:400px;
+  height: 400px;
   /* adjust height as needed */
 }
 
@@ -995,6 +1010,160 @@ body {
 .case-img-wrapper:hover .case-img {
   transform: scale(1.05);
   /* optional hover zoom effect */
+}
+
+.slider-section {
+  border-bottom: 1px solid #0000001a;
+  padding: 5rem 2.5rem;
+}
+
+.brags-card {
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+  letter-spacing: 0;
+  flex-flow: column;
+  width: 14rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-right: 1.75rem;
+  font-size: .875rem;
+  line-height: 1.2;
+  display: flex;
+  font-weight: 400;
+  ;
+}
+
+.body-medium {
+  letter-spacing: -.02em;
+  font-size: 1.125rem;
+  line-height: 1.4
+}
+
+.body-medium.is-heading {
+  letter-spacing: -.04em;
+  font-weight: 500;
+  line-height: 1.06
+}
+
+.body-medium.is-case-desc.is-long {
+  max-width: 35rem
+}
+
+.body-medium.is-table-desc {
+  max-width: 34rem
+}
+
+.body-medium.is-table-desc.is-short {
+  max-width: 27.5rem
+}
+
+.body-medium.is-health-cta {
+  max-width: 25rem;
+  margin-bottom: 2.5rem
+}
+
+.clients-wrapper {
+  justify-content: flex-end;
+  align-items: stretch;
+  margin-top: 2.5rem;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  display: flex;
+  gap: 15px;
+}
+
+.clients-group {
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  flex: none;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 2rem;
+  display: flex
+}
+
+.clients-card {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  flex-flow: column;
+  max-width: 30.25rem;
+  display: flex
+}
+
+.clients-quote {
+  background-color: var(--beige);
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2
+}
+
+.clients-quote.is-cyan {
+  background-color: var(--cyan)
+}
+
+.clients-quote.is-gray {
+  background-color: var(--light-gray)
+}
+
+.clients-quote.is-red {
+  background-color: var(--red);
+  color: var(--white)
+}
+
+.clients-quote.is-orange {
+  background-color: var(--primary);
+  color: var(--white)
+}
+
+.clients-quote.is-purple {
+  background-color: var(--dark-purple);
+  color: var(--white)
+}
+
+.clients-quote.is-blue {
+  background-color: var(--blue);
+  color: var(--white)
+}
+
+.clients-quote.is-indigo {
+  background-color: var(--purple);
+  color: var(--white)
+}
+
+.clients-author-wrapper {
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex
+}
+
+.clients-logo {
+  width: 3rem
+}
+
+.clients-author-name {
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  line-height: 1.3;
+  display: flex
+}
+
+.clients-company {
+  color: var(--medium-grey)
+}
+
+.h2 {
+  letter-spacing: -.04em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.25rem;
+  font-weight: 400;
+  line-height: 1.05
 }
 
 @media screen and (min-width: 1280px) {
@@ -1101,7 +1270,13 @@ body {
   .contained-button {
     padding: 1rem 2rem 1.125rem;
     font-size: 1.125rem;
-  }
+  }  .h1 {
+        font-size:3.5rem
+    }
+
+    .h2 {
+        font-size: 3rem
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1207,8 +1382,20 @@ body {
 @media (max-width:767px) {
   .footer-grid {
     grid-template-columns: 1fr;
-  }
+  } 
+  .slider-section {
+        padding: 4rem 1rem
+    }
 
+ .h1 {
+        letter-spacing:-.05em;
+        font-size: 2.375rem;
+        line-height: 1.05
+    }
+
+    .h2 {
+        font-size: 2.25rem
+    }
   .heading-style-h1_fintech {
     font-size: 4.5rem;
   }
@@ -1313,3 +1500,15 @@ body {
     border-radius: 1.75rem !important;
   }
 }
+@media screen and (max-width: 479px) {
+    .h2 {
+        font-size:1.875rem
+    }
+
+    
+
+    .slider-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem
+    }
+  }

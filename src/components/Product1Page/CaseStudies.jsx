@@ -52,9 +52,9 @@ export default function CaseStudies() {
     ];
 
     return (
-        <section className="relative w-full h-screen overflow-hidden p-5 py-20">
+        <section className="relative w-full slider-section   overflow-hidden p-5 py-20">
             <div className="flex items-center justify-between mb-10">
-                <h1 className="h1">Humblework</h1>
+                <h1 className="h2">Humblework</h1>
                 <div className="flex gap-2">
                     <button onClick={goPrev} className="splide__arrow splide__arrow--prev">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ export default function CaseStudies() {
                 ref={splideRef}
                 options={{
                     type: "loop",
-                    autoplay: true,
+                    autoplay: false,
                     interval: 4000,
                     gap: "1rem",
                     arrows: false,
@@ -81,9 +81,15 @@ export default function CaseStudies() {
                     perPage: 3, // 👈 show 3 cards
                     perMove: 1, // 👈 slide one by one
                     pauseOnHover: false,
+                      breakpoints: {
+                        1280: { perPage: 2 }, // large tablets
+                        1024: { perPage: 1 }, // tablets
+                        768: { perPage: 1 },  // small tablets / large phones
+                        480: { perPage: 1 },  // mobile
+                    },
                 }}
                 aria-label="Hero Carousel"
-                className="h-full"
+              
             >
                 {slides.map((slide, index) => (
                     <SplideSlide key={index} className="relative">
