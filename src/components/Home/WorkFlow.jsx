@@ -2,9 +2,9 @@ export default function WorkFlowSectionCases() {
   return (
     <div className="section-cases py-[100px] px-6">
       <div className="container-global">
-       <h2 className="text-center text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-medium mb-12 sm:mb-16 md:mb-20">
-  Our brightest work in fintech
-</h2>
+        <h2 className="text-center heading-style-h2_fintech text-align-center mb-12 sm:mb-16 md:mb-20">
+          Our brightest work in fintech
+        </h2>
 
         <div className="section-cases-grid">
           {/* ING */}
@@ -159,7 +159,7 @@ export default function WorkFlowSectionCases() {
             <div className="cases-card-item-image-wrapper">
               <img
                 src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d3810f7bfb8e31f34b5cc_cases-5.webp"
-                  className="misc_grid-offset-image-3 "
+                className="misc_grid-offset-image-3 "
                 loading="eager"
                 alt="Oxygen neobank app interface on multiple screens"
               />
@@ -234,7 +234,7 @@ export default function WorkFlowSectionCases() {
 
           {/* Sadapay */}
           <div className="cases-grid-item is-horizontal background-color-secondary" id="w-node-_79ace377-de97-5a8e-5bbf-1b133cd74f4c-2da5785d">
-              <div className="cases-card-item-image-wrapper">
+            <div className="cases-card-item-image-wrapper">
               <img
                 src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6613dc368e650e6c55a8f6e0_cases-7.webp"
                 loading="eager"
@@ -265,7 +265,7 @@ export default function WorkFlowSectionCases() {
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
       </div>

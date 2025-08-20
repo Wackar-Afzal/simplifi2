@@ -1,9 +1,11 @@
+import { ContactUs } from "@/components/common/ContactUs";
 import { Clients } from "@/components/Home/Clients";
 import Hero from "@/components/Home/Hero/Hero";
 import ProductOverview from "@/components/Home/ProductOverview/ProductOverview";
 import Testimonials from "@/components/Home/Testimonials";
 import WhatWeDo from "@/components/Home/WhatWeDo";
 import WorkFlowSectionCases from "@/components/Home/WorkFlow";
+import { Footer } from "@/components/layouts/Footer";
 import Navbar from "@/components/layouts/Navbar";
 
 
@@ -17,6 +19,8 @@ export default function Home() {
       <Testimonials/>
       <WhatWeDo/>
       <WorkFlowSectionCases/>
+      <ContactUs/>
+      <Footer/>
     </div>
   );
 }

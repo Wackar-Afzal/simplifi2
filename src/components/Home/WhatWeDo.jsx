@@ -37,12 +37,12 @@ export default function WhatWeDo() {
     ];
 
     return (
-        <section className="bg-black text-white py-16 px-6">
+        <section className="whatwedo text-white py-16 px-6">
             <div className="  mx-auto">
 
-<h2 className="text-start text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mt-2 sm:mt-3 md:mt-4">
-  What we do
-</h2>
+                <h2 className="heading-style-h2_fintech text-color-inverted">
+                    What we do
+                </h2>
 
                 <div className="hidden md:grid grid-cols-2 gap-8 mt-12">
 
@@ -66,13 +66,14 @@ export default function WhatWeDo() {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTab(tab.id)}
-                                className={`p-4   text-left transition-all ${activeTab === tab.id
-                                    ? "active-tabs-btn"
-                                    : "tabs-btn"
-                                    }`}
+                                className={`p-4 text-left transition-all ${activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"}`}
                             >
-                                <p className=" text-2xl mb-3 text-gray-300">{tab.subtitle}</p>
-                                <p className="text-5xl  font-semibold">{tab.title}</p>
+                                {tab.subtitle?.trim() && (
+                                    <p className="paragraph-style-body text-color-inverted">
+                                        {tab.subtitle}
+                                    </p>
+                                )}
+                                <p className="heading-style-h2_big">{tab.title}</p>
                             </button>
                         ))}
 
@@ -87,13 +88,13 @@ export default function WhatWeDo() {
                     {tabs.map(tab => (
                         <motion.div
                             key={tab.id}
-                            className="bg-gray-900 rounded-2xl p-6 space-y-4"
+                            className="  space-y-4"
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h3 className="text-xl font-bold">{tab.title}</h3>
-                            <p className="text-gray-300">{tab.subtitle}</p>
+                            <p className="paragraph-style-body text-color-inverted">{tab.subtitle}</p>
+                            <h3 className="heading-style-h3 text-color-inverted">{tab.title}</h3>
                             <motion.img
                                 src={tab.img}
                                 alt={tab.alt}
@@ -104,6 +105,7 @@ export default function WhatWeDo() {
                             />
                         </motion.div>
                     ))}
+                    <button className="contained-button  w-full" >Get Qoute</button>
                 </div>
 
 

@@ -100,7 +100,6 @@ export default function Hero() {
     };
 
     const handleScroll = () => {
-
       updateImagePosition();
     };
 
@@ -131,7 +130,7 @@ export default function Hero() {
 
   return (
     <div
-      className="relative w-screen h-[100vh] flex items-center justify-center overflow-hidden"
+      className="relative hero w-screen h-[100vh] flex items-center justify-center overflow-hidden"
       onMouseEnter={() => setIsInside(true)}
       onMouseLeave={() => setIsInside(false)}
     >
@@ -147,11 +146,10 @@ export default function Hero() {
           exit={{ opacity: 0, scale: 0.8 }}
           transition={{
             type: "spring",
-            stiffness: 200,  // higher = faster, snappier
-            damping: 20,     // lower = more bouncy
-            mass: 1,         // adjust "weight"
+            stiffness: 200, // higher = faster, snappier
+            damping: 20, // lower = more bouncy
+            mass: 1, // adjust "weight"
           }}
-
         />
       )}
 
@@ -174,7 +172,7 @@ export default function Hero() {
 
       {/* Center Text */}
       <motion.div
-        className="absolute text-center flex justify-between gap-4 flex-col items-center max-w-3xl z-20"
+        className="absolute text-center flex justify-between gap-1 flex-col items-center max-w-3xl z-20"
         initial="hidden"
         animate="visible"
         variants={{
@@ -192,16 +190,7 @@ export default function Hero() {
       >
         <motion.h2
           className="
-    text-black 
-    leading-[1.2] 
-    text-4xl 
-    sm:text-5xl 
-    md:text-7xl 
-    lg:text-8xl 
-    xl:text-9xl 
-    mix-blend-difference 
-    cursor-none 
-    mb-6
+ heading-style-h1_fintech text-color-difference
   "
           variants={{
             hidden: { opacity: 0, y: 40 },
@@ -212,13 +201,13 @@ export default function Hero() {
           <br />
           <TypeAnimation
             sequence={[
-              'propTech.',
+              "propTech.",
               1000,
-              'money.',
+              "money.",
               1000,
-              'crypto.',
+              "crypto.",
               1000,
-              'lending.',
+              "lending.",
               1000,
             ]}
             speed={50}
@@ -226,11 +215,16 @@ export default function Hero() {
             repeat={Infinity}
           />
         </motion.h2>
-        <motion.p className="text-black text-xl mix-blend-difference cursor-none mb-6">
-          Rewriting the Way Money Moves Smart <br /> Finance Starts Simple From Code to
-          Card
+        <motion.p className="text-black  paragraph-style-body mt-4   mix-blend-difference cursor-none  ">
+          Humbleteam has designed interfaces for 56 digital products <br />{" "}
+          launched by startups and enterprises in all areas of fintech. <br />
         </motion.p>
-        <button className="contained-button">Get Started</button>
+        <motion.p className="text-black  paragraph-style-body   mix-blend-difference cursor-none mb-6">
+          <span className="text-color-secondary">
+            (You’ve probably used one of them.)
+          </span>
+        </motion.p>
+        <button className="contained-button">Let’s get started</button>
       </motion.div>
     </div>
   );
