@@ -37,10 +37,30 @@ const RightArrow = () => (
 );
 
 const slides = [
-  "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
-  "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
-  "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
-  "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
+  {
+    image: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
+    userPic: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bf337492bd42366475d1c_testimonials-userpic-2.webp",
+    company: "Banking Platform",
+    position: "Head of Engineering"
+  },
+  {
+    image: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
+    userPic: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bf337492bd42366475d1c_testimonials-userpic-2.webp",
+    company: "Banking Platform",
+    position: "Head of Engineering"
+  },
+  {
+    image: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
+    userPic: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bf337492bd42366475d1c_testimonials-userpic-2.webp",
+    company: "Banking Platform",
+    position: "Head of Engineering"
+  },
+  {
+    image: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/66167e7433cbf7d8d8f5985e_testimonials-01.webp",
+    userPic: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bf337492bd42366475d1c_testimonials-userpic-2.webp",
+    company: "Banking Platform",
+    position: "Head of Engineering"
+  },
 ];
 
 export default function Testimonials() {
@@ -88,7 +108,7 @@ export default function Testimonials() {
           }}
           className="flex items-center pb-20"
         >
-          {slides.map((src, i) => (
+          {slides.map((slide, i) => (
             <SwiperSlide
               key={i}
               className="!w-[280px] sm:!w-[400px] md:!w-[500px] lg:!w-[550px] overflow-visible transition-all duration-500"
@@ -96,16 +116,17 @@ export default function Testimonials() {
               {({ isActive }) => (
                 <div className="relative">
                   <img
-                    src={src}
+                    src={slide.image}
                     alt={`Slide ${i}`}
                     className={`border-radius-primary shadow-lg w-full h-full object-cover transition-all duration-500 ${isActive ? "opacity-100 scale-100" : "opacity-50 scale-90"
                       }`}
                   />
                   
                   {/* User info div positioned below the image */}
-                  <div className="testimonials-slider-userpic-grid  mt-5   gap-2 p-4 flex items-center  ">
+                  <div className={`testimonials-slider-userpic-grid mt-5 gap-2 p-4 flex items-center transition-all duration-500 ${isActive ? "opacity-100" : "opacity-50"
+                    }`}>
                     <img
-                      src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bf337492bd42366475d1c_testimonials-userpic-2.webp"
+                      src={slide.userPic}
                       loading="eager"
                       width="32"
                       height="32"
@@ -115,10 +136,10 @@ export default function Testimonials() {
                     />
                     <div className="flex flex-col">
                       <div className="paragraph-style-caption_small text-color-secondary">
-                        Banking Platform
+                        {slide.company}
                       </div>
                       <div className="paragraph-style-caption_small text-color-inverted">
-                        Head of Engineering
+                        {slide.position}
                       </div>
                     </div>
                   </div>

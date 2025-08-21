@@ -155,7 +155,15 @@ body {
 
 .border-radius-primary {
   border-radius: 3.75rem !important;
+      overflow: hidden;
 }
+.tabssss{
+    /* margin-bottom: -7.5rem; */
+    padding-top: 3rem;
+    padding-right: 2rem;
+    overflow: hidden;
+}
+
 
 .fintech-2-content-grid {
   grid-column-gap: 1.25rem;
@@ -1479,6 +1487,27 @@ body {
   grid-area: 6 / 2 / 7 / 3;
   justify-self: start;
 }
+.fintech-2-content-grid-2-image.is-first {
+    margin-top: -8rem;
+}.fintech-2-content-grid-2-image.is-second {
+    margin-top: -4rem;
+}#w-node-a7860b71-b4b4-544c-b7f3-19007ff0cec7-2da5785d {
+    place-self: end;
+}#w-node-b828682d-3529-adb4-a4c1-afe222b5b3e3-2da5785d {
+    align-self: end;
+}
+#w-node-e622e967-03d8-1edc-5964-e48c96930b9a-2da5785d {
+    align-self: end;
+}#w-node-e622e967-03d8-1edc-5964-e48c96930b9a-2da5785d {
+    align-self: end;
+}
+.fintech-2-content-grid-2-image.is-third {
+    max-width: 110%;
+    margin-top: 0;
+    margin-right: -2.5rem;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+}
 
 @media screen and (min-width: 1280px) {
   .button-primary_large {
@@ -1588,7 +1617,9 @@ body {
     background-color: var(--white);
   }
 }
-
+.container-custom{
+      padding: 8rem 2.5rem;
+}
 @media screen and (max-width: 991px) {
   #w-node-a1858a9d-4769-a235-9986-a642b0426717-838ded47 {
     grid-area: span 1/span 1/span 1/span 1
@@ -1780,6 +1811,11 @@ body {
   .container-global {
     grid-column-gap: 2.5rem;
     grid-row-gap: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } 
+   .container-custom {
+ 
     padding-left: 1rem;
     padding-right: 1rem;
   }

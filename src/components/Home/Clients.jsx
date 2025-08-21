@@ -2,7 +2,7 @@ import React from "react";
 
 export const Clients = () => {
     return (
-        <div className="container-fluid px-6 py-20">
+        <div className="container-custom">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
                 <div className="md:col-span-6">
                     <h2 className="heading-style-h2_fintech">
@@ -84,16 +84,11 @@ export const Clients = () => {
                             design support
                         </h3>
                         <p className="mt-3 paragraph-style-body text-color-inverted">
-                            We’re here for you if you need to strengthen  
-                            your team with extra pros for a long period of time.
+                            We’re here for you if you need to strengthen your team with extra
+                            pros for a long period of time.
                         </p>
                     </div>
-                    <img
-                        src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4.webp"
-                        alt="Two floating mobile phones displaying a fintech app screens"
-                        className="rounded-xl   w-full h-auto object-contain"
-                        loading="eager"
-                    />
+                  <img src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4.webp" loading="eager" id="w-node-e622e967-03d8-1edc-5964-e48c96930b9a-2da5785d" sizes="(max-width: 479px) 100vw, (max-width: 767px) 54vw, (max-width: 991px) 45vw, (max-width: 1279px) 30vw, 31vw" alt="Two floating mobile phones displaying a fintech app screens" srcset="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4.webp 880w" class="fintech-2-content-grid-2-image is-first"/>
                 </div>
                 <div className="border-radius-primary text-black fintech-2-content-grid-card_big  ">
                     <div className="mb-6 text-center p-10">
@@ -107,9 +102,12 @@ export const Clients = () => {
                     </div>
                     <img
                         src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5.webp"
-                        alt="Two mobile screens displaying a design concept for PayPal application"
-                        className="rounded-xl   w-full h-auto object-contain"
                         loading="eager"
+                        id="w-node-a7860b71-b4b4-544c-b7f3-19007ff0cec7-2da5785d"
+                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 58vw, (max-width: 991px) 49vw, (max-width: 1279px) 33vw, 34vw"
+                        alt="Two mobile screens displaying a design concept for PayPal application"
+                        srcset="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5.webp 822w"
+                        class="fintech-2-content-grid-2-image is-third"
                     />
                 </div>
                 <div className="border-radius-primary text-white   fintech-2-content-grid-card_big  background-color-primary">
@@ -123,12 +121,7 @@ export const Clients = () => {
                             convenient banking on the go.
                         </p>
                     </div>
-                    <img
-                        src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6.webp"
-                        alt="Digital banking product preview"
-                        className="rounded-xl   w-full h-auto object-contain"
-                        loading="eager"
-                    />
+                   <img src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6.webp" loading="eager" id="w-node-b828682d-3529-adb4-a4c1-afe222b5b3e3-2da5785d" sizes="(max-width: 479px) 100vw, (max-width: 767px) 54vw, (max-width: 991px) 45vw, (max-width: 1279px) 30vw, 31vw" alt="" srcset="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6.webp 880w" class="fintech-2-content-grid-2-image is-second"/>
                 </div>
             </div>
             <div className="fintech-2-content-grid">
@@ -190,7 +183,6 @@ export const Clients = () => {
                     </div>
                 </a>
             </div>
-
         </div>
     );
 };

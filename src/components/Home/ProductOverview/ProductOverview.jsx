@@ -101,7 +101,7 @@ const gridItems = [
 
 export default function ProductOverview() {
   return (
-    <div className=" products text-white py-20 px-6" >
+    <div className=" products text-white container-custom" >
       <div className="w-full   mx-auto">
 
         <motion.div
