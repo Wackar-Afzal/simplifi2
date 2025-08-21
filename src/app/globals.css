@@ -1413,7 +1413,9 @@ body {
     grid-template-columns: 1fr
   }
 }
-
+.careers-img{
+  width: 100%;
+}
 @media (max-width: 1024px) {
 
   /* Grids stack fewer columns */
