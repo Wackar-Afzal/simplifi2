@@ -74,13 +74,13 @@ export default function ClientSays() {
         <div className="body-medium is-heading">What our clients say</div>
       </div>
 
-      <Marquee gradient={false} speed={100} pauseOnHover={true} direction="right">
+      <Marquee gradient={false} speed={100} pauseOnHover={true} direction="left">
         <div className="clients-wrapper">
           {clients.concat(clients).map((client, index) => (
             <div className="clients-card" key={index}>
               <div className={`clients-quote ${client.color}`}>{client.quote}</div>
               <div className="clients-author-wrapper">
-                <img src={client.logo} alt="" className="clients-logo" loading="lazy" />
+                <img src={client.logo} alt="" className="clients-logo" style={{width:"14rem"}} loading="lazy" />
                 <div className="clients-author-name">
                   <div>{client.name}</div>
                   <div className="clients-company">{client.company}</div>
