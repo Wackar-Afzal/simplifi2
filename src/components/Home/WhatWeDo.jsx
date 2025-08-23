@@ -37,23 +37,24 @@ export default function WhatWeDo() {
     ];
 
     return (
-        <section className="whatwedo text-white py-16 px-6">
+        <section className="whatwedo text-white  container-custom">
             <div className="  mx-auto">
 
                 <h2 className="heading-style-h2_fintech text-color-inverted">
                     What we do
                 </h2>
 
-                <div className="hidden md:grid grid-cols-2 gap-8 mt-12">
+                <div className="hidden md:grid grid-cols-2 gap-8  ">
 
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-center tabssss">
 
                         <AnimatePresence mode="wait">
                             <motion.img
                                 key={tabs.find(t => t.id === activeTab).img}
                                 src={tabs.find(t => t.id === activeTab).img}
                                 alt={tabs.find(t => t.id === activeTab).alt}
-                                className="rounded-4xl shadow-lg w-full  "
+                                className=" w-full  "
+                                style={{borderRadius:"2.5rem"}}
                                 initial={{ scale: 0.9, opacity: 0 }}
                                 animate={{ scale: 1, opacity: 1 }}
                                 exit={{ scale: 0.9, opacity: 0 }}
@@ -79,7 +80,7 @@ export default function WhatWeDo() {
 
                     </div>
 
-
+{/* <button className="button-primary_large">hy</button> */}
 
                 </div>
 
