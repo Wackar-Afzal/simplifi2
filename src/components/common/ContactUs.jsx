@@ -71,14 +71,14 @@ export const ContactUs = () => {
                         <label htmlFor="" className="form-label">A few words about your project
                         </label>
                         <div className="mt-3">
-                            <textarea type="text" maxlength="5000" placeholder="Your Text" className="custom-input is-textarea  w-full" />
+                            <textarea type="text" maxLength="5000" placeholder="Your Text" className="custom-input is-textarea  w-full" />
                         </div>
                     </div>
                     <div className="from-group py-8">
                         <label htmlFor="" className="form-label">We'll respond within 24 hours with relevant case studies, a cost estimate, <br /> and a possible timeline.</label>
                     </div>
                     <button className="button-submit w-full mb-8">Get Touch</button>
-                    <div class="form-info">Prefer email? Reach out at <a href="mailto:hi@humbleteam.com" class="is-link_alt text-color-accent">hi@humbleteam.com</a></div>
+                    <div className="form-info">Prefer email? Reach out at <a href="mailto:hi@humbleteam.com" className="is-link_alt text-color-accent">hi@humbleteam.com</a></div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import BSlidingDiv from "../common/BSliding";
 
 export const Clients = () => {
     return (
@@ -49,7 +50,7 @@ export const Clients = () => {
                 <div className="md:col-span-4"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 fintech-2-content-grid mt-20">
-                <div className="bg-white  border-radius-primary  p-6 fintech-2-content-grid-card_small ">
+                <BSlidingDiv className="bg-white  border-radius-primary  p-6 fintech-2-content-grid-card_small ">
                     <div className="flex items-center gap-2">
                         <span className="number-style  ">50</span>
                         <span className="number-style  ">+</span>
@@ -57,14 +58,14 @@ export const Clients = () => {
                     <p className="mt-2 text-gray-600">
                         UX/UI, brand, motion designers, and research experts on board
                     </p>
-                </div>
+                </BSlidingDiv>
 
-                <div className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
+                <BSlidingDiv className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
                     <div className="number-style ">25</div>
                     <p className="mt-2 text-gray-600">
                         Countries with fintech clients represented
                     </p>
-                </div>
+                </BSlidingDiv>
 
                 <div className="fintech-2-content-grid-offset-image flex justify-center items-center relative">
                     <img
@@ -77,7 +78,7 @@ export const Clients = () => {
                 </div>
             </div>
             <div className=" fintech-2-content-grid-2 py-[150px]">
-                <div className=" border-radius-primary text-white   fintech-2-content-grid-card_big background-color-primary">
+                <BSlidingDiv className=" border-radius-primary text-white   fintech-2-content-grid-card_big background-color-primary">
                     <div className="card-title-block">
                         <h3 className="heading-style-h3 text-color-inverted">
                             Long-term <br />
@@ -88,9 +89,9 @@ export const Clients = () => {
                             pros for a long period of time.
                         </p>
                     </div>
-                  <img src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4.webp" loading="eager" id="w-node-e622e967-03d8-1edc-5964-e48c96930b9a-2da5785d" sizes="(max-width: 479px) 100vw, (max-width: 767px) 54vw, (max-width: 991px) 45vw, (max-width: 1279px) 30vw, 31vw" alt="Two floating mobile phones displaying a fintech app screens" srcset="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4.webp 880w" class="fintech-2-content-grid-2-image is-first"/>
-                </div>
-                <div className="border-radius-primary text-black fintech-2-content-grid-card_big  ">
+                  <img src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4.webp" loading="eager" id="w-node-e622e967-03d8-1edc-5964-e48c96930b9a-2da5785d" sizes="(max-width: 479px) 100vw, (max-width: 767px) 54vw, (max-width: 991px) 45vw, (max-width: 1279px) 30vw, 31vw" alt="Two floating mobile phones displaying a fintech app screens" srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e54f9dd6724dd076fa365_fintech-2-img-4.webp 880w" className="fintech-2-content-grid-2-image is-first"/>
+                </BSlidingDiv>
+                <BSlidingDiv className="border-radius-primary text-black fintech-2-content-grid-card_big  ">
                     <div className="mb-6 text-center p-10">
                         <h3 className="heading-style-h3  ">
                             Relaunch existing fintech product
@@ -106,11 +107,11 @@ export const Clients = () => {
                         id="w-node-a7860b71-b4b4-544c-b7f3-19007ff0cec7-2da5785d"
                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 58vw, (max-width: 991px) 49vw, (max-width: 1279px) 33vw, 34vw"
                         alt="Two mobile screens displaying a design concept for PayPal application"
-                        srcset="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5.webp 822w"
-                        class="fintech-2-content-grid-2-image is-third"
+                        srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660e52e550ba1c1a0bfdd52f_fintech-2-img-5.webp 822w"
+                        className="fintech-2-content-grid-2-image is-third"
                     />
-                </div>
-                <div className="border-radius-primary text-white   fintech-2-content-grid-card_big  background-color-primary">
+                </BSlidingDiv>
+                <BSlidingDiv className="border-radius-primary text-white   fintech-2-content-grid-card_big  background-color-primary">
                     <div className="card-title-block">
                         <h3 className="heading-style-h3 text-color-inverted">
                             Invent and design new <br /> digital products
@@ -121,8 +122,8 @@ export const Clients = () => {
                             convenient banking on the go.
                         </p>
                     </div>
-                   <img src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6.webp" loading="eager" id="w-node-b828682d-3529-adb4-a4c1-afe222b5b3e3-2da5785d" sizes="(max-width: 479px) 100vw, (max-width: 767px) 54vw, (max-width: 991px) 45vw, (max-width: 1279px) 30vw, 31vw" alt="" srcset="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6.webp 880w" class="fintech-2-content-grid-2-image is-second"/>
-                </div>
+                   <img src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6.webp" loading="eager" id="w-node-b828682d-3529-adb4-a4c1-afe222b5b3e3-2da5785d" sizes="(max-width: 479px) 100vw, (max-width: 767px) 54vw, (max-width: 991px) 45vw, (max-width: 1279px) 30vw, 31vw" alt="" srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6-p-800.webp 800w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660aa4786e2b1e2f37ab05d4_fintech-2-img-6.webp 880w" className="fintech-2-content-grid-2-image is-second"/>
+                </BSlidingDiv>
             </div>
             <div className="fintech-2-content-grid">
                 <div
@@ -147,7 +148,7 @@ export const Clients = () => {
                     />
                 </div>
 
-                <div
+                <BSlidingDiv
                     id="w-node-d4992ffb-30fc-888f-1084-b18b2366f1a7-2da5785d"
                     data-w-id="d4992ffb-30fc-888f-1084-b18b2366f1a7"
                     style={{
@@ -165,7 +166,7 @@ export const Clients = () => {
                     <div className="paragraph-style-body text-lg">
                         Raised in investments by our fintech startup clients
                     </div>
-                </div>
+                </BSlidingDiv>
 
                 <a
                     id="click_CTA_challenge_fintech"
@@ -173,14 +174,14 @@ export const Clients = () => {
                     href="#request"
                     className="fintech-2-content-grid-card_button border-radius-primary w-node-a17aba4a-7960-0568-0880-95f57dc0544a-2da5785d w-inline-block"
                 >
-                    <div className="heading-style-h2_small text-color-inverted text-white text-3xl leading-tight">
+                    <BSlidingDiv className="heading-style-h2_small text-color-inverted text-white text-3xl leading-tight">
                         What’s your challenge?
-                    </div>
-                    <div className="div-block">
+                    </BSlidingDiv>
+                    <BSlidingDiv className="div-block">
                         <div className="heading-style-h2_small text-color-inverted text-white text-3xl leading-tight">
                             Let’s talk.↗
                         </div>
-                    </div>
+                    </BSlidingDiv>
                 </a>
             </div>
         </div>

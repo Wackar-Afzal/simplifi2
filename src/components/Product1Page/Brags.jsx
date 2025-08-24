@@ -113,7 +113,7 @@ export default function Brags() {
       >
         {slides.map((slide, index) => (
           <SplideSlide key={index} className="relative feed-link">
-            <div class="brags-card">
+            <div className="brags-card">
               <div>
                 14 Behance badges
                 <br />

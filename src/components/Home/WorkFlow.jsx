@@ -1,3 +1,5 @@
+import BSlidingDiv from "../common/BSliding"
+
 export default function WorkFlowSectionCases() {
   return (
     <div className="section-cases py-[100px] px-6">
@@ -17,8 +19,9 @@ export default function WorkFlowSectionCases() {
                 "translate3d(0px,0px,0px) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg)",
               transformStyle: "preserve-3d",
             }}
-            className="cases-grid-item border-radius-primary"
+            className="cases-grid-item border-radius-primary "
           >
+            <BSlidingDiv>
             <div className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
@@ -51,6 +54,7 @@ export default function WorkFlowSectionCases() {
                 alt="Mobile phone with a fintech app lying on a 3D background"
               />
             </div>
+            </BSlidingDiv>
           </div>
 
           {/* Société Générale Group */}
@@ -65,7 +69,7 @@ export default function WorkFlowSectionCases() {
             }}
             className="cases-grid-item background-color-secondary border-radius-primary"
           >
-            <div className="cases-card-item-content-wrapper">
+            <BSlidingDiv className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
                   src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e2c46c7f5de93e2b0176_sgg-userpic.svg"
@@ -87,8 +91,8 @@ export default function WorkFlowSectionCases() {
                   greener lifestyle.
                 </div>
               </div>
-            </div>
-            <div className="cases-card-item-image-wrapper">
+            </BSlidingDiv>
+            <BSlidingDiv className="cases-card-item-image-wrapper">
               <img
                 src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2.webp"
                 loading="eager"
@@ -96,11 +100,12 @@ export default function WorkFlowSectionCases() {
                 srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2.webp 800w"
                 alt="Mobile screen displaying a banking app with flowers in the background"
               />
-            </div>
+            </BSlidingDiv>
           </div>
 
           {/* Moka */}
           <div className="cases-grid-item border-radius-primary" id="w-node-bc9a16cb-67f3-e1d0-55bd-3b49311aff14-2da5785d">
+            <BSlidingDiv>
             <div className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
@@ -131,6 +136,7 @@ export default function WorkFlowSectionCases() {
                 alt="Moka fintech app screens displayed on mobile devices"
               />
             </div>
+            </BSlidingDiv>
           </div>
 
           {/* Oxygen */}

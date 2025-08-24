@@ -1,5 +1,6 @@
 "use client"
 
+import BSlidingDiv from "@/components/common/BSliding"
 import { motion } from "framer-motion"
 
 const containerVariants = {
@@ -138,15 +139,13 @@ export default function ProductOverview() {
         >
           <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4 w-full  mx-auto">
             {gridItems.map((item, idx) => (
-              <motion.div
+              <BSlidingDiv 
                 key={idx}
                 className={`${item.col} rounded-4xl flex flex-col items-center justify-center h-full w-full text-center`}
-                initial={{ opacity: 0, [item.direction || "y"]: item.value || 30 }}
-                animate={{ opacity: 1, [item.direction || "y"]: 0 }}
-                transition={{ duration: 0.6, delay: item.delay }}
               >
+          
                 {item.content}
-              </motion.div>
+              </BSlidingDiv>
             ))}
           </div>
         </motion.div>
