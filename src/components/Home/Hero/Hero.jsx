@@ -172,7 +172,7 @@ export default function Hero() {
 
       {/* Center Text */}
       <motion.div
-        className="absolute text-center flex justify-between gap-1 flex-col items-center max-w-3xl z-20"
+        className="absolute text-center flex justify-between gap-1 flex-col items-center max-w-3xl "
         initial="hidden"
         animate="visible"
         variants={{
@@ -190,24 +190,24 @@ export default function Hero() {
       >
         <motion.h2
           className="
- heading-style-h1_fintech text-color-difference
+ heading-style-h1_fintech text-white mix-blend-difference
   "
           variants={{
             hidden: { opacity: 0, y: 40 },
             visible: { opacity: 1, y: 0 },
           }}
         >
-          We love
+          From Code to 
           <br />
           <TypeAnimation
             sequence={[
-              "propTech.",
+              "Cards.",
               1000,
-              "money.",
+              "Wallets .",
               1000,
-              "crypto.",
+              "Transactions .",
               1000,
-              "lending.",
+              "Card Programs.",
               1000,
             ]}
             speed={50}
@@ -215,13 +215,12 @@ export default function Hero() {
             repeat={Infinity}
           />
         </motion.h2>
-        <motion.p className="text-black  paragraph-style-body mt-4   mix-blend-difference cursor-none  ">
-          Humbleteam has designed interfaces for 56 digital products <br />{" "}
-          launched by startups and enterprises in all areas of fintech. <br />
+        <motion.p className="text-white  paragraph-style-body mt-4   mix-blend-difference cursor-none  ">
+          Powering Cards for Every Business / Startup / Enterprise / Platform / Fintech. Embed off-the-shelf cards or build your own card product - SimpliFi powers it all. Whether you want to launch a card product in days or customize every layer, our infrastructure adapts to your needs. 
         </motion.p>
         <motion.p className="text-black  paragraph-style-body   mix-blend-difference cursor-none mb-6">
           <span className="text-color-secondary">
-            (You’ve probably used one of them.)
+            (Fully modular. PCI-compliant. Global-ready.)
           </span>
         </motion.p>
         <button className="contained-button">Let’s get started</button>

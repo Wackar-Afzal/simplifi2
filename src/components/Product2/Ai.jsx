@@ -3,7 +3,7 @@ import React from "react";
 const Ai = () => {
     return (
         <div>
-            <section className="section_ventures">
+            {/* <section className="section_ventures">
                 <img
                     src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493212_ventures1.avif"
                     loading="lazy"
@@ -94,7 +94,7 @@ const Ai = () => {
                         />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <div className="section-cases">
                 <img
@@ -121,7 +121,7 @@ const Ai = () => {
                     className="cases-bg6"
                 />
                 <div className="container-global">
-                    <h2 className="section-heading is-large">Adventures in AI experience design</h2>
+                    <h2 className="section-heading is-large">USPs</h2>
                     <div className="section-cases-grid">
                         <div
                             id="w-node-_8545a01a-43bd-28fc-8c15-0a43f8cc9953-8f49312d"
@@ -145,9 +145,9 @@ const Ai = () => {
                                     <div className="cases-company">Synthesia</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Prototype for AI-powered text-to-video in just 15 days</h3>
+                                    <h3 className="heading-style-h4">Built for Scale. Secured for Trust. Ready for any Launch.</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Synthesia is an AI-powered text-to-video platform used by HP, McDonald's, and 500 other top Fortune companies.
+                                       Whether you're embedding cards or launching your own card program, we power both.
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -195,9 +195,9 @@ const Ai = () => {
                                     <div className="cases-company">TravelPal</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Interface design and branding for an AI-powered travel route planner</h3>
+                                    <h3 className="heading-style-h4">One contract for everything</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        We built a smarter way to create Travel Pal's AI-generated travel guides, cutting costs by 40% without sacrificing quality.
+                                        Work with just one provider to get technology, compliance, operational support, and more.
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -246,9 +246,9 @@ const Ai = () => {
                                     <div className="cases-company">MyRadar</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">UX/UI for top-tier weather platform leveraging artificial intelligence</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">One integration, multiple markets</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        We designed a virtual reality version of MyRadar for Apple Vision Pro, the world's top #3 weather app, with over 50 million downloads
+                                        Go live across markets with a single integration.
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -308,9 +308,9 @@ const Ai = () => {
                                     <div className="cases-company">NASA</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">User experience for a storage system on the International Space Station</h3>
+                                    <h3 className="heading-style-h4">Compliance, sorted</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        We created an interface indicating the actual capacity of each station block, along with a smart search functionality that works within seconds.
+                                        KYC, AML, and regulatory approvals to ensure end to end compliance.
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -343,9 +343,9 @@ const Ai = () => {
                                     <div className="cases-company">VOS</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">Adding AI-powered insights to VOS's mental health platform</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">Security at the core</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        We redesigned the interface of VOS's app to help users easily access new AI tools for analyzing their mental health data.
+                                        PCI-DSS compliant with encryption, tokenization, and secure APIs.
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -394,9 +394,9 @@ const Ai = () => {
                                     <div className="cases-company">Offered</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Visual identity for an AI-powered job application platform</h3>
+                                    <h3 className="heading-style-h4">Infrastructure that grows with you</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Offered's updated brand system and &nbsp;UX, including several AI features, resulted in improved user-engagement across the board.
+                                        Handle high volumes, custom logic, and complex workflows with ease.
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -441,9 +441,9 @@ const Ai = () => {
                                     <div className="cases-company">Nauto</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">Dashboard for an AI-powered Driver and Fleet Safety Platform</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">Made for developers</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Used by DHL and FedEx among others, Nauto uses advanced AI to detect, predict and prevent thousands of road accidents every year.
+                                        Get started faster with detailed API documentation and sandbox access.
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">

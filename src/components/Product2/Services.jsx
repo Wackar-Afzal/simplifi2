@@ -52,7 +52,7 @@ export default function WhatWeDo() {
         <section className="section_services text-white is-xsmall">
             <div className="services-wrapper mx-auto">
                 <h2 className="section-heading is-services mb-10">
-                    We design UX for AI products – from websites to product design
+                    Embed: Off-the-shelf cards, ready to go
                 </h2>
 
                 {/* Desktop Tabs */}

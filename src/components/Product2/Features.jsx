@@ -1,10 +1,45 @@
+'use client'
 import React from 'react'
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const Features = () => {
+
+      const containerRef = useRef(null)
+
+  // Track scroll progress of this specific section
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  })
+
+  // Define final positions for each card
+  const finalPositions = {
+    card1: { x: -96, y: -112 }, // -6rem, -7rem in pixels (16px = 1rem)
+    card2: { x: 112, y: -80 }, // 7rem, -5rem
+    card3: { x: -80, y: 80 }, // -5rem, 5rem
+    card4: { x: 144, y: 112 }, // 9rem, 7rem
+  }
+
+  // Create smooth transforms for each card based on scroll progress
+  const card1X = useTransform(scrollYProgress, [0.2, 0.8], [0, finalPositions.card1.x])
+  const card1Y = useTransform(scrollYProgress, [0.2, 0.8], [0, finalPositions.card1.y])
+
+  const card2X = useTransform(scrollYProgress, [0.25, 0.85], [0, finalPositions.card2.x])
+  const card2Y = useTransform(scrollYProgress, [0.25, 0.85], [0, finalPositions.card2.y])
+
+  const card3X = useTransform(scrollYProgress, [0.3, 0.9], [0, finalPositions.card3.x])
+  const card3Y = useTransform(scrollYProgress, [0.3, 0.9], [0, finalPositions.card3.y])
+
+  const card4X = useTransform(scrollYProgress, [0.35, 0.95], [0, finalPositions.card4.x])
+  const card4Y = useTransform(scrollYProgress, [0.35, 0.95], [0, finalPositions.card4.y])
+
+
     return (
         <div>
-            <div className="features-track">
-                <section className="section_features">
+            <div className="h-[300vh]" ref={containerRef} >
+                      <div className="sticky top-0 h-screen ">
+                <section className="section_features  h-full">
                     <img
                         src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif"
                         loading="lazy"
@@ -36,14 +71,16 @@ const Features = () => {
                             href="#request"
                             className="btn-primary w-button mt-5"
                         >
-                            Get in touch
+                            Get in touch waqa
                         </button>
-                        <div
-                            className="features-card is-first"
+                        <motion.div
+                            className="features-card is-first absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
                             style={{
-                                willChange: "transform",
-                                transform: "translate3d(-6rem, -7rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                                transformStyle: "preserve-3d"
+                                // willChange: "transform",
+                                // transform: "translate3d(-6rem, -7rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                                // transformStyle: "preserve-3d",
+                                     x: card1X,
+                                     y: card1Y,
                             }}
                         >
                             <div className="features-card-number">01</div>
@@ -53,7 +90,7 @@ const Features = () => {
                             <p className="features-desc">
                                 Building on our AI expertise, we deliver ready-to-use designs that work within technical constraints—getting you to market faster.
                             </p>
-                        </div>
+                        </motion.div>
                         <div
                             className="features-card is-second"
                             style={{
@@ -98,6 +135,7 @@ const Features = () => {
                         </div>
                     </div>
                 </section>
+                </div>
             </div>
         </div>
     )

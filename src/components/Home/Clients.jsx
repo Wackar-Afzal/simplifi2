@@ -7,8 +7,7 @@ export const Clients = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
                 <div className="md:col-span-6">
                     <h2 className="heading-style-h2_fintech">
-                        Since 2019 we elevate digital products and skyrocket clients’
-                        returns
+                       Powering businesses across the Region
                     </h2>
 
                     <div className="mt-10 flex flex-col gap-6">
@@ -52,18 +51,18 @@ export const Clients = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 fintech-2-content-grid mt-20">
                 <BSlidingDiv className="bg-white  border-radius-primary  p-6 fintech-2-content-grid-card_small ">
                     <div className="flex items-center gap-2">
-                        <span className="number-style  ">50</span>
+                        <span className="number-style  ">500</span>
                         <span className="number-style  ">+</span>
                     </div>
                     <p className="mt-2 text-gray-600">
-                        UX/UI, brand, motion designers, and research experts on board
+                        Businesses Empowered
                     </p>
                 </BSlidingDiv>
 
                 <BSlidingDiv className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
-                    <div className="number-style ">25</div>
+                    <div className="number-style ">06</div>
                     <p className="mt-2 text-gray-600">
-                        Countries with fintech clients represented
+                        Markets Covered
                     </p>
                 </BSlidingDiv>
 
@@ -160,11 +159,11 @@ export const Clients = () => {
                     className="fintech-2-content-grid-card_small border-radius-primary"
                 >
                     <div className="flex gap-4">
-                        <div className="number-style ">$2.7</div>
-                        <div className="number-style ">B+</div>
+                        <div className="number-style ">08</div>
+                        {/* <div className="number-style ">B+</div> */}
                     </div>
                     <div className="paragraph-style-body text-lg">
-                        Raised in investments by our fintech startup clients
+                         Banking Partners
                     </div>
                 </BSlidingDiv>
 
@@ -175,11 +174,11 @@ export const Clients = () => {
                     className="fintech-2-content-grid-card_button border-radius-primary w-node-a17aba4a-7960-0568-0880-95f57dc0544a-2da5785d w-inline-block"
                 >
                     <BSlidingDiv className="heading-style-h2_small text-color-inverted text-white text-3xl leading-tight">
-                        What’s your challenge?
+                        13
                     </BSlidingDiv>
                     <BSlidingDiv className="div-block">
                         <div className="heading-style-h2_small text-color-inverted text-white text-3xl leading-tight">
-                            Let’s talk.↗
+                            Currencies Supported
                         </div>
                     </BSlidingDiv>
                 </a>

@@ -23,8 +23,8 @@ export default function WhatsCookin() {
             alt: "Landscape",
             subtitle: "New research",
             title:
-                "Flawless beauty app UX? Our research uncovers top industry insights",
-            buttonText: "Comming soon",
+                "Corporate Payouts",
+            buttonText: "Learn more",
             buttonLink: "/shop",
         },
         {
@@ -32,8 +32,8 @@ export default function WhatsCookin() {
             alt: "Landscape",
             subtitle: "New research",
             title:
-                "Flawless beauty app UX? Our research uncovers top industry insights",
-            buttonText: "Comming soon",
+                "Corporate Spend",
+            buttonText: "Learn more",
             buttonLink: "/shop",
         },
         {
@@ -41,17 +41,36 @@ export default function WhatsCookin() {
             alt: "Landscape",
             subtitle: "New research",
             title:
-                "Flawless beauty app UX? Our research uncovers top industry insights",
-            buttonText: "Comming soon",
+                "Consumer Spend",
+            buttonText: "Learn more",
             buttonLink: "/shop",
         },
+               {
+            src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
+            alt: "Landscape",
+            subtitle: "New research",
+            title:
+                "Reward & Gifting Programs",
+            buttonText: "Learn more",
+            buttonLink: "/shop",
+        },
+               {
+            src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
+            alt: "Landscape",
+            subtitle: "New research",
+            title:
+                "BNPL & Credit",
+            buttonText: "Learn more",
+            buttonLink: "/shop",
+        },
+        
     ];
 
     return (
         <section className="relative w-full slider-section   overflow-hidden p-5 py-20">
             <div className="flex items-center justify-between mb-10">
 
-                <h1 className="h2">What’s cookin’</h1>
+                <h1 className="h2">What you can power with SimpliFi</h1>
                 <div className=" text-end   gap-2 flex justify-end  ">
                     <button
                         onClick={goPrev}
@@ -104,7 +123,7 @@ export default function WhatsCookin() {
                         </div>
 
                         {/* Overlay Content */}
-                        <div className=" pb-5 ">
+                        <div className=" pb-8 ">
                             <p className="feed-tag mb-3 mt-3">{slide.subtitle}</p>
                             <h2 className="feed-title mb-3">{slide.title}</h2>
                             <button href={slide.buttonLink} className="case-button">

@@ -32,7 +32,7 @@ const gridItems = [
           src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d51f881948ad05838968f_fintech-1-img-1.webp"
         />
         <p className="mt-4 text-center text-sm md:text-base">
-          5 YC fintechs have our design team as part of in-house production
+          Embed: Off-the-shelf cards, ready to go
         </p>
       </>
     ),
@@ -114,14 +114,13 @@ export default function ProductOverview() {
         >
           <motion.div variants={itemVariants} className="max-w-xl">
             <h1 className="heading-style-h2_fintech">
-              Leverage our fintech-focused design expertise
+              The fastest way to go live, your way
             </h1>
           </motion.div>
 
           <motion.div variants={itemVariants} className="max-w-md flex flex-col gap-6">
             <p className="paragraph-style-body text-color-inverted">
-              As a multidisciplinary team, we're all about speed and innovation, creating groundbreaking product
-              hypotheses and quickly testing them.
+              Whether you want to go live in days or build something truly custom, we’ve got you covered.
             </p>
             <p className="paragraph-style-body text-color-inverted">
               Humbleteam is specifically geared for this, aiming to boost your product from within, not just on the

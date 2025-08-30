@@ -3,19 +3,13 @@
 * {
 
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   scrollbar-width: none;
   -ms-overflow-style: none;
 
 
 
 }
-
-@import "tailwindcss";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @font-face {
   font-family: 'MyCustomFont';
@@ -45,22 +39,16 @@
   font-style: normal;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "MyCustomFont", sans-serif;
-  overflow-x: hidden !important;
-}
 
 :root {
 
   --grey--100: #222;
-  --primary--secondary: #ea3b01;
-  --primary--main: #ff490c;
+  --primary--secondary: #2e7dfc;
+  --primary--main: #2e7dfc;
   --white: white;
   --grey--50: #999;
   --grey--10: #f4f4f4;
-  --error: #f10000;
+  --error: #2e7dfc;
   --grey--90: #333;
   overflow-x: hidden !important;
   --black: black;
@@ -68,19 +56,33 @@ body {
   --black: #222;
   --dark-blue: #06121e;
   --white: white;
-  --primary: #ff490c;
+  --primary: #2e7dfc;
   --medium-grey: #979797;
   --beige: #fff0de;
   --cyan: #30cfe4;
   --light-gray: #f4f4f4;
-  --red: #e55775;
+  --red: #2e7dfc;
   --dark-purple: #011051;
   --blue: #3735f3;
   --purple: #5e13bd;
-  --secondary: #ea3b01
+  --secondary: #ea3b01;
+      --background: #ffffff;
+  --foreground: #171717;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "MyCustomFont", sans-serif;
+  overflow-x: hidden !important;
+}
 
 
 .no-scrollbar::-webkit-scrollbar {
@@ -2156,14 +2158,14 @@ svg:not(:root) {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   display: flex;
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
 }
 
 .features-track {

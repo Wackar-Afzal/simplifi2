@@ -1,40 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import Marquee from "react-fast-marquee";
+import ClientsMargquee from "./ClientsMargquee";
 const HeroSection = () => {
   const [activeTab, setActiveTab] = useState("Tab 1");
-  const clients = [
-    {
 
-      logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png",
-
-    }, {
-
-      logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png",
-
-    }, {
-
-      logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png",
-
-    }, {
-
-      logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png",
-
-    }, {
-
-      logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png",
-
-    }, {
-
-      logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png",
-
-    }, {
-
-      logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png",
-
-    },
-
-  ];
   return (
     <>
       <section className="section_hero">
@@ -324,34 +293,7 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-
-     <section data-w-id="98497e24-bb38-c836-dd0c-6f7393fd4e39" className="section_clients">
-        <h2 className="section-heading">
-          Pardon the humblebrag, but you may know some of our clients
-        </h2>
-        
-        <Marquee
-          gradient={false}
-          speed={100}
-          pauseOnHover={true}
-          direction="right"
-        >
-      <div className="clients-wrapper">
-          <div className="clients-carousel">
-            <div className="clients-block">
-            {clients.map((client, index) => (
-                <img
-                  src={client.logo}
-                  alt=""
-                  className="clients-logo"
-                  loading="lazy"
-                />
-              ))}
-              </div>
-          </div>
-      </div>
-        </Marquee>
-    </section>
+      <ClientsMargquee />
     </>
   );
 };
