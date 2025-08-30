@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import homeText from "@/utils/homeText.json";
 
 export default function Hero() {
   const imgRef = useRef(null);
@@ -203,9 +204,9 @@ export default function Hero() {
             sequence={[
               "Cards.",
               1000,
-              "Wallets .",
+              "Wallets.",
               1000,
-              "Transactions .",
+              "Transactions.",
               1000,
               "Card Programs.",
               1000,
@@ -216,14 +217,14 @@ export default function Hero() {
           />
         </motion.h2>
         <motion.p className="text-white  paragraph-style-body mt-4   mix-blend-difference cursor-none  ">
-          Powering Cards for Every Business / Startup / Enterprise / Platform / Fintech. Embed off-the-shelf cards or build your own card product - SimpliFi powers it all. Whether you want to launch a card product in days or customize every layer, our infrastructure adapts to your needs. 
+          {homeText.homepage.hero.subtitle}. {homeText.homepage.hero.description} {homeText.homepage.hero.subDescription}
         </motion.p>
         <motion.p className="text-black  paragraph-style-body   mix-blend-difference cursor-none mb-6">
           <span className="text-color-secondary">
-            (Fully modular. PCI-compliant. Global-ready.)
+            ({homeText.homepage.hero.features})
           </span>
         </motion.p>
-        <button className="contained-button">Let’s get started</button>
+        <button className="contained-button">{homeText.homepage.hero.cta}</button>
       </motion.div>
     </div>
   );

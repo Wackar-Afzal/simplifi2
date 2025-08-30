@@ -27,11 +27,11 @@ export default function Home() {
       <WhatsCookin/>
       <Ai/>
       <Features/>
-      <Testimonials/>
-      <Partners/>
+      {/* <Testimonials/> */}
+      {/* <Partners/> */}
       <WhatWeDo/>
-      <WorkFlowSectionCases/>
-      <ContactUs/>
+      {/* <WorkFlowSectionCases/> */}
+      {/* <ContactUs/> */}
       <Footer/>
     </div>
   );

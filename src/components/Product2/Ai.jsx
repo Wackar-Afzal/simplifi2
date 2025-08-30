@@ -1,4 +1,5 @@
 import React from "react";
+import homeText from "@/utils/homeText.json";
 
 const Ai = () => {
     return (
@@ -121,7 +122,7 @@ const Ai = () => {
                     className="cases-bg6"
                 />
                 <div className="container-global">
-                    <h2 className="section-heading is-large">USPs</h2>
+                    <h2 className="section-heading is-large">{homeText.homepage.usps.title}</h2>
                     <div className="section-cases-grid">
                         <div
                             id="w-node-_8545a01a-43bd-28fc-8c15-0a43f8cc9953-8f49312d"
@@ -145,9 +146,9 @@ const Ai = () => {
                                     <div className="cases-company">Synthesia</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Built for Scale. Secured for Trust. Ready for any Launch.</h3>
+                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[0].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                       Whether you're embedding cards or launching your own card program, we power both.
+                                       {homeText.homepage.usps.features[0].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -195,9 +196,9 @@ const Ai = () => {
                                     <div className="cases-company">TravelPal</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">One contract for everything</h3>
+                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[1].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Work with just one provider to get technology, compliance, operational support, and more.
+                                        {homeText.homepage.usps.features[1].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -246,9 +247,9 @@ const Ai = () => {
                                     <div className="cases-company">MyRadar</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">One integration, multiple markets</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">{homeText.homepage.usps.features[2].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Go live across markets with a single integration.
+                                        {homeText.homepage.usps.features[2].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -308,9 +309,9 @@ const Ai = () => {
                                     <div className="cases-company">NASA</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Compliance, sorted</h3>
+                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[3].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        KYC, AML, and regulatory approvals to ensure end to end compliance.
+                                        {homeText.homepage.usps.features[3].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -343,9 +344,9 @@ const Ai = () => {
                                     <div className="cases-company">VOS</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">Security at the core</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">{homeText.homepage.usps.features[4].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        PCI-DSS compliant with encryption, tokenization, and secure APIs.
+                                        {homeText.homepage.usps.features[4].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -394,9 +395,9 @@ const Ai = () => {
                                     <div className="cases-company">Offered</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Infrastructure that grows with you</h3>
+                                        <h3 className="heading-style-h4">{homeText.homepage.usps.features[5].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Handle high volumes, custom logic, and complex workflows with ease.
+                                        {homeText.homepage.usps.features[5].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -441,9 +442,9 @@ const Ai = () => {
                                     <div className="cases-company">Nauto</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">Made for developers</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">{homeText.homepage.usps.features[6].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Get started faster with detailed API documentation and sandbox access.
+                                        {homeText.homepage.usps.features[6].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -488,9 +489,9 @@ const Ai = () => {
                                     <div className="cases-company">Qantev</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Brand design for the leading AI claims platform for health &amp; life insurance</h3>
+                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[7].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Qantev's new brand uses the metaphor of rapid neural connections as the core creative concept of its "augmented insurance" product.
+                                        {homeText.homepage.usps.features[7].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -533,9 +534,9 @@ const Ai = () => {
                                     <div className="cases-company">Eko Health</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">Improved user experience for a digital stethoscope platform</h3>
+                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[8].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        Using AI, Eko Health's digital stethoscope and telehealth app detect over 100,000+ heart conditions annually. We streamlined the user experience for greater ease.
+                                        {homeText.homepage.usps.features[8].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">

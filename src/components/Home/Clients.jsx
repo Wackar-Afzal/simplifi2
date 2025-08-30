@@ -1,5 +1,6 @@
 import React from "react";
 import BSlidingDiv from "../common/BSliding";
+import homeText from "@/utils/homeText.json";
 
 export const Clients = () => {
     return (
@@ -7,7 +8,8 @@ export const Clients = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
                 <div className="md:col-span-6">
                     <h2 className="heading-style-h2_fintech">
-                       Powering businesses across the Region
+                       {/* Powering businesses across the Region */}
+                       {homeText.homepage.clientsCount.title}
                     </h2>
 
                     <div className="mt-10 flex flex-col gap-6">
@@ -51,18 +53,18 @@ export const Clients = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 fintech-2-content-grid mt-20">
                 <BSlidingDiv className="bg-white  border-radius-primary  p-6 fintech-2-content-grid-card_small ">
                     <div className="flex items-center gap-2">
-                        <span className="number-style  ">500</span>
-                        <span className="number-style  ">+</span>
+                        <span className="number-style  ">{homeText.homepage.clientsCount.stats[0].number}</span>
+                        {/* <span className="number-style  ">+</span> */}
                     </div>
                     <p className="mt-2 text-gray-600">
-                        Businesses Empowered
+                        {homeText.homepage.clientsCount.stats[0].label}
                     </p>
                 </BSlidingDiv>
 
                 <BSlidingDiv className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
-                    <div className="number-style ">06</div>
+                    <div className="number-style ">{homeText.homepage.clientsCount.stats[1].number}</div>
                     <p className="mt-2 text-gray-600">
-                        Markets Covered
+                        {homeText.homepage.clientsCount.stats[1].label}
                     </p>
                 </BSlidingDiv>
 
@@ -159,11 +161,11 @@ export const Clients = () => {
                     className="fintech-2-content-grid-card_small border-radius-primary"
                 >
                     <div className="flex gap-4">
-                        <div className="number-style ">08</div>
+                        <div className="number-style ">{homeText.homepage.clientsCount.stats[2].number}</div>
                         {/* <div className="number-style ">B+</div> */}
                     </div>
                     <div className="paragraph-style-body text-lg">
-                         Banking Partners
+                        {homeText.homepage.clientsCount.stats[2].label}
                     </div>
                 </BSlidingDiv>
 
@@ -174,11 +176,11 @@ export const Clients = () => {
                     className="fintech-2-content-grid-card_button border-radius-primary w-node-a17aba4a-7960-0568-0880-95f57dc0544a-2da5785d w-inline-block"
                 >
                     <BSlidingDiv className="heading-style-h2_small text-color-inverted text-white text-3xl leading-tight">
-                        13
+                        {homeText.homepage.clientsCount.stats[3].number}
                     </BSlidingDiv>
                     <BSlidingDiv className="div-block">
                         <div className="heading-style-h2_small text-color-inverted text-white text-3xl leading-tight">
-                            Currencies Supported
+                            {homeText.homepage.clientsCount.stats[3].label}
                         </div>
                     </BSlidingDiv>
                 </a>

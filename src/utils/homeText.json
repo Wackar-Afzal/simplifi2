@@ -1,0 +1,220 @@
+{
+  "homepage": {
+    "hero": {
+      "title": "From Code to Cards - Wallets - Transactions - Card Programs",
+      "subtitle": "Powering Cards for Every Business / Startup / Enterprise / Platform / Fintech",
+      "description": "Embed off-the-shelf cards or build your own card product - SimpliFi powers it all.",
+      "subDescription": "Whether you want to launch a card product in days or customize every layer, our infrastructure adapts to your needs.",
+      "features": "Fully modular. PCI-compliant. Global-ready.",
+      "cta": "Let's get started"
+    },
+
+    "clients": {
+      "title": "Trusted by fintechs, startups, and enterprises across MENA",
+      "clients": [
+        "Floward",
+        "Bayzat",
+        "Jisr",
+        "Walaplus",
+        "Transportr",
+        "Nqoodlet",
+        "Kamel Pay"
+      ]
+    },
+
+    "productOverview": {
+      "title": "The fastest way to go live, your way",
+      "subtitle": "Whether you want to go live in days or build something truly custom, we've got you covered.",
+      "embed": {
+        "title": "Embed: Off-the-shelf cards, ready to go",
+        "description": "Add live card functionality to your platform with zero setup hassle.",
+        "details": "Use SimpliFi-issued cards through a simple integration. Perfect for platforms looking to test, scale, or enhance their product with card functionality without building infrastructure.",
+        "whatsIncluded": "What's included",
+        "features": [
+          "Pre-configured workflows",
+          "Instant virtual card issuance",
+          "Real-time controls and spend tracking",
+          "Coverage across GCC currencies",
+          "Investor-ready for POCs and pilots"
+        ]
+      },
+      "buildYourOwn": {
+        "title": "Build Your Own: SimpliFi Enterprise",
+        "description": "Launch a fully branded card program with complete control.",
+        "details": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
+        "whatsIncluded": "What's included",
+        "features": [
+          "Fully branded cards, portals, SMS, and APIs",
+          "Flexible and configurable workflows",
+          "Scalable infrastructure with enterprise-grade APIs",
+          "End-to-end support including KYB, settlement, and compliance"
+        ]
+      },
+      "cta": "Learn more"
+    },
+
+    "clientsCount": {
+      "title": "Powering businesses across the Region",
+      "stats": [
+        {
+          "number": "500+",
+          "label": "Businesses Empowered"
+        },
+        {
+          "number": "06",
+          "label": "Markets Covered"
+        },
+        {
+          "number": "08",
+          "label": "Banking Partners"
+        },
+        {
+          "number": "13",
+          "label": "Currencies Supported"
+        }
+      ]
+    },
+
+    "whatsCookin": {
+      "title": "What you can power with SimpliFi",
+      "subtitle": "Our platform supports multiple payment and spend use cases through a single integration.",
+      "items": [
+        "Corporate Payouts",
+        "Corporate Spend",
+        "Reward & Gifting Programs",
+        "Consumer Spend",
+        "BNPL & Credit",
+        "Wallets",
+        "Transactions",
+        "Card Programs"
+      ],
+      "cta": "Learn more"
+    },
+
+    "usps": {
+      "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
+      "subtitle": "Whether you're embedding cards or launching your own card program, we power both.",
+      "features": [
+        {
+          "title": "One contract for everything",
+          "description": "Work with just one provider to get technology, compliance, operational support, and more."
+        },
+        {
+          "title": "One integration, multiple markets",
+          "description": "Go live across markets with a single integration."
+        },
+        {
+          "title": "Compliance, sorted",
+          "description": "KYC, AML, and regulatory approvals to ensure end to end compliance."
+        },
+        {
+          "title": "Security at the core",
+          "description": "PCI-DSS compliant with encryption, tokenization, and secure APIs."
+        },
+        {
+          "title": "Infrastructure that grows with you",
+          "description": "Handle high volumes, custom logic, and complex workflows with ease."
+        },
+        {
+          "title": "Made for developers",
+          "description": "Get started faster with detailed API documentation and sandbox access."
+        },
+        {
+          "title": "Made for developers",
+          "description": "Get started faster with detailed API documentation and sandbox access."
+        },
+        {
+          "title": "Made for developers",
+          "description": "Get started faster with detailed API documentation and sandbox access."
+        },
+        {
+          "title": "Made for developers",
+          "description": "Get started faster with detailed API documentation and sandbox access."
+        }
+      ],
+      "cta": "Learn more (To the Product Page 1)"
+    },
+
+    "features": {
+      "title": "Why Teams Build with SimpliFi",
+      "subtitle": "Speed when you want it. Control when you need it.",
+      "mainTitle": "Cards, Compliance, and everything in Between",
+      "description": "SimpliFi gives you the tools, tech, and support to go live and grow.",
+      "features": [
+        {
+          "title": "Fast-track your launch",
+          "description": "Issue branded cards in days or build a full-stack card experience. Your call."
+        },
+        {
+          "title": "Your brand, your rules",
+          "description": "Design card programs that match your UX, logic, and customer journey."
+        },
+        {
+          "title": "One platform, multiple use cases",
+          "description": "From rewards and gifting to expense and payout flows. We power it all."
+        },
+        {
+          "title": "Trusted by forward-thinking teams",
+          "description": "Hundreds of businesses use SimpliFi to move faster and build smarter."
+        },
+        {
+          "title": "Support that scales with you",
+          "description": "From pilot to full rollout. We're with you at every stage."
+        }
+      ],
+      "cta": "Learn more (To the Solutions Page)"
+    },
+
+    "section8_partners": {
+      "title": "Trusted by banks, platforms, and businesses building the future of payments"
+    },
+
+    "whatwedo": {
+      "title": "Enterprise-grade security and data privacy",
+      "description": "We're PCI DSS compliant and follow strict AML/KYC protocols. All card data is tokenized and monitored in real time to prevent fraud.",
+      "highlightsTitle": "Security & Compliance Highlights",
+      "highlights": [
+        {
+          "id": 1,
+          "title": "Global security compliance",
+          "description": "We follow international standards to ensure safe and compliant payment processing.",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 2,
+          "title": "End-to-end encryption",
+          "description": "Financial and personal data is encrypted at every stage of the transaction.",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 3,
+          "title": "Advanced access controls",
+          "description": "Role-based permissions and multi-factor authentication ensure only authorized access.",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 4,
+          "title": "Compliant data privacy practices",
+          "description": "We adhere to local and international data privacy laws across all markets we operate in.",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 5,
+          "title": "Data residency compliance",
+          "description": "Your data is stored securely within compliant cloud environments, meeting local data residency requirements.",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        }
+      ],
+      "footer": "We invest in security, privacy, and compliance so you can focus on growing your business."
+    },
+
+    "mediaMentions": {
+      "title": "Media & News"
+    }
+  }
+}
