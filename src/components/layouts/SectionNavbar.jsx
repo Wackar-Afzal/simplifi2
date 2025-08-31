@@ -7,15 +7,22 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
     case "Products":
       // Get the NAV_ITEMS to access features and other data
       const productsData = dropdown
-      const features = [
+      const features =[
         { name: "Multi-Currency Cards", icon: "🌍" },
         { name: "Real-Time Notifications", icon: "🔔" },
-        { name: "Programmable Card Controls", icon: "⚙️" },
+        { name: "Fully Programmable Card Controls", icon: "⚙️" },
         { name: "Instant Issuance", icon: "⚡" },
         { name: "Bulk Load Management", icon: "📊" },
         { name: "Role-Based Access", icon: "👥" },
+        { name: "Statement Downloads", icon: "📄" },
         { name: "Developer Sandbox", icon: "🧪" },
+        { name: "Developer Tools", icon: "🛠️" },
+        { name: "SDKs for Mobile", icon: "📱" },
+        { name: "Webhooks", icon: "🔄" },
+        { name: "Web Hosted Pages", icon: "🌐" },
         { name: "Custom KYC Flows", icon: "🔐" },
+        { name: "Maker-Checker & Two-Factor Authentication", icon: "🔒" },
+        { name: "Reports & Insights", icon: "📊" }
       ]
 
       return (

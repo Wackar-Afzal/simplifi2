@@ -1,0 +1,49 @@
+{
+  "productMainMenu": {
+    "title": "Product Main Menu",
+    "products": [
+      {
+        "title": "Embed Ready-to-Use Cards",
+        "description": "Go live in days with prebuilt, compliant multi-currency cards."
+      },
+      {
+        "title": "Cards-as-a-Service",
+        "description": "Build your own branded card program with full control."
+      }
+    ],
+    "features": {
+      "title": "Features",
+      "items": [
+        "Multi-Currency Cards",
+        "Real-Time Notifications",
+        "Fully Programmable Card Controls",
+        "Instant Issuance",
+        "Bulk Load Management",
+        "Role-Based Access",
+        "Statement Downloads",
+        "Developer Sandbox",
+        "Developer Tools",
+        "SDKs for Mobile",
+        "Webhooks",
+        "Web Hosted Pages",
+        "Custom KYC Flows",
+        "Maker-Checker & Two-Factor Authentication",
+        "Reports & Insights"
+      ]
+    },
+    "capabilities": {
+      "title": "Capabilities",
+      "items": [
+        "Security & Compliance",
+        "Identity Verification In-a-Box",
+        "Card Fulfillment & Delivery",
+        "3DS and Tokenization",
+        "Collateral Management",
+        "Chargebacks & Disputes",
+        "Partner Management",
+        "Settlement & Reconciliation",
+        "Cardholder & Technical Support"
+      ]
+    }
+  }
+}
