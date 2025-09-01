@@ -645,7 +645,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
         ],
       };
       return (
-        <div className="w-full max-w-7xl mx-auto p-6 overflow-y-auto max-h-[80vh]">
+        <div className="w-full max-w-7xl  hidden lg:block mx-auto p-6 overflow-y-auto max-h-[80vh]">
           {/* Header */}
           <div className="mb-4 text-center">
             <h2 className="text-2xl text-start font-bold text-gray-900 mb-2">
