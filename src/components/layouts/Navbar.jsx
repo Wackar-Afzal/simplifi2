@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -13,36 +13,24 @@ const NAV_ITEMS = [
     path: "/products",
     dropdown: [
       {
-        name: "Embedded Cards",
+        name: "PaymentsApps",
         path: "/products/embedded-cards",
         icon: "💳",
-        descrip:
-          "Go live with ready-to-issue cards in days. Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code.",
-        category: "READY-TO-USE",
       },
       {
-        name: "Cards as a Service",
+        name: "Pro API",
         path: "/products/cards-as-a-service",
         icon: "🏗️",
-        descrip:
-          "Build your own card program. Your brand. Your logic. Our infrastructure. Get full control with SimpliFi's Cards as a Service solution.",
-        category: "BUILD YOUR OWN",
       },
       {
-        name: "Features",
+        name: "Cards-as-a-Service",
         path: "/products/features",
         icon: "⚡",
-        descrip:
-          "Everything you need to launch and scale. Multi-currency cards, real-time notifications, programmable controls, and more.",
-        category: "CAPABILITIES",
       },
       {
-        name: "Core Capabilities",
+        name: "CardOS",
         path: "/products/core-capabilities",
         icon: "🛡️",
-        descrip:
-          "Enterprise-grade infrastructure. Security & compliance, identity verification, card fulfillment, 3DS tokenization, and more.",
-        category: "CAPABILITIES",
       },
     ],
     features: [
@@ -57,8 +45,8 @@ const NAV_ITEMS = [
     ],
   },
   {
-    name: "Solutions",
-    path: "/solutions",
+    name: "Cards",
+    path: "/cards",
     dropdown: [
       {
         name: "By Use Cases",
@@ -88,15 +76,28 @@ const NAV_ITEMS = [
           },
           {
             category: "Corporate Spend",
-            items: ["Corporate Expense Cards", "Fuel Cards", "Supplier Payment Cards"],
+            items: [
+              "Corporate Expense Cards",
+              "Fuel Cards",
+              "Supplier Payment Cards",
+            ],
           },
           {
             category: "Consumer Spend",
-            items: ["Consumer Wallet Cards", "Cashback & Rewards Cards", "Travel Cards", "Crypto Cards"],
+            items: [
+              "Consumer Wallet Cards",
+              "Cashback & Rewards Cards",
+              "Travel Cards",
+              "Crypto Cards",
+            ],
           },
           {
             category: "BNPL & Credit",
-            items: ["BNPL Cards", "In-store & Online Payment Cards", "Consumer Credit Profiles"],
+            items: [
+              "BNPL Cards",
+              "In-store & Online Payment Cards",
+              "Consumer Credit Profiles",
+            ],
           },
         ],
       },
@@ -104,23 +105,28 @@ const NAV_ITEMS = [
         name: "By Industries",
         path: "/solutions/industries",
         icon: "🏢",
-        descrip: "SaaS, Ecommerce, Marketing, Logistics, Travel, Insurance, Startups & Scaleups",
+        descrip:
+          "SaaS, Ecommerce, Marketing, Logistics, Travel, Insurance, Startups & Scaleups",
         industries: [
           {
             name: "SaaS",
-            descrip: "Empower tech teams with spend controls, usage insights, and multi-currency cards.",
+            descrip:
+              "Empower tech teams with spend controls, usage insights, and multi-currency cards.",
           },
           {
             name: "Ecommerce",
-            descrip: "Manage ad spend, fulfillment payouts, and supplier transactions from one platform.",
+            descrip:
+              "Manage ad spend, fulfillment payouts, and supplier transactions from one platform.",
           },
           {
             name: "Marketing",
-            descrip: "Run campaign cards, manage influencer budgets, or issue merchant specific cards.",
+            descrip:
+              "Run campaign cards, manage influencer budgets, or issue merchant specific cards.",
           },
           {
             name: "Logistics",
-            descrip: "Issue fuel cards and driver per diem cards, complete with real-time tracking.",
+            descrip:
+              "Issue fuel cards and driver per diem cards, complete with real-time tracking.",
           },
           {
             name: "Travel",
@@ -129,51 +135,210 @@ const NAV_ITEMS = [
           },
           {
             name: "Insurance",
-            descrip: "Disburse funds for claims via instantly issued cards to streamline insurance payments.",
+            descrip:
+              "Disburse funds for claims via instantly issued cards to streamline insurance payments.",
           },
           {
             name: "Startups & Scaleups",
-            descrip: "Keep team spend in check while moving fast - Issue, track, and reconcile with ease.",
+            descrip:
+              "Keep team spend in check while moving fast - Issue, track, and reconcile with ease.",
           },
         ],
       },
     ],
     cardTypes: [
-      { name: "Physical Cards", icon: "💳", descrip: "Plastic cards with your brand, delivered to your team or customers." },
-      { name: "Virtual Cards", icon: "🌐", descrip: "Instantly issued and ready to use online or via mobile wallets." },
-      { name: "Single-Use Cards", icon: "🔁", descrip: "Auto-expiring cards designed for one-time transactions." },
-      { name: "Crypto Cards", icon: "🪙", descrip: "Link to crypto wallets and convert on-the-fly for real-world spend." },
-      { name: "Gift Cards", icon: "🎁", descrip: "Branded cards for promotions, rewards, or loyalty programs." },
-      { name: "Fuel Cards", icon: "⛽", descrip: "Tailored for transportation teams. Limit use to fuel merchants." },
+      {
+        name: "Physical Cards",
+        icon: "💳",
+        descrip:
+          "Plastic cards with your brand, delivered to your team or customers.",
+      },
+      {
+        name: "Virtual Cards",
+        icon: "🌐",
+        descrip:
+          "Instantly issued and ready to use online or via mobile wallets.",
+      },
+      {
+        name: "Single-Use Cards",
+        icon: "🔁",
+        descrip: "Auto-expiring cards designed for one-time transactions.",
+      },
+      {
+        name: "Crypto Cards",
+        icon: "🪙",
+        descrip:
+          "Link to crypto wallets and convert on-the-fly for real-world spend.",
+      },
+      {
+        name: "Gift Cards",
+        icon: "🎁",
+        descrip: "Branded cards for promotions, rewards, or loyalty programs.",
+      },
+      {
+        name: "Fuel Cards",
+        icon: "⛽",
+        descrip:
+          "Tailored for transportation teams. Limit use to fuel merchants.",
+      },
+    ],
+  },
+  {
+    name: "Solutions",
+    path: "/solutions",
+    dropdown: [
+      {
+        name: "By Industries",
+        path: "/solutions/industries",
+        icon: "🏢",
+        industries: [
+          {
+            image:
+              "https://www.getpliant.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F169635%2F48x48%2F195786bbda%2Fcustomer_salabam.svg&w=48&q=75",
+            name: "SaaS",
+            descrip:
+              "Empower tech teams with spend controls, usage insights, and multi-currency cards.",
+          },
+          {
+            image:
+              "https://www.getpliant.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F169635%2F48x48%2F195786bbda%2Fcustomer_salabam.svg&w=48&q=75",
+            name: "Ecommerce",
+            descrip:
+              "Manage ad spend, fulfillment payouts, and supplier transactions from one platform.",
+          },
+          {
+            image:
+              "https://www.getpliant.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F169635%2F48x48%2F195786bbda%2Fcustomer_salabam.svg&w=48&q=75",
+            name: "Marketing",
+            descrip:
+              "Run campaign cards, manage influencer budgets, or issue merchant specific cards.",
+          },
+          {
+            image:
+              "https://www.getpliant.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F169635%2F48x48%2F195786bbda%2Fcustomer_salabam.svg&w=48&q=75",
+            name: "Logistics",
+            descrip:
+              "Issue fuel cards and driver per diem cards, complete with real-time tracking.",
+          },
+          {
+            image:
+              "https://www.getpliant.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F169635%2F48x48%2F195786bbda%2Fcustomer_salabam.svg&w=48&q=75",
+            name: "Travel",
+            descrip:
+              "Issue multi-currency cards for travelers to optimize on FX, manage spend limits and enforce region-specific rules.",
+          },
+          {
+            image:
+              "https://www.getpliant.com/_next/image/?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F169635%2F48x48%2F195786bbda%2Fcustomer_salabam.svg&w=48&q=75",
+            name: "Insurance",
+            descrip:
+              "Disburse funds for claims via instantly issued cards to streamline insurance payments.",
+          },
+        ],
+      },
     ],
   },
   {
     name: "Resources",
     path: "/resources",
     dropdown: [
-      { name: "API Documentation", path: "/resources/api-docs", icon: "📚", descrip: "Complete API reference and integration guides" },
-      { name: "Developer Sandbox", path: "/resources/sandbox", icon: "🧪", descrip: "Test and build in a secure, private environment" },
-      { name: "SDKs & Tools", path: "/resources/sdks", icon: "🛠️", descrip: "PCI-compliant SDKs for iOS and Android apps" },
-      { name: "Support Center", path: "/resources/support", icon: "🎧", descrip: "24/7 multilingual support and technical assistance" },
-      { name: "Blog", path: "/resources/blog", icon: "✍️", descrip: "Latest insights on fintech and payments" },
-      { name: "Press & Media", path: "/resources/press", icon: "📰", descrip: "Media coverage and company news" },
+      {
+        name: "API Documentation",
+        path: "/resources/api-docs",
+        icon: "📚",
+        descrip: "Complete API reference and integration guides",
+      },
+      {
+        name: "Developer Sandbox",
+        path: "/resources/sandbox",
+        icon: "🧪",
+        descrip: "Test and build in a secure, private environment",
+      },
+      {
+        name: "SDKs & Tools",
+        path: "/resources/sdks",
+        icon: "🛠️",
+        descrip: "PCI-compliant SDKs for iOS and Android apps",
+      },
+      {
+        name: "Support Center",
+        path: "/resources/support",
+        icon: "🎧",
+        descrip: "24/7 multilingual support and technical assistance",
+      },
+      {
+        name: "Blog",
+        path: "/resources/blog",
+        icon: "✍️",
+        descrip: "Latest insights on fintech and payments",
+      },
+      {
+        name: "Press & Media",
+        path: "/resources/press",
+        icon: "📰",
+        descrip: "Media coverage and company news",
+      },
     ],
     blogPosts: [
-      { title: "The Future of Embedded Finance in MENA: Trends and Opportunities", image: "/placeholder.svg?height=200&width=300", path: "/blog/embedded-finance-mena" },
-      { title: "Building Compliant Card Programs: A Developer's Guide to KYC and AML", image: "/placeholder.svg?height=200&width=300", path: "/blog/compliant-card-programs" },
-      { title: "Multi-Currency Cards: Optimizing FX for Global Businesses", image: "/placeholder.svg?height=200&width=300", path: "/blog/multi-currency-optimization" },
-      { title: "From Startup to Scale: How SimpliFi Powers Growing Businesses", image: "/placeholder.svg?height=200&width=300", path: "/blog/startup-to-scale" },
+      {
+        title:
+          "The Future of Embedded Finance in MENA: Trends and Opportunities",
+        image: "/placeholder.svg?height=200&width=300",
+        path: "/blog/embedded-finance-mena",
+      },
+      {
+        title:
+          "Building Compliant Card Programs: A Developer's Guide to KYC and AML",
+        image: "/placeholder.svg?height=200&width=300",
+        path: "/blog/compliant-card-programs",
+      },
+      {
+        title: "Multi-Currency Cards: Optimizing FX for Global Businesses",
+        image: "/placeholder.svg?height=200&width=300",
+        path: "/blog/multi-currency-optimization",
+      },
+      {
+        title: "From Startup to Scale: How SimpliFi Powers Growing Businesses",
+        image: "/placeholder.svg?height=200&width=300",
+        path: "/blog/startup-to-scale",
+      },
     ],
   },
   {
-    name: "About",
-    path: "/about",
+    name: "Developers",
+    path: "/developers",
     dropdown: [
-      { name: "Our Story", path: "/about/story", icon: "📖", descrip: "Founded by Ali Amin Sattar to simplify financial infrastructure across MENA and Pakistan" },
-      { name: "Our Team", path: "/about/team", icon: "👥", descrip: "Meet the SimpliFiers building the future of finance" },
-      { name: "Our Values", path: "/about/values", icon: "⭐", descrip: "Raise the bar, Make an impact, Own it, People first" },
-      { name: "Careers", path: "/about/careers", icon: "💼", descrip: "Join our team and become a SimpliFier" },
-      { name: "Press", path: "/about/press", icon: "📰", descrip: "Media coverage and company announcements" },
+      {
+        name: "Our Story",
+        path: "/about/story",
+        icon: "📖",
+        descrip:
+          "Founded by Ali Amin Sattar to simplify financial infrastructure across MENA and Pakistan",
+      },
+      {
+        name: "Our Team",
+        path: "/about/team",
+        icon: "👥",
+        descrip: "Meet the SimpliFiers building the future of finance",
+      },
+      {
+        name: "Our Values",
+        path: "/about/values",
+        icon: "⭐",
+        descrip: "Raise the bar, Make an impact, Own it, People first",
+      },
+      {
+        name: "Careers",
+        path: "/about/careers",
+        icon: "💼",
+        descrip: "Join our team and become a SimpliFier",
+      },
+      {
+        name: "Press",
+        path: "/about/press",
+        icon: "📰",
+        descrip: "Media coverage and company announcements",
+      },
     ],
   },
 ];
@@ -183,9 +348,36 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(false);
   const [contactdrop, setContactdrop] = useState(false);
   const pathname = usePathname();
+  
+  // Add refs and timeout for better hover control
+  const hoverTimeoutRef = useRef(null);
+  const dropdownRef = useRef(null);
 
-  const handleDropdownToggle = (path) => {
-    setOpenDropdown(openDropdown === path ? null : path);
+  const handleMouseEnter = (path) => {
+    // Clear any existing timeout
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+    setOpenDropdown(path);
+  };
+
+  const handleMouseLeave = () => {
+    // Add a small delay before closing to allow mouse to move to dropdown
+    hoverTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(false);
+    }, 150); // 150ms delay
+  };
+
+  const handleDropdownMouseEnter = () => {
+    // Cancel the close timeout when mouse enters dropdown
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+  };
+
+  const handleDropdownMouseLeave = () => {
+    // Close immediately when leaving dropdown
+    setOpenDropdown(false);
   };
 
   return (
@@ -198,41 +390,41 @@ export default function Navbar() {
         <div className="flex flex-wrap gap-4 justify-between items-center py-2 md:py-4 px-1 m-auto">
           {/* Logo */}
           <div className="flex items-center gap-[2rem]">
-            <Link href="/" className="text-2xl font-bold text-blue px-[0.5rem] md:pl-[2rem]">
-              <img src="/logo.svg" alt="logo" className="w-[4rem] md:w-[6rem]" />
+            <Link
+              href="/"
+              className="text-2xl font-bold text-blue px-[0.5rem] md:pl-[2rem]"
+            >
+              <img
+                src="/logo.svg"
+                alt="logo"
+                className="w-[4rem] md:w-[6rem]"
+              />
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex bg-lightGrey rounded-[6.25rem]">
+            <div className="hidden lg:flex bg-lightGrey gap-5 rounded-[6.25rem]">
               {NAV_ITEMS.map(({ name, path, dropdown }) => (
-                <div key={path} className="flex items-center">
+                <div key={path} className="flex items-center relative">
                   {dropdown ? (
                     <div
-                      className={`h-[3.27rem] flex items-center justify-center text-center capitalize rounded-[6.25rem] px-1.5 cursor-pointer ${
-                        pathname.includes(path) ? "bg-lightPurple text-black" : "bg-transparent text-black hover:text-gray-400"
-                      }`}
-                      onMouseEnter={() => handleDropdownToggle(path)}
-                      onMouseLeave={() => handleDropdownToggle(null)}
-                      onClick={() => handleDropdownToggle(!openDropdown)}
+                      className={`h-[3.27rem] flex items-center justify-center text-center capitalize rounded-[6.25rem] px-1.5 cursor-pointer ${pathname.includes(path)
+                          ? "bg-lightPurple text-black"
+                          : "bg-transparent text-black hover:text-gray-400"
+                        }`}
+                      onMouseEnter={() => handleMouseEnter(path)}
+                      onMouseLeave={handleMouseLeave}
                     >
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-6">
                         {name}
-                        <ChevronDown className="h-3 w-3" />
                       </div>
-                      <AnimatePresence>
-                        {openDropdown == path && (
-                          <div className="absolute overflow-scroll w-full right-0 top-[4.6rem] mt-2 bg-white shadow-lg rounded-lg py-8 px-6">
-                            <SectionNavbar sectionName={name} dropdown={dropdown} pathname={pathname} />
-                          </div>
-                        )}
-                      </AnimatePresence>
                     </div>
                   ) : (
                     <Link
                       href={path}
-                      className={`!w-[7rem] h-[3.27rem] flex items-center justify-center text-center px-6 py-3 text-black rounded-[6.25rem] ${
-                        pathname === path ? "bg-lightPurple text-black" : "bg-transparent text-black hover:bg-gray-100"
-                      }`}
+                      className={`!w-[7rem] h-[3.27rem] flex items-center justify-center text-center px-6 py-3 text-black rounded-[6.25rem] ${pathname === path
+                          ? "bg-lightPurple text-black"
+                          : "bg-transparent text-black hover:bg-gray-100"
+                        }`}
                     >
                       {name}
                     </Link>
@@ -249,7 +441,7 @@ export default function Navbar() {
                 <button
                   onMouseEnter={() => setContactdrop(true)}
                   onMouseLeave={() => setContactdrop(false)}
-                  onClick={() => setContactdrop(!openDropdown)}
+                  onClick={() => setContactdrop(!contactdrop)}
                 >
                   Sales:+12 34 56789 1
                 </button>
@@ -269,7 +461,9 @@ export default function Navbar() {
                 )}
               </div>
               <button className="outlined-button">Login</button>
-              <button className="nav-contained-button hidden lg:visible">Get Started</button>
+              <button className="nav-contained-button hidden lg:visible">
+                Get Started
+              </button>
             </div>
 
             {/* Mobile Hamburger */}
@@ -291,13 +485,39 @@ export default function Navbar() {
                 className="w-6 h-0.5 bg-black"
               />
               <motion.div
-                animate={{ rotate: isMenuOpen ? -45 : 0, y: isMenuOpen ? -6 : 0 }}
+                animate={{
+                  rotate: isMenuOpen ? -45 : 0,
+                  y: isMenuOpen ? -6 : 0,
+                }}
                 transition={{ duration: 0.1 }}
                 className="w-6 h-0.5 bg-black"
               />
             </button>
           </div>
         </div>
+
+        {/* Desktop Dropdown Menu */}
+        <AnimatePresence>
+          {openDropdown && (
+            <motion.div
+              ref={dropdownRef}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="absolute overflow-hidden w-full left-0 top-full bg-white shadow-lg py-0 px-6 z-50"
+              style={{ borderTop: "1px solid #efefef" }}
+              onMouseEnter={handleDropdownMouseEnter}
+              onMouseLeave={handleDropdownMouseLeave}
+            >
+              <SectionNavbar
+                sectionName={NAV_ITEMS.find(item => item.path === openDropdown)?.name}
+                dropdown={NAV_ITEMS.find(item => item.path === openDropdown)?.dropdown}
+                pathname={pathname}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
 
         {/* Mobile Menu */}
         <AnimatePresence>
@@ -329,7 +549,10 @@ export default function Navbar() {
                         className="flex justify-between w-full px-4 py-3 text-black font-medium hover:bg-gray-50 rounded"
                       >
                         {name}
-                        <ChevronDown className={`transition-transform ${openDropdown === path ? "rotate-180" : ""}`} />
+                        <ChevronDown
+                          className={`transition-transform ${openDropdown === path ? "rotate-180" : ""
+                            }`}
+                        />
                       </button>
                       <AnimatePresence>
                         {openDropdown === path && (
@@ -357,7 +580,10 @@ export default function Navbar() {
                       </AnimatePresence>
                     </div>
                   ) : (
-                    <Link href={path} className="block px-4 py-3 text-black font-medium hover:bg-gray-50 rounded">
+                    <Link
+                      href={path}
+                      className="block px-4 py-3 text-black font-medium hover:bg-gray-50 rounded"
+                    >
                       {name}
                     </Link>
                   )}
