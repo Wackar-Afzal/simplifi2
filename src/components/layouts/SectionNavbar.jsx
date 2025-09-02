@@ -1,3 +1,4 @@
+import { CardSim, CreditCard } from "lucide-react"
 import Link from "next/link"
 
 const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
@@ -7,74 +8,63 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
     case "Products":
       // Get the NAV_ITEMS to access features and other data
       const productsData = dropdown
-      const features =[
-        { name: "Multi-Currency Cards", icon: "🌍" },
-        { name: "Real-Time Notifications", icon: "🔔" },
-        { name: "Fully Programmable Card Controls", icon: "⚙️" },
-        { name: "Instant Issuance", icon: "⚡" },
-        { name: "Bulk Load Management", icon: "📊" },
-        { name: "Role-Based Access", icon: "👥" },
-        { name: "Statement Downloads", icon: "📄" },
-        { name: "Developer Sandbox", icon: "🧪" },
-        { name: "Developer Tools", icon: "🛠️" },
-        { name: "SDKs for Mobile", icon: "📱" },
-        { name: "Webhooks", icon: "🔄" },
-        { name: "Web Hosted Pages", icon: "🌐" },
-        { name: "Custom KYC Flows", icon: "🔐" },
-        { name: "Maker-Checker & Two-Factor Authentication", icon: "🔒" },
-        { name: "Reports & Insights", icon: "📊" }
-      ]
+const features = [
+  { name: "Multi-Currency Cards", icon: "🌍" },
+  { name: "Real-Time Notifications", icon: "🔔" },
+  { name: "Fully Programmable Card Controls", icon: "⚙️" },
+  { name: "Instant Issuance", icon: "⚡" },
+  { name: "Bulk Load Management", icon: "📦" },
+  { name: "Role-Based Access", icon: "👥" },
+  { name: "Statement Downloads", icon: "📑" },
+  { name: "Developer Sandbox", icon: "🧪" },
+  { name: "Developer Tools", icon: "🛠️" },
+  { name: "SDKs for Mobile", icon: "📱" },
+  { name: "Webhooks", icon: "🔗" },
+  { name: "Web Hosted Pages", icon: "🌐" },
+  { name: "Custom KYC Flows", icon: "🪪" },
+  { name: "Maker-Checker & Two-Factor Authentication", icon: "🔐" },
+  { name: "Reports & Insights", icon: "📊" },
+];
+
+const capabilites = [
+  { name: "Security & Compliance", icon: "🛡️" },
+  { name: "Identity Verification In-a-Box", icon: "🪪" },
+  { name: "Card Fulfillment & Delivery", icon: "📬" },
+  { name: "3DS and Tokenization", icon: "🔑" },
+  { name: "Collateral Management", icon: "📂" },
+  { name: "Chargebacks & Disputes", icon: "⚖️" },
+  { name: "Partner Management", icon: "🤝" },
+  { name: "Settlement & Reconciliation", icon: "💱" },
+  { name: "Cardholder & Technical Support", icon: "🎧" },
+];
 
       return (
-        <div className="flex w-full max-w-6xl mx-auto ">
+        <div className="flex w-full   mx-auto overflow-y-scroll h-[80vh] no-scrollbar ">
           {/* Left Sidebar */}
-          <div className="w-80 bg-gray-50 p-6 rounded-l-lg">
-            <div className="mb-6">
+          <div className=" bg-gray-50 text-left p-6 rounded-l-lg">
+            {/* <div className="mb-6">
               <span className="text-xs font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
                 READY-TO-USE
               </span>
-            </div>
+            </div> */}
 
-            <div className="space-y-4">
+            <div className="min-w-[28vw]">
               {productsData.slice(0, 2).map(({ name, path, icon, descrip }) => (
                 <Link
                   key={path}
                   href={path}
-                  className={`flex items-start gap-3 p-4 rounded-lg transition-colors ${
+                  className={`flex justify-center !items-start gap-3 p-4 rounded-lg transition-colors ${
                     pathname.includes(path)
                       ? "bg-white shadow-sm border border-gray-200"
                       : "hover:bg-white hover:shadow-sm"
                   }`}
                 >
-                  <div className="text-2xl mt-1">{icon}</div>
-                  <div>
-                    <p className="font-semibold text-gray-900 mb-1">{name}</p>
-                    <p className="text-sm text-gray-600 line-clamp-2">{descrip}</p>
-                  </div>
-                </Link>
-              ))}
-            </div>
+                  <div className="w-full">
+                    <div className="flex items-center justify-items-start gap-3 mb-2">
+                      <CreditCard color="grey"/>
+                    <p className="font-semibold text-gray-900 !m-0">{name}</p>
 
-            <div className="mt-8 mb-4">
-              <span className="text-xs font-semibold text-green-600 bg-green-100 px-3 py-1 rounded-full">
-                CAPABILITIES
-              </span>
-            </div>
-
-            <div className="space-y-4">
-              {productsData.slice(2).map(({ name, path, icon, descrip }) => (
-                <Link
-                  key={path}
-                  href={path}
-                  className={`flex items-start gap-3 p-4 rounded-lg transition-colors ${
-                    pathname.includes(path)
-                      ? "bg-white shadow-sm border border-gray-200"
-                      : "hover:bg-white hover:shadow-sm"
-                  }`}
-                >
-                  <div className="text-2xl mt-1">{icon}</div>
-                  <div>
-                    <p className="font-semibold text-gray-900 mb-1">{name}</p>
+                    </div>
                     <p className="text-sm text-gray-600 line-clamp-2">{descrip}</p>
                   </div>
                 </Link>
@@ -83,17 +73,17 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
           </div>
 
           {/* Right Content Area */}
-          <div className="flex-1 p-6 bg-white rounded-r-lg">
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Everything you Need to Launch and Scale</h3>
-              <p className="text-gray-600">
-                Every card platform promises control - few deliver clarity, flexibility, and speed like SimpliFi.
-              </p>
+ <div className="ml-2 !mb-8 pb-8">
+            <div className="flex-1 p-2 bg-white rounded-r-lg">
+            <div className="mb-0">
+              <h3 className="text-xl font-semibold text-gray-900 ">Features</h3>
+              {/* <p className="text-gray-600">
+                Discover our features
+              </p> */}
             </div>
 
-            <div className="mb-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Core Features</h4>
-              <div className="grid grid-cols-2 gap-4">
+            <div className="mb-2">
+              <div className="grid grid-cols-3 gap-2">
                 {features.map(({ name, icon }) => (
                   <div key={name} className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
                     <span className="text-lg">{icon}</span>
@@ -102,15 +92,32 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
                 ))}
               </div>
             </div>
+          </div>
 
-            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-              <p className="text-sm text-blue-800">
-                <strong>450+ businesses</strong> across <strong>6 markets</strong> trust SimpliFi with their card
-                programs
+          <div className="flex-1 p-6 bg-primarylight rounded-r-lg">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Capabilities</h3>
+              <p className="text-gray-600">
+                
               </p>
             </div>
+
+            <div className="mb-6">
+              <div className="grid grid-cols-3 gap-2">
+                {capabilites.map(({ name, icon }) => (
+                  <div key={name} className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
+                    <span className="text-lg">{icon}</span>
+                    <span className="text-gray-700 text-sm">{name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+
           </div>
+  
         </div>
+         </div> 
       )
 
     case "Cards":

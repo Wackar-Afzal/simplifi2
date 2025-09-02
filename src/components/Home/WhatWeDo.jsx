@@ -5,63 +5,39 @@ import homeText from "@/utils/homeText.json";
 
 export default function WhatWeDo() {
   const [activeTab, setActiveTab] = useState(1);
+  const highlights = homeText.homepage.whatwedo.highlights;
 
-  const tabs = [
-    {
-      id: 1,
-      title: "Improve product KPIs",
-      subtitle: "Growth and optimisation for digital products",
-      img: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
-      alt: "Competitor analysis in Figma",
-    },
-    {
-      id: 2,
-      title: "Identify new revenue flows",
-      subtitle: " ",
-      img: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8db56e8668bde294398_what-we-do-2.webp",
-      alt: "UX audit in Figma",
-    },
-    {
-      id: 3,
-      title: "Identify market opportunities",
-      subtitle: "Invent and design new digital products",
-      img: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8daac62cf3776b528e8_what-we-do-3.webp",
-      alt: "Presentation process with 3 people",
-    },
-    {
-      id: 4,
-      title: "Find product-market fit",
-      subtitle: " ",
-      img: "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8da74419a3c59452a47_what-we-do-4.webp",
-      alt: "Colorful bank application concept",
-    },
-  ];
+  const activeTabData = highlights.find((t) => t.id === activeTab);
 
   return (
-    <section className="whatwedo text-white  container-custom">
-      <div className="  mx-auto">
+    <section className="whatwedo text-white container-custom">
+      <div className="mx-auto">
         <h2 className="heading-style-h2_fintech text-color-inverted">
           {homeText.homepage.whatwedo.title}
         </h2>
 
-        <div className="hidden md:grid grid-cols-2 gap-8  ">
-          <div className="flex items-center justify-center tabssss">
+        {/* Desktop layout */}
+        <div className="hidden md:grid grid-cols-2 gap-8">
+          <div className="flex items-center justify-center">
             <AnimatePresence mode="wait">
-              <motion.img
-                key={tabs.find((t) => t.id === activeTab).img}
-                src={tabs.find((t) => t.id === activeTab).img}
-                alt={tabs.find((t) => t.id === activeTab).alt}
-                className=" w-full  "
-                style={{ borderRadius: "2.5rem" }}
-                initial={{ scale: 0.9, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.9, opacity: 0 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
-              />
+              {activeTabData && (
+                <motion.img
+                  key={activeTabData.id}
+                  src={activeTabData.img}
+                  alt={activeTabData.alt}
+                  className="w-full"
+                  style={{ borderRadius: "2.5rem" }}
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.9, opacity: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                />
+              )}
             </AnimatePresence>
           </div>
+
           <div className="flex flex-col space-y-4">
-            {homeText.homepage.whatwedo.highlights.map((tab) => (
+            {highlights.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
@@ -69,30 +45,29 @@ export default function WhatWeDo() {
                   activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"
                 }`}
               >
-                {tab.description?.trim() && (
+                <p className="heading-style-h2_big">{tab.title}</p>
+                {activeTab === tab.id && tab.description?.trim() && (
                   <p className="paragraph-style-body text-color-inverted">
                     {tab.description}
                   </p>
                 )}
-                <p className="heading-style-h2_big">{tab.title}</p>
               </button>
             ))}
           </div>
-
-          {/* <button className="button-primary_large">hy</button> */}
         </div>
 
+        {/* Mobile layout */}
         <div className="md:hidden space-y-8 mt-12">
-          {homeText.homepage.whatwedo.highlights.map((tab) => (
+          {highlights.map((tab) => (
             <motion.div
               key={tab.id}
-              className="  space-y-4"
+              className="space-y-4"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
               <p className="paragraph-style-body text-color-inverted">
-                {tab.subtitle}
+                {tab.description}
               </p>
               <h3 className="heading-style-h3 text-color-inverted">
                 {tab.title}
@@ -107,7 +82,7 @@ export default function WhatWeDo() {
               />
             </motion.div>
           ))}
-          <button className="contained-button  w-full">Get Qoute</button>
+          <button className="contained-button w-full">Get Quote</button>
         </div>
       </div>
     </section>

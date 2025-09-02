@@ -71,7 +71,7 @@ export default function ClientSays() {
   return (
     <section className="section slider-section">
       <div className="container">
-        <div className="body-medium is-heading">What our clients say</div>
+        <div className="body-medium is-heading">Media & News</div>
       </div>
 
       <Marquee gradient={false} speed={100} pauseOnHover={true} direction="left">

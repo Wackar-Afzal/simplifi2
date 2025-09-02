@@ -1,16 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        custom: ['MyCustomFont', 'sans-serif'], // fallback font
+        custom: ["MyCustomFont", "sans-serif"], // fallback font
+      },
+      colors: {
+        primarylight: "#eef4ff",
+        // add as many as you need
       },
     },
   },
   plugins: [],
-}
+};

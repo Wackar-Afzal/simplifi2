@@ -13,187 +13,145 @@ const NAV_ITEMS = [
     path: "/products",
     dropdown: [
       {
-        name: "Embedded Cards",
-        path: "/products/embedded-cards",
+        name: "Embed Ready-to-Use Cards",
+        path: "/Embed-Ready-To-Use-Card",
         icon: "💳",
         descrip:
-          "Go live with ready-to-issue cards in days. Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code.",
-        category: "READY-TO-USE",
+          "Go live in days with prebuilt, compliant multi-currency cards.",
       },
       {
         name: "Cards as a Service",
-        path: "/products/cards-as-a-service",
+        path: "/Cards-As-a-Service",
         icon: "🏗️",
         descrip:
-          "Build your own card program. Your brand. Your logic. Our infrastructure. Get full control with SimpliFi's Cards as a Service solution.",
-        category: "BUILD YOUR OWN",
+          "Build your own branded card program with full control.",
       },
       {
-        name: "Features",
-        path: "/products/features",
-        icon: "⚡",
-        descrip:
-          "Everything you need to launch and scale. Multi-currency cards, real-time notifications, programmable controls, and more.",
-        category: "CAPABILITIES",
-      },
-      {
-        name: "Core Capabilities",
-        path: "/products/core-capabilities",
-        icon: "🛡️",
-        descrip:
-          "Enterprise-grade infrastructure. Security & compliance, identity verification, card fulfillment, 3DS tokenization, and more.",
-        category: "CAPABILITIES",
-      },
+        
+      }
+    
     ],
-    features: [
-      { name: "Multi-Currency Cards", icon: "🌍" },
-      { name: "Real-Time Notifications", icon: "🔔" },
-      { name: "Fully Programmable Card Controls", icon: "⚙️" },
-      { name: "Instant Issuance", icon: "⚡" },
-      { name: "Bulk Load Management", icon: "📊" },
-      { name: "Role-Based Access", icon: "👥" },
-      { name: "Statement Downloads", icon: "📄" },
-      { name: "Developer Sandbox", icon: "🧪" },
-      { name: "Developer Tools", icon: "🛠️" },
-      { name: "SDKs for Mobile", icon: "📱" },
-      { name: "Webhooks", icon: "🔄" },
-      { name: "Web Hosted Pages", icon: "🌐" },
-      { name: "Custom KYC Flows", icon: "🔐" },
-      { name: "Maker-Checker & Two-Factor Authentication", icon: "🔒" },
-      { name: "Reports & Insights", icon: "📊" }
-    ],
-    capabilities: [
-      { name: "Security & Compliance", icon: "🛡️" },
-      { name: "Identity Verification In-a-Box", icon: "🔐" },
-      { name: "Card Fulfillment & Delivery", icon: "📦" },
-      { name: "3DS and Tokenization", icon: "🔒" },
-      { name: "Collateral Management", icon: "📄" },
-      { name: "Chargebacks & Disputes", icon: "⚖️" },
-      { name: "Partner Management", icon: "🤝" },
-      { name: "Settlement & Reconciliation", icon: "💰" },
-      { name: "Cardholder & Technical Support", icon: "🎯" }
-    ]
   },
-  // {
-  //   name: "Solutions",
-  //   path: "/solutions",
-  //   dropdown: [
-  //     {
-  //       name: "By Use Cases",
-  //       path: "/solutions/use-cases",
-  //       icon: "📋",
-  //       descrip:
-  //         "Corporate Payouts, Gifting & Rewards, Corporate Spend, Consumer Spend, BNPL & Credit",
-  //       useCases: [
-  //         {
-  //           category: "Corporate Payouts",
-  //           items: [
-  //             "Salary Payout Cards",
-  //             "Freelancer Payout Cards",
-  //             "Commission & Incentive Cards",
-  //             "Payroll Cards (WPS)",
-  //           ],
-  //         },
-  //         {
-  //           category: "Gifting & Rewards",
-  //           items: [
-  //             "Gift Cards",
-  //             "Mall Gift Cards",
-  //             "Retail Gift Cards",
-  //             "eGift Cards",
-  //             "Loyalty Redemption Cards",
-  //           ],
-  //         },
-  //         {
-  //           category: "Corporate Spend",
-  //           items: ["Corporate Expense Cards", "Fuel Cards", "Supplier Payment Cards"],
-  //         },
-  //         {
-  //           category: "Consumer Spend",
-  //           items: ["Consumer Wallet Cards", "Cashback & Rewards Cards", "Travel Cards", "Crypto Cards"],
-  //         },
-  //         {
-  //           category: "BNPL & Credit",
-  //           items: ["BNPL Cards", "In-store & Online Payment Cards", "Consumer Credit Profiles"],
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       name: "By Industries",
-  //       path: "/solutions/industries",
-  //       icon: "🏢",
-  //       descrip: "SaaS, Ecommerce, Marketing, Logistics, Travel, Insurance, Startups & Scaleups",
-  //       industries: [
-  //         {
-  //           name: "SaaS",
-  //           descrip: "Empower tech teams with spend controls, usage insights, and multi-currency cards.",
-  //         },
-  //         {
-  //           name: "Ecommerce",
-  //           descrip: "Manage ad spend, fulfillment payouts, and supplier transactions from one platform.",
-  //         },
-  //         {
-  //           name: "Marketing",
-  //           descrip: "Run campaign cards, manage influencer budgets, or issue merchant specific cards.",
-  //         },
-  //         {
-  //           name: "Logistics",
-  //           descrip: "Issue fuel cards and driver per diem cards, complete with real-time tracking.",
-  //         },
-  //         {
-  //           name: "Travel",
-  //           descrip:
-  //             "Issue multi-currency cards for travelers to optimize on FX, manage spend limits and enforce region-specific rules.",
-  //         },
-  //         {
-  //           name: "Insurance",
-  //           descrip: "Disburse funds for claims via instantly issued cards to streamline insurance payments.",
-  //         },
-  //         {
-  //           name: "Startups & Scaleups",
-  //           descrip: "Keep team spend in check while moving fast - Issue, track, and reconcile with ease.",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   cardTypes: [
-  //     { name: "Physical Cards", icon: "💳", descrip: "Plastic cards with your brand, delivered to your team or customers." },
-  //     { name: "Virtual Cards", icon: "🌐", descrip: "Instantly issued and ready to use online or via mobile wallets." },
-  //     { name: "Single-Use Cards", icon: "🔁", descrip: "Auto-expiring cards designed for one-time transactions." },
-  //     { name: "Crypto Cards", icon: "🪙", descrip: "Link to crypto wallets and convert on-the-fly for real-world spend." },
-  //     { name: "Gift Cards", icon: "🎁", descrip: "Branded cards for promotions, rewards, or loyalty programs." },
-  //     { name: "Fuel Cards", icon: "⛽", descrip: "Tailored for transportation teams. Limit use to fuel merchants." },
-  //   ],
-  // },
-  // {
-  //   name: "Resources",
-  //   path: "/resources",
-  //   dropdown: [
-  //     { name: "API Documentation", path: "/resources/api-docs", icon: "📚", descrip: "Complete API reference and integration guides" },
-  //     { name: "Developer Sandbox", path: "/resources/sandbox", icon: "🧪", descrip: "Test and build in a secure, private environment" },
-  //     { name: "SDKs & Tools", path: "/resources/sdks", icon: "🛠️", descrip: "PCI-compliant SDKs for iOS and Android apps" },
-  //     { name: "Support Center", path: "/resources/support", icon: "🎧", descrip: "24/7 multilingual support and technical assistance" },
-  //     { name: "Blog", path: "/resources/blog", icon: "✍️", descrip: "Latest insights on fintech and payments" },
-  //     { name: "Press & Media", path: "/resources/press", icon: "📰", descrip: "Media coverage and company news" },
-  //   ],
-  //   blogPosts: [
-  //     { title: "The Future of Embedded Finance in MENA: Trends and Opportunities", image: "/placeholder.svg?height=200&width=300", path: "/blog/embedded-finance-mena" },
-  //     { title: "Building Compliant Card Programs: A Developer's Guide to KYC and AML", image: "/placeholder.svg?height=200&width=300", path: "/blog/compliant-card-programs" },
-  //     { title: "Multi-Currency Cards: Optimizing FX for Global Businesses", image: "/placeholder.svg?height=200&width=300", path: "/blog/multi-currency-optimization" },
-  //     { title: "From Startup to Scale: How SimpliFi Powers Growing Businesses", image: "/placeholder.svg?height=200&width=300", path: "/blog/startup-to-scale" },
-  //   ],
-  // },
-  // {
-  //   name: "About",
-  //   path: "/about",
-  //   dropdown: [
-  //     { name: "Our Story", path: "/about/story", icon: "📖", descrip: "Founded by Ali Amin Sattar to simplify financial infrastructure across MENA and Pakistan" },
-  //     { name: "Our Team", path: "/about/team", icon: "👥", descrip: "Meet the SimpliFiers building the future of finance" },
-  //     { name: "Our Values", path: "/about/values", icon: "⭐", descrip: "Raise the bar, Make an impact, Own it, People first" },
-  //     { name: "Careers", path: "/about/careers", icon: "💼", descrip: "Join our team and become a SimpliFier" },
-  //     { name: "Press", path: "/about/press", icon: "📰", descrip: "Media coverage and company announcements" },
-  //   ],
-  // },
+  {
+    name: "Solutions",
+    path: "/solutions",
+    dropdown: [
+      {
+        name: "By Use Cases",
+        path: "/solutions/use-cases",
+        icon: "📋",
+        descrip:
+          "Corporate Payouts, Gifting & Rewards, Corporate Spend, Consumer Spend, BNPL & Credit",
+        useCases: [
+          {
+            category: "Corporate Payouts",
+            items: [
+              "Salary Payout Cards",
+              "Freelancer Payout Cards",
+              "Commission & Incentive Cards",
+              "Payroll Cards (WPS)",
+            ],
+          },
+          {
+            category: "Gifting & Rewards",
+            items: [
+              "Gift Cards",
+              "Mall Gift Cards",
+              "Retail Gift Cards",
+              "eGift Cards",
+              "Loyalty Redemption Cards",
+            ],
+          },
+          {
+            category: "Corporate Spend",
+            items: ["Corporate Expense Cards", "Fuel Cards", "Supplier Payment Cards"],
+          },
+          {
+            category: "Consumer Spend",
+            items: ["Consumer Wallet Cards", "Cashback & Rewards Cards", "Travel Cards", "Crypto Cards"],
+          },
+          {
+            category: "BNPL & Credit",
+            items: ["BNPL Cards", "In-store & Online Payment Cards", "Consumer Credit Profiles"],
+          },
+        ],
+      },
+      {
+        name: "By Industries",
+        path: "/solutions/industries",
+        icon: "🏢",
+        descrip: "SaaS, Ecommerce, Marketing, Logistics, Travel, Insurance, Startups & Scaleups",
+        industries: [
+          {
+            name: "SaaS",
+            descrip: "Empower tech teams with spend controls, usage insights, and multi-currency cards.",
+          },
+          {
+            name: "Ecommerce",
+            descrip: "Manage ad spend, fulfillment payouts, and supplier transactions from one platform.",
+          },
+          {
+            name: "Marketing",
+            descrip: "Run campaign cards, manage influencer budgets, or issue merchant specific cards.",
+          },
+          {
+            name: "Logistics",
+            descrip: "Issue fuel cards and driver per diem cards, complete with real-time tracking.",
+          },
+          {
+            name: "Travel",
+            descrip:
+              "Issue multi-currency cards for travelers to optimize on FX, manage spend limits and enforce region-specific rules.",
+          },
+          {
+            name: "Insurance",
+            descrip: "Disburse funds for claims via instantly issued cards to streamline insurance payments.",
+          },
+          {
+            name: "Startups & Scaleups",
+            descrip: "Keep team spend in check while moving fast - Issue, track, and reconcile with ease.",
+          },
+        ],
+      },
+    ],
+    cardTypes: [
+      { name: "Physical Cards", icon: "💳", descrip: "Plastic cards with your brand, delivered to your team or customers." },
+      { name: "Virtual Cards", icon: "🌐", descrip: "Instantly issued and ready to use online or via mobile wallets." },
+      { name: "Single-Use Cards", icon: "🔁", descrip: "Auto-expiring cards designed for one-time transactions." },
+      { name: "Crypto Cards", icon: "🪙", descrip: "Link to crypto wallets and convert on-the-fly for real-world spend." },
+      { name: "Gift Cards", icon: "🎁", descrip: "Branded cards for promotions, rewards, or loyalty programs." },
+      { name: "Fuel Cards", icon: "⛽", descrip: "Tailored for transportation teams. Limit use to fuel merchants." },
+    ],
+  },
+  {
+    name: "Resources",
+    path: "/resources",
+    dropdown: [
+      { name: "API Documentation", path: "/resources/api-docs", icon: "📚", descrip: "Complete API reference and integration guides" },
+      { name: "Developer Sandbox", path: "/resources/sandbox", icon: "🧪", descrip: "Test and build in a secure, private environment" },
+      { name: "SDKs & Tools", path: "/resources/sdks", icon: "🛠️", descrip: "PCI-compliant SDKs for iOS and Android apps" },
+      { name: "Support Center", path: "/resources/support", icon: "🎧", descrip: "24/7 multilingual support and technical assistance" },
+      { name: "Blog", path: "/resources/blog", icon: "✍️", descrip: "Latest insights on fintech and payments" },
+      { name: "Press & Media", path: "/resources/press", icon: "📰", descrip: "Media coverage and company news" },
+    ],
+    blogPosts: [
+      { title: "The Future of Embedded Finance in MENA: Trends and Opportunities", image: "/placeholder.svg?height=200&width=300", path: "/blog/embedded-finance-mena" },
+      { title: "Building Compliant Card Programs: A Developer's Guide to KYC and AML", image: "/placeholder.svg?height=200&width=300", path: "/blog/compliant-card-programs" },
+      { title: "Multi-Currency Cards: Optimizing FX for Global Businesses", image: "/placeholder.svg?height=200&width=300", path: "/blog/multi-currency-optimization" },
+      { title: "From Startup to Scale: How SimpliFi Powers Growing Businesses", image: "/placeholder.svg?height=200&width=300", path: "/blog/startup-to-scale" },
+    ],
+  },
+  {
+    name: "About",
+    path: "/about",
+    dropdown: [
+      { name: "Our Story", path: "/about/story", icon: "📖", descrip: "Founded by Ali Amin Sattar to simplify financial infrastructure across MENA and Pakistan" },
+      { name: "Our Team", path: "/about/team", icon: "👥", descrip: "Meet the SimpliFiers building the future of finance" },
+      { name: "Our Values", path: "/about/values", icon: "⭐", descrip: "Raise the bar, Make an impact, Own it, People first" },
+      { name: "Careers", path: "/about/careers", icon: "💼", descrip: "Join our team and become a SimpliFier" },
+      { name: "Press", path: "/about/press", icon: "📰", descrip: "Media coverage and company announcements" },
+    ],
+  },
 ];
 
 export default function Navbar() {
@@ -207,13 +165,14 @@ export default function Navbar() {
   };
 
   return (
+    <div className="bg-white sticky top-0 z-[100] pt-4 pb-2">
     <nav
-      className="w-full p-0 bg-white sticky top-0 z-[100]"
+      className="p-0  mx-4 mt-4 mb-0 bg-primarylight  rounded-4xl "
       onClick={() => setIsMenuOpen(false)}
     >
       <div className="relative">
         {/* Main Navbar */}
-        <div className="flex flex-wrap gap-4 justify-between items-center py-2 md:py-4 px-1 m-auto">
+        <div className="flex flex-wrap gap-4 justify-between items-center py-2 md:py-2 px-1 m-auto">
           {/* Logo */}
           <div className="flex items-center gap-[2rem]">
             <Link href="/" className="text-2xl font-bold text-blue px-[0.5rem] md:pl-[2rem]">
@@ -224,7 +183,7 @@ export default function Navbar() {
             <div className="hidden lg:flex bg-lightGrey rounded-[6.25rem]">
               {NAV_ITEMS.map(({ name, path, dropdown }) => (
                 <div key={path} className="flex items-center">
-                  {true ? (
+                  {dropdown  ? (
                     <div
                       className={`h-[3.27rem] flex items-center justify-center text-center capitalize rounded-[6.25rem] px-1.5 cursor-pointer ${
                         pathname.includes(path) ? "bg-lightPurple text-black" : "bg-transparent text-black hover:text-gray-400"
@@ -238,8 +197,8 @@ export default function Navbar() {
                         <ChevronDown className="h-3 w-3" />
                       </div>
                       <AnimatePresence>
-                        {true && (
-                          <div className="absolute overflow-scroll w-full right-0 top-[4.6rem] mt-2 bg-white shadow-lg rounded-lg py-8 px-6">
+                        {openDropdown==path && (
+                          <div className="absolute no-scrollbar overflow-scroll w-full right-0 top-[3.75rem] mt-2 bg-white shadow-lg rounded-lg py-8 px-6 z-0">
                             <SectionNavbar sectionName={name} dropdown={dropdown} pathname={pathname} />
                           </div>
                         )}
@@ -286,7 +245,7 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              <button className="outlined-button">Login</button>
+              <button className="nav-contained-button !px-6 !py-3">Login</button>
               <button className="nav-contained-button hidden lg:visible">Get Started</button>
             </div>
 
@@ -393,5 +352,6 @@ export default function Navbar() {
         </AnimatePresence>
       </div>
     </nav>
+    </div>
   );
 }

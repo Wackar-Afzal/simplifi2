@@ -217,11 +217,11 @@ export default function Hero() {
           />
         </motion.h2>
         <motion.p className="text-white  paragraph-style-body mt-4   mix-blend-difference cursor-none  ">
-          {homeText.homepage.hero.subtitle}. {homeText.homepage.hero.description} {homeText.homepage.hero.subDescription}
+           {homeText.homepage.hero.description} {homeText.homepage.hero.subDescription}
         </motion.p>
         <motion.p className="text-black  paragraph-style-body   mix-blend-difference cursor-none mb-6">
           <span className="text-color-secondary">
-            ({homeText.homepage.hero.features})
+            {homeText.homepage.hero.features}
           </span>
         </motion.p>
         <button className="contained-button">{homeText.homepage.hero.cta}</button>

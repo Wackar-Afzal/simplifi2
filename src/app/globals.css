@@ -2,9 +2,7 @@
 
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  /* outline: 1px solid red;  */
 }
 
 @font-face {
@@ -39,6 +37,7 @@
   --grey--100: #222;
   --primary--secondary: #2e7dfc;
   --primary--main: #2e7dfc;
+  --primary--light: #eef4ff;
   --white: white;
   --grey--50: #999;
   --grey--10: #f4f4f4;
@@ -64,18 +63,25 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+@theme {
+  --color-primary: #2e7dfc;
+  --color-primarylight: #eef4ff;
+  --color-secondary: #ea3b01;
+  --color-grey-100: #222;
+  --color-grey-50: #999;
+  --color-grey-10: #f4f4f4;
+  /* add any others you want Tailwind to understand */
 }
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "MyCustomFont", sans-serif;
-  overflow-x: hidden !important;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -178,7 +184,7 @@ body {
 
 .fintech-2-content-grid-card_small {
   z-index: 2 !important;
-  aspect-ratio: 1 !important;
+  /* aspect-ratio: 1 !important; */
   background-color: var(--grey--10) !important;
   flex-flow: column !important;
   justify-content: space-between !important;
@@ -1056,8 +1062,8 @@ body {
 }
 
 .clients-wrapper {
-  justify-content: flex-end;
-  align-items: stretch;
+  justify-content: center;
+  align-items: center;
   margin-top: 2.5rem;
   margin-left: -2.5rem;
   margin-right: -2.5rem;
@@ -2205,29 +2211,8 @@ svg:not(:root) {
   line-height: 1.4;
 }
 
-.features-card.is-first {
-  position: absolute;
-  top: 30%;
-  left: 25%;
-}
 
-.features-card.is-second {
-  position: absolute;
-  top: 30%;
-  right: 25%;
-}
 
-.features-card.is-third {
-  position: absolute;
-  bottom: 30%;
-  left: 25%;
-}
-
-.features-card.is-fourth {
-  position: absolute;
-  bottom: 30%;
-  right: 25%;
-}
 
 @media screen and (min-width: 1280px) {
   .button-primary_large {
@@ -2472,9 +2457,7 @@ svg:not(:root) {
     height: auto;
     transform: none !important;
   }
-  .features-card.is-first {
-    height: auto;
-  }
+
   .features-heading {
     max-width: 30rem;
   }

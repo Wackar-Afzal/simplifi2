@@ -1,21 +1,22 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import homeText from "@/utils/homeText.json";
+import Image from "next/image";
 
-// Using client names from homeText.json - logos can be added later
-const clients = homeText.homepage.clients.clients.map(clientName => ({
-  name: clientName,
-  logo: "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f4931fa_company%20name%20%26logo-1.png", // placeholder logo
-}));
-const ClientsMargquee = () => {
+// List of logos from /public (green-colored ones in your screenshot)
+const clientLogos = [
+  { name: "Bayzat", logo: "/bayzat.png" },
+  { name: "Floward", logo: "/floward.png" },
+  { name: "Jisr", logo: "/jisr.webp" },
+  { name: "Kamel Pay", logo: "/kamelpay.png" },
+  { name: "NQOODLET", logo: "/nqoodlet.png" },
+  { name: "Transportr", logo: "/transportr.png" },
+  { name: "Walaplus", logo: "/walaplus.png" },
+];
+
+const ClientsMarquee = () => {
   return (
-    <section
-      data-w-id="98497e24-bb38-c836-dd0c-6f7393fd4e39"
-      className="section_clients"
-    >
-      <h2 className="section-heading">
-        {homeText.homepage.clients.title}
-      </h2>
+    <section className="section_clients ">
+      <h2 className="section-heading">Our Clients</h2>
 
       <Marquee
         gradient={false}
@@ -23,27 +24,22 @@ const ClientsMargquee = () => {
         pauseOnHover={true}
         direction="right"
       >
-        <div className="clients-wrapper">
-          <div className="clients-carousel">
-            <div className="clients-block">
-              {clients.map((client, index) => (
-                <div key={index} className="client-item">
-                  <img
-                    src={client.logo}
-                    alt={client.name}
-                    className="clients-logo"
-                    loading="lazy"
-                    title={client.name}
-                  />
-                  <span className="client-name sr-only">{client.name}</span>
-                </div>
-              ))}
+        <div className="flex mt-16">
+          {clientLogos.map((client, index) => (
+            <div key={index} className=" flex items-center !gap-0">
+              <img
+                src={client.logo}
+                alt={client.name}
+              
+                className=" object-contain h-[5vh] mx-10 "
+              />
+              {/* <span className="text-black sr-only z-10">jk</span> */}
             </div>
-          </div>
+          ))}
         </div>
       </Marquee>
     </section>
   );
 };
 
-export default ClientsMargquee;
+export default ClientsMarquee;

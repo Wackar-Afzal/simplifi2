@@ -150,7 +150,7 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                        {homeText.homepage.usps.features[0].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">$55M+</div>
                                             <div>In investments</div>
@@ -159,7 +159,7 @@ const Ai = () => {
                                             <div className="cases-stats-title">Fortune 500</div>
                                             <div>Clients</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div
@@ -200,7 +200,7 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                         {homeText.homepage.usps.features[1].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">$1,5M</div>
                                             <div>In investments</div>
@@ -209,7 +209,7 @@ const Ai = () => {
                                             <div className="cases-stats-title">1M+</div>
                                             <div>Users</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div
@@ -251,7 +251,7 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                         {homeText.homepage.usps.features[2].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">$7M</div>
                                             <div>In investments</div>
@@ -260,7 +260,7 @@ const Ai = () => {
                                             <div className="cases-stats-title">50M+</div>
                                             <div>Downloads</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div
@@ -348,7 +348,7 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                         {homeText.homepage.usps.features[4].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">$3M</div>
                                             <div>In investments</div>
@@ -357,7 +357,7 @@ const Ai = () => {
                                             <div className="cases-stats-title">App of the Day</div>
                                             <div>Featured by Apple</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div
@@ -399,12 +399,12 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                         {homeText.homepage.usps.features[5].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">$750K+</div>
                                             <div>In funding</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div
@@ -446,12 +446,12 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                         {homeText.homepage.usps.features[6].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">50,000+</div>
                                             <div>Collisions prevented</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div
@@ -493,12 +493,12 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                         {homeText.homepage.usps.features[7].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">$10M+</div>
                                             <div>In funding</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div
@@ -538,7 +538,7 @@ const Ai = () => {
                                     <div className="paragraph-style-body text-color-secondary">
                                         {homeText.homepage.usps.features[8].description}
                                     </div>
-                                    <div className="cases-stats-wrapper">
+                                    {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">500K+</div>
                                             <div>Paid customers</div>
@@ -551,7 +551,7 @@ const Ai = () => {
                                             <div className="cases-stats-title">4.9 stars</div>
                                             <div>On App Store</div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="cases-card-item-image-wrapper is-horizontal">

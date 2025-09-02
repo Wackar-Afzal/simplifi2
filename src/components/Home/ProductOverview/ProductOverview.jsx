@@ -102,11 +102,12 @@ const gridItems = [
 
 export default function ProductOverview() {
   return (
-    <div className=" products text-white container-custom" >
+    <div className=" products text-white pt-16 pb-4 px-10" >
       <div className="w-full   mx-auto">
 
         <motion.div
-          className="grid md:grid-cols-2 gap-16 mb-20 w-full justify-center items-center"
+          // className="grid md:grid-cols-2 gap-16 mb-20 w-full justify-center items-center"
+          className="grid md:grid-cols-2 gap-16 mb-4 w-full justify-center items-center"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -122,15 +123,15 @@ export default function ProductOverview() {
             <p className="paragraph-style-body text-color-inverted">
               Whether you want to go live in days or build something truly custom, we’ve got you covered.
             </p>
-            <p className="paragraph-style-body text-color-inverted">
+            {/* <p className="paragraph-style-body text-color-inverted">
               Humbleteam is specifically geared for this, aiming to boost your product from within, not just on the
               surface.
-            </p>
+            </p> */}
           </motion.div>
         </motion.div>
 
 
-        <motion.div
+        {/* <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -147,7 +148,7 @@ export default function ProductOverview() {
               </BSlidingDiv>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   )

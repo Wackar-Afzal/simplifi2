@@ -15,61 +15,61 @@ const Features = () => {
 
   // Define final positions for each card
   const finalPositions = {
-    card1: { x: -96, y: -112 }, // -6rem, -7rem in pixels (16px = 1rem)
-    card2: { x: 112, y: -80 }, // 7rem, -5rem
-    card3: { x: -80, y: 80 }, // -5rem, 5rem
-    card4: { x: 144, y: 112 }, // 9rem, 7rem
+    card1: { x: -396, y: -232 }, // -6rem, -7rem in pixels (16px = 1rem)
+    card2: { x: 386, y: -242 }, // 7rem, -5rem
+    card3: { x: -440, y: 180 }, // -5rem, 5rem
+    card4: { x: 404, y: 150 }, // 9rem, 7rem
   };
 
   // Create smooth transforms for each card based on scroll progress
   const card1X = useTransform(
     scrollYProgress,
-    [0.2, 0.8],
+    [0.2, 0.7],
     [0, finalPositions.card1.x]
   );
   const card1Y = useTransform(
     scrollYProgress,
-    [0.2, 0.8],
+    [0.2, 0.7],
     [0, finalPositions.card1.y]
   );
 
   const card2X = useTransform(
     scrollYProgress,
-    [0.25, 0.85],
+     [0.2, 0.7],
     [0, finalPositions.card2.x]
   );
   const card2Y = useTransform(
     scrollYProgress,
-    [0.25, 0.85],
+     [0.2, 0.7],
     [0, finalPositions.card2.y]
   );
 
   const card3X = useTransform(
     scrollYProgress,
-    [0.3, 0.9],
+     [0.2, 0.7],
     [0, finalPositions.card3.x]
   );
   const card3Y = useTransform(
     scrollYProgress,
-    [0.3, 0.9],
+     [0.2, 0.7],
     [0, finalPositions.card3.y]
   );
 
   const card4X = useTransform(
     scrollYProgress,
-    [0.35, 0.95],
+     [0.2, 0.7],
     [0, finalPositions.card4.x]
   );
   const card4Y = useTransform(
     scrollYProgress,
-    [0.35, 0.95],
+     [0.2, 0.7],
     [0, finalPositions.card4.y]
   );
 
   return (
     // <div className="transform-none">
-      <div className="h-[300vh] " ref={containerRef}>
-        <div className=" sticky top-[-50vh] h-screen ">
+      <div className=" relative h-[300vh] " ref={containerRef}>
+        <div className=" sticky top-0 h-screen ">
           <section className="section_features h-full">
             <img
               src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif"
@@ -105,11 +105,11 @@ const Features = () => {
                 {homeText.homepage.features.cta}
               </button>
               <motion.div
-                className="features-card is-first absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                className="features-card absolute top-[35%] left-[40%]"
                 style={{
-                  // willChange: "transform",
-                  // transform: "translate3d(-6rem, -7rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                  // transformStyle: "preserve-3d",
+                  willChange: "transform",
+                  // transform: "translate3d(100rem, 20rem, 100px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                  transformStyle: "preserve-3d",
                   x: card1X,
                   y: card1Y,
                 }}
@@ -122,13 +122,14 @@ const Features = () => {
                   {homeText.homepage.features.features[0].description}
                 </p>
               </motion.div>
-              <div
-                className="features-card is-second"
+              <motion.div
+                className="features-card absolute top-[35%] left-[50%]"
                 style={{
                   willChange: "transform",
-                  transform:
-                    "translate3d(7rem, -5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                  // transform:"translate3d(7rem, -5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                   transformStyle: "preserve-3d",
+                  x: card2X,
+                  y: card2Y,
                 }}
               >
                 <div className="features-card-number">02</div>
@@ -138,14 +139,15 @@ const Features = () => {
                 <p className="features-desc">
                   {homeText.homepage.features.features[1].description}
                 </p>
-              </div>
-              <div
-                className="features-card is-third"
+              </motion.div>
+              <motion.div
+                className="features-card absolute top-[50%] left-[42%]"
                 style={{
                   willChange: "transform",
-                  transform:
-                    "translate3d(-5rem, 5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                  // transform:"translate3d(-5rem, 5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                   transformStyle: "preserve-3d",
+                  x: card3X,
+                  y: card3Y,
                 }}
               >
                 <div className="features-card-number">03</div>
@@ -155,14 +157,15 @@ const Features = () => {
                 <p className="features-desc">
                   {homeText.homepage.features.features[2].description}
                 </p>
-              </div>
-              <div
-                className="features-card is-fourth"
+              </motion.div>
+              <motion.div
+                className="features-card absolute top-[55%] left-[50%]"
                 style={{
                   willChange: "transform",
-                  transform:
-                    "translate3d(9rem, 7rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
+                  // transform:"translate3d(9rem, 7rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
                   transformStyle: "preserve-3d",
+                  x: card4X,
+                  y: card4Y,
                 }}
               >
                 <div className="features-card-number">04</div>
@@ -172,7 +175,7 @@ const Features = () => {
                 <p className="features-desc">
                   {homeText.homepage.features.features[3].description}
                 </p>
-              </div>
+              </motion.div>
             </div>
           </section>
         </div>
