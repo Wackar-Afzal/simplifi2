@@ -19,11 +19,9 @@ const HeroSection = () => {
         <div className="container-global is-small">
           <div className="hero-wrapper">
             <div className="hero-left">
-              <h1 className="heading-style-h1">AI, meet UX</h1>
+              <h1 className="heading-style-h1">Go live with ready-to-issue cards in days</h1>
               <p className="hero-desc">
-                Humbleteam designs intuitive user interfaces for AI-powered
-                products, making advanced technology feel natural, seamless, and
-                human.
+                Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code.
               </p>
             </div>
             <div className="hero-tabs-wrapper">

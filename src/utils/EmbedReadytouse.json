@@ -1,0 +1,23 @@
+{
+  "embedreadytouse": {
+
+
+    "productOverview1":{
+    "heading": "Why embedded cards",
+    "imageUrl":
+      "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493238_image-min.png",
+    "title": "",
+    "description":"With our embedded cards, you’re not launching your branded cards. You're leveraging our off the shelf cards. Get everything prebuilt and ready to go - card issuance, compliance, spend controls, and real-time tracking. You control the user experience without the investment.",
+    "includedTitle": "What’s included",
+    "includedItems": [
+      "Multi-currency wallets",
+      "Instant virtual card issuance",
+      "Real-time controls and spend tracking",
+      "Coverage across GCC currencies",
+      "Investor-ready for POCs and pilots"
+    ],
+    "buttonText": "Learn more"
+  }
+
+  }
+}

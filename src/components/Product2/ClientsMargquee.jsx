@@ -16,7 +16,7 @@ const clientLogos = [
 const ClientsMarquee = () => {
   return (
     <section className="section_clients ">
-      <h2 className="section-heading">Our Clients</h2>
+      <h2 className="section-heading">Trusted by fintechs, startups, and enterprises across MENA</h2>
 
       <Marquee
         gradient={false}
