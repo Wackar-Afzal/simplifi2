@@ -1,7 +1,7 @@
 import React from "react";
 import homeText from "@/utils/homeText.json";
 
-const Ai = () => {
+const Ai = ({data}) => {
     return (
         <div>
             {/* <section className="section_ventures">
@@ -122,7 +122,7 @@ const Ai = () => {
                     className="cases-bg6"
                 />
                 <div className="container-global">
-                    <h2 className="section-heading is-large">{homeText.homepage.usps.title}</h2>
+                    <h2 className="section-heading is-large">{data.title}</h2>
                     <div className="section-cases-grid">
                         <div
                             id="w-node-_8545a01a-43bd-28fc-8c15-0a43f8cc9953-8f49312d"
@@ -146,9 +146,9 @@ const Ai = () => {
                                     <div className="cases-company">Synthesia</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[0].title}</h3>
+                                    <h3 className="heading-style-h4">{data.features[0].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                       {homeText.homepage.usps.features[0].description}
+                                       {data.features[0].description}
                                     </div>
                                     {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -196,9 +196,9 @@ const Ai = () => {
                                     <div className="cases-company">TravelPal</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[1].title}</h3>
+                                    <h3 className="heading-style-h4">{data.features[1].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[1].description}
+                                        {data.features[1].description}
                                     </div>
                                     {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -247,9 +247,9 @@ const Ai = () => {
                                     <div className="cases-company">MyRadar</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">{homeText.homepage.usps.features[2].title}</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">{data.features[2].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[2].description}
+                                        {data.features[2].description}
                                     </div>
                                     {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -309,9 +309,9 @@ const Ai = () => {
                                     <div className="cases-company">NASA</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[3].title}</h3>
+                                    <h3 className="heading-style-h4">{data.features[3].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[3].description}
+                                        {data.features[3].description}
                                     </div>
                                     <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -344,9 +344,9 @@ const Ai = () => {
                                     <div className="cases-company">VOS</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">{homeText.homepage.usps.features[4].title}</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">{data.features[4].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[4].description}
+                                        {data.features[4].description}
                                     </div>
                                     {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -395,9 +395,9 @@ const Ai = () => {
                                     <div className="cases-company">Offered</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                        <h3 className="heading-style-h4">{homeText.homepage.usps.features[5].title}</h3>
+                                        <h3 className="heading-style-h4">{data.features[5].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[5].description}
+                                        {data.features[5].description}
                                     </div>
                                     {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -442,9 +442,9 @@ const Ai = () => {
                                     <div className="cases-company">Nauto</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4 text-color-inverted">{homeText.homepage.usps.features[6].title}</h3>
+                                    <h3 className="heading-style-h4 text-color-inverted">{data.features[6].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[6].description}
+                                        {data.features[6].description}
                                     </div>
                                     {/* <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
@@ -467,7 +467,7 @@ const Ai = () => {
                                 />
                             </div>
                         </div>
-                        <div
+                        {/* <div
                             id="w-node-_523dab7f-3ba9-b56c-cc4d-eea58db2e8bc-8f49312d"
                             data-w-id="523dab7f-3ba9-b56c-cc4d-eea58db2e8bc"
                             style={{
@@ -489,16 +489,16 @@ const Ai = () => {
                                     <div className="cases-company">Qantev</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[7].title}</h3>
+                                    <h3 className="heading-style-h4">{data.features[7].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[7].description}
+                                        {data.features[7].description}
                                     </div>
-                                    {/* <div className="cases-stats-wrapper">
+                                    <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">$10M+</div>
                                             <div>In funding</div>
                                         </div>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
                             <div
@@ -511,8 +511,8 @@ const Ai = () => {
                                     alt=""
                                 />
                             </div>
-                        </div>
-                        <div
+                        </div> */}
+                        {/* <div
                             id="w-node-_9d80c8a9-d880-7a19-032b-ecd4895eb515-8f49312d"
                             data-w-id="9d80c8a9-d880-7a19-032b-ecd4895eb515"
                             style={{
@@ -534,11 +534,11 @@ const Ai = () => {
                                     <div className="cases-company">Eko Health</div>
                                 </div>
                                 <div className="cases-card-itm-title">
-                                    <h3 className="heading-style-h4">{homeText.homepage.usps.features[8].title}</h3>
+                                    <h3 className="heading-style-h4">{data.features[8].title}</h3>
                                     <div className="paragraph-style-body text-color-secondary">
-                                        {homeText.homepage.usps.features[8].description}
+                                        {data.features[8].description}
                                     </div>
-                                    {/* <div className="cases-stats-wrapper">
+                                    <div className="cases-stats-wrapper">
                                         <div className="cases-stats-block">
                                             <div className="cases-stats-title">500K+</div>
                                             <div>Paid customers</div>
@@ -551,7 +551,7 @@ const Ai = () => {
                                             <div className="cases-stats-title">4.9 stars</div>
                                             <div>On App Store</div>
                                         </div>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
                             <div className="cases-card-item-image-wrapper is-horizontal">
@@ -562,7 +562,7 @@ const Ai = () => {
                                     className="cases-img-big"
                                 />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <img

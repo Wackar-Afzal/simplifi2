@@ -1,11 +1,10 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import homeText from "@/utils/homeText.json";
 
-export default function WhatWeDo() {
+export default function WhatWeDo({data}) {
   const [activeTab, setActiveTab] = useState(1);
-  const highlights = homeText.homepage.whatwedo.highlights;
+  const highlights = data.highlights;
 
   const activeTabData = highlights.find((t) => t.id === activeTab);
 
@@ -13,7 +12,7 @@ export default function WhatWeDo() {
     <section className="whatwedo text-white container-custom">
       <div className="mx-auto">
         <h2 className="heading-style-h2_fintech text-color-inverted">
-          {homeText.homepage.whatwedo.title}
+          {data.title}
         </h2>
 
         {/* Desktop layout */}

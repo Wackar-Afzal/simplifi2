@@ -25,7 +25,7 @@
     "productOverview1":{
     "heading": "Embed: Off-the-shelf cards, ready to go",
     "imageUrl":
-      "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493238_image-min.png",
+      "UX1.png",
     "title": "Add live card functionality to your platform with zero setup hassle.",
     "description":
       "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
@@ -44,7 +44,7 @@
     "productOverview2":{
     "heading": "Build Your Own: SimpliFi Enterprise",
     "imageUrl":
-      "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493238_image-min.png",
+      "UX2.png",
     "title": "Launch a fully branded card program with complete control.",
     "description":
       "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
@@ -96,46 +96,78 @@
       "cta": "Learn more"
     },
 
-    "usps": {
-      "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
-      "subtitle": "Whether you're embedding cards or launching your own card program, we power both.",
+    "usps":  {
+      "title": "USPs",
       "features": [
         {
-          "title": "One contract for everything",
-          "description": "Work with just one provider to get technology, compliance, operational support, and more."
+          "company": "Synthesia",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493216_Icons.png",
+      "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
+          "description": "Whether you're embedding cards or launching your own card program, we power both.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321e_Image-1.avif",
+          "style": "light"
         },
         {
+          "company": "TravelPal",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
+         "title": "One contract for everything",
+          "description": "Work with just one provider to get technology, compliance, operational support, and more.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493221_Image-2.avif",
+          "style": "dark"
+        },
+        {
+          "company": "MyRadar",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321a_Icons-2.png",
           "title": "One integration, multiple markets",
-          "description": "Go live across markets with a single integration."
+          "description": "Go live across markets with a single integration.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493236_Image.avif",
+          "style": "light"
         },
         {
+          "company": "NASA",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321b_Icons-3.png",
           "title": "Compliance, sorted",
-          "description": "KYC, AML, and regulatory approvals to ensure end to end compliance."
+          "description": "KYC, AML, and regulatory approvals to ensure end to end compliance.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493225_Image-4.avif",
+          "style": "dark",
+          "extraStats": {
+            "duration": "2 weeks",
+            "note": "From concept to delivery"
+          }
         },
         {
+          "company": "VOS",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493219_Icons-4.png",
           "title": "Security at the core",
-          "description": "PCI-DSS compliant with encryption, tokenization, and secure APIs."
+          "description": "PCI-DSS compliant with encryption, tokenization, and secure APIs.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493220_Image-6.avif",
+          "style": "light"
         },
         {
+          "company": "Offered",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493215_Icons-5.png",
           "title": "Infrastructure that grows with you",
-          "description": "Handle high volumes, custom logic, and complex workflows with ease."
+          "description": "Handle high volumes, custom logic, and complex workflows with ease.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493222_Image-5.avif",
+          "style": "dark"
         },
         {
+          "company": "Nauto",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493218_Icons-8.png",
           "title": "Made for developers",
-          "description": "Get started faster with detailed API documentation and sandbox access."
-        },
-        {
-          "title": "Made for developers",
-          "description": "Get started faster with detailed API documentation and sandbox access."
-        },
-        {
-          "title": "Made for developers",
-          "description": "Get started faster with detailed API documentation and sandbox access."
-        },
-        {
-          "title": "Made for developers",
-          "description": "Get started faster with detailed API documentation and sandbox access."
+          "description": "Get started faster with detailed API documentation and sandbox access.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493224_Image.avif",
+          "style": "light"
         }
+      ],
+      "backgrounds": [
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320e_exp1.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493211_exp4.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320f_exp6.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493232_07.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493234_08.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320d_exp7.avif"
       ],
       "cta": "Learn more (To the Product Page 1)"
     },

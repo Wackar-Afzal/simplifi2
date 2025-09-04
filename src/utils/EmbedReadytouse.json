@@ -17,7 +17,132 @@
       "Investor-ready for POCs and pilots"
     ],
     "buttonText": "Learn more"
-  }
+  },
+     "usps":  {
+      "title": "Our AI Use Cases",
+      "features": [
+        {
+          "company": "Emnbbb",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493216_Icons.png",
+      "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
+          "description": "Whether you're embedding cards or launching your own card program, we power both.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321e_Image-1.avif",
+          "style": "light"
+        },
+        {
+          "company": "TravelPal",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
+         "title": "One contract for everything",
+          "description": "Work with just one provider to get technology, compliance, operational support, and more.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493221_Image-2.avif",
+          "style": "dark"
+        },
+        {
+          "company": "MyRadar",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321a_Icons-2.png",
+          "title": "One integration, multiple markets",
+          "description": "Go live across markets with a single integration.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493236_Image.avif",
+          "style": "light"
+        },
+        {
+          "company": "NASA",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321b_Icons-3.png",
+          "title": "Compliance, sorted",
+          "description": "KYC, AML, and regulatory approvals to ensure end to end compliance.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493225_Image-4.avif",
+          "style": "dark",
+          "extraStats": {
+            "duration": "2 weeks",
+            "note": "From concept to delivery"
+          }
+        },
+        {
+          "company": "VOS",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493219_Icons-4.png",
+          "title": "Security at the core",
+          "description": "PCI-DSS compliant with encryption, tokenization, and secure APIs.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493220_Image-6.avif",
+          "style": "light"
+        },
+        {
+          "company": "Offered",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493215_Icons-5.png",
+          "title": "Infrastructure that grows with you",
+          "description": "Handle high volumes, custom logic, and complex workflows with ease.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493222_Image-5.avif",
+          "style": "dark"
+        },
+        {
+          "company": "Nauto",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493218_Icons-8.png",
+          "title": "Made for developers",
+          "description": "Get started faster with detailed API documentation and sandbox access.",
+          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493224_Image.avif",
+          "style": "light"
+        }
+      ],
+      "backgrounds": [
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320e_exp1.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493211_exp4.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320f_exp6.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493232_07.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493234_08.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320d_exp7.avif"
+      ],
+      "cta": "Learn more (To the Product Page 1)"
+    },
+        "whatwedo": {
+      "title": "Discover SimpliFi APIs",
+      "description": "We're PCI DSS compliant and follow strict AML/KYC protocols. All card data is tokenized and monitored in real time to prevent fraud.",
+      "highlightsTitle": "Security & Compliance Highlights",
+      "highlights": [
+        {
+          "id": 1,
+          "title": "Virtual and physical cards issued through your own platform",
+          "description": "",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 2,
+          "title": "APIs to issue, track, and control spend",
+          "description": "",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 3,
+          "title": "Built-in compliance, KYC, and card scheme approvals",
+          "description": "",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 4,
+          "title": "Sandbox access and fast integration",
+          "description": "",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 5,
+          "title": "Real-time webhooks and custom rules",
+          "description": "",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        },
+        {
+          "id": 6,
+          "title": "Scalable infrastructure for platforms and ERPs",
+          "description": "",
+          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "alt": "Competitor analysis in Figma"
+        }
+      ],
+      "footer": "We invest in security, privacy, and compliance so you can focus on growing your business."
+    }
 
   }
 }

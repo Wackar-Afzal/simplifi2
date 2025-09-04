@@ -1287,7 +1287,7 @@ body {
   max-width: 115rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 8rem 2.5rem;
+  padding: 0rem 2.5rem;
   transition: all 0.25s;
   display: flex;
 }

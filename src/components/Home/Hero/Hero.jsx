@@ -12,13 +12,13 @@ export default function Hero() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
 
   const images = [
-    "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bb9a8b726425f0d6570dd_hero-deserve.webp",
-    "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bb9a89392e68e4f3e7b5b_hero-paypal.webp",
-    "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660bb9a8ad603167323ff43a_hero-abra.webp",
-    "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660beffa0126885cb7c7624f_hero-get-parker.webp",
-    "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660beffac55d453672cc2ef8_hero-onbo-1.webp",
-    "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660beffa4a122468f0837a2d_hero-onbo-2.webp",
-    "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660beffad44441e51c473ae9_hero-zavo-1.webp",
+    "HoverImages/1.png",
+    "HoverImages/2.png",
+    "HoverImages/3.png",
+    "HoverImages/4.png",
+    "HoverImages/5.png",
+    "HoverImages/6.png",
+    "HoverImages/7.png",
   ];
 
   useEffect(() => {

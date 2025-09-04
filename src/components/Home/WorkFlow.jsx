@@ -1,12 +1,22 @@
-import BSlidingDiv from "../common/BSliding"
+import BSlidingDiv from "../common/BSliding";
 
 export default function WorkFlowSectionCases() {
   return (
-    <div className="section-cases py-[100px] px-6">
+    <div className="section-cases  px-6">
       <div className="container-global">
-        <h2 className="text-center heading-style-h2_fintech text-align-center mb-12 sm:mb-16 md:mb-20">
-          Our brightest work in fintech
-        </h2>
+        <div>
+          <h2 className="text-center heading-style-h2_fintech text-align-center mb-2 sm:mb-2 md:mb-2">
+            Why embedded cards
+          </h2>
+          <p className="mt-8">
+            With our embedded cards, you’re not launching your branded cards.
+            You're leveraging our off the shelf cards. Get everything prebuilt
+            and ready to go - card issuance, compliance, spend controls, and
+            real-time tracking. You control the user experience without the
+            investment. From employee expenses to supplier payments, you stay in
+            control while we do the heavy lifting.
+          </p>
+        </div>
 
         <div className="section-cases-grid">
           {/* ING */}
@@ -22,38 +32,36 @@ export default function WorkFlowSectionCases() {
             className="cases-grid-item border-radius-primary "
           >
             <BSlidingDiv>
-            <div className="cases-card-item-content-wrapper">
-              <div className="hflex-05rem_leftcenter">
+              <div className="cases-card-item-content-wrapper">
+                <div className="hflex-05rem_leftcenter">
+                  <img
+                    src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp"
+                    loading="lazy"
+                    width="24"
+                    alt=""
+                  />
+                  <div className="paragraph-style-table text-color-inverted">
+                    ING
+                  </div>
+                </div>
+                <div className="cases-card-itm-title">
+                  <h3 className="heading-style-h4 text-color-inverted">
+                    Multi-currency wallets
+                  </h3>
+                  <div className="paragraph-style-body text-color-secondary">
+                    Fund, hold, and move money in USD, AED, SAR, BHD, KWD, QAR, and OMR. Avoid FX loss and streamline regional and international spend.
+                  </div>
+                </div>
+              </div>
+              <div className="cases-card-item-image-wrapper">
                 <img
-                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp"
-                  loading="lazy"
-                  width="24"
-                  alt=""
+                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp"
+                  loading="eager"
+                  sizes="(max-width: 479px) 100vw, (max-width: 767px) 40vw, (max-width: 991px) 43vw, (max-width: 1279px) 27vw, 28vw"
+                  srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp 800w"
+                  alt="Mobile phone with a fintech app lying on a 3D background"
                 />
-                <div className="paragraph-style-table text-color-inverted">
-                  ING
-                </div>
               </div>
-              <div className="cases-card-itm-title">
-                <h3 className="heading-style-h4 text-color-inverted">
-                  New banking concept in just 3 weeks
-                </h3>
-                <div className="paragraph-style-body text-color-secondary">
-                  Humbleteam supported the ING team in redesigning banking for
-                  small businesses. In just 23 days, we developed and
-                  user-tested prototypes for a new banking approach.
-                </div>
-              </div>
-            </div>
-            <div className="cases-card-item-image-wrapper">
-              <img
-                src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp"
-                loading="eager"
-                sizes="(max-width: 479px) 100vw, (max-width: 767px) 40vw, (max-width: 991px) 43vw, (max-width: 1279px) 27vw, 28vw"
-                srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp 800w"
-                alt="Mobile phone with a fintech app lying on a 3D background"
-              />
-            </div>
             </BSlidingDiv>
           </div>
 
@@ -83,12 +91,10 @@ export default function WorkFlowSectionCases() {
               </div>
               <div className="cases-card-itm-title">
                 <h3 className="heading-style-h4">
-                  Transforming a banking app for sustainable spending
+                  Multi-currency cards
                 </h3>
                 <div className="paragraph-style-body text-color-secondary">
-                  We designed the UI for a program that analyzes expenses to
-                  show if you're supporting eco-friendly businesses, promoting a
-                  greener lifestyle.
+                  Issue and manage cards across currencies using a single integration. Enable seamless spend across markets with built-in currency controls.
                 </div>
               </div>
             </BSlidingDiv>
@@ -104,43 +110,47 @@ export default function WorkFlowSectionCases() {
           </div>
 
           {/* Moka */}
-          <div className="cases-grid-item border-radius-primary" id="w-node-bc9a16cb-67f3-e1d0-55bd-3b49311aff14-2da5785d">
+          <div
+            className="cases-grid-item border-radius-primary"
+            id="w-node-bc9a16cb-67f3-e1d0-55bd-3b49311aff14-2da5785d"
+          >
             <BSlidingDiv>
-            <div className="cases-card-item-content-wrapper">
-              <div className="hflex-05rem_leftcenter">
+              <div className="cases-card-item-content-wrapper">
+                <div className="hflex-05rem_leftcenter">
+                  <img
+                    src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg"
+                    loading="lazy"
+                    width="24"
+                    alt=""
+                  />
+                  <div className="paragraph-style-table text-color-inverted">
+                    Moka
+                  </div>
+                </div>
+                <div className="cases-card-itm-title">
+                  <h3 className="heading-style-h4 text-color-inverted">
+                    Card management features
+                  </h3>
+                  <div className="paragraph-style-body text-color-secondary">
+                    Let your users issue cards, set spend limits, track transactions, and freeze cards in real time through your own interface.
+                  </div>
+                </div>
+              </div>
+              <div className="cases-card-item-image-wrapper">
                 <img
-                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg"
-                  loading="lazy"
-                  width="24"
-                  alt=""
+                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e4481e7b29eba27de38_cases-3.webp"
+                  loading="eager"
+                  alt="Moka fintech app screens displayed on mobile devices"
                 />
-                <div className="paragraph-style-table text-color-inverted">
-                  Moka
-                </div>
               </div>
-              <div className="cases-card-itm-title">
-                <h3 className="heading-style-h4 text-color-inverted">
-                  Designing the future of expense tracking
-                </h3>
-                <div className="paragraph-style-body text-color-secondary">
-                  We redesigned Moka’s expense-tracking app, making it more
-                  intuitive and appealing for millennials while keeping it
-                  business-friendly.
-                </div>
-              </div>
-            </div>
-            <div className="cases-card-item-image-wrapper">
-              <img
-                src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e4481e7b29eba27de38_cases-3.webp"
-                loading="eager"
-                alt="Moka fintech app screens displayed on mobile devices"
-              />
-            </div>
             </BSlidingDiv>
           </div>
 
           {/* Oxygen */}
-          <div className="cases-grid-item is-horizontal background-color-secondary" id="w-node-_9d80c8a9-d880-7a19-032b-ecd4895eb515-2da5785d">
+          <div
+            className="cases-grid-item is-horizontal background-color-secondary"
+            id="w-node-_9d80c8a9-d880-7a19-032b-ecd4895eb515-2da5785d"
+          >
             <div className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
@@ -153,12 +163,10 @@ export default function WorkFlowSectionCases() {
               </div>
               <div className="cases-card-itm-title">
                 <h3 className="heading-style-h4">
-                  Building the neobank from scratch
+                  Budget controls
                 </h3>
                 <div className="paragraph-style-body text-color-secondary">
-                  We partnered with Oxygen to launch their neobank app, building
-                  out the UI/UX for their innovative banking solution tailored
-                  to freelancers and entrepreneurs.
+                   Support company-wide budgets and keep spend aligned with business goals.
                 </div>
               </div>
             </div>
@@ -172,8 +180,10 @@ export default function WorkFlowSectionCases() {
             </div>
           </div>
 
-          {/* Chuck */}
-          <div className="cases-grid-item border-radius-primary" id="w-node-a6880751-85a1-73d5-6223-157ab81a55ac-2da5785d">
+          {/* <div
+            className="cases-grid-item border-radius-primary"
+            id="w-node-a6880751-85a1-73d5-6223-157ab81a55ac-2da5785d"
+          >
             <div className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
@@ -206,8 +216,10 @@ export default function WorkFlowSectionCases() {
             </div>
           </div>
 
-          {/* Nude */}
-          <div className="cases-grid-item background-color-secondary border-radius-primary" id="w-node-_4db10948-35de-fb69-d336-d47d74bf6e08-2da5785d">
+          <div
+            className="cases-grid-item background-color-secondary border-radius-primary"
+            id="w-node-_4db10948-35de-fb69-d336-d47d74bf6e08-2da5785d"
+          >
             <div className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
@@ -238,8 +250,10 @@ export default function WorkFlowSectionCases() {
             </div>
           </div>
 
-          {/* Sadapay */}
-          <div className="cases-grid-item is-horizontal background-color-secondary" id="w-node-_79ace377-de97-5a8e-5bbf-1b133cd74f4c-2da5785d">
+          <div
+            className="cases-grid-item is-horizontal background-color-secondary"
+            id="w-node-_79ace377-de97-5a8e-5bbf-1b133cd74f4c-2da5785d"
+          >
             <div className="cases-card-item-image-wrapper">
               <img
                 src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6613dc368e650e6c55a8f6e0_cases-7.webp"
@@ -256,9 +270,7 @@ export default function WorkFlowSectionCases() {
                   width="24"
                   alt=""
                 />
-                <div className="paragraph-style-table  ">
-                  Sadapay
-                </div>
+                <div className="paragraph-style-table  ">Sadapay</div>
               </div>
               <div className="cases-card-itm-title">
                 <h3 className="heading-style-h4  ">
@@ -271,8 +283,7 @@ export default function WorkFlowSectionCases() {
                 </div>
               </div>
             </div>
-
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
