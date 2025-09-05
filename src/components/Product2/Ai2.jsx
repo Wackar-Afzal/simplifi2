@@ -2,7 +2,7 @@ import React from "react";
 
 const Ai = ({ data }) => {
   return (
-    <div>
+    <div className="mb-4">
       <div className="section-cases">
         <img
           src={data.backgrounds[0]}

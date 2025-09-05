@@ -17,8 +17,8 @@ const Features = () => {
   const finalPositions = {
     card1: { x: -396, y: -232 }, // -6rem, -7rem in pixels (16px = 1rem)
     card2: { x: 386, y: -242 }, // 7rem, -5rem
-    card3: { x: -440, y: 180 }, // -5rem, 5rem
-    card4: { x: 404, y: 150 }, // 9rem, 7rem
+    card3: { x: -440, y: 110 }, // -5rem, 5rem
+    card4: { x: 404, y: 100 }, // 9rem, 7rem
   };
 
   // Create smooth transforms for each card based on scroll progress
@@ -68,8 +68,8 @@ const Features = () => {
 
   return (
     // <div className="transform-none">
-      <div className=" relative h-[300vh] " ref={containerRef}>
-        <div className=" sticky top-0 h-screen ">
+      <div className=" relative overflow-x-hidden lg:overflow-x-visible h-auto lg:h-[300vh] " ref={containerRef}>
+        <div className=" sticky top-0 h-auto lg:h-screen ">
           <section className="section_features h-full">
             <img
               src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif"
@@ -105,7 +105,7 @@ const Features = () => {
                 {homeText.homepage.features.cta}
               </button>
               <motion.div
-                className="features-card absolute -translate-y-[90%] -translate-x-[-120%]"
+                className="features-card lg:absolute lg:-translate-y-[90%] lg:-translate-x-[-120%]"
                 style={{
                   willChange: "transform",
                   // transform: "translate3d(100rem, 20rem, 100px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -123,7 +123,7 @@ const Features = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="features-card absolute -translate-y-[80%]  -translate-x-[-150%]"
+                className="features-card lg:absolute lg:-translate-y-[80%]  lg:-translate-x-[-150%]"
                 style={{
                   willChange: "transform",
                   // transform:"translate3d(7rem, -5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -141,7 +141,7 @@ const Features = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="features-card absolute -translate-y-[20%] -translate-x-[-125%]"
+                className="features-card lg:absolute lg:-translate-y-[20%] lg:-translate-x-[-125%]"
                 style={{
                   willChange: "transform",
                   // transform:"translate3d(-5rem, 5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -159,7 +159,7 @@ const Features = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="features-card absolute -translate-y-[10%] -translate-x-[-160%]"
+                className="features-card lg:absolute lg:-translate-y-[10%] lg:-translate-x-[-160%]"
                 style={{
                   willChange: "transform",
                   // transform:"translate3d(9rem, 7rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",

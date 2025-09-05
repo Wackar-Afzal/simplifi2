@@ -3,7 +3,7 @@ import homeText from "@/utils/homeText.json";
 
 const Ai = ({data}) => {
     return (
-        <div>
+        <div className="mb-8">
             {/* <section className="section_ventures">
                 <img
                     src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493212_ventures1.avif"

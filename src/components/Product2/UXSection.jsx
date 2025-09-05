@@ -8,12 +8,12 @@ export default function UXSection({ data }) {
   return (
     <section className={`section_services text-white is-xsmall `}>
       <div className="mx-auto">
-        <h2 className={`section-heading is-services mb-10 ${data.reverse?"text-left":"!text-right !w-full "}`}>{data.heading}</h2>
+        <h2 className={`!text-center !max-w-[100vw] section-heading is-services mb-10 ${data.reverse?"lg:!text-left":"lg:!text-right !w-full "}`}>{data.heading}</h2>
 
-        <div className={`hidden md:flex ${data.reverse?"flex-row-reverse":""} gap-16`}>
+        <div className={`md:flex flex-col ${data.reverse?"lg:flex-row-reverse":"lg:flex-row"} gap-16`}>
           {/* Left image */}
-          <div className="w-[50%] flex items-center justify-start">
-            <div className=" max-w-[785px] aspect-[16/10] overflow-hidden rounded-[2.5rem]">
+          <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-start mb-4">
+            <div className="max-w-[100vw] lg:max-w-[785px] lg:aspect-[16/10] overflow-hidden  rounded-[2.5rem]">
               <motion.img
                 src={data.imageUrl}
                 className="flex-1 h-full object-cover"
@@ -26,7 +26,7 @@ export default function UXSection({ data }) {
           </div>
 
           {/* Right content */}
-          <div className={`flex-1 services-menu flex flex-col h-full gap-8 ${data.reverse?"":"items-end text-right"}`}>
+          <div className={`flex-1 services-menu flex flex-col h-full gap-8 ${data.reverse?"":"lg:items-end lg:text-right"}`}>
             <div className="services-title">{data.title}</div>
 
             <motion.p

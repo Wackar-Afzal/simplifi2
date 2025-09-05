@@ -35,6 +35,7 @@ export default function Home() {
       {/* <Testimonials/> */}
       {/* <Partners/> */}
       <WhatWeDo data={homeText.homepage.whatwedo}/>
+
       <ClientSays/>
       {/* <WorkFlowSectionCases/> */}
       {/* <ContactUs/> */}
