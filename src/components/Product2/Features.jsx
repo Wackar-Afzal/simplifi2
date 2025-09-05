@@ -105,7 +105,7 @@ const Features = () => {
                 {homeText.homepage.features.cta}
               </button>
               <motion.div
-                className="features-card absolute top-[35%] left-[40%]"
+                className="features-card absolute -translate-y-[90%] -translate-x-[-120%]"
                 style={{
                   willChange: "transform",
                   // transform: "translate3d(100rem, 20rem, 100px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -123,7 +123,7 @@ const Features = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="features-card absolute top-[35%] left-[50%]"
+                className="features-card absolute -translate-y-[80%]  -translate-x-[-150%]"
                 style={{
                   willChange: "transform",
                   // transform:"translate3d(7rem, -5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -141,7 +141,7 @@ const Features = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="features-card absolute top-[50%] left-[42%]"
+                className="features-card absolute -translate-y-[20%] -translate-x-[-125%]"
                 style={{
                   willChange: "transform",
                   // transform:"translate3d(-5rem, 5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -159,7 +159,7 @@ const Features = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="features-card absolute top-[55%] left-[50%]"
+                className="features-card absolute -translate-y-[10%] -translate-x-[-160%]"
                 style={{
                   willChange: "transform",
                   // transform:"translate3d(9rem, 7rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",

@@ -20,7 +20,7 @@ export default function WhatsCookin() {
   // JSON Data for image slides only
   const slides = [
     {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
+      src: "WebImages/corperatepayout.jpg",
       alt: "Landscape",
       subtitle: "New research",
       title: "Corporate Payouts",
@@ -39,14 +39,6 @@ export default function WhatsCookin() {
       src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
       alt: "Landscape",
       subtitle: "New research",
-      title: "Consumer Spend",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
       title: "Reward & Gifting Programs",
       buttonText: "Learn more",
       buttonLink: "/shop",
@@ -55,7 +47,40 @@ export default function WhatsCookin() {
       src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
       alt: "Landscape",
       subtitle: "New research",
+      title: "Consumer Spend",
+      buttonText: "Learn more",
+      buttonLink: "/shop",
+    },
+
+    {
+      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
+      alt: "Landscape",
+      subtitle: "New research",
       title: "BNPL & Credit",
+      buttonText: "Learn more",
+      buttonLink: "/shop",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
+      alt: "Landscape",
+      subtitle: "New research",
+      title: "Wallets",
+      buttonText: "Learn more",
+      buttonLink: "/shop",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
+      alt: "Landscape",
+      subtitle: "New research",
+      title: "Transactions",
+      buttonText: "Learn more",
+      buttonLink: "/shop",
+    },
+    {
+      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
+      alt: "Landscape",
+      subtitle: "New research",
+      title: "Card Programs",
       buttonText: "Learn more",
       buttonLink: "/shop",
     },
@@ -125,11 +150,11 @@ export default function WhatsCookin() {
           },
         }}
       >
-        {homeText.homepage.whatsCookin.items.map((slide, index) => (
+        {homeText.homepage.whatsCookin.slides.map((slide, index) => (
           <SplideSlide key={index} className="relative feed-link">
             <div className="feed-img-wrapper">
               <img
-                src="https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png"
+                src={slide.src}
                 alt={slide.alt || `Slide ${index + 1}`}
                 className="feed-img"
               />
@@ -138,7 +163,7 @@ export default function WhatsCookin() {
             {/* Overlay Content */}
             <div className=" pb-8 ">
               <p className="feed-tag mb-3 mt-3">{}</p>
-              <h2 className="feed-title mb-3">{slide}</h2>
+              <h2 className="feed-title mb-3">{slide.title}</h2>
               <button href={slide.buttonLink} className="case-button">
                 {slide.buttonText}
               </button>

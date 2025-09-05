@@ -37,6 +37,7 @@
       "Coverage across GCC currencies",
       "Investor-ready for POCs and pilots"
     ],
+    "reverse":true,
     "buttonText": "Learn more"
   }
 
@@ -93,6 +94,73 @@
         "Transactions",
         "Card Programs"
       ],
+       "slides":[
+    {
+      "src": "WebImages/corperatepayout.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Corporate Payouts",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/corperatespend.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Corporate Spend",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/powerbybusiness.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Reward & Gifting Programs",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/consumerspend.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Consumer Spend",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+
+    {
+      "src": "WebImages/BNPL&creadit.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "BNPL & Credit",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/consumerspend.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Wallets",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/BNPL&creadit.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Transactions",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/CardPrograme.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Card Programs",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    }
+  ],
       "cta": "Learn more"
     },
 
@@ -112,7 +180,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
          "title": "One contract for everything",
           "description": "Work with just one provider to get technology, compliance, operational support, and more.",
-          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493221_Image-2.avif",
+          "image": "WebImages/Onecontractforeverything.jpg",
           "style": "dark"
         },
         {
@@ -128,7 +196,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321b_Icons-3.png",
           "title": "Compliance, sorted",
           "description": "KYC, AML, and regulatory approvals to ensure end to end compliance.",
-          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493225_Image-4.avif",
+          "image": "WebImages/Compliancesorted.jpg",
           "style": "dark",
           "extraStats": {
             "duration": "2 weeks",
@@ -148,7 +216,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493215_Icons-5.png",
           "title": "Infrastructure that grows with you",
           "description": "Handle high volumes, custom logic, and complex workflows with ease.",
-          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493222_Image-5.avif",
+          "image": "WebImages/Infrastructurethatgrowswithyou.jpg",
           "style": "dark"
         },
         {
@@ -156,7 +224,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493218_Icons-8.png",
           "title": "Made for developers",
           "description": "Get started faster with detailed API documentation and sandbox access.",
-          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493224_Image.avif",
+          "image": "WebImages/Madefordevelopers.jpg",
           "style": "light"
         }
       ],

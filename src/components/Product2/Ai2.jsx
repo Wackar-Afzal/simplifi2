@@ -65,9 +65,11 @@ const Ai = ({ data }) => {
                 className="cases-card-item-image-wrapper"
               >
                 <img
-                  src={data.features[1].image}
+                  src={data.features[0].image}
                   loading="eager"
                   sizes="(max-width: 816px) 100vw, 816px"
+                  className="rounded-[3rem]"
+
                   alt=""
                 />
               </div>
@@ -108,7 +110,8 @@ const Ai = ({ data }) => {
                 src={data.features[1].image}
                   loading="eager"
                   sizes="(max-width: 816px) 100vw, 816px"
-                  srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493221_Image-2.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493221_Image-2.avif 816w"
+                  className="rounded-[3rem]"
+
                   alt=""
                 />
               </div>
@@ -242,6 +245,8 @@ const Ai = ({ data }) => {
                   src={data.features[4].image}
                   loading="eager"
                   sizes="(max-width: 816px) 100vw, 816px"
+                  className="rounded-[3rem]"
+
                   alt=""
                 />
               </div>
@@ -283,7 +288,8 @@ const Ai = ({ data }) => {
                   src={data.features[5].image}
                   loading="eager"
                   sizes="(max-width: 816px) 100vw, 816px"
-                  srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493222_Image-5.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493222_Image-5.avif 816w"
+                  className="rounded-[3rem]"
+
                   alt=""
                 />
               </div>
@@ -328,6 +334,7 @@ const Ai = ({ data }) => {
                   loading="eager"
                   sizes="(max-width: 816px) 100vw, 816px"
                   alt=""
+                  className="rounded-[3rem]"
                 />
               </div>
             </div>
@@ -339,14 +346,12 @@ const Ai = ({ data }) => {
           width="480"
           sizes="(max-width: 479px) 100vw, 480px"
           alt=""
-          srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 2000w"
           className="cases-bg2"
         />
         <img
           src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493232_07.avif"
           loading="lazy"
           sizes="100vw"
-          srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493232_07.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493232_07.avif 2000w"
           alt=""
           className="cases-bg3"
         />
@@ -354,7 +359,6 @@ const Ai = ({ data }) => {
           src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493234_08.avif"
           loading="lazy"
           sizes="100vw"
-          srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493234_08.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493234_08.avif 2000w"
           alt=""
           className="cases-bg5"
         />

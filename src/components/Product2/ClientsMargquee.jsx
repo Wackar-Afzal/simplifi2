@@ -4,19 +4,29 @@ import Image from "next/image";
 
 // List of logos from /public (green-colored ones in your screenshot)
 const clientLogos = [
-  { name: "Bayzat", logo: "/Logosweb/6.png" },
   { name: "Floward", logo: "/Logosweb/1.png" },
-  // { name: "Jisr", logo: "/jisr.webp" },
-  { name: "Kamel Pay", logo: "/Logosweb/4.png" },
-  { name: "NQOODLET", logo: "/Logosweb/3.png" },
-  { name: "Transportr", logo: "/Logosweb/5.png" },
   { name: "Walaplus", logo: "/Logosweb/2.png" },
+  { name: "NQOODLET", logo: "/Logosweb/3.png" },
+  { name: "Kamel Pay", logo: "/Logosweb/4.png" },
+  { name: "Transportr", logo: "/Logosweb/5.png" },
+  { name: "Bayzat", logo: "/Logosweb/6.png" },
+  { name: "Bayzat", logo: "/Logosweb/7.png" },
+  { name: "Bayzat", logo: "/Logosweb/8.png" },
+  { name: "Bayzat", logo: "/Logosweb/9.png" },
+  { name: "Bayzat", logo: "/Logosweb/10.png" },
+  { name: "Bayzat", logo: "/Logosweb/11.png" },
+  { name: "Bayzat", logo: "/Logosweb/12.png" },
+  { name: "Bayzat", logo: "/Logosweb/13.png" },
+  { name: "Bayzat", logo: "/Logosweb/14.png" },
+  // { name: "Jisr", logo: "/jisr.webp" },
 ];
 
 const ClientsMarquee = () => {
   return (
     <section className="section_clients ">
-      <h2 className="section-heading">Trusted by fintechs, startups, and enterprises across MENA</h2>
+      <h2 className="section-heading text-center">
+        Trusted by fintechs, startups, and enterprises across MENA
+      </h2>
 
       <Marquee
         gradient={false}
@@ -30,7 +40,6 @@ const ClientsMarquee = () => {
               <img
                 src={client.logo}
                 alt={client.name}
-              
                 className=" object-contain h-[5vh] mx-10 "
               />
               {/* <span className="text-black sr-only z-10">jk</span> */}

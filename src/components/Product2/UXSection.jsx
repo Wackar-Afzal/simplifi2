@@ -6,17 +6,17 @@ import { motion } from "framer-motion";
 export default function UXSection({ data }) {
   console.log(data)
   return (
-    <section className="section_services text-white is-xsmall">
-      <div className="services-wrapper mx-auto">
-        <h2 className="section-heading is-services mb-10">{data.heading}</h2>
+    <section className={`section_services text-white is-xsmall `}>
+      <div className="mx-auto">
+        <h2 className={`section-heading is-services mb-10 ${data.reverse?"text-left":"!text-right !w-full "}`}>{data.heading}</h2>
 
-        <div className="hidden md:grid grid-cols-2 gap-16">
+        <div className={`hidden md:flex ${data.reverse?"flex-row-reverse":""} gap-16`}>
           {/* Left image */}
-          <div className="flex items-center justify-start">
-            <div className="w-full max-w-[785px] aspect-[16/10] overflow-hidden rounded-[2.5rem]">
+          <div className="w-[50%] flex items-center justify-start">
+            <div className=" max-w-[785px] aspect-[16/10] overflow-hidden rounded-[2.5rem]">
               <motion.img
                 src={data.imageUrl}
-                className="w-full h-full object-cover"
+                className="flex-1 h-full object-cover"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
@@ -26,7 +26,7 @@ export default function UXSection({ data }) {
           </div>
 
           {/* Right content */}
-          <div className="services-menu flex flex-col h-full gap-8">
+          <div className={`flex-1 services-menu flex flex-col h-full gap-8 ${data.reverse?"":"items-end text-right"}`}>
             <div className="services-title">{data.title}</div>
 
             <motion.p
