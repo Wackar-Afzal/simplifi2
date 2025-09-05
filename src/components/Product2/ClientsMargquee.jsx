@@ -4,13 +4,13 @@ import Image from "next/image";
 
 // List of logos from /public (green-colored ones in your screenshot)
 const clientLogos = [
-  { name: "Bayzat", logo: "logosweb/6.png" },
-  { name: "Floward", logo: "logosweb/1.png" },
+  { name: "Bayzat", logo: "/logosweb/6.png" },
+  { name: "Floward", logo: "/logosweb/1.png" },
   // { name: "Jisr", logo: "/jisr.webp" },
-  { name: "Kamel Pay", logo: "logosweb/4.png" },
-  { name: "NQOODLET", logo: "logosweb/3.png" },
-  { name: "Transportr", logo: "logosweb/5.png" },
-  { name: "Walaplus", logo: "logosweb/2.png" },
+  { name: "Kamel Pay", logo: "/logosweb/4.png" },
+  { name: "NQOODLET", logo: "/logosweb/3.png" },
+  { name: "Transportr", logo: "/logosweb/5.png" },
+  { name: "Walaplus", logo: "/logosweb/2.png" },
 ];
 
 const ClientsMarquee = () => {
