@@ -1,0 +1,93 @@
+{
+  "cardAsService": {
+    "hero": {
+      "bckgroundImage": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif",
+      "heading": " Your brand. Your logic. Our infrastructure.",
+      "descrip": "Get full control with SimpliFi’s Cards as a Service solution. Whether you're a fintech building a new product or an enterprise launching custom spend tools, our infrastructure powers every layer so you can create exactly what you need. From onboarding flows to KYC, from tokenization to fraud management, we’ve got the backend covered. You own the experience."
+    },
+    "careerList": {
+      "heading": "Why build with SimpliFi",
+      "descrip": "",
+      "careerPositions": [
+        {
+          "title": "Modular by design",
+          "href": "/careers/communication-designer",
+          "location": "Prague or remote",
+          "descrip": "Pick the layers you need and skip what you don’t. Build faster without compromising on your vision."
+        },
+        {
+          "title": "Made to scale",
+          "href": "/careers/senior-designer-product",
+          "location": "Prague or remote",
+          "descrip": "Handle millions of transactions, complex approval flows, and real-time controls without friction."
+        },
+        {
+          "title": "Fully white-label",
+          "href": "/careers/design-lead-product",
+          "location": "Prague or remote",
+          "descrip": "Your branding. Your workflows. We stay invisible so your brand stays front and center."
+        },
+        {
+          "title": "Built for compliance",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "We handle KYC, AML, 3DS, PCI-DSS, and more so you can focus on your product."
+        }
+      ]
+    },
+        "useCases": {
+      "heading": "Our layered stack",
+      "descrip": " Choose the layers you need. We’ll handle the rest.",
+
+      "cases": [
+        {
+          "id": 1,
+          "company": "ING",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp",
+          "title": "Frontend layer",
+          "description": "Build your own cardholder and admin interfaces using our APIs. Enable real-time controls, card management, and custom workflows within your platform.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp",
+          "dark": false
+        },
+        {
+          "id": 2,
+          "company": "Société Générale Group",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e2c46c7f5de93e2b0176_sgg-userpic.svg",
+          "title": "Backend layer",
+          "description": "Powerful APIs and webhooks for issuing, managing, and tracking cards. Easy integration with your systems.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2.webp",
+          "dark": true
+        },
+        {
+          "id": 3,
+          "company": "Moka",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg",
+          "title": "Regulatory layer",
+          "description": "KYC, AML, and ongoing compliance covered. Stay compliant from day one.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e4481e7b29eba27de38_cases-3.webp",
+          "dark": false
+        },
+        {
+          "id": 4,
+          "company": "Oxygen",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
+          "title": "Banking layer",
+          "description": "We handle BIN sponsorship, funds management, and settlement. You focus on the experience.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d3810f7bfb8e31f34b5cc_cases-5.webp",
+          "dark": true,
+          "horizontal": true
+        },
+        {
+          "id": 5,
+          "company": "Oxygen",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
+          "title": "Support layer",
+          "description": "Guidance from onboarding to launch. We assist with setup, integration, and daily operations.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d3810f7bfb8e31f34b5cc_cases-5.webp",
+          "dark": true,
+          "horizontal": true
+        }
+      ]
+    }
+  }
+}

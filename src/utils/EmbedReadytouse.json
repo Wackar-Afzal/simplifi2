@@ -1,30 +1,62 @@
 {
   "embedreadytouse": {
-
-
-    "productOverview1":{
-    "heading": "Why embedded cards",
-    "imageUrl":
-      "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493238_image-min.png",
-    "title": "",
-    "description":"With our embedded cards, you’re not launching your branded cards. You're leveraging our off the shelf cards. Get everything prebuilt and ready to go - card issuance, compliance, spend controls, and real-time tracking. You control the user experience without the investment.",
-    "includedTitle": "What’s included",
-    "includedItems": [
-      "Multi-currency wallets",
-      "Instant virtual card issuance",
-      "Real-time controls and spend tracking",
-      "Coverage across GCC currencies",
-      "Investor-ready for POCs and pilots"
-    ],
-    "buttonText": "Learn more"
-  },
-     "usps":  {
+    "hero": {
+      "bckgroundImage": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif",
+      "heading": "Go live with ready-to-issue cards in days",
+      "descrip": "Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code."
+    },
+    "careerList": {
+      "heading": "Built-in security and compliance",
+      "descrip": "We do the heavy lifting",
+      "careerPositions": [
+        {
+          "title": "KYC and AML pre-integrated",
+          "href": "/careers/communication-designer",
+          "location": "Prague or remote",
+          "descrip": ""
+        },
+        {
+          "title": "PCI-DSS ready",
+          "href": "/careers/senior-designer-product",
+          "location": "Prague or remote",
+          "descrip": ""
+        },
+        {
+          "title": "No licensing or approvals needed",
+          "href": "/careers/design-lead-product",
+          "location": "Prague or remote",
+          "descrip": ""
+        },
+        {
+          "title": "3DS and fraud management built-in",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": ""
+        }
+      ]
+    },
+    "productOverview1": {
+      "heading": "Why embedded cards",
+      "imageUrl": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493238_image-min.png",
+      "title": "",
+      "description": "With our embedded cards, you’re not launching your branded cards. You're leveraging our off the shelf cards. Get everything prebuilt and ready to go - card issuance, compliance, spend controls, and real-time tracking. You control the user experience without the investment.",
+      "includedTitle": "What’s included",
+      "includedItems": [
+        "Multi-currency wallets",
+        "Instant virtual card issuance",
+        "Real-time controls and spend tracking",
+        "Coverage across GCC currencies",
+        "Investor-ready for POCs and pilots"
+      ],
+      "buttonText": "Learn more"
+    },
+    "usps": {
       "title": "Our AI Use Cases",
       "features": [
         {
           "company": "Emnbbb",
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493216_Icons.png",
-      "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
+          "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
           "description": "Whether you're embedding cards or launching your own card program, we power both.",
           "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321e_Image-1.avif",
           "style": "light"
@@ -32,7 +64,7 @@
         {
           "company": "TravelPal",
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
-         "title": "One contract for everything",
+          "title": "One contract for everything",
           "description": "Work with just one provider to get technology, compliance, operational support, and more.",
           "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493221_Image-2.avif",
           "style": "dark"
@@ -93,7 +125,7 @@
       ],
       "cta": "Learn more (To the Product Page 1)"
     },
-        "whatwedo": {
+    "whatwedo": {
       "title": "Discover SimpliFi APIs",
       "description": "We're PCI DSS compliant and follow strict AML/KYC protocols. All card data is tokenized and monitored in real time to prevent fraud.",
       "highlightsTitle": "Security & Compliance Highlights",
@@ -142,7 +174,50 @@
         }
       ],
       "footer": "We invest in security, privacy, and compliance so you can focus on growing your business."
-    }
+    },
+    "useCases": {
+      "heading": "Why embedded cards",
+      "descrip": " With our embedded cards, you’re not launching your branded cards. You're leveraging our off the shelf cards. Get everything prebuilt and ready to go - card issuance, compliance, spend controls, and  real-time tracking. You control the user experience without the investment. From employee expenses to supplier payments, you stay in           control while we do the heavy lifting.",
 
+      "cases": [
+        {
+          "id": 1,
+          "company": "ING",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp",
+          "title": "Multi-currency wallets",
+          "description": "Fund, hold, and move money in USD, AED, SAR, BHD, KWD, QAR, and OMR. Avoid FX loss and streamline regional and international spend.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp",
+          "dark": false
+        },
+        {
+          "id": 2,
+          "company": "Société Générale Group",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e2c46c7f5de93e2b0176_sgg-userpic.svg",
+          "title": "Multi-currency cards",
+          "description": "Issue and manage cards across currencies using a single integration. Enable seamless spend across markets with built-in currency controls.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2.webp",
+          "dark": true
+        },
+        {
+          "id": 3,
+          "company": "Moka",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg",
+          "title": "Card management features",
+          "description": "Let your users issue cards, set spend limits, track transactions, and freeze cards in real time through your own interface.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e4481e7b29eba27de38_cases-3.webp",
+          "dark": false
+        },
+        {
+          "id": 4,
+          "company": "Oxygen",
+          "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
+          "title": "Budget controls",
+          "description": "Support company-wide budgets and keep spend aligned with business goals.",
+          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d3810f7bfb8e31f34b5cc_cases-5.webp",
+          "dark": true,
+          "horizontal": true
+        }
+      ]
+    }
   }
 }

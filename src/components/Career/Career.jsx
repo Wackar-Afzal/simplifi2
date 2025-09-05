@@ -3,7 +3,36 @@ import Navbar from '../layouts/Navbar'
 import { ContactUs } from '../common/ContactUs'
 import { Footer } from '../layouts/Footer'
 import CareerList from './CareerList'
-
+const careerList={
+    heading:"Built-in security and compliance",
+    descrip:"We do the heavy lifting",
+     careerPositions:[
+  {
+    title: "KYC and AML pre-integrated",
+    href: "/careers/communication-designer",
+    location: "Prague or remote",
+    descrip: "full-time"
+  },
+  {
+    title: "PCI-DSS ready",
+    href: "/careers/senior-designer-product",
+    location: "Prague or remote",
+    descrip: "full-time"
+  },
+  {
+    title: "No licensing or approvals needed",
+    href: "/careers/design-lead-product",
+    location: "Prague or remote",
+    descrip: "full-time"
+  },
+  {
+    title: "3DS and fraud management built-in",
+    href: "/careers/creative-director-product",
+    location: "Prague or remote",
+    descrip: "full-time"
+  }
+]
+}
 
 
 export default function Career() {
@@ -56,7 +85,7 @@ export default function Career() {
 
       {/* Careers List Section */}
 
-      <CareerList/>
+      <CareerList data={careerList}/>
       <ContactUs/>
       <Footer/>
     </div>

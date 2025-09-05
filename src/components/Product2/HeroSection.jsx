@@ -1,27 +1,26 @@
 "use client";
 import React, { useState } from "react";
 import ClientsMargquee from "./ClientsMargquee";
-const HeroSection = () => {
+const HeroSection = ({data}) => {
   const [activeTab, setActiveTab] = useState("Tab 1");
 
   return (
     <>
       <section className="section_hero">
         <img
-          src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif"
+          src={data.background}
           loading="lazy"
           width="1172.5"
           sizes="(max-width: 1279px) 100vw, 1172.5px"
           alt=""
-          srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif 800w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif 1080w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif 2345w"
           className="hero-bg"
         />
         <div className="container-global is-small">
           <div className="hero-wrapper">
             <div className="hero-left">
-              <h1 className="heading-style-h1">Go live with ready-to-issue cards in days</h1>
+              <h1 className="heading-style-h1">{data.heading}</h1>
               <p className="hero-desc">
-                Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code.
+                {data.descrip}
               </p>
             </div>
             <div className="hero-tabs-wrapper">

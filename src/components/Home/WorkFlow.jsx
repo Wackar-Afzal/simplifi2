@@ -1,20 +1,15 @@
 import BSlidingDiv from "../common/BSliding";
 
-export default function WorkFlowSectionCases() {
+export default function WorkFlowSectionCases({data}) {
   return (
     <div className="section-cases  px-6">
       <div className="container-global">
         <div>
           <h2 className="text-center heading-style-h2_fintech text-align-center mb-2 sm:mb-2 md:mb-2">
-            Why embedded cards
+            {data.heading}
           </h2>
           <p className="mt-8">
-            With our embedded cards, you’re not launching your branded cards.
-            You're leveraging our off the shelf cards. Get everything prebuilt
-            and ready to go - card issuance, compliance, spend controls, and
-            real-time tracking. You control the user experience without the
-            investment. From employee expenses to supplier payments, you stay in
-            control while we do the heavy lifting.
+           {data.descrip}
           </p>
         </div>
 
@@ -35,30 +30,29 @@ export default function WorkFlowSectionCases() {
               <div className="cases-card-item-content-wrapper">
                 <div className="hflex-05rem_leftcenter">
                   <img
-                    src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp"
+                    src={data.cases[0].logo}
                     loading="lazy"
                     width="24"
                     alt=""
                   />
                   <div className="paragraph-style-table text-color-inverted">
-                    ING
+                    {data.cases[0].company}
                   </div>
                 </div>
                 <div className="cases-card-itm-title">
                   <h3 className="heading-style-h4 text-color-inverted">
-                    Multi-currency wallets
+                    {data.cases[0].title}
                   </h3>
                   <div className="paragraph-style-body text-color-secondary">
-                    Fund, hold, and move money in USD, AED, SAR, BHD, KWD, QAR, and OMR. Avoid FX loss and streamline regional and international spend.
+                    {data.cases[0].description}
                   </div>
                 </div>
               </div>
               <div className="cases-card-item-image-wrapper">
                 <img
-                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp"
+                  src={data.cases[0].image}
                   loading="eager"
                   sizes="(max-width: 479px) 100vw, (max-width: 767px) 40vw, (max-width: 991px) 43vw, (max-width: 1279px) 27vw, 28vw"
-                  srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp 800w"
                   alt="Mobile phone with a fintech app lying on a 3D background"
                 />
               </div>
@@ -80,30 +74,29 @@ export default function WorkFlowSectionCases() {
             <BSlidingDiv className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
-                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e2c46c7f5de93e2b0176_sgg-userpic.svg"
+                  src={data.cases[1].logo}
                   loading="lazy"
                   width="24"
                   alt=""
                 />
                 <div className="paragraph-style-table">
-                  Société Générale Group
+                  {data.cases[1].company}
                 </div>
               </div>
               <div className="cases-card-itm-title">
                 <h3 className="heading-style-h4">
-                  Multi-currency cards
+                  {data.cases[1].title}
                 </h3>
                 <div className="paragraph-style-body text-color-secondary">
-                  Issue and manage cards across currencies using a single integration. Enable seamless spend across markets with built-in currency controls.
+                  {data.cases[1].description}
                 </div>
               </div>
             </BSlidingDiv>
             <BSlidingDiv className="cases-card-item-image-wrapper">
               <img
-                src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2.webp"
+                src={data.cases[1].image}
                 loading="eager"
                 sizes="(max-width: 479px) 100vw, (max-width: 767px) 40vw, (max-width: 991px) 43vw, (max-width: 1279px) 27vw, 28vw"
-                srcSet="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2-p-500.webp 500w, https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2.webp 800w"
                 alt="Mobile screen displaying a banking app with flowers in the background"
               />
             </BSlidingDiv>
@@ -118,27 +111,27 @@ export default function WorkFlowSectionCases() {
               <div className="cases-card-item-content-wrapper">
                 <div className="hflex-05rem_leftcenter">
                   <img
-                    src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg"
+                    src={data.cases[2].logo}
                     loading="lazy"
                     width="24"
                     alt=""
                   />
                   <div className="paragraph-style-table text-color-inverted">
-                    Moka
+                    {data.cases[2].company}
                   </div>
                 </div>
                 <div className="cases-card-itm-title">
                   <h3 className="heading-style-h4 text-color-inverted">
-                    Card management features
+                    {data.cases[2].title}
                   </h3>
                   <div className="paragraph-style-body text-color-secondary">
-                    Let your users issue cards, set spend limits, track transactions, and freeze cards in real time through your own interface.
+                    {data.cases[2].description}
                   </div>
                 </div>
               </div>
               <div className="cases-card-item-image-wrapper">
                 <img
-                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e4481e7b29eba27de38_cases-3.webp"
+                  src={data.cases[2].image}
                   loading="eager"
                   alt="Moka fintech app screens displayed on mobile devices"
                 />
@@ -154,25 +147,25 @@ export default function WorkFlowSectionCases() {
             <div className="cases-card-item-content-wrapper">
               <div className="hflex-05rem_leftcenter">
                 <img
-                  src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg"
+                  src={data.cases[3].logo}
                   loading="lazy"
                   width="24"
                   alt=""
                 />
-                <div className="paragraph-style-table">Oxygen</div>
+                <div className="paragraph-style-table">{data.cases[2].company}</div>
               </div>
               <div className="cases-card-itm-title">
                 <h3 className="heading-style-h4">
-                  Budget controls
+                  {data.cases[3].title}
                 </h3>
                 <div className="paragraph-style-body text-color-secondary">
-                   Support company-wide budgets and keep spend aligned with business goals.
+                   {data.cases[2].description}
                 </div>
               </div>
             </div>
             <div className="cases-card-item-image-wrapper">
               <img
-                src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d3810f7bfb8e31f34b5cc_cases-5.webp"
+                src={data.cases[3].image}
                 className="misc_grid-offset-image-3 "
                 loading="eager"
                 alt="Oxygen neobank app interface on multiple screens"
@@ -180,7 +173,8 @@ export default function WorkFlowSectionCases() {
             </div>
           </div>
 
-          {/* <div
+{data?.cases[4].id?
+          <div
             className="cases-grid-item border-radius-primary"
             id="w-node-a6880751-85a1-73d5-6223-157ab81a55ac-2da5785d"
           >
@@ -214,9 +208,9 @@ export default function WorkFlowSectionCases() {
                 alt="Chuck payment app displayed on mobile phone"
               />
             </div>
-          </div>
-
-          <div
+          </div>:null
+}
+          {/* <div
             className="cases-grid-item background-color-secondary border-radius-primary"
             id="w-node-_4db10948-35de-fb69-d336-d47d74bf6e08-2da5785d"
           >
@@ -248,9 +242,9 @@ export default function WorkFlowSectionCases() {
                 alt="Nude app screen with home savings goals"
               />
             </div>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             className="cases-grid-item is-horizontal background-color-secondary"
             id="w-node-_79ace377-de97-5a8e-5bbf-1b133cd74f4c-2da5785d"
           >

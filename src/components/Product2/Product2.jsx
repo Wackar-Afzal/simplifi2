@@ -18,11 +18,11 @@ const Product2 = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection />
+      <HeroSection  data={embedreadytouse.hero}/>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
       <WorkFlowSectionCases />
-      <CareerList/>
+      <CareerList data={embedreadytouse.careerList}/>
       <ProductOverviewH/>
       <WhatWeDo data={embedreadytouse.whatwedo}/>
       
