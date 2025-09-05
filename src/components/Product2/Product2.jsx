@@ -21,7 +21,7 @@ const Product2 = () => {
       <HeroSection  data={embedreadytouse.hero}/>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
-      <WorkFlowSectionCases />
+      <WorkFlowSectionCases data={embedreadytouse.useCases} />
       <CareerList data={embedreadytouse.careerList}/>
       <ProductOverviewH/>
       <WhatWeDo data={embedreadytouse.whatwedo}/>

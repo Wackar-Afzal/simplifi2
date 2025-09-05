@@ -173,7 +173,7 @@ export default function WorkFlowSectionCases({data}) {
             </div>
           </div>
 
-{data?.cases[4].id?
+{data?.cases[4]?.id?
           <div
             className="cases-grid-item border-radius-primary"
             id="w-node-a6880751-85a1-73d5-6223-157ab81a55ac-2da5785d"
