@@ -84,16 +84,6 @@
     "whatsCookin": {
       "title": "What you can power with SimpliFi",
       "subtitle": "Our platform supports multiple payment and spend use cases through a single integration.",
-      "items": [
-        "Corporate Payouts",
-        "Corporate Spend",
-        "Reward & Gifting Programs",
-        "Consumer Spend",
-        "BNPL & Credit",
-        "Wallets",
-        "Transactions",
-        "Card Programs"
-      ],
        "slides":[
     {
       "src": "WebImages/corperatepayout.jpg",

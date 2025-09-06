@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function HeroProduct() {
+export default function HeroProduct({data}) {
   return (
     <>
     <div className="px-8 product-hero py-30">
-      <h1 className="h1 hero-heading">Interfaces and digital brands that accelerate growth</h1>
+      <h1 className="h1 hero-heading">{data.heading}</h1>
+      <p className="mt-8">{data.descrip}</p>
     </div>
  <section className="section is-fluid">
       <div className="hero-img-wrapper">
@@ -95,7 +96,7 @@ export default function HeroProduct() {
         <div className="hero-video w-embed">
           <video width="100%" height="auto" autoPlay muted playsInline loop>
             <source
-              src="https://files.asad.digital/video/humbleteam/hero.mp4"
+              src={data.desVideo}
               type="video/mp4"
             />
           </video>
@@ -105,7 +106,7 @@ export default function HeroProduct() {
         <div className="hero-video is-mobile w-embed">
           <video width="auto" height="100%" autoPlay muted playsInline loop>
             <source
-              src="https://files.asad.digital/video/humbleteam/hero.mp4"
+              src={data.mobVideo}
               type="video/mp4"
             />
           </video>

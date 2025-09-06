@@ -88,6 +88,44 @@
           "horizontal": true
         }
       ]
+    },
+       "whatsCookin": {
+      "title": "Who it’s for",
+      "subtitle": "",
+       "slides":[
+    {
+      "src": "WebImages/corperatepayout.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Fintechs launching card products",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/corperatespend.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Enterprises building internal spend tools",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/powerbybusiness.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Startups and scaleups building custom payment experiences",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    },
+    {
+      "src": "WebImages/consumerspend.jpg",
+      "alt": "Landscape",
+      "subtitle": "New research",
+      "title": "Tech-first teams that need full control",
+      "buttonText": "Learn more",
+      "buttonLink": "/shop"
+    }],
+      "cta": "Learn more"
     }
   }
 }

@@ -49,7 +49,7 @@ const capabilites = [
             </div> */}
 
             <div className="min-w-[28vw]">
-              {productsData.slice(0, 2).map(({ name, path, icon, descrip }) => (
+              {productsData.map(({ name, path, icon, descrip }) => (
                 <Link
                   key={path}
                   href={path}

@@ -27,7 +27,18 @@ const NAV_ITEMS = [
           "Build your own branded card program with full control.",
       },
       {
-        
+        name: "Features",
+        path: "/features",
+        icon: "🏗️",
+        descrip:
+        "Explore all features",
+      },
+            {
+        name: "Capabilities",
+        path: "/capabilities",
+        icon: "🏗️",
+        descrip:
+        "Explore all capabilities",
       }
     
     ],

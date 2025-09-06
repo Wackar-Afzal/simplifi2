@@ -21,11 +21,10 @@ export const ProductMain = () => {
       {/* <HeroProduct /> */}
       <CareerList data={cardAsService.careerList} />
       <WorkFlowSectionCases data={cardAsService.useCases} />
-
-      <WhatsCookin />
-      <CaseStudies />
-      <Brags />
-      <ClientSays />
+      <WhatsCookin data={cardAsService.whatsCookin} />
+      {/* <CaseStudies /> */}
+      {/* <Brags /> */}
+      {/* <ClientSays /> */}
       <ContactUs />
       <Footer />
     </div>

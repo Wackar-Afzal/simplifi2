@@ -4,7 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { useRef } from "react";
 
-export default function CaseStudies() {
+export default function CaseStudies({data}) {
     const splideRef = useRef(null);
 
     const goNext = () => {
@@ -15,46 +15,12 @@ export default function CaseStudies() {
         if (splideRef.current) splideRef.current.splide.go("-1");
     };
 
-    // JSON Data
-    const slides = [
-        {
-            src: "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
-            alt: "Landscape",
-            subtitle: "Tinder Black",
-            title: "Designed a Tinder’s sister app for the Black community, crafting a brand and UX/UI experience that converted into 481,000+ positive App Store reviews.",
-            buttonText: "Coming soon",
-            buttonLink: "/shop",
-        },
-        {
-            src: "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
-            alt: "Landscape",
-            subtitle: "Tinder Black",
-            title: "Designed a Tinder’s sister app for the Black community, crafting a brand and UX/UI experience that converted into 481,000+ positive App Store reviews.",
-            buttonText: "Coming soon",
-            buttonLink: "/shop",
-        },
-        {
-            src: "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
-            alt: "Landscape",
-            subtitle: "Tinder Black",
-            title: "Designed a Tinder’s sister app for the Black community, crafting a brand and UX/UI experience that converted into 481,000+ positive App Store reviews.",
-            buttonText: "Coming soon",
-            buttonLink: "/shop",
-        },
-         {
-            src: "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
-            alt: "Landscape",
-            subtitle: "Tinder Black",
-            title: "Designed a Tinder’s sister app for the Black community, crafting a brand and UX/UI experience that converted into 481,000+ positive App Store reviews.",
-            buttonText: "Coming soon",
-            buttonLink: "/shop",
-        },
-    ];
+   
 
     return (
         <section className="relative w-full slider-section   overflow-hidden p-5 py-20">
             <div className="flex items-center justify-between mb-10">
-                <h1 className="h2">Humblework</h1>
+                <h1 className="h2">{data.heading}</h1>
                 <div className="flex gap-2">
                     <button onClick={goPrev} className="splide__arrow splide__arrow--prev">
                             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +57,7 @@ export default function CaseStudies() {
                 aria-label="Hero Carousel"
               
             >
-                {slides.map((slide, index) => (
+                {data.slides.map((slide, index) => (
                     <SplideSlide key={index} className="relative">
                         <div className="  overflow-hidden h-full flex flex-col">
                             <div className="case-img-wrapper">
@@ -105,10 +71,11 @@ export default function CaseStudies() {
                             </div>
                             <div className="p-4 flex flex-col flex-grow">
                                 <p className="case-name  mb-5">
-                                    <img src="https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg" alt="" />
-                                    {slide.subtitle}
+                                    <img src={data.image}
+                                     alt="" />
+                                    {slide.title}
                                     </p>
-                                <h2 className="body-medium is-case-desc mb-5">{slide.title}</h2>
+                                <h2 className="body-medium is-case-desc mb-5">{slide.subtitle}</h2>
                                 <button className="case-button">
                                     {slide.buttonText}
                                 </button>

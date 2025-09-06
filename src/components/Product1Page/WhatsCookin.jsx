@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import homeText from "@/utils/homeText.json";
 
-export default function WhatsCookin() {
+export default function WhatsCookin({data}) {
   const splideRef = useRef(null);
 
   const goNext = () => {
@@ -17,79 +17,12 @@ export default function WhatsCookin() {
     if (splideRef.current) splideRef.current.splide.go("-1");
   };
 
-  // JSON Data for image slides only
-  const slides = [
-    {
-      src: "WebImages/corperatepayout.jpg",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "Corporate Payouts",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "Corporate Spend",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "Reward & Gifting Programs",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "Consumer Spend",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "BNPL & Credit",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "Wallets",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "Transactions",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-    {
-      src: "https://cdn.prod.website-files.com/6790dad36bf4ff16c0782d49/679b6ceb8a2f9aab276ec088_banner%20small-min.png",
-      alt: "Landscape",
-      subtitle: "New research",
-      title: "Card Programs",
-      buttonText: "Learn more",
-      buttonLink: "/shop",
-    },
-  ];
+ 
 
   return (
     <section className="relative w-full slider-section   overflow-hidden p-5 py-20">
       <div className="flex items-center justify-between mb-10">
-        <h1 className="h2">{homeText.homepage.whatsCookin.title}</h1>
+        <h1 className="h2">{data.title}</h1>
         <div className=" text-end   gap-2 flex justify-end  ">
           <button
             onClick={goPrev}
@@ -150,7 +83,7 @@ export default function WhatsCookin() {
           },
         }}
       >
-        {homeText.homepage.whatsCookin.slides.map((slide, index) => (
+        {data.slides.map((slide, index) => (
           <SplideSlide key={index} className="relative feed-link">
             <div className="feed-img-wrapper">
               <img

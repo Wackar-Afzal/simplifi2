@@ -29,7 +29,7 @@ export default function Home() {
       <UXSection data={homeText.homepage.productOverview2} />
 
       <Clients/>
-      <WhatsCookin/>
+      <WhatsCookin data={homeText.homepage.whatsCookin}/>
       <Ai data={homeText.homepage.usps}/>
       <Features/>
       {/* <Testimonials/> */}
