@@ -102,7 +102,7 @@
       "buttonLink": "/shop"
     },
     {
-      "src": "WebImages/powerbybusiness.jpg",
+      "src": "WebImages/rewarding&gifting.jpg",
       "alt": "Landscape",
       "subtitle": "New research",
       "title": "Reward & Gifting Programs",
@@ -127,7 +127,7 @@
       "buttonLink": "/shop"
     },
     {
-      "src": "WebImages/consumerspend.jpg",
+      "src": "WebImages/wallets.jpg",
       "alt": "Landscape",
       "subtitle": "New research",
       "title": "Wallets",
@@ -135,7 +135,7 @@
       "buttonLink": "/shop"
     },
     {
-      "src": "WebImages/BNPL&creadit.jpg",
+      "src": "WebImages/transection.jpg",
       "alt": "Landscape",
       "subtitle": "New research",
       "title": "Transactions",
@@ -162,7 +162,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493216_Icons.png",
       "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
           "description": "Whether you're embedding cards or launching your own card program, we power both.",
-          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321e_Image-1.avif",
+          "image": "USPS/1.jpg",
           "style": "light"
         },
         {
@@ -178,7 +178,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321a_Icons-2.png",
           "title": "One integration, multiple markets",
           "description": "Go live across markets with a single integration.",
-          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493236_Image.avif",
+          "image": "USPS/2.png",
           "style": "light"
         },
         {
@@ -198,7 +198,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493219_Icons-4.png",
           "title": "Security at the core",
           "description": "PCI-DSS compliant with encryption, tokenization, and secure APIs.",
-          "image": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493220_Image-6.avif",
+          "image": "USPS/3.jpg",
           "style": "light"
         },
         {
@@ -273,35 +273,35 @@
           "id": 1,
           "title": "Global security compliance",
           "description": "We follow international standards to ensure safe and compliant payment processing.",
-          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "img": "WebImages/globalsecuritycompilance.jpg",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 2,
           "title": "End-to-end encryption",
           "description": "Financial and personal data is encrypted at every stage of the transaction.",
-          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "img": "WebImages/endtoendencribtion.jpg",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 3,
           "title": "Advanced access controls",
           "description": "Role-based permissions and multi-factor authentication ensure only authorized access.",
-          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "img": "WebImages/Advanceaccesscontrol.jpg",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 4,
           "title": "Compliant data privacy practices",
           "description": "We adhere to local and international data privacy laws across all markets we operate in.",
-          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "img": "WebImages/compilantdateprivacy.jpg",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 5,
           "title": "Data residency compliance",
           "description": "Your data is stored securely within compliant cloud environments, meeting local data residency requirements.",
-          "img": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660fa8d9be8ae0145d1ea4bf_what-we-do-1.webp",
+          "img": "WebImages/dataresidencecomplance.jpg",
           "alt": "Competitor analysis in Figma"
         }
       ],

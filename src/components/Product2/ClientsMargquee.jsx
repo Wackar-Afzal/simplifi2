@@ -18,7 +18,13 @@ const clientLogos = [
   { name: "Bayzat", logo: "/Logosweb/12.png" },
   { name: "Bayzat", logo: "/Logosweb/13.png" },
   { name: "Bayzat", logo: "/Logosweb/14.png" },
-  // { name: "Jisr", logo: "/jisr.webp" },
+  { name: "Bayzat", logo: "/Logosweb/15.png" },
+  { name: "Bayzat", logo: "/Logosweb/16.png" },
+  { name: "Bayzat", logo: "/Logosweb/17.png" },
+  { name: "Bayzat", logo: "/Logosweb/18.png" },
+  { name: "Bayzat", logo: "/Logosweb/19.png" },
+  { name: "Bayzat", logo: "/Logosweb/20.png" },
+  { name: "Bayzat", logo: "/Logosweb/21.png" },
 ];
 
 const ClientsMarquee = () => {
