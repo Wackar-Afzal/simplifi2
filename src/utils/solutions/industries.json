@@ -1,0 +1,127 @@
+{
+  "industries": {
+    "hero": {
+      "heading": "Designed for Your Industry, Ready for Every Workflow",
+      "descrip": "From SaaS to logistics, startups to global enterprises—our card infrastructure supports businesses of all sizes, across all sectors. Build solutions tailored to your industry’s unique spend needs, whether it’s recurring payments, campaign budgets, or regulated disbursements.",
+      "desVideo": "https://files.asad.digital/video/humbleteam/hero.mp4",
+      "mobVideo": "https://files.asad.digital/video/humbleteam/hero.mp4"
+    },
+    "usps": {
+      "title": "Industry Verticals We Support",
+      "features": [
+        {
+          "company": "Synthesia",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493216_Icons.png",
+          "title": "SaaS",
+          "description": "Empower tech teams with spend controls, usage insights, and multi-currency cards.",
+          "image": "USPS/1.jpg",
+          "style": "light"
+        },
+        {
+          "company": "TravelPal",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
+          "title": "Ecommerce",
+          "description": "Manage ad spend, fulfillment payouts, and supplier transactions from one platform.",
+          "image": "WebImages/Onecontractforeverything.jpg",
+          "style": "dark"
+        },
+        {
+          "company": "MyRadar",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321a_Icons-2.png",
+          "title": "Marketing",
+          "description": "Run campaign cards, manage influencer budgets, or issue merchant specific cards.",
+          "image": "USPS/2.png",
+          "style": "light"
+        },
+        {
+          "company": "NASA",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321b_Icons-3.png",
+          "title": "Logistics",
+          "description": "Issue fuel cards and driver per diem cards, complete with real-time tracking.",
+          "image": "WebImages/Compliancesorted.jpg",
+          "style": "dark",
+          "extraStats": {
+            "duration": "2 weeks",
+            "note": "From concept to delivery"
+          }
+        },
+        {
+          "company": "VOS",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493219_Icons-4.png",
+          "title": "Travel",
+          "description": "Issue mutli-currency cards for travelers to optimize on FX, manage spend limits and enforce region-specific rules.",
+          "image": "USPS/3.jpg",
+          "style": "light"
+        },
+        {
+          "company": "Offered",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493215_Icons-5.png",
+          "title": "Insurance",
+          "description": "Disburse funds for claims via instantly issued cards to streamline insurance payments.",
+          "image": "WebImages/Infrastructurethatgrowswithyou.jpg",
+          "style": "dark"
+        },
+        {
+          "company": "Nauto",
+          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493218_Icons-8.png",
+          "title": "Startups & Scaleups",
+          "description": "Keep team spend in check while moving fast - Issue, track, and reconcile with ease.",
+          "image": "WebImages/Madefordevelopers.jpg",
+          "style": "light"
+        }
+      ],
+      "backgrounds": [
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320e_exp1.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493211_exp4.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320f_exp6.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493232_07.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493234_08.avif",
+        "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49320d_exp7.avif"
+      ],
+      "cta": "Learn more (To the Product Page 1)"
+    },
+    "careerList": {
+      "heading": "Card Types You Can Use",
+      "descrip": "",
+      "careerPositions": [
+        {
+          "title": "Physical Cards",
+          "href": "/careers/communication-designer",
+          "location": "Prague or remote",
+          "descrip": "Plastic cards with your brand, delivered to your team or customers. Perfect for on-the-go spending like travel, fuel, or fieldwork."
+        },
+        {
+          "title": "Virtual Cards",
+          "href": "/careers/design-lead-product",
+          "location": "Prague or remote",
+          "descrip": " Instantly issued and ready to use online or via mobile wallets. Ideal for subscriptions, online purchases, and remote teams."
+        },
+        {
+          "title": " Crypto Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Link to crypto wallets and convert on-the-fly for real-world spend. Useful for platforms operating in digital asset environments."
+        },
+        {
+          "title": "Gift Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Branded cards for promotions, rewards, or loyalty programs. Reloadable or one-time use—your call. "
+        },
+        {
+          "title": " Fuel Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Tailored for transportation teams. Limit use to fuel merchants, set caps, and track every transaction in real time."
+        },
+        {
+          "title": " Single-Use Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Auto-expiring cards designed for one-time transactions. Great for secure payouts, vendor payments, or limited-use cases."
+        }
+      ]
+    }
+  }
+}

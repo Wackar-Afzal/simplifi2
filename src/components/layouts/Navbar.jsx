@@ -209,8 +209,12 @@ export default function Navbar() {
                       </div>
                       <AnimatePresence>
                         {openDropdown==path && (
-                          <div className="absolute no-scrollbar overflow-scroll w-full right-0 top-[3.75rem] mt-2 bg-white shadow-lg rounded-lg py-8 px-6 z-0">
+                        // {true && (
+                          <div className="absolute no-scrollbar overflow-scroll w-full right-0 top-[2rem] mt-2   py-8 px-6 z-0">
+                            <div className="bg-white shadow-lg rounded-lg">
                             <SectionNavbar sectionName={name} dropdown={dropdown} pathname={pathname} />
+
+                            </div>
                           </div>
                         )}
                       </AnimatePresence>

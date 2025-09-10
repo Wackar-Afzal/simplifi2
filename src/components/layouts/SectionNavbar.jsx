@@ -1,42 +1,42 @@
-import { CardSim, CreditCard } from "lucide-react"
-import Link from "next/link"
+import { CardSim, CreditCard } from "lucide-react";
+import Link from "next/link";
 
 const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
-  if (!Array.isArray(dropdown) || dropdown.length === 0) return null
+  if (!Array.isArray(dropdown) || dropdown.length === 0) return null;
 
   switch (sectionName) {
     case "Products":
       // Get the NAV_ITEMS to access features and other data
-      const productsData = dropdown
-const features = [
-  { name: "Multi-Currency Cards", icon: "🌍" },
-  { name: "Real-Time Notifications", icon: "🔔" },
-  { name: "Fully Programmable Card Controls", icon: "⚙️" },
-  { name: "Instant Issuance", icon: "⚡" },
-  { name: "Bulk Load Management", icon: "📦" },
-  { name: "Role-Based Access", icon: "👥" },
-  { name: "Statement Downloads", icon: "📑" },
-  { name: "Developer Sandbox", icon: "🧪" },
-  { name: "Developer Tools", icon: "🛠️" },
-  { name: "SDKs for Mobile", icon: "📱" },
-  { name: "Webhooks", icon: "🔗" },
-  { name: "Web Hosted Pages", icon: "🌐" },
-  { name: "Custom KYC Flows", icon: "🪪" },
-  { name: "Maker-Checker & Two-Factor Authentication", icon: "🔐" },
-  { name: "Reports & Insights", icon: "📊" },
-];
+      const productsData = dropdown;
+      const features = [
+        { name: "Multi-Currency Cards", icon: "🌍" },
+        { name: "Real-Time Notifications", icon: "🔔" },
+        { name: "Fully Programmable Card Controls", icon: "⚙️" },
+        { name: "Instant Issuance", icon: "⚡" },
+        { name: "Bulk Load Management", icon: "📦" },
+        { name: "Role-Based Access", icon: "👥" },
+        { name: "Statement Downloads", icon: "📑" },
+        { name: "Developer Sandbox", icon: "🧪" },
+        { name: "Developer Tools", icon: "🛠️" },
+        { name: "SDKs for Mobile", icon: "📱" },
+        { name: "Webhooks", icon: "🔗" },
+        { name: "Web Hosted Pages", icon: "🌐" },
+        { name: "Custom KYC Flows", icon: "🪪" },
+        { name: "Maker-Checker & Two-Factor Authentication", icon: "🔐" },
+        { name: "Reports & Insights", icon: "📊" },
+      ];
 
-const capabilites = [
-  { name: "Security & Compliance", icon: "🛡️" },
-  { name: "Identity Verification In-a-Box", icon: "🪪" },
-  { name: "Card Fulfillment & Delivery", icon: "📬" },
-  { name: "3DS and Tokenization", icon: "🔑" },
-  { name: "Collateral Management", icon: "📂" },
-  { name: "Chargebacks & Disputes", icon: "⚖️" },
-  { name: "Partner Management", icon: "🤝" },
-  { name: "Settlement & Reconciliation", icon: "💱" },
-  { name: "Cardholder & Technical Support", icon: "🎧" },
-];
+      const capabilites = [
+        { name: "Security & Compliance", icon: "🛡️" },
+        { name: "Identity Verification In-a-Box", icon: "🪪" },
+        { name: "Card Fulfillment & Delivery", icon: "📬" },
+        { name: "3DS and Tokenization", icon: "🔑" },
+        { name: "Collateral Management", icon: "📂" },
+        { name: "Chargebacks & Disputes", icon: "⚖️" },
+        { name: "Partner Management", icon: "🤝" },
+        { name: "Settlement & Reconciliation", icon: "💱" },
+        { name: "Cardholder & Technical Support", icon: "🎧" },
+      ];
 
       return (
         <div className="flex w-full   mx-auto overflow-y-scroll h-[80vh] no-scrollbar ">
@@ -61,11 +61,12 @@ const capabilites = [
                 >
                   <div className="w-full">
                     <div className="flex items-center justify-items-start gap-3 mb-2">
-                      <CreditCard color="grey"/>
-                    <p className="font-semibold text-gray-900 !m-0">{name}</p>
-
+                      <CreditCard color="grey" />
+                      <p className="font-semibold text-gray-900 !m-0">{name}</p>
                     </div>
-                    <p className="text-sm text-gray-600 line-clamp-2">{descrip}</p>
+                    <p className="text-sm text-gray-600 line-clamp-2">
+                      {descrip}
+                    </p>
                   </div>
                 </Link>
               ))}
@@ -73,59 +74,66 @@ const capabilites = [
           </div>
 
           {/* Right Content Area */}
- <div className="ml-2 !mb-8 pb-8">
+          <div className="ml-2 !mb-8 pb-8">
             <div className="flex-1 p-2 bg-white rounded-r-lg">
-            <div className="mb-0">
-              <h3 className="text-xl font-semibold text-gray-900 ">Features</h3>
-              {/* <p className="text-gray-600">
+              <div className="mb-0">
+                <h3 className="text-xl font-semibold text-gray-900 ">
+                  Features
+                </h3>
+                {/* <p className="text-gray-600">
                 Discover our features
               </p> */}
-            </div>
-
-            <div className="mb-2">
-              <div className="grid grid-cols-3 gap-2">
-                {features.map(({ name, icon }) => (
-                  <div key={name} className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
-                    <span className="text-lg">{icon}</span>
-                    <span className="text-gray-700 text-sm">{name}</span>
-                  </div>
-                ))}
               </div>
-            </div>
-          </div>
 
-          <div className="flex-1 p-6 bg-primarylight rounded-r-lg">
-            <div className="mb-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Capabilities</h3>
-              <p className="text-gray-600">
-                
-              </p>
-            </div>
-
-            <div className="mb-6">
-              <div className="grid grid-cols-3 gap-2">
-                {capabilites.map(({ name, icon }) => (
-                  <div key={name} className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors">
-                    <span className="text-lg">{icon}</span>
-                    <span className="text-gray-700 text-sm">{name}</span>
-                  </div>
-                ))}
+              <div className="mb-2">
+                <div className="grid grid-cols-3 gap-2">
+                  {features.map(({ name, icon }) => (
+                    <div
+                      key={name}
+                      className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors"
+                    >
+                      <span className="text-lg">{icon}</span>
+                      <span className="text-gray-700 text-sm">{name}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
+            <div className="flex-1 p-6 bg-primarylight rounded-r-lg">
+              <div className="mb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Capabilities
+                </h3>
+                <p className="text-gray-600"></p>
+              </div>
 
+              <div className="mb-6">
+                <div className="grid grid-cols-3 gap-2">
+                  {capabilites.map(({ name, icon }) => (
+                    <div
+                      key={name}
+                      className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors"
+                    >
+                      <span className="text-lg">{icon}</span>
+                      <span className="text-gray-700 text-sm">{name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-  
         </div>
-         </div> 
-      )
+      );
 
     case "Cards":
       return (
         <div className="w-full max-w-6xl mx-auto p-6">
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Cards</h2>
-            <p className="text-gray-600 mb-6">See the advantages of all our different credit cards</p>
+            <p className="text-gray-600 mb-6">
+              See the advantages of all our different credit cards
+            </p>
 
             <div className="flex gap-6 mb-8">
               <div className="flex items-center gap-2">
@@ -166,20 +174,27 @@ const capabilites = [
             ))}
           </div>
         </div>
-      )
+      );
 
     case "Solutions":
-      const solutionsData = dropdown.find((item) => item.useCases) || { useCases: [] }
-      const industriesData = dropdown.find((item) => item.industries) || { industries: [] }
-      const cardTypes = dropdown[0]?.cardTypes || []
+      const solutionsData = dropdown.find((item) => item.useCases) || {
+        useCases: [],
+      };
+      const industriesData = dropdown.find((item) => item.industries) || {
+        industries: [],
+      };
+      const cardTypes = dropdown[0]?.cardTypes || [];
 
       return (
         <div className="w-full max-w-7xl mx-auto p-6 overflow-y-auto max-h-[80vh]">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">One Platform. Endless Use Cases.</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              One Platform. Endless Use Cases.
+            </h2>
             <p className="text-gray-600">
-              Whether you're managing team expenses, sending payouts, or building loyalty programs, our infrastructure
-              supports a wide range of business needs.
+              Whether you're managing team expenses, sending payouts, or
+              building loyalty programs, our infrastructure supports a wide
+              range of business needs.
             </p>
           </div>
 
@@ -188,7 +203,7 @@ const capabilites = [
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <span className="text-xl">📋</span>
-                By Use Cases
+                <Link href={"/solutions/use-cases"}>By Use Cases</Link>
               </h3>
               <div className="space-y-4">
                 {solutionsData.useCases.map(({ category, items }) => (
@@ -196,10 +211,15 @@ const capabilites = [
                     key={category}
                     className="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors"
                   >
-                    <h4 className="font-semibold text-gray-900 mb-2">{category}</h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">
+                      {category}
+                    </h4>
                     <div className="flex flex-wrap gap-2">
                       {items.map((item) => (
-                        <span key={item} className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
+                        <span
+                          key={item}
+                          className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded"
+                        >
                           {item}
                         </span>
                       ))}
@@ -213,7 +233,7 @@ const capabilites = [
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <span className="text-xl">🏢</span>
-                By Industries
+                <Link href="/solutions/industries">By Industries</Link>
               </h3>
               <div className="space-y-3">
                 {industriesData.industries.map(({ name, descrip }) => (
@@ -231,10 +251,15 @@ const capabilites = [
 
           {/* Card Types Section */}
           <div className="mt-8 pt-6 border-t border-gray-200">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Card Types You Can Use</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Card Types You Can Use
+            </h3>
             <div className="grid grid-cols-3 gap-4">
               {cardTypes.map(({ name, icon, descrip }) => (
-                <div key={name} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
+                <div
+                  key={name}
+                  className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg"
+                >
                   <span className="text-2xl">{icon}</span>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">{name}</h4>
@@ -245,17 +270,19 @@ const capabilites = [
             </div>
           </div>
         </div>
-      )
+      );
 
     case "Resources":
       const blogPosts = [
         {
-          title: "The Future of Embedded Finance in MENA: Trends and Opportunities",
+          title:
+            "The Future of Embedded Finance in MENA: Trends and Opportunities",
           image: "/placeholder.svg?height=200&width=300",
           path: "/blog/embedded-finance-mena",
         },
         {
-          title: "Building Compliant Card Programs: A Developer's Guide to KYC and AML",
+          title:
+            "Building Compliant Card Programs: A Developer's Guide to KYC and AML",
           image: "/placeholder.svg?height=200&width=300",
           path: "/blog/compliant-card-programs",
         },
@@ -265,17 +292,23 @@ const capabilites = [
           path: "/blog/multi-currency-optimization",
         },
         {
-          title: "From Startup to Scale: How SimpliFi Powers Growing Businesses",
+          title:
+            "From Startup to Scale: How SimpliFi Powers Growing Businesses",
           image: "/placeholder.svg?height=200&width=300",
           path: "/blog/startup-to-scale",
         },
-      ]
+      ];
 
       return (
         <div className="w-full max-w-6xl mx-auto p-6 overflow-y-auto max-h-[80vh]">
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Developer Resources & Support</h2>
-            <p className="text-gray-600">Everything you need to integrate, build, and scale with SimpliFi's platform</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Developer Resources & Support
+            </h2>
+            <p className="text-gray-600">
+              Everything you need to integrate, build, and scale with SimpliFi's
+              platform
+            </p>
           </div>
 
           {/* Resource Links Grid */}
@@ -302,8 +335,13 @@ const capabilites = [
           {/* Recent Blog Posts */}
           <div>
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-xl font-semibold text-gray-900">Latest Insights</h3>
-              <Link href="/blog" className="text-blue-600 hover:text-blue-700 font-medium">
+              <h3 className="text-xl font-semibold text-gray-900">
+                Latest Insights
+              </h3>
+              <Link
+                href="/blog"
+                className="text-blue-600 hover:text-blue-700 font-medium"
+              >
                 All blog posts →
               </Link>
             </div>
@@ -328,7 +366,7 @@ const capabilites = [
             </div>
           </div>
         </div>
-      )
+      );
 
     case "Developers":
       return (
@@ -352,15 +390,18 @@ const capabilites = [
             ))}
           </div>
         </div>
-      )
+      );
 
     case "About":
       return (
         <div className="p-6 max-w-4xl">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Powering the Future of Finance in GCC</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Powering the Future of Finance in GCC
+            </h2>
             <p className="text-gray-600">
-              Based in Dubai, SimpliFi was founded to simplify financial infrastructure across MENA and Pakistan
+              Based in Dubai, SimpliFi was founded to simplify financial
+              infrastructure across MENA and Pakistan
             </p>
           </div>
 
@@ -387,23 +428,26 @@ const capabilites = [
           <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-lg">
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Our Mission</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Our Mission
+                </h3>
                 <p className="text-sm text-gray-700">
-                  To simplify financial infrastructure across MENA and Pakistan by enabling businesses to launch and
-                  scale card programs with speed, compliance, and control.
+                  To simplify financial infrastructure across MENA and Pakistan
+                  by enabling businesses to launch and scale card programs with
+                  speed, compliance, and control.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-gray-900 mb-2">Our Vision</h3>
                 <p className="text-sm text-gray-700">
-                  To become the financial backbone of the region - powering innovation, access, and ownership through
-                  every card we issue.
+                  To become the financial backbone of the region - powering
+                  innovation, access, and ownership through every card we issue.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      )
+      );
 
     default:
       // Generic fallback renderer
@@ -414,15 +458,17 @@ const capabilites = [
               key={path}
               href={path}
               className={`px-3 py-2 rounded-md transition-colors ${
-                pathname.includes(path) ? "bg-lightPurple text-white" : "hover:bg-gray-100"
+                pathname.includes(path)
+                  ? "bg-lightPurple text-white"
+                  : "hover:bg-gray-100"
               }`}
             >
               {name}
             </Link>
           ))}
         </div>
-      )
+      );
   }
-}
+};
 
-export default SectionNavbar
+export default SectionNavbar;
