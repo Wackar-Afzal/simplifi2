@@ -23,7 +23,8 @@
     },
 
     "productOverview1":{
-    "heading": "Embed: Off-the-shelf cards, ready to go",
+    "heading": "Embed: Off-the-shelf cards,",
+    "heading1": "ready to go",
     "imageUrl":
       "WebImages/WebImage1.jpg",
     "title": "Add live card functionality to your platform with zero setup hassle.",
@@ -82,7 +83,8 @@
     },
 
     "whatsCookin": {
-      "title": "What you can power with SimpliFi",
+      "title": "What you can power",
+      "title1": " with SimpliFi",
       "subtitle": "Our platform supports multiple payment and spend use cases through a single integration.",
        "slides":[
     {
@@ -280,14 +282,14 @@
           "id": 2,
           "title": "End-to-end encryption",
           "description": "Financial and personal data is encrypted at every stage of the transaction.",
-          "img": "WebImages/endtoendencribtion.jpg",
+          "img": "WebImages/endtoendencribtion.png",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 3,
           "title": "Advanced access controls",
           "description": "Role-based permissions and multi-factor authentication ensure only authorized access.",
-          "img": "WebImages/Advanceaccesscontrol.jpg",
+          "img": "WebImages/Advanceaccesscontrol.png",
           "alt": "Competitor analysis in Figma"
         },
         {

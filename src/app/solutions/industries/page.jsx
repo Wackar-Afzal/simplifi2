@@ -4,7 +4,7 @@ import HeroProduct from "@/components/Product1Page/HeroProduct";
 import React from "react";
 import {industries} from "@/utils/solutions/industries"
 import CareerList from "@/components/Career/CareerList";
-import Ai from "@/components/Product2/Ai";
+import Ai from "@/components/Product2/Ai2";
 
 const Page = () => {
   return (

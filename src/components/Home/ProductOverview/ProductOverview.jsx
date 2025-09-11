@@ -102,7 +102,7 @@ const gridItems = [
 
 export default function ProductOverview() {
   return (
-    <div className=" products text-white pt-16 pb-4 px-10" >
+    <div className=" products text-white pt-24 pb-4 px-10" >
       <div className="w-full   mx-auto">
 
         <motion.div
@@ -120,7 +120,7 @@ export default function ProductOverview() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="">
-            <p className="paragraph-style-body text-color-inverted">
+            <p className="paragraph-style-body !text-gray-400">
               Whether you want to go live in days or build something truly custom, we’ve got you covered.
             </p>
             {/* <p className="paragraph-style-body text-color-inverted">

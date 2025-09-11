@@ -190,15 +190,13 @@ export default function Hero() {
         }}
       >
         <motion.h2
-          className="
- heading-style-h1_fintech text-white mix-blend-difference
-  "
+          className=" heading-style-h1_fintech text-white mix-blend-difference"
           variants={{
             hidden: { opacity: 0, y: 40 },
             visible: { opacity: 1, y: 0 },
           }}
         >
-          From Code to 
+          From Code to
           <br />
           <TypeAnimation
             sequence={[
@@ -216,15 +214,18 @@ export default function Hero() {
             repeat={Infinity}
           />
         </motion.h2>
-        <motion.p className="text-white  paragraph-style-body mt-4   mix-blend-difference cursor-none  ">
-           {homeText.homepage.hero.description} {homeText.homepage.hero.subDescription}
+        <motion.p className="text-white  paragraph-style-body mt-4  mix-blend-difference cursor-none  ">
+          {homeText.homepage.hero.description}{" "}
+          {homeText.homepage.hero.subDescription}
         </motion.p>
-        <motion.p className="text-black  paragraph-style-body   mix-blend-difference cursor-none mb-6">
+        <motion.p className="text-black mt-4 paragraph-style-body   mix-blend-difference cursor-none mb-6">
           <span className="text-color-secondary">
             {homeText.homepage.hero.features}
           </span>
         </motion.p>
-        <button className="contained-button">{homeText.homepage.hero.cta}</button>
+        <button className="contained-button">
+          {homeText.homepage.hero.cta}
+        </button>
       </motion.div>
     </div>
   );

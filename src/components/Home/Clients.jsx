@@ -5,9 +5,9 @@ import homeText from "@/utils/homeText.json";
 export const Clients = () => {
   return (
     <div className="container-custom">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
-        <div className="md:col-span-6">
-          <h2 className="heading-style-h2_fintech">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div className="!w-full !text-center lg:w-auto md:col-span-6">
+          <h2 className="heading-style-h2_fintech !w-full !text-center">
             {/* Powering businesses across the Region */}
             {homeText.homepage.clientsCount.title}
           </h2>
@@ -48,7 +48,6 @@ export const Clients = () => {
           </div> */}
         </div>
 
-        <div className="md:col-span-4"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 fintech-2-content-grid mt-20">
         <div className="flex flex-col gap-4">
@@ -92,9 +91,11 @@ export const Clients = () => {
           </BSlidingDiv>
         </div>
 
-        <div className="fintech-2-content-grid-offset-image flex justify-center items-center relative">
+        <div className="hidden lg:flex justify-center items-center relative w-[60%]">
           <img
-            src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660a98ffcd41a6583f08e6de_fintech-2-img-3.webp"
+            // src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660a98ffcd41a6583f08e6de_fintech-2-img-3.webp"
+            src="backgrounds/powerbybusiness.png"
+
             alt="A mobile phone displaying abstract 3D shapes in the background, with a financial management app on the screen"
             className="rounded-xl  w-full h-auto object-contain
                         misc_grid-offset-image-1

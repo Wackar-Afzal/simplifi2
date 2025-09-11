@@ -71,7 +71,7 @@ const Features = () => {
       <div className=" relative overflow-x-hidden lg:overflow-x-visible h-auto lg:h-[300vh] " ref={containerRef}>
         <div className=" sticky top-0 h-auto lg:h-screen ">
           <section className="section_features h-full">
-            <img
+            {/* <img
               src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif"
               loading="lazy"
               width="538"
@@ -87,7 +87,7 @@ const Features = () => {
               srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 2000w"
               alt=""
               className="features-bg2"
-            />
+            /> */}
             <div className="features-wrapper text-center">
               <h2
                 id="w-node-a950199f-2e45-8c40-a20e-d831862318e8-8f49312d"

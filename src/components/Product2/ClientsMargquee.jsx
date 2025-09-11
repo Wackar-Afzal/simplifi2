@@ -32,7 +32,7 @@ const ClientsMarquee = () => {
   return (
     <section className="section_clients ">
       <h2 className="heading-style-h2_fintech text-center">
-        Trusted by fintechs, startups, and enterprises across MENA
+        Trusted by fintechs, startups, and <br/> enterprises across MENA
       </h2>
 
       <Marquee

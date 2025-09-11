@@ -27,14 +27,14 @@ export default function UXSection({ data }) {
             className={`flex-1  flex flex-col h-full gap-3 `}
           >
             <h2
-              className={`text-[1rem] `}>
-              {data.heading}
+              className={`text-[2.8rem] font-semibold `}>
+              {data.heading} <br/> {data.heading1}
             </h2>
 
-            <h2 className="services-title">{data.title}</h2>
+            <h2 className="paragraph-style-body !text-gray-400">{data.title}</h2>
 
             <motion.p
-              className="services-desc "
+              className="paragraph-style-body !text-gray-400"
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ opacity: 0, height: 0 }}
@@ -43,15 +43,17 @@ export default function UXSection({ data }) {
               {data.description}
             </motion.p>
 
-            <div className="services-title">{data.includedTitle}</div>
-
+            <div className="paragraph-style-body !text-gray-400">{data.includedTitle}</div>
+            <ul className="list-disc pl-5 text-white">
             {data.includedItems.map((item, idx) => (
-              <h2 key={idx} className="services-title services-menu-link">
+              <li key={idx} className="pt-3 paragraph-style-body !text-gray-400">
                 {item}
-              </h2>
+              </li>
             ))}
+            </ul>
 
-            <div className="w-[8rem]">
+
+            <div className="w-[8rem] py-6">
               <button className="nav-contained-button">
                 {data.buttonText}
               </button>

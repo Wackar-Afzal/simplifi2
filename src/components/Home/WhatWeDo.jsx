@@ -10,8 +10,8 @@ export default function WhatWeDo({data}) {
 
   return (
     <section className="whatwedo text-white container-custom">
-      <div className="mx-auto">
-        <h2 className="heading-style-h2_fintech text-color-inverted">
+      <div className="mx-auto mt-20">
+        <h2 className="heading-style-h2_fintech  text-center text-color-inverted mb-20">
           {data.title}
         </h2>
 
@@ -44,7 +44,7 @@ export default function WhatWeDo({data}) {
                   activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"
                 }`}
               >
-                <p className="heading-style-h2_big">{tab.title}</p>
+                <p className="heading-style-h2 !leading-11 !text-[2.8rem] !pb-0 ">{tab.title}</p>
                 {activeTab === tab.id && tab.description?.trim() && (
                   <p className="paragraph-style-body text-color-inverted">
                     {tab.description}
