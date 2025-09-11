@@ -9,7 +9,7 @@ const clientLogos = [
   { name: "NQOODLET", logo: "/Logosweb/3.png" },
   { name: "Kamel Pay", logo: "/Logosweb/4.png" },
   { name: "Transportr", logo: "/Logosweb/5.png" },
-  { name: "jisr", logo: "/Logosweb/jisr.png" },
+  { name: "jisr", logo: "/Logosweb/Jisr.png" },
   // { name: "Bayzat", logo: "/Logosweb/6.png" },
   // { name: "Bayzat", logo: "/Logosweb/7.png" },
   // { name: "Bayzat", logo: "/Logosweb/8.png" },
@@ -31,7 +31,7 @@ const clientLogos = [
 const ClientsMarquee = () => {
   return (
     <section className="section_clients ">
-      <h2 className="section-heading text-center">
+      <h2 className="heading-style-h2_fintech text-center">
         Trusted by fintechs, startups, and enterprises across MENA
       </h2>
 
@@ -47,7 +47,7 @@ const ClientsMarquee = () => {
               <img
                 src={client.logo}
                 alt={client.name}
-                className=" object-contain h-[5vh] mx-10 "
+                className=" object-contain h-[8vh] mx-10 "
               />
               {/* <span className="text-black sr-only z-10">jk</span> */}
             </div>

@@ -107,19 +107,19 @@ export default function ProductOverview() {
 
         <motion.div
           // className="grid md:grid-cols-2 gap-16 mb-20 w-full justify-center items-center"
-          className="grid md:grid-cols-2 gap-16 mb-4 w-full justify-center items-center"
+          className="flex flex-col gap-4 text-center  w-full justify-center items-center"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.div variants={itemVariants} className="max-w-xl">
-            <h1 className="heading-style-h2_fintech">
+          <motion.div variants={itemVariants} className="">
+            <h1 className="heading-style-h2_fintech ">
               The fastest way to go live, your way
             </h1>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="max-w-md flex flex-col gap-6">
+          <motion.div variants={itemVariants} className="">
             <p className="paragraph-style-body text-color-inverted">
               Whether you want to go live in days or build something truly custom, we’ve got you covered.
             </p>

@@ -1,19 +1,16 @@
 "use client";
 import { motion } from "framer-motion";
 
-
-
 export default function UXSection({ data }) {
-  console.log(data)
+  console.log(data);
   return (
     <section className={`section_services text-white is-xsmall `}>
       <div className="mx-auto">
-        <h2 className={`!text-center !max-w-[100vw] section-heading is-services mb-10 ${data.reverse?"lg:!text-left":"lg:!text-right !w-full "}`}>{data.heading}</h2>
-
-        <div className={`md:flex flex-col ${data.reverse?"lg:flex-row-reverse":"lg:flex-row"} gap-16`}>
+        <div className={`md:flex flex-col ${ data.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8`}
+        >
           {/* Left image */}
           <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-start mb-4">
-            <div className="max-w-[100vw] lg:max-w-[785px] lg:aspect-[16/10] overflow-hidden  rounded-[2.5rem]">
+            <div className="overflow-hidden  rounded-[2.5rem]">
               <motion.img
                 src={data.imageUrl}
                 className="flex-1 h-full object-cover"
@@ -26,11 +23,18 @@ export default function UXSection({ data }) {
           </div>
 
           {/* Right content */}
-          <div className={`flex-1 services-menu flex flex-col h-full gap-8 ${data.reverse?"":"lg:items-end lg:text-right"}`}>
-            <div className="services-title">{data.title}</div>
+          <div
+            className={`flex-1  flex flex-col h-full gap-3 `}
+          >
+            <h2
+              className={`text-[1rem] `}>
+              {data.heading}
+            </h2>
+
+            <h2 className="services-title">{data.title}</h2>
 
             <motion.p
-              className="services-desc m-4 mb-14"
+              className="services-desc "
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ opacity: 0, height: 0 }}
@@ -48,7 +52,9 @@ export default function UXSection({ data }) {
             ))}
 
             <div className="w-[8rem]">
-              <button className="nav-contained-button">{data.buttonText}</button>
+              <button className="nav-contained-button">
+                {data.buttonText}
+              </button>
             </div>
           </div>
         </div>
