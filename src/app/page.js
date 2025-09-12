@@ -28,7 +28,7 @@ export default function Home() {
       <UXSection data={homeText.homepage.productOverview1} />
       <UXSection data={homeText.homepage.productOverview2} />
 
-      <div className="lg:pb-22">
+      <div className="lg:pb-18">
       <Clients/>
 
       </div>

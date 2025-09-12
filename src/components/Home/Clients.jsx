@@ -97,7 +97,7 @@ export const Clients = () => {
             src="backgrounds/powerbybusiness.png"
 
             alt="A mobile phone displaying abstract 3D shapes in the background, with a financial management app on the screen"
-            className="rounded-xl  w-full h-auto object-contain
+            className="rounded-xl  w-full h-auto object-contain max-h-[800px]
                         misc_grid-offset-image-1
                         "
           />
