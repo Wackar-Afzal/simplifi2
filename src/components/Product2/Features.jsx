@@ -16,9 +16,9 @@ const Features = () => {
   // Define final positions for each card
   const finalPositions = {
     card1: { x: -396, y: -232 }, // -6rem, -7rem in pixels (16px = 1rem)
-    card2: { x: 386, y: -242 }, // 7rem, -5rem
-    card3: { x: -440, y: 110 }, // -5rem, 5rem
-    card4: { x: 404, y: 100 }, // 9rem, 7rem
+    card2: { x: 256, y: -242 }, // 7rem, -5rem
+    card3: { x: -382, y: 65 }, // -5rem, 5rem
+    card4: { x: 204, y: 40 }, // 9rem, 7rem
   };
 
   // Create smooth transforms for each card based on scroll progress
@@ -35,68 +35,56 @@ const Features = () => {
 
   const card2X = useTransform(
     scrollYProgress,
-     [0.2, 0.7],
+    [0.2, 0.7],
     [0, finalPositions.card2.x]
   );
   const card2Y = useTransform(
     scrollYProgress,
-     [0.2, 0.7],
+    [0.2, 0.7],
     [0, finalPositions.card2.y]
   );
 
   const card3X = useTransform(
     scrollYProgress,
-     [0.2, 0.7],
+    [0.2, 0.7],
     [0, finalPositions.card3.x]
   );
   const card3Y = useTransform(
     scrollYProgress,
-     [0.2, 0.7],
+    [0.2, 0.7],
     [0, finalPositions.card3.y]
   );
 
   const card4X = useTransform(
     scrollYProgress,
-     [0.2, 0.7],
+    [0.2, 0.7],
     [0, finalPositions.card4.x]
   );
   const card4Y = useTransform(
     scrollYProgress,
-     [0.2, 0.7],
+    [0.2, 0.7],
     [0, finalPositions.card4.y]
   );
 
   return (
     // <div className="transform-none">
-      <div className=" relative overflow-x-hidden lg:overflow-x-visible h-auto lg:h-[300vh] " ref={containerRef}>
-        <div className=" sticky top-0 h-auto lg:h-screen ">
-          <section className="section_features h-full">
-            {/* <img
-              src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif"
-              loading="lazy"
-              width="538"
-              sizes="(max-width: 767px) 100vw, 538px"
-              alt=""
-              srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif 1076w"
-              className="features-bg1"
-            />
-            <img
-              src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif"
-              loading="lazy"
-              sizes="100vw"
-              srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 2000w"
-              alt=""
-              className="features-bg2"
-            /> */}
+    <div
+      className=" relative overflow-x-hidden lg:overflow-x-visible h-auto lg:h-[300vh] "
+      ref={containerRef}
+    >
+      <div className=" sticky top-0 h-auto lg:h-screen ">
+        <section className="section_features h-full flex justify-center">
+          <div className="max-w-[1400px]">
             <div className="features-wrapper text-center">
-              <h2
-                id="w-node-a950199f-2e45-8c40-a20e-d831862318e8-8f49312d"
-                className="features-heading text-center"
-              >
-                {homeText.homepage.features.title}
-                <br />
-                {homeText.homepage.features.subtitle}
-              </h2>
+              <div className="flex flex-col gap-4">
+                <h2 className="heading-style-h2_fintech text-center">
+                  {homeText.homepage.features.title}
+                </h2>
+                <p className="paragraph-style-body">
+                  {homeText.homepage.features.subtitle}
+                </p>
+              </div>
+
               <button
                 id="w-node-d881b892-6b3f-0f50-5bea-8135d7946171-8f49312d"
                 href="#request"
@@ -105,7 +93,7 @@ const Features = () => {
                 {homeText.homepage.features.cta}
               </button>
               <motion.div
-                className="features-card lg:absolute lg:-translate-y-[90%] lg:-translate-x-[-120%]"
+                className="features-card lg:absolute lg:-translate-y-[90%] lg:-translate-x-[-90%]"
                 style={{
                   willChange: "transform",
                   // transform: "translate3d(100rem, 20rem, 100px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -141,7 +129,7 @@ const Features = () => {
                 </p>
               </motion.div>
               <motion.div
-                className="features-card lg:absolute lg:-translate-y-[20%] lg:-translate-x-[-125%]"
+                className="features-card lg:absolute lg:-translate-y-[20%] lg:-translate-x-[-99%]"
                 style={{
                   willChange: "transform",
                   // transform:"translate3d(-5rem, 5rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
@@ -177,9 +165,27 @@ const Features = () => {
                 </p>
               </motion.div>
             </div>
-          </section>
-        </div>
+          </div>
+          {/* <img
+              src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif"
+              loading="lazy"
+              width="538"
+              sizes="(max-width: 767px) 100vw, 538px"
+              alt=""
+              srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif 1076w"
+              className="features-bg1"
+            />
+            <img
+              src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif"
+              loading="lazy"
+              sizes="100vw"
+              srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 2000w"
+              alt=""
+              className="features-bg2"
+            /> */}
+        </section>
       </div>
+    </div>
     // </div>
   );
 };

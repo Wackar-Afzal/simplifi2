@@ -18,7 +18,7 @@ export default function CaseStudies({data}) {
    
 
     return (
-        <section className="relative w-full slider-section   overflow-hidden p-5 py-20">
+        <section className="relative w-full slider-section   overflow-hidden p-5 py-0">
             <div className="flex items-center justify-between mb-10">
                 <h1 className="h2">{data.heading}</h1>
                 <div className="flex gap-2">
@@ -43,12 +43,12 @@ export default function CaseStudies({data}) {
                     interval: 4000,
                     gap: "1rem",
                     arrows: false,
-                    pagination: true,
+                    pagination: false,
                     perPage: 3, // 👈 show 3 cards
                     perMove: 1, // 👈 slide one by one
                     pauseOnHover: false,
                       breakpoints: {
-                        1280: { perPage: 2 }, // large tablets
+                        1280: { perPage: 3 }, // large tablets
                         1024: { perPage: 1 }, // tablets
                         768: { perPage: 1 },  // small tablets / large phones
                         480: { perPage: 1 },  // mobile

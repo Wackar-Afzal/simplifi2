@@ -2,38 +2,16 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
-// List of logos from /public (green-colored ones in your screenshot)
-const clientLogos = [
-  { name: "Floward", logo: "/Logosweb/1.png" },
-  { name: "Walaplus", logo: "/Logosweb/2.png" },
-  { name: "NQOODLET", logo: "/Logosweb/3.png" },
-  { name: "Kamel Pay", logo: "/Logosweb/4.png" },
-  { name: "Transportr", logo: "/Logosweb/5.png" },
-  { name: "jisr", logo: "/Logosweb/Jisr.png" },
-  // { name: "Bayzat", logo: "/Logosweb/6.png" },
-  // { name: "Bayzat", logo: "/Logosweb/7.png" },
-  // { name: "Bayzat", logo: "/Logosweb/8.png" },
-  // { name: "Bayzat", logo: "/Logosweb/9.png" },
-  // { name: "Bayzat", logo: "/Logosweb/10.png" },
-  // { name: "Bayzat", logo: "/Logosweb/11.png" },
-  // { name: "Bayzat", logo: "/Logosweb/12.png" },
-  // { name: "Bayzat", logo: "/Logosweb/13.png" },
-  // { name: "Bayzat", logo: "/Logosweb/14.png" },
-  // { name: "Bayzat", logo: "/Logosweb/15.png" },
-  // { name: "Bayzat", logo: "/Logosweb/16.png" },
-  // { name: "Bayzat", logo: "/Logosweb/17.png" },
-  // { name: "Bayzat", logo: "/Logosweb/18.png" },
-  // { name: "Bayzat", logo: "/Logosweb/19.png" },
-  // { name: "Bayzat", logo: "/Logosweb/20.png" },
-  // { name: "Bayzat", logo: "/Logosweb/21.png" },
-];
 
-const ClientsMarquee = () => {
+const ClientsMarquee = ({data}) => {
   return (
     <section className="section_clients ">
-      <h2 className="heading-style-h2_fintech text-center">
-        Trusted by fintechs, startups, and <br/> enterprises across MENA
+      <div className="flex justify-center flex-col !w-full">
+      <h2 className="heading-style-h2_fintech  max-w-6xl !text-center mx-auto">
+        {data.heading}
       </h2>
+      </div>
+
 
       <Marquee
         gradient={false}
@@ -42,7 +20,7 @@ const ClientsMarquee = () => {
         direction="right"
       >
         <div className="flex mt-16">
-          {clientLogos.map((client, index) => (
+          {data.clientLogos.map((client, index) => (
             <div key={index} className=" flex items-center !gap-0">
               <img
                 src={client.logo}

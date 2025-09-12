@@ -11,7 +11,10 @@ const Page = () => {
     <>
       <Navbar />
       <HeroProduct data={industries.hero} />
+      <div className="my-20">
       <Ai data={industries.usps}/>
+
+      </div>
       <CareerList data={industries.careerList}/>
     </>
   );

@@ -2,226 +2,87 @@ import React from "react";
 
 const Ai = ({ data }) => {
   return (
-    <div className="mb-4">
-      <div className="section-cases">
-
+    <div className="mb-4 flex justify-center">
+      <div className="section-cases max-w-[1400px]">
         <div className="container-global">
-          <h2 className="section-heading is-large lg:mb-20">{data.title}</h2>
-          <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 auto-cols-fr gap-x-5 gap-y-16  md:[grid-template-rows:auto] 
-">
-            <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="cases-grid-item border-radius-primary"
-            >
-              <div className="cases-card-item-content-wrapper">
-  
-                <div className="cases-card-itm-title">
-                  <h3 className="heading-style-h4">{data.features[0].title}</h3>
-                  <div className="paragraph-style-body text-color-secondary">
-                    {data.features[0].description}
-                  </div>
-                </div>
-              </div>
-              <div className="cases-card-item-image-wrapper" >
-                <img
-                  src={data.features[0].image}
-                  loading="eager"
-                  sizes="(max-width: 816px) 100vw, 816px"
-                  className="rounded-[3rem]"
+          <div className="flex flex-col gap-4 justify-center items-center">
+            <h2 className="section-heading is-large mb-4">{data.title}</h2>
+            <p className="paragraph-style-body text-center lg:mb-20">
+              {data.descrip}
+            </p>
+          </div>
 
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="cases-grid-item background-color-secondary border-radius-primary lg:mt-[-8rem]"
-            >
-              <div className="cases-card-item-content-wrapper">
-                <div className="cases-card-itm-title">
-                  <h3 className="heading-style-h4">{data.features[1].title}</h3>
-                  <div className="paragraph-style-body text-color-secondary">
-                    {data.features[1].description}
-                  </div>
-                </div>
-              </div>
-              <div
-                className="cases-card-item-image-wrapper"
-              >
-                <img
-                src={data.features[1].image}
-                  loading="eager"
-                  sizes="(max-width: 816px) 100vw, 816px"
-                  className="rounded-[3rem]"
+          <div
+            className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 auto-cols-fr gap-x-5 gap-y-16  md:[grid-template-rows:auto]"
+          >
+{data.features.map((feature, index) => {
+  const total = data.features.length;
+  const remainder = total % 3;
+  const isLastRowStart = index >= total - remainder;
 
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
+  let lastRowClasses = "";
+  let isCenterColumn = index % 3 === 1;
+  let isLastCenteredCard = false;
 
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="cases-grid-item border-radius-primary"
-            >
-              <div className="cases-card-item-content-wrapper">
-                <div className="cases-card-itm-title">
-                  <h3 className="heading-style-h4 text-color-inverted">
-                    {data.features[2].title}
-                  </h3>
-                  <div className="paragraph-style-body text-color-secondary">
-                    {data.features[2].description}
-                  </div>
-                </div>
-              </div>
-              <div
-                className="cases-card-item-image-wrapper"
-              >
-                <img
-                  src={data.features[2].image}
-                  loading="eager"
-                  sizes="(max-width: 1056px) 100vw, 1056px"
-                  alt=""
-                />
-              </div>
-            </div>
-         <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="cases-grid-item background-color-secondary border-radius-primary"
-            >
-              <div className="cases-card-item-content-wrapper">
-                <div className="cases-card-itm-title">
-                  <h3 className="heading-style-h4">{data.features[3].title}</h3>
-                  <div className="paragraph-style-body text-color-secondary">
-                    {data.features[3].description}
-                  </div>
-                </div>
-              </div>
-              <div
-                className="cases-card-item-image-wrapper"
-              >
-                <img
-                  src={data.features[3].image}
-                  loading="eager"
-                  sizes="(max-width: 816px) 100vw, 816px"
-                  className="rounded-[3rem]"
+  // Detect if this is the single centered card in the last row
+  if (isLastRowStart) {
+    if (remainder === 1 && index === total - 1) {
+      lastRowClasses = "lg:col-start-2 lg:mt-[-8rem]";
+      isCenterColumn = true;
+      isLastCenteredCard = true;
+    } else if (remainder === 2 && index >= total - 2) {
+      lastRowClasses = "lg:mt-16";
+    }
+  }
 
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="cases-grid-item border-radius-primary lg:mt-[-8rem]"
-            >
-              <div className="cases-card-item-content-wrapper">
+  // Determine default background class (even index → no bg, odd index → dark bg)
+  const defaultHasBg = index % 2 === 1;
 
-                <div className="cases-card-itm-title">
-                  <h3 className="heading-style-h4 text-color-inverted">
-                    {data.features[4].title}
-                  </h3>
-                  <div className="paragraph-style-body text-color-secondary">
-                    {data.features[4].description}
-                  </div>
-                </div>
-              </div>
-              <div
-                className="cases-card-item-image-wrapper"
-              >
-                <img
-                  src={data.features[4].image}
-                  loading="eager"
-                  sizes="(max-width: 816px) 100vw, 816px"
-                  className="rounded-[3rem]"
+  // Flip background for last centered card based on the card above (index - 3)
+  let backgroundClass = "";
+  if (isLastCenteredCard) {
+    const aboveIndex = index - 3;
+    const aboveHasBg = aboveIndex >= 0 && aboveIndex % 2 === 1;
 
-                  alt=""
-                />
-              </div>
-            </div>
-            <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="cases-grid-item background-color-secondary border-radius-primary"
-            >
-              <div className="cases-card-item-content-wrapper">
-                <div className="cases-card-itm-title">
-                  <h3 className="heading-style-h4">{data.features[5].title}</h3>
-                  <div className="paragraph-style-body text-color-secondary">
-                    {data.features[5].description}
-                  </div>
-                </div>
-              </div>
-              <div
-                className="cases-card-item-image-wrapper"
-              >
-                <img
-                  src={data.features[5].image}
-                  loading="eager"
-                  sizes="(max-width: 816px) 100vw, 816px"
-                  className="rounded-[3rem]"
+    // Flip: if above has bg → this should not, else apply dark background
+    backgroundClass = aboveHasBg
+      ? "background-color-secondary" // no bg
+      : ""; // apply dark bg
+  } else {
+    // For all other cards: use normal alternating bg logic
+    backgroundClass = defaultHasBg ? "background-color-secondary" : "";
+  }
 
-                  alt=""
-                />
-              </div>
-            </div>
-         <div
-              style={{
-                opacity: 1,
-                transform:
-                  "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-                transformStyle: "preserve-3d",
-              }}
-              className="cases-grid-item background-color-secondary border-radius-primary lg:col-start-2 lg:mt-[-8rem]"
-            >
-              <div className="cases-card-item-content-wrapper">
-                <div className="cases-card-itm-title">
-                  <h3 className="heading-style-h4">{data.features[6].title}</h3>
-                  <div className="paragraph-style-body text-color-secondary">
-                    {data.features[6].description}
-                  </div>
-                </div>
-              </div>
-              <div
-                className="cases-card-item-image-wrapper"
-              >
-                <img
-                  src={data.features[6].image}
-                  loading="eager"
-                  sizes="(max-width: 816px) 100vw, 816px"
-                  className="rounded-[3rem]"
+  // Additional center column margin if needed
+  const centerColumnMargin = isCenterColumn ? "lg:mt-[-8rem]" : "";
 
-                  alt=""
-                />
-              </div>
-            </div>
+  return (
+    <div
+      key={index}
+      className={`cases-grid-item border-radius-primary ${backgroundClass} ${lastRowClasses} ${centerColumnMargin}`}
+    >
+      <div className="cases-card-item-content-wrapper">
+        <div className="cases-card-itm-title">
+          <h3 className="heading-style-h4">{feature.title}</h3>
+          <div className="paragraph-style-body text-color-secondary">
+            {feature.description}
+          </div>
+        </div>
+      </div>
+      <div className="cases-card-item-image-wrapper">
+        <img
+          src={feature.image}
+          loading="eager"
+          sizes="(max-width: 816px) 100vw, 816px"
+          className="rounded-[3rem]"
+          alt=""
+        />
+      </div>
+    </div>
+  );
+})}
+
+
           </div>
         </div>
       </div>

@@ -5,6 +5,7 @@ import "@splidejs/react-splide/css";
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import homeText from "@/utils/homeText.json";
+import Link from "next/link";
 
 export default function WhatsCookin({data}) {
   const splideRef = useRef(null);
@@ -97,9 +98,9 @@ export default function WhatsCookin({data}) {
             <div className=" pb-20 ">
               <p className="feed-tag mb-3 mt-3">{}</p>
               <h2 className="feed-title mb-3">{slide.title}</h2>
-              <button href={slide.buttonLink} className="case-button">
+              <Link href={slide.buttonLink} className="case-button">
                 {slide.buttonText}
-              </button>
+              </Link>
             </div>
           </SplideSlide>
         ))}

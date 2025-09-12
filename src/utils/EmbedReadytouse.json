@@ -176,10 +176,10 @@
       "footer": "We invest in security, privacy, and compliance so you can focus on growing your business."
     },
     "useCases": {
-      "heading": "Why embedded cards",
+      "title": "Why embedded cards",
       "descrip": " With our embedded cards, you’re not launching your branded cards. You're leveraging our off the shelf cards. Get everything prebuilt and ready to go - card issuance, compliance, spend controls, and  real-time tracking. You control the user experience without the investment. From employee expenses to supplier payments, you stay in           control while we do the heavy lifting.",
 
-      "cases": [
+      "features": [
         {
           "id": 1,
           "company": "ING",

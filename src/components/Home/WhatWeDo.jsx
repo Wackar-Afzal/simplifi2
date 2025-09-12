@@ -10,7 +10,7 @@ export default function WhatWeDo({data}) {
 
   return (
     <section className="whatwedo text-white container-custom">
-      <div className="mx-auto mt-20">
+      <div className="mx-auto mt-20 max-w-[1400px]">
         <h2 className="heading-style-h2_fintech  text-center text-color-inverted mb-20">
           {data.title}
         </h2>
@@ -35,7 +35,7 @@ export default function WhatWeDo({data}) {
             </AnimatePresence>
           </div>
 
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col">
             {highlights.map((tab) => (
               <button
                 key={tab.id}
@@ -44,7 +44,7 @@ export default function WhatWeDo({data}) {
                   activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"
                 }`}
               >
-                <p className="heading-style-h2 !leading-11 !text-[2.8rem] !pb-0 ">{tab.title}</p>
+                <p className="heading-style-h2 !leading-11 !text-[2.2rem] !pb-0 ">{tab.title}</p>
                 {activeTab === tab.id && tab.description?.trim() && (
                   <p className="paragraph-style-body text-color-inverted">
                     {tab.description}

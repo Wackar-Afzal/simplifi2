@@ -49,7 +49,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
             </div> */}
 
             <div className="min-w-[28vw]">
-              {productsData.map(({ name, path, icon, descrip }) => (
+              {productsData.slice(0,2).map(({ name, path, icon, descrip }) => (
                 <Link
                   key={path}
                   href={path}
@@ -77,9 +77,9 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
           <div className="ml-2 !mb-8 pb-8">
             <div className="flex-1 p-2 bg-white rounded-r-lg">
               <div className="mb-0">
-                <h3 className="text-xl font-semibold text-gray-900 ">
+                 <Link href="/features" className="text-xl font-semibold text-gray-900 ">
                   Features
-                </h3>
+                </Link>
                 {/* <p className="text-gray-600">
                 Discover our features
               </p> */}
@@ -88,13 +88,13 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
               <div className="mb-2">
                 <div className="grid grid-cols-3 gap-2">
                   {features.map(({ name, icon }) => (
-                    <div
+                     <Link href="/features"
                       key={name}
                       className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors"
                     >
                       <span className="text-lg">{icon}</span>
                       <span className="text-gray-700 text-sm">{name}</span>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -102,22 +102,22 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
 
             <div className="flex-1 p-6 bg-primarylight rounded-r-lg">
               <div className="mb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <Link href="/capabilities" className="text-xl font-semibold text-gray-900 mb-2">
                   Capabilities
-                </h3>
+                </Link>
                 <p className="text-gray-600"></p>
               </div>
 
               <div className="mb-6">
                 <div className="grid grid-cols-3 gap-2">
                   {capabilites.map(({ name, icon }) => (
-                    <div
+                    <Link href="/capabilities"
                       key={name}
                       className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors"
                     >
                       <span className="text-lg">{icon}</span>
                       <span className="text-gray-700 text-sm">{name}</span>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -186,47 +186,15 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
       const cardTypes = dropdown[0]?.cardTypes || [];
 
       return (
-        <div className="w-full max-w-7xl mx-auto p-6 overflow-y-auto max-h-[80vh]">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              One Platform. Endless Use Cases.
-            </h2>
-            <p className="text-gray-600">
-              Whether you're managing team expenses, sending payouts, or
-              building loyalty programs, our infrastructure supports a wide
-              range of business needs.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-8">
+        <div className="w-[max-content] max-w-7xl mx-auto p-6 overflow-y-auto max-h-[80vh] flex">
+                 <div className="flex flex-col ">
             {/* Use Cases Column */}
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <span className="text-xl">📋</span>
                 <Link href={"/solutions/use-cases"}>By Use Cases</Link>
               </h3>
-              <div className="space-y-4">
-                {solutionsData.useCases.map(({ category, items }) => (
-                  <div
-                    key={category}
-                    className="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors"
-                  >
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      {category}
-                    </h4>
-                    <div className="flex flex-wrap gap-2">
-                      {items.map((item) => (
-                        <span
-                          key={item}
-                          className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+         
             </div>
 
             {/* Industries Column */}
@@ -235,40 +203,23 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
                 <span className="text-xl">🏢</span>
                 <Link href="/solutions/industries">By Industries</Link>
               </h3>
-              <div className="space-y-3">
-                {industriesData.industries.map(({ name, descrip }) => (
-                  <div
-                    key={name}
-                    className="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors"
-                  >
-                    <h4 className="font-semibold text-gray-900 mb-1">{name}</h4>
-                    <p className="text-sm text-gray-600">{descrip}</p>
-                  </div>
-                ))}
-              </div>
+          
             </div>
           </div>
+          {/* <div className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              One Platform. Endless Use Cases.
+            </h2>
+            <p className="text-gray-600">
+              Whether you're managing team expenses, sending payouts, or
+              building loyalty programs, our infrastructure supports a wide
+              range of business needs.
+            </p>
+          </div> */}
 
-          {/* Card Types Section */}
-          <div className="mt-8 pt-6 border-t border-gray-200">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">
-              Card Types You Can Use
-            </h3>
-            <div className="grid grid-cols-3 gap-4">
-              {cardTypes.map(({ name, icon, descrip }) => (
-                <div
-                  key={name}
-                  className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg"
-                >
-                  <span className="text-2xl">{icon}</span>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{name}</h4>
-                    <p className="text-sm text-gray-600">{descrip}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+   
+
+      
         </div>
       );
 
@@ -425,27 +376,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
             ))}
           </div>
 
-          <div className="bg-gradient-to-r from-blue-50 to-green-50 p-6 rounded-lg">
-            <div className="grid grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-2">
-                  Our Mission
-                </h3>
-                <p className="text-sm text-gray-700">
-                  To simplify financial infrastructure across MENA and Pakistan
-                  by enabling businesses to launch and scale card programs with
-                  speed, compliance, and control.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Our Vision</h3>
-                <p className="text-sm text-gray-700">
-                  To become the financial backbone of the region - powering
-                  innovation, access, and ownership through every card we issue.
-                </p>
-              </div>
-            </div>
-          </div>
+    
         </div>
       );
 

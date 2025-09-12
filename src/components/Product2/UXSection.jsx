@@ -2,11 +2,10 @@
 import { motion } from "framer-motion";
 
 export default function UXSection({ data }) {
-  console.log(data);
   return (
     <section className={`section_services text-white is-xsmall `}>
-      <div className="mx-auto">
-        <div className={`md:flex flex-col ${ data.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8`}
+      <div className="mx-auto flex justify-center">
+        <div className={`md:flex flex-col ${ data.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 max-w-[1400px] !w-full`}
         >
           {/* Left image */}
           <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-start mb-4">

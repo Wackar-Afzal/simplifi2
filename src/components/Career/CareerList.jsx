@@ -32,7 +32,6 @@ import React from 'react'
 // }
 
 const CareerList = ({data}) => {
-    console.log(data)
   return (
         <section className="section slider-section is-careers-list">
         <div className="">

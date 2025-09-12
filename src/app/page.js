@@ -1,7 +1,7 @@
 import { ContactUs } from "@/components/common/ContactUs";
 import { Clients } from "@/components/Home/Clients";
 import Hero from "@/components/Home/Hero/Hero";
-import Partners  from "@/components/Home/Partners";
+import Partners from "@/components/Home/Partners";
 import ProductOverview from "@/components/Home/ProductOverview/ProductOverview";
 import Testimonials from "@/components/Home/Testimonials";
 import WhatWeDo from "@/components/Home/WhatWeDo";
@@ -15,36 +15,37 @@ import ClientsMargquee from "@/components/Product2/ClientsMargquee";
 import Features from "@/components/Product2/Features";
 import Services from "@/components/Product2/Services";
 import UXSection from "@/components/Product2/UXSection";
-import homeText from "@/utils/homeText.json"
+import homeText from "@/utils/homeText.json";
 export default function Home() {
-
   return (
     <div className="mx-auto">
       <Navbar />
       <Hero />
-      <ClientsMargquee/>
+      <ClientsMargquee data={homeText.homepage.clientMarquee} />
       <ProductOverview />
       {/* <Services/> */}
       <UXSection data={homeText.homepage.productOverview1} />
       <UXSection data={homeText.homepage.productOverview2} />
 
       <div className="lg:pb-18">
-      <Clients/>
-
+        <Clients />
       </div>
-      <WhatsCookin data={homeText.homepage.whatsCookin}/>
-
-      <Ai data={homeText.homepage.usps}/>
-      <Features/>
+      <WhatsCookin data={homeText.homepage.whatsCookin} />
+      <div className="lg:pb-18">
+        <Ai data={homeText.homepage.usps} />
+      </div>
+      <Features />
       {/* <Testimonials/> */}
       {/* <Partners/> */}
-      <WhatWeDo data={homeText.homepage.whatwedo}/>
+      <ClientsMargquee data={homeText.homepage.clientMarquee1} />
 
-      <ClientSays/>
+      <WhatWeDo data={homeText.homepage.whatwedo} />
+
+      <ClientSays />
       {/* <WorkFlowSectionCases/> */}
       {/* <ContactUs/> */}
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import ClientsMargquee from "./ClientsMargquee";
 const HeroSection = ({data}) => {
+  console.log(data,"datataat")
   const [activeTab, setActiveTab] = useState("Tab 1");
 
   return (
@@ -290,7 +290,6 @@ const HeroSection = ({data}) => {
           </div>
         </div>
       </section>
-      <ClientsMargquee />
     </>
   );
 };

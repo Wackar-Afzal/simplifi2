@@ -22,43 +22,38 @@
       ]
     },
 
-    "productOverview1":{
-    "heading": "Embed: Off-the-shelf cards,",
-    "heading1": "ready to go",
-    "imageUrl":
-      "WebImages/WebImage1.jpg",
-    "title": "Add live card functionality to your platform with zero setup hassle.",
-    "description":
-      "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
-    "includedTitle": "What’s included",
-    "includedItems": [
-      "Pre-configured workflows",
-      "Instant virtual card issuance",
-      "Real-time controls and spend tracking",
-      "Coverage across GCC currencies",
-      "Investor-ready for POCs and pilots"
-    ],
-    "reverse":true,
-    "buttonText": "Learn more"
-  }
+    "productOverview1": {
+      "heading": "Embed: Off-the-shelf cards,",
+      "heading1": "ready to go",
+      "imageUrl": "WebImages/WebImage1.jpg",
+      "title": "Add live card functionality to your platform with zero setup hassle.",
+      "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
+      "includedTitle": "What’s included",
+      "includedItems": [
+        "Pre-configured workflows",
+        "Instant virtual card issuance",
+        "Real-time controls and spend tracking",
+        "Coverage across GCC currencies",
+        "Investor-ready for POCs and pilots"
+      ],
+      "reverse": true,
+      "buttonText": "Learn more"
+    },
 
-,
-    "productOverview2":{
-    "heading": "Build Your Own: SimpliFi Enterprise",
-    "imageUrl":
-      "WebImages/WebImage2.jpg",
-    "title": "Launch a fully branded card program with complete control.",
-    "description":
-      "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
-    "includedTitle": "What’s included",
-    "includedItems": [
-      "Fully branded cards, portals, SMS, and APIs",
-      "Flexible and configurable workflows",
-      "Scalable infrastructure with enterprise-grade APIs",
-      "End-to-end support including KYB, settlement, and compliance"
-    ],
-    "buttonText": "Learn more"
-  },
+    "productOverview2": {
+      "heading": "Build Your Own: SimpliFi Enterprise",
+      "imageUrl": "WebImages/WebImage2.jpg",
+      "title": "Launch a fully branded card program with complete control.",
+      "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
+      "includedTitle": "What’s included",
+      "includedItems": [
+        "Fully branded cards, portals, SMS, and APIs",
+        "Flexible and configurable workflows",
+        "Scalable infrastructure with enterprise-grade APIs",
+        "End-to-end support including KYB, settlement, and compliance"
+      ],
+      "buttonText": "Learn more"
+    },
 
     "clientsCount": {
       "title": "Powering businesses across the Region",
@@ -86,91 +81,84 @@
       "title": "What you can power",
       "title1": " with SimpliFi",
       "subtitle": "Our platform supports multiple payment and spend use cases through a single integration.",
-       "slides":[
-    {
-      "src": "WebImages/corperatepayout.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Corporate Payouts",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/corperatespend.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Corporate Spend",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/rewarding&gifting.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Reward & Gifting Programs",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/consumerspend.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Consumer Spend",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
+      "slides": [
+        {
+          "src": "WebImages/corperatepayout.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Corporate Payouts",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/use-cases"
+        },
+        {
+          "src": "WebImages/corperatespend.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Corporate Spend",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/use-cases"
+        },
+        {
+          "src": "WebImages/rewarding&gifting.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Reward & Gifting Programs",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/use-cases"
+        },
+        {
+          "src": "WebImages/consumerspend.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Consumer Spend",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/use-cases"
+        },
 
-    {
-      "src": "WebImages/BNPL&creadit.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "BNPL & Credit",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/wallets.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Wallets",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/transection.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Transactions",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/CardPrograme.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Card Programs",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    }
-  ],
+        {
+          "src": "WebImages/BNPL&creadit.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "BNPL & Credit",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/use-cases"
+        },
+        {
+          "src": "WebImages/wallets.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Wallets",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/industries"
+        },
+        {
+          "src": "WebImages/transection.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Transactions",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/industries"
+        },
+        {
+          "src": "WebImages/CardPrograme.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Card Programs",
+          "buttonText": "Learn more",
+          "buttonLink": "/solutions/industries"
+        }
+      ],
       "cta": "Learn more"
     },
 
-    "usps":  {
-      "title": "USPs",
-      "features": [
-        {
-          "company": "Synthesia",
-          "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493216_Icons.png",
+    "usps": {
       "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
-          "description": "Whether you're embedding cards or launching your own card program, we power both.",
-          "image": "USPS/1.jpg",
-          "style": "light"
-        },
+      "descrip": "Whether you're embedding cards or launching your own card program, we power both.",
+      "features": [
         {
           "company": "TravelPal",
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
-         "title": "One contract for everything",
+          "title": "One contract for everything",
           "description": "Work with just one provider to get technology, compliance, operational support, and more.",
           "image": "WebImages/Onecontractforeverything.jpg",
           "style": "dark"
@@ -231,7 +219,28 @@
       ],
       "cta": "Learn more (To the Product Page 1)"
     },
-
+    "clientMarquee": {
+      "heading": "Trusted by fintechs, startups, and  enterprises across MENA",
+      "clientLogos": [
+        { "name": "Floward", "logo": "/Logosweb/1.png" },
+        { "name": "Walaplus", "logo": "/Logosweb/2.png" },
+        { "name": "NQOODLET", "logo": "/Logosweb/3.png" },
+        { "name": "Kamel Pay", "logo": "/Logosweb/4.png" },
+        { "name": "Transportr", "logo": "/Logosweb/5.png" },
+        { "name": "jisr", "logo": "/Logosweb/Jisr.png" }
+      ]
+    },
+    "clientMarquee1": {
+      "heading": "Trusted by banks, platforms, and businesses building the future of payments",
+      "clientLogos": [
+        { "name": "Floward", "logo": "/Logosweb/1.png" },
+        { "name": "Walaplus", "logo": "/Logosweb/2.png" },
+        { "name": "NQOODLET", "logo": "/Logosweb/3.png" },
+        { "name": "Kamel Pay", "logo": "/Logosweb/4.png" },
+        { "name": "Transportr", "logo": "/Logosweb/5.png" },
+        { "name": "jisr", "logo": "/Logosweb/Jisr.png" }
+      ]
+    },
     "features": {
       "title": "Why Teams Build with SimpliFi",
       "subtitle": "Speed when you want it. Control when you need it.",

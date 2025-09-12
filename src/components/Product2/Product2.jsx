@@ -13,7 +13,6 @@ import ProductOverviewH from "../Home/ProductOverview/ProductOverviewH";
 import WhatWeDo from "@/components/Home/WhatWeDo";
 import homeText from "@/utils/homeText.json";
 
-console.log(embedreadytouse, "embedreadytouse");
 const Product2 = () => {
   return (
     <div>
@@ -21,7 +20,9 @@ const Product2 = () => {
       <HeroSection  data={embedreadytouse.hero}/>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
-      <WorkFlowSectionCases data={embedreadytouse.useCases} />
+      <div className="mt-20"> 
+      <Ai data={embedreadytouse.useCases} />
+      </div>
       <CareerList data={embedreadytouse.careerList}/>
       <ProductOverviewH/>
       <WhatWeDo data={embedreadytouse.whatwedo}/>

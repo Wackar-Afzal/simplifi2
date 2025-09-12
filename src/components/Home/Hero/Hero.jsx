@@ -35,8 +35,6 @@ export default function Hero() {
     if (!img) return;
 
     const handleMouseMove = (e) => {
-      // console.log(e);
-
       if (isInside) {
         img.style.left = `${e.clientX + window.scrollX}px`;
         img.style.top = `${e.clientY + window.scrollY}px`;
@@ -50,7 +48,6 @@ export default function Hero() {
       }
     };
     const handleScroll = (e) => {
-      console.log("scroll");
 
       if (isInside) {
         img.style.left = `${window.scrollX}px`;

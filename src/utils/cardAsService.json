@@ -5,6 +5,17 @@
       "heading": " Your brand. Your logic. Our infrastructure.",
       "descrip": "Get full control with SimpliFi’s Cards as a Service solution. Whether you're a fintech building a new product or an enterprise launching custom spend tools, our infrastructure powers every layer so you can create exactly what you need. From onboarding flows to KYC, from tokenization to fraud management, we’ve got the backend covered. You own the experience."
     },
+    "clientMarquee": {
+      "heading": "Trusted by banks, platforms, and businesses building the future of payments",
+      "clientLogos": [
+        { "name": "Floward", "logo": "/Logosweb/1.png" },
+        { "name": "Walaplus", "logo": "/Logosweb/2.png" },
+        { "name": "NQOODLET", "logo": "/Logosweb/3.png" },
+        { "name": "Kamel Pay", "logo": "/Logosweb/4.png" },
+        { "name": "Transportr", "logo": "/Logosweb/5.png" },
+        { "name": "jisr", "logo": "/Logosweb/Jisr.png" }
+      ]
+    },
     "careerList": {
       "heading": "Why build with SimpliFi",
       "descrip": "",
@@ -35,11 +46,11 @@
         }
       ]
     },
-        "useCases": {
-      "heading": "Our layered stack",
+    "useCases": {
+      "title": "Our layered stack",
       "descrip": " Choose the layers you need. We’ll handle the rest.",
 
-      "cases": [
+      "features": [
         {
           "id": 1,
           "company": "ING",
@@ -89,42 +100,43 @@
         }
       ]
     },
-       "whatsCookin": {
+    "whatsCookin": {
       "title": "Who it’s for",
       "subtitle": "",
-       "slides":[
-    {
-      "src": "WebImages/corperatepayout.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Fintechs launching card products",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/corperatespend.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Enterprises building internal spend tools",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/powerbybusiness.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Startups and scaleups building custom payment experiences",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    },
-    {
-      "src": "WebImages/consumerspend.jpg",
-      "alt": "Landscape",
-      "subtitle": "New research",
-      "title": "Tech-first teams that need full control",
-      "buttonText": "Learn more",
-      "buttonLink": "/shop"
-    }],
+      "slides": [
+        {
+          "src": "WebImages/corperatepayout.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Fintechs launching card products",
+          "buttonText": "Learn more",
+          "buttonLink": "/shop"
+        },
+        {
+          "src": "WebImages/corperatespend.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Enterprises building internal spend tools",
+          "buttonText": "Learn more",
+          "buttonLink": "/shop"
+        },
+        {
+          "src": "WebImages/powerbybusiness.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Startups and scaleups building custom payment experiences",
+          "buttonText": "Learn more",
+          "buttonLink": "/shop"
+        },
+        {
+          "src": "WebImages/consumerspend.jpg",
+          "alt": "Landscape",
+          "subtitle": "New research",
+          "title": "Tech-first teams that need full control",
+          "buttonText": "Learn more",
+          "buttonLink": "/shop"
+        }
+      ],
       "cta": "Learn more"
     }
   }

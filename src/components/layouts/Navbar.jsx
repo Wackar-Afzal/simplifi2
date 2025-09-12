@@ -255,27 +255,33 @@ const NAV_ITEMS = [
         descrip:
           "Founded by Ali Amin Sattar to simplify financial infrastructure across MENA and Pakistan",
       },
-      {
-        name: "Our Team",
-        path: "/about/team",
-        icon: "👥",
-        descrip: "Meet the SimpliFiers building the future of finance",
-      },
-      {
-        name: "Our Values",
-        path: "/about/values",
-        icon: "⭐",
-        descrip: "Raise the bar, Make an impact, Own it, People first",
-      },
-      {
-        name: "Careers",
-        path: "/about/careers",
-        icon: "💼",
-        descrip: "Join our team and become a SimpliFier",
-      },
+      // {
+      //   name: "Our Team",
+      //   path: "/about/team",
+      //   icon: "👥",
+      //   descrip: "Meet the SimpliFiers building the future of finance",
+      // },
+      // {
+      //   name: "Our Values",
+      //   path: "/about/values",
+      //   icon: "⭐",
+      //   descrip: "Raise the bar, Make an impact, Own it, People first",
+      // },
+      // {
+      //   name: "Careers",
+      //   path: "/about/careers",
+      //   icon: "💼",
+      //   descrip: "Join our team and become a SimpliFier",
+      // },
       {
         name: "Press",
         path: "/about/press",
+        icon: "📰",
+        descrip: "Media coverage and company announcements",
+      },
+            {
+        name: "Blogs",
+        path: "/about/Blogs",
         icon: "📰",
         descrip: "Media coverage and company announcements",
       },
@@ -317,7 +323,7 @@ export default function Navbar() {
             </div>
             {/* Desktop Navigation */}
             <div className="hidden lg:flex bg-lightGrey rounded-[6.25rem]">
-              {NAV_ITEMS.map(({ name, path, dropdown }) => (
+              {NAV_ITEMS.map(({ name, path, dropdown},i) => (
                 <div key={path} className="flex items-center">
                   {dropdown ? (
                     <div
@@ -337,7 +343,7 @@ export default function Navbar() {
                       <AnimatePresence>
                         {openDropdown == path && (
                           // {true && (
-                          <div className="absolute no-scrollbar overflow-scroll w-full right-0 top-[2rem] mt-2   py-8 px-6 z-0">
+                          <div className={`absolute no-scrollbar overflow-scroll  ${i==0?" w-full right-0":"w-[max-content]"}   top-[2rem] mt-2   py-8 px-6 z-0`}>
                             <div className="bg-white shadow-lg rounded-lg">
                               <SectionNavbar
                                 sectionName={name}

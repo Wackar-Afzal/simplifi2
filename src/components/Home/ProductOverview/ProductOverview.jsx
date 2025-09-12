@@ -102,12 +102,12 @@ const gridItems = [
 
 export default function ProductOverview() {
   return (
-    <div className=" products text-white pt-24 pb-4 px-10" >
-      <div className="w-full   mx-auto">
+    <div className=" !w-full products text-white pt-24 pb-4 px-10  " >
+      <div className="!w-full   flex justify-center ">
 
         <motion.div
           // className="grid md:grid-cols-2 gap-16 mb-20 w-full justify-center items-center"
-          className="flex flex-col gap-4 text-center  w-full justify-center items-center"
+          className="flex flex-col gap-4 text-center   justify-center items-center  max-w-6xl"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
