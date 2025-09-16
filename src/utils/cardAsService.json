@@ -57,7 +57,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp",
           "title": "Frontend layer",
           "description": "Build your own cardholder and admin interfaces using our APIs. Enable real-time controls, card management, and custom workflows within your platform.",
-          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e45a3b72e29b1dab499_cases-1.webp",
+          "image": "Cards-As-a-Service/Frontendlayer.jpg",
           "dark": false
         },
         {
@@ -66,7 +66,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e2c46c7f5de93e2b0176_sgg-userpic.svg",
           "title": "Backend layer",
           "description": "Powerful APIs and webhooks for issuing, managing, and tracking cards. Easy integration with your systems.",
-          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d42d99fe78ee847782eb1_cases-2.webp",
+          "image": "Cards-As-a-Service/Backendlayer.jpg",
           "dark": true
         },
         {
@@ -75,7 +75,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg",
           "title": "Regulatory layer",
           "description": "KYC, AML, and ongoing compliance covered. Stay compliant from day one.",
-          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d2e4481e7b29eba27de38_cases-3.webp",
+          "image": "Cards-As-a-Service/Regulatorylayer.jpg",
           "dark": false
         },
         {
@@ -84,7 +84,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
           "title": "Banking layer",
           "description": "We handle BIN sponsorship, funds management, and settlement. You focus on the experience.",
-          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d3810f7bfb8e31f34b5cc_cases-5.webp",
+          "image": "Cards-As-a-Service/Bankinglayer.jpg",
           "dark": true,
           "horizontal": true
         },
@@ -105,7 +105,7 @@
       "subtitle": "",
       "slides": [
         {
-          "src": "WebImages/corperatepayout.jpg",
+          "src": "Cards-As-a-Service/Fintechlaunchingproduct.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Fintechs launching card products",
@@ -113,7 +113,7 @@
           "buttonLink": "/shop"
         },
         {
-          "src": "WebImages/corperatespend.jpg",
+          "src": "Cards-As-a-Service/Enterprisebuilding.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Enterprises building internal spend tools",
@@ -121,7 +121,7 @@
           "buttonLink": "/shop"
         },
         {
-          "src": "WebImages/powerbybusiness.jpg",
+          "src": "Cards-As-a-Service/Startupsandscluping.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Startups and scaleups building custom payment experiences",
@@ -129,7 +129,7 @@
           "buttonLink": "/shop"
         },
         {
-          "src": "WebImages/consumerspend.jpg",
+          "src": "Cards-As-a-Service/Techfirstterm_.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Tech-first teams that need full control",

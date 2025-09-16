@@ -20,9 +20,14 @@ export const ProductMain = () => {
       <ClientsMarquee data={cardAsService.clientMarquee} />
 
       {/* <HeroProduct /> */}
+      <div className="mb-20">
       <CareerList data={cardAsService.careerList} />
+
+      </div>
       <Ai data={cardAsService.useCases} />
+      <div className="mt-20">
       <WhatsCookin data={cardAsService.whatsCookin} />
+      </div>
       {/* <CaseStudies /> */}
       {/* <Brags /> */}
       {/* <ClientSays /> */}

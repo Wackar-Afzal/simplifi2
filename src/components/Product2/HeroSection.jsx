@@ -19,7 +19,7 @@ const HeroSection = ({data}) => {
           <div className="hero-wrapper">
             <div className="hero-left">
               <h1 className="heading-style-h1">{data.heading}</h1>
-              <p className="hero-desc">
+              <p className=" paragraph-style-body">
                 {data.descrip}
               </p>
             </div>

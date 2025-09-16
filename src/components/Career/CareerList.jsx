@@ -37,7 +37,7 @@ const CareerList = ({data}) => {
         <div className="">
           <div className="careers-grid">
             <div className="body-large">
-                <h2>{data.heading}</h2>
+                <h2 className=''>{data.heading}</h2>
                 <p>{data.descrip}</p>
                 </div>
             <div className="w-dyn-list">

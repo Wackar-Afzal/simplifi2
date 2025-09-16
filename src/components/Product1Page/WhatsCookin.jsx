@@ -62,49 +62,70 @@ export default function WhatsCookin({data}) {
         </div> */}
       </div>
 
-      <Splide
-        ref={splideRef}
-        options={{
-          //   type: "loop",
-          autoplay: false,
-          interval: 4000,
-          gap: "2rem", // can also try "16px" for precise control
-          arrows: false,
-          pagination: true,
-          perPage: 4.5, // Changed from 5 to 4.5 slides visible
-          perMove: 1,
-          focus: 0, // no centering
-          padding: 0, // remove extra padding
-          pauseOnHover: false,
-          breakpoints: {
-            1280: { perPage: 4.5 }, // Changed from 5 to 4.5 for large screens
-            1024: { perPage: 3 }, // tablets
-            768: { perPage: 2 }, // small tablets / large phones
-            480: { perPage: 1 }, // mobile
-          },
-        }}
-      >
-        {data.slides.map((slide, index) => (
-          <SplideSlide key={index} className="relative feed-link">
-            <div className="feed-img-wrapper">
-              <img
-                src={slide.src}
-                alt={slide.alt || `Slide ${index + 1}`}
-                className="feed-img"
-              />
-            </div>
+  {data.slides.length < 5 ? (
+  <div className="flex justify-center gap-8 flex-wrap">
+    {data.slides.map((slide, index) => (
+      <div key={index} className="relative feed-link w-[250px]"> {/* Adjust width as needed */}
+        <div className="feed-img-wrapper">
+          <img
+            src={slide.src}
+            alt={slide.alt || `Slide ${index + 1}`}
+            className="feed-img"
+          />
+        </div>
+        <div className="pb-20">
+          <p className="feed-tag mb-3 mt-3">{}</p>
+          <h2 className="feed-title mb-3">{slide.title}</h2>
+          <Link href={slide.buttonLink} className="case-button">
+            {slide.buttonText}
+          </Link>
+        </div>
+      </div>
+    ))}
+  </div>
+) : (
+  <Splide
+    ref={splideRef}
+    options={{
+      autoplay: false,
+      interval: 4000,
+      gap: "2rem",
+      arrows: false,
+      pagination: true,
+      perPage: 4.5,
+      perMove: 1,
+      focus: 0,
+      padding: 0,
+      pauseOnHover: false,
+      breakpoints: {
+        1280: { perPage: 4.5 },
+        1024: { perPage: 3 },
+        768: { perPage: 2 },
+        480: { perPage: 1 },
+      },
+    }}
+  >
+    {data.slides.map((slide, index) => (
+      <SplideSlide key={index} className="relative feed-link">
+        <div className="feed-img-wrapper">
+          <img
+            src={slide.src}
+            alt={slide.alt || `Slide ${index + 1}`}
+            className="feed-img"
+          />
+        </div>
+        <div className="pb-20">
+          <p className="feed-tag mb-3 mt-3">{}</p>
+          <h2 className="feed-title mb-3">{slide.title}</h2>
+          <Link href={slide.buttonLink} className="case-button">
+            {slide.buttonText}
+          </Link>
+        </div>
+      </SplideSlide>
+    ))}
+  </Splide>
+)}
 
-            {/* Overlay Content */}
-            <div className=" pb-20 ">
-              <p className="feed-tag mb-3 mt-3">{}</p>
-              <h2 className="feed-title mb-3">{slide.title}</h2>
-              <Link href={slide.buttonLink} className="case-button">
-                {slide.buttonText}
-              </Link>
-            </div>
-          </SplideSlide>
-        ))}
-      </Splide>
     </section>
   );
 }
