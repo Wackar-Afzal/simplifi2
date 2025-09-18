@@ -808,6 +808,14 @@ body {
   transform: scale(1.05);
 }
 
+/* Line clamp utility for blog excerpts */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .feed-img {
   aspect-ratio: 1 / 1.2;
   object-fit: cover;

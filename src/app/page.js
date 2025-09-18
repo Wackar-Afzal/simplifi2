@@ -16,6 +16,10 @@ import Features from "@/components/Product2/Features";
 import Services from "@/components/Product2/Services";
 import UXSection from "@/components/Product2/UXSection";
 import homeText from "@/utils/homeText.json";
+import CaseStudies from "@/components/Product1Page/CaseStudies";
+import {blogs} from "@/utils/blogs/blogs.js"
+import {pressReleases} from "@/utils/press/press.js"
+
 export default function Home() {
   return (
     <div className="mx-auto">
@@ -40,8 +44,10 @@ export default function Home() {
       <ClientsMargquee data={homeText.homepage.clientMarquee1} />
 
       <WhatWeDo data={homeText.homepage.whatwedo} />
+      <CaseStudies data={blogs.blogs.blogs}/>
+      <CaseStudies data={pressReleases.pressReleases.pressReleases}/>
 
-      <ClientSays />
+      {/* <ClientSays /> */}
       {/* <WorkFlowSectionCases/> */}
       {/* <ContactUs/> */}
 

@@ -1,0 +1,258 @@
+{
+  "useCases": {
+    "hero": {
+      "heading": "One Platform. Endless Use Cases.",
+      "descrip": "Whether you’re managing team expenses, sending payouts, or building loyalty programs, our infrastructure supports a wide range of business needs. Choose from ready-to-use card formats - physical, virtual, single-use, crypto, gift, and fuel and tailor them to your workflows.",
+      "desVideo": "https://files.asad.digital/video/humbleteam/hero.mp4",
+      "mobVideo": "https://files.asad.digital/video/humbleteam/hero.mp4"
+    },
+    "caseStudies": {
+      "heading": "Corporate Payouts",
+      "descrip": "",
+      "slides": [
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Disburse  salaries and advances. ",
+          "title": "Salary Payout Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Pay freelancers and gig workers with ease.",
+          "title": "Freelancer Payout Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Disburse commissions or performance-linked incentives.",
+          "title": "Commission & Incentive Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Process payroll via central bank systems in UAE/KSA.",
+          "title": "Payroll Cards (WPS)",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        }
+      ]
+    },
+    "caseStudies1": {
+      "heading": "Gifting & Rewards",
+      "descrip": "",
+      "slides": [
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": " Offer prepaid cards to teams, partners, or customers.",
+          "title": "Gift Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": " Distribute gift cards redeemable at shopping malls.",
+          "title": "Mall Gift Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Offer branded gift cards for retail partners or store networks.",
+          "title": "Retail Gift Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Instant, digital gift cards.",
+          "title": "eGift Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Turn points into instantly usable, branded card value.",
+          "title": "Loyalty Redemption Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        }
+      ]
+    },
+    "caseStudies2": {
+      "heading": "Corporate Spend",
+      "descrip": "",
+      "slides": [
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Let employees spend with limits, categories, and tracking.",
+          "title": "Corporate Expense Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Manage fuel spend for teams or fleets with control.",
+          "title": "Fuel Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Pay vendors and suppliers through virtual or physical cards.",
+          "title": "Supplier Payment Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        }
+      ]
+    },
+    "caseStudies3": {
+      "heading": "Consumer Spend",
+      "descrip": "",
+      "slides": [
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Link branded cards to digital wallets for easy spend.",
+          "title": "Consumer Wallet Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Issue cards that enable users to earn cashback or perks.",
+          "title": "Cashback & Rewards Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Multi-currency cards with FX savings and smart controls.",
+          "title": "Travel Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Allow spending directly from crypto wallets.",
+          "title": "Crypto Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        }
+      ]
+    },
+    "caseStudies4": {
+      "heading": "BNPL & Credit",
+      "descrip": "",
+      "slides": [
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Let users buy now, pay later without merchant tie-ups.",
+          "title": "BNPL Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Enable seamless spending across POS and e-commerce.",
+          "title": "In-store & Online Payment Cards",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "alt": "Landscape",
+          "subtitle": "Build credit profiles with controlled card-based spend.",
+          "title": "Consumer Credit Profiles",
+          "buttonText": "Coming soon",
+          "buttonLink": "/shop",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        }
+      ]
+    },
+    "careerList": {
+      "heading": "Card Types You Can Use",
+      "descrip": "",
+      "careerPositions": [
+        {
+          "title": "Physical Cards",
+          "href": "/careers/communication-designer",
+          "location": "Prague or remote",
+          "descrip": "Plastic cards with your brand, delivered to your team or customers. Perfect for on-the-go spending like travel, fuel, or fieldwork."
+        },
+        {
+          "title": "Virtual Cards",
+          "href": "/careers/design-lead-product",
+          "location": "Prague or remote",
+          "descrip": " Instantly issued and ready to use for online purchases, subscriptions, and remote team expenses."
+        },
+        {
+          "title": " Mobile Wallets",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Easily add cards to Apple Pay, Google Pay, and other mobile wallets for seamless tap-and-go payments."
+        },
+
+                {
+          "title": " Crypto Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Link to crypto wallets and convert on-the-fly for real-world spend. Useful for platforms operating in digital asset environments."
+        },
+                {
+          "title": "Gift Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Branded cards for promotions, rewards, or loyalty programs. "
+        },        {
+          "title": " Fuel Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Tailored for logistics companies. Limit use to fuel merchants, set caps, and track every transaction in real time."
+        },                {
+          "title": " Single-Use Cards",
+          "href": "/careers/creative-director-product",
+          "location": "Prague or remote",
+          "descrip": "Auto-expiring cards designed for one-time transactions. Great for trial subscriptions, one-time vendor payments, or other limited-use cases."
+        }
+      ]
+    }
+  }
+}

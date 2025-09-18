@@ -274,16 +274,16 @@ const NAV_ITEMS = [
       //   descrip: "Join our team and become a SimpliFier",
       // },
       {
-        name: "Press",
-        path: "/about/press",
+        name: "Press Releases",
+        path: "/press",
         icon: "📰",
-        descrip: "Media coverage and company announcements",
+        descrip: "Latest press releases and company announcements",
       },
-            {
+      {
         name: "Blogs",
-        path: "/about/Blogs",
-        icon: "📰",
-        descrip: "Media coverage and company announcements",
+        path: "/blogs",
+        icon: "📝",
+        descrip: "Insights and trends in fintech and payment solutions",
       },
     ],
   },
