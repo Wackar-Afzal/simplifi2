@@ -11,7 +11,7 @@
       "descrip": "",
       "slides": [
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Multi-Currency Cards.jpg",
           "alt": "Landscape",
           "subtitle": "Issue in multiple currencies and avoid FX fees.",
           "title": "Multi-Currency Cards",
@@ -20,7 +20,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Real-Time Notifications.jpg",
           "alt": "Landscape",
           "subtitle": "Get alerts for every transaction instantly.",
           "title": "Real-Time Notifications",
@@ -30,7 +30,7 @@
         },
 
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Instant Issuance.jpg",
           "alt": "Landscape",
           "subtitle": "Create and activate virtual cards in seconds.",
           "title": "Instant Issuance",
@@ -39,16 +39,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
-          "alt": "Landscape",
-          "subtitle": "Create and activate virtual cards in seconds.",
-          "title": "Instant Issuance",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
-          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        },
-        {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Bulk Load Management.jpg",
           "alt": "Landscape",
           "subtitle": "Load funds or issue cards in batches effortlessly.",
           "title": "Bulk Load Management",
@@ -57,7 +48,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Role-Based Access.jpg",
           "alt": "Landscape",
           "subtitle": " Assign roles and permissions across your team.",
           "title": "Role-Based Access",
@@ -66,7 +57,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Statement Downloads.jpg",
           "alt": "Landscape",
           "subtitle": "Export statements by user or timeframe.",
           "title": "Statement Downloads",
@@ -75,7 +66,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Developer Sandbox.jpg",
           "alt": "Landscape",
           "subtitle": "Test and build in a secure, private environment.",
           "title": "Developer Sandbox",
@@ -84,7 +75,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Developer Tools.jpg",
           "alt": "Landscape",
           "subtitle": "Access detailed API docs and integration guides.",
           "title": "Developer Tools",
@@ -93,7 +84,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/SDKs for Mobile.jpg",
           "alt": "Landscape",
           "subtitle": "Use PCI-compliant SDKs for iOS and Android apps.",
           "title": "SDKs for Mobile",
@@ -102,7 +93,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Webhooks.jpg",
           "alt": "Landscape",
           "subtitle": "Receive real-time event updates via webhooks.",
           "title": "Webhooks",
@@ -111,7 +102,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Web Hosted Pages.jpg",
           "alt": "Landscape",
           "subtitle": "Use hosted card pages as an alternative to building apps.",
           "title": "Web Hosted Pages",
@@ -120,7 +111,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Custom KYC Flows.jpg",
           "alt": "Landscape",
           "subtitle": "Design onboarding journeys that match your business needs.",
           "title": "Custom KYC Flows",
@@ -130,7 +121,7 @@
         },
 
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Reports & Insights.jpg",
           "alt": "Landscape",
           "subtitle": "Access pre-built dashboards for spend analysis.",
           "title": "Reports & Insights",
@@ -139,7 +130,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Fully Programmable Card Controls.jpg",
           "alt": "Landscape",
           "subtitle": "Set limits, block categories, and restrict usage.",
           "title": "Fully Programmable Card Controls",
@@ -148,7 +139,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d15f5cb118f7bd7c96e_Image-min.png",
+          "src": "/features/Maker-Checker & Two-Factor Authentication.jpg",
           "alt": "Landscape",
           "subtitle": "Add layers of control with approval flows and secure logins.",
           "title": "Maker-Checker & Two-Factor Authentication",
