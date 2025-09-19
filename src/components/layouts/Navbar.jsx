@@ -246,11 +246,11 @@ const NAV_ITEMS = [
   },
   {
     name: "About",
-    path: "/about",
+    path: "/about-us",
     dropdown: [
       {
         name: "Our Story",
-        path: "/about/story",
+        path: "/about-us",
         icon: "📖",
         descrip:
           "Founded by Ali Amin Sattar to simplify financial infrastructure across MENA and Pakistan",
