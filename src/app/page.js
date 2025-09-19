@@ -32,7 +32,7 @@ export default function Home() {
       <UXSection data={homeText.homepage.productOverview2} />
 
       <div className="lg:pb-18">
-        <Clients />
+        <Clients data={homeText.homepage.clientsCount} />
       </div>
       <WhatsCookin data={homeText.homepage.whatsCookin} />
       <div className="lg:pb-18">

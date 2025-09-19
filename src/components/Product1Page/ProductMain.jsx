@@ -4,11 +4,12 @@ import Navbar from "../layouts/Navbar";
 import WhatsCookin from "./WhatsCookin";
 import { ContactUs } from "../common/ContactUs";
 import { Footer } from "../layouts/Footer";
-import HeroSection from "../Product2/HeroSection";
 import CareerList from "../Career/CareerList";
 import WorkFlowSectionCases from "../Home/WorkFlow";
 import ClientsMarquee from "../Product2/ClientsMargquee";
 import Ai from "../Product2/Ai2";
+import {cardAsService} from "@/utils/cardAsService.json"
+import HeroSection from "../Product2/HeroSection";
 
 export const ProductMain = () => {
 

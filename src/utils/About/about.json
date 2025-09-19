@@ -1,0 +1,38 @@
+{
+  "about": {
+    "hero": {
+      "bckgroundImage": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif",
+      "heading": " Democratizing Card Issuance since 2020",
+      "descrip": "Since 2020, we’ve been transforming the way businesses launch and scale their own card programs, removing the barriers of cost, complexity, and compliance."
+    },
+    "story": {
+      "heading": "Our Story",
+      "paras": [
+        "Based in Dubai, SimpliFi was founded by Ali Amin Sattar, a seasoned leader in payments, banking, and technology with over 25 years of industry experience. Having led large-scale financial ventures across the region, Ali saw how complex and fragmented it was for businesses in MENA and Pakistan to launch and manage card programs.",
+        "SimpliFi was built to change that.",
+        "What started as a simple idea in the UAE quickly evolved into a powerful Cards-as-a-Service (CaaS) platform that expanded across the GCC helps businesses issue and manage physical and virtual cards—without the usual operational or regulatory hurdles. With a focus on speed, compliance, and scalability, SimpliFi gives companies the infrastructure to build and grow payment products on their own terms."
+      ]
+    },
+    "clientsCount": {
+      "title": "Our Values",
+      "stats": [
+        {
+          "number": "Raise the bar ",
+          "label": "We pursue excellence with integrity and transparency."
+        },
+        {
+          "number": "Make an impact",
+          "label": "We work fast, own results, and never stop improving."
+        },
+        {
+          "number": "Own it ",
+          "label": "We take initiative and celebrate accountability."
+        },
+        {
+          "number": "People first",
+          "label": "We lead with empathy, support, and collaboration."
+        }
+      ]
+    }
+  }
+}
