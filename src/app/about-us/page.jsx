@@ -1,7 +1,7 @@
 import Navbar from "@/components/layouts/Navbar";
 import React from "react";
 import HeroSection from "@/components/Product2/HeroSection";
-import about  from "@/utils/about/about.json";
+import about  from "@/utils/About/about.json";
 import  {Clients} from "@/components/about/Clients";
 import ClientsMarquee from "@/components/Product2/ClientsMargquee";
 const Page = () => {
