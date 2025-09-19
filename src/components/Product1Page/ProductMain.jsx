@@ -1,14 +1,12 @@
-import { cardAsService } from "@/utils/cardAsService.json";
+import cardAsService  from "@/utils/cardAsService.json";
 
 import Navbar from "../layouts/Navbar";
 import WhatsCookin from "./WhatsCookin";
 import { ContactUs } from "../common/ContactUs";
 import { Footer } from "../layouts/Footer";
 import CareerList from "../Career/CareerList";
-import WorkFlowSectionCases from "../Home/WorkFlow";
 import ClientsMarquee from "../Product2/ClientsMargquee";
 import Ai from "../Product2/Ai2";
-import {cardAsService} from "@/utils/cardAsService.json"
 import HeroSection from "../Product2/HeroSection";
 
 export const ProductMain = () => {
@@ -17,17 +15,17 @@ export const ProductMain = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection data={cardAsService.hero} />
-      <ClientsMarquee data={cardAsService.clientMarquee} />
+      <HeroSection data={cardAsService.cardAsService.hero} />
+      <ClientsMarquee data={cardAsService.cardAsService.clientMarquee} />
 
       {/* <HeroProduct /> */}
       <div className="mb-20">
-      <CareerList data={cardAsService.careerList} />
+      <CareerList data={cardAsService.cardAsService.careerList} />
 
       </div>
-      <Ai data={cardAsService.useCases} />
+      <Ai data={cardAsService.cardAsService.useCases} />
       <div className="mt-20">
-      <WhatsCookin data={cardAsService.whatsCookin} />
+      <WhatsCookin data={cardAsService.cardAsService.whatsCookin} />
       </div>
       {/* <CaseStudies /> */}
       {/* <Brags /> */}

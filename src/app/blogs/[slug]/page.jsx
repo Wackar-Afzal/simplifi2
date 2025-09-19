@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/layouts/Navbar";
 import { Footer } from "@/components/layouts/Footer";
-import { blogs } from "@/utils/blogs/blogs.js";
+import {blogs}  from "@/utils/blogs/blogs.js";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";

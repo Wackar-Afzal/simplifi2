@@ -4,28 +4,24 @@ import Navbar from "../layouts/Navbar";
 import { ContactUs } from "../common/ContactUs";
 import { Footer } from "../layouts/Footer";
 import Ai from "./Ai2";
-import Features from "./Features";
-import UXSection from "./UXSection";
-import { embedreadytouse } from "@/utils/EmbedReadytouse.json";
-import WorkFlowSectionCases from "../Home/WorkFlow";
+import  embedreadytouse  from "@/utils/EmbedReadytouse.json";
 import CareerList from "../Career/CareerList";
 import ProductOverviewH from "../Home/ProductOverview/ProductOverviewH";
 import WhatWeDo from "@/components/Home/WhatWeDo";
-import homeText from "@/utils/homeText.json";
 
 const Product2 = () => {
   return (
     <div>
       <Navbar />
-      <HeroSection  data={embedreadytouse.hero}/>
+      <HeroSection  data={embedreadytouse.embedreadytouse.hero}/>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
       <div className="mt-20"> 
-      <Ai data={embedreadytouse.useCases} />
+      <Ai data={embedreadytouse.embedreadytouse.useCases} />
       </div>
-      <CareerList data={embedreadytouse.careerList}/>
+      <CareerList data={embedreadytouse.embedreadytouse.careerList}/>
       <ProductOverviewH/>
-      <WhatWeDo data={embedreadytouse.whatwedo}/>
+      <WhatWeDo data={embedreadytouse.embedreadytouse.whatwedo}/>
       
       
       {/* <Features /> */}
