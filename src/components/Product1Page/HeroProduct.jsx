@@ -3,7 +3,7 @@ import React from "react";
 export default function HeroProduct({data}) {
   return (
     <>
-    <div className="px-8 product-hero py-30">
+    <div className={`px-8 product-hero ${data.desVideo?"py-30":"py-10"}`}>
       <h1 className="h1 hero-heading">{data.heading}</h1>
       <p className="mt-8">{data.descrip}</p>
     </div>
@@ -93,6 +93,7 @@ export default function HeroProduct({data}) {
         </div>
 
         {/* Desktop Video */}
+        {data.desVideo &&
         <div className="hero-video w-embed">
           <video width="100%" height="auto" autoPlay muted playsInline loop>
             <source
@@ -100,9 +101,10 @@ export default function HeroProduct({data}) {
               type="video/mp4"
             />
           </video>
-        </div>
+        </div>}
 
         {/* Mobile Video */}
+        {data.mobVideo && 
         <div className="hero-video is-mobile w-embed">
           <video width="auto" height="100%" autoPlay muted playsInline loop>
             <source
@@ -110,7 +112,7 @@ export default function HeroProduct({data}) {
               type="video/mp4"
             />
           </video>
-        </div>
+        </div>}
       </div>
     </section>
 

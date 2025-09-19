@@ -3,6 +3,7 @@ import React from "react";
 import HeroSection from "@/components/Product2/HeroSection";
 import { about } from "@/utils/about/about.json";
 import { Clients } from "@/components/about/Clients";
+import ClientsMarquee from "@/components/Product2/ClientsMargquee";
 const Page = () => {
   console.log(about, "about");
   return (
@@ -24,6 +25,9 @@ const Page = () => {
       <div className="lg:pb-18 max-w-7xl mx-auto overflow-hidden">
         <Clients data={about.clientsCount} />
       </div>
+      <div>
+        <ClientsMarquee data={about.clientMarquee} />
+        </div>
     </>
   );
 };

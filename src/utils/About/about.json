@@ -33,6 +33,17 @@
           "label": "We lead with empathy, support, and collaboration."
         }
       ]
+    },
+      "clientMarquee": {
+      "heading": "Trusted by fintechs, startups, and  enterprises across MENA",
+      "clientLogos": [
+        { "name": "Floward", "logo": "/Logosweb/1.png" },
+        { "name": "Walaplus", "logo": "/Logosweb/2.png" },
+        { "name": "NQOODLET", "logo": "/Logosweb/3.png" },
+        { "name": "Kamel Pay", "logo": "/Logosweb/4.png" },
+        { "name": "Transportr", "logo": "/Logosweb/5.png" },
+        { "name": "jisr", "logo": "/Logosweb/Jisr.png" }
+      ]
     }
   }
 }
