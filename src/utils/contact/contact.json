@@ -1,0 +1,14 @@
+{
+  "contact": {
+    "hero": {
+      "bckgroundImage": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif",
+      "heading": " Democratizing Card Issuance since 2020",
+      "descrip": "Since 2020, we’ve been transforming the way businesses launch and scale their own card programs, removing the barriers of cost, complexity, and compliance."
+    },
+    "footer":{
+      "bg-dark":true,
+      "heading":"Need assistance?",
+      "subheading":"Our team is ready to help you with any questions or requests."
+    }
+  }
+}

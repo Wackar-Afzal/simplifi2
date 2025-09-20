@@ -1,15 +1,16 @@
 import { ContactUs } from '@/components/common/ContactUs'
+import PageFooter from '@/components/common/PageFooter'
 import DemoForm from '@/components/ContactUs/DemoForm'
 import { Footer } from '@/components/layouts/Footer'
 import Navbar from '@/components/layouts/Navbar'
 import React from 'react'
-
+import data from '@/utils/contact/contact.json'
 const page = () => {
   return (
     <>
     <Navbar/>
     {/* <ContactUs/> */}
-      <div className="h-auto flex items-center justify-center w-full">
+      <div className="h-auto flex items-center justify-center w-full mb-20">
         <div
     
           className="w-full gap-[1rem] bg-white overflow-hidden flex flex-col md:flex-row-reverse justify-center h-full md:h-[80vh] overflow-y-scroll !snap-y no-scrollbar"
@@ -31,6 +32,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <PageFooter data={data.contact.footer}/>
       <Footer/>
     </> 
     

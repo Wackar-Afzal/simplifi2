@@ -8,7 +8,7 @@ export default function PageFooter({ data }) {
       
             <h2 className={`heading-style-h2_fintech w-full !text-center mx-auto ${data["bg-dark"]?"":"!text-black"} `}>{data.heading}</h2>
             <p className={`paragraph-style-body ${data["bg-dark"]?"":"!text-black"}`}>{data.subheading}</p>
-            <Link href={data.buttonLink} className="contained-button !max-w-[max-content ]">{data.buttonText}</Link>
+            {data?.buttonLink?<Link href={data.buttonLink} className="contained-button !max-w-[max-content ]">{data.buttonText}</Link>:null}
       </div>
     </section>
   );
