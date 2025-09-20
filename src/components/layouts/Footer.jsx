@@ -1,23 +1,18 @@
+import { Linkedin, Mail, MessageCircleMore, MessageCircleMoreIcon, Phone } from "lucide-react";
 import React from "react";
 
 export const Footer = () => {
     return (
-        <div className="footer-wrapper py-10 px-5">
-            <div className="footer-top">
-                <div
-                    id="w-node-a9b8ea4c-e119-4125-3e5d-f2abb7770f8b-2da5785d"
-                    className="footer-grid-title"
-                >
-                    <a href="https://humbleteam.com/" className="w-inline-block">
-                        <img
-                            src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660a655c9f17e25bfb250ddd_humbleteam-logo.svg"
+        <div className="footer-wrapper py-10 px-5 max-w-7xl mx-auto mt-20">
+            <div className="flex justify-between items-center">
+                <div>
+                     <img
+                            src="/logo.svg"
                             loading="lazy"
                             alt=""
+                            className="w-[7rem]"
                         />
-                    </a>
-                    <div className="paragraph-style-body">
-                        We make products <span className="text-color-accent">go brrrr.</span>
-                    </div>
+                
                 </div>
                 <div
                     id="w-node-_5ab5dc9a-cdec-672b-b43e-39b097ff44e3-2da5785d"
@@ -26,46 +21,30 @@ export const Footer = () => {
                     <a
                         href="https://www.instagram.com/humbleteam.agency/"
                         target="_blank"
-                        className="button-social w-inline-block"
+                        className="hover:text-primary w-inline-block"
                     >
-                        <img
-                            src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660ab3af0b6882c961ab1205_social-ig.svg"
-                            loading="lazy"
-                            alt=""
-                        />
+                      <MessageCircleMoreIcon />
                     </a>
                     <a
                         href="https://clutch.co/profile/humbleteam"
                         target="_blank"
-                        className="button-social w-inline-block"
+                        className="hover:text-primary w-inline-block"
                     >
-                        <img
-                            src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660ab3af6511a8faf1486373_social-v.svg"
-                            loading="lazy"
-                            alt=""
-                        />
+                         <Mail />
                     </a>
                     <a
                         href="https://www.linkedin.com/company/humbleteam/"
                         target="_blank"
-                        className="button-social w-inline-block"
+                        className="hover:text-primary w-inline-block"
                     >
-                        <img
-                            src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660ab3afa0ff0bd53cc9668a_social-in.svg"
-                            loading="lazy"
-                            alt=""
-                        />
+                          <Linkedin />
                     </a>
-                    <a
-                        href="https://www.behance.net/humbleteam"
+                     <a
+                        href="https://www.linkedin.com/company/humbleteam/"
                         target="_blank"
-                        className="button-social w-inline-block"
+                        className="hover:text-primary w-inline-block"
                     >
-                        <img
-                            src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660ab3af0b6882c961ab1210_social-be.svg"
-                            loading="lazy"
-                            alt=""
-                        />
+                          <Phone />
                     </a>
                 </div>
             </div>
@@ -76,39 +55,22 @@ export const Footer = () => {
             <div className="footer-grid">
                 <div className="footer-location-wrapper">
                     <div className="paragraph-style-body">
-                        Europe
+                        UAE OFFICE
                         <br />
-                        <a href="mailto:europe@humbleteam.com" className="is-link">
-                            europe@humbleteam.com
-                        </a>
-                    </div>
-                    <div className="paragraph-style-body">
-                        <a
-                            href="https://www.google.com/maps/place/Humbleteam+Design+Agency/@50.0758009,14.4411429,17z/data=!3m1!4b1!4m6!3m5!1s0x470b930076d6dd29:0xf146763c8b260a6b!8m2!3d50.075801!4d14.4460084!16s%2Fg%2F11h1qyy_zx?entry=ttu"
-                            target="_blank"
-                            className="is-link_alt"
-                        >
-                            Národní 135/14, Prague
-                        </a>
+                        <p className="is-link">
+                           Unit 208, Level 1,<br/>Gate Avenue – South Zone, DIFC, Dubai,<br/> UAE-P.O. Box 507211
+                        </p>
                     </div>
                 </div>
                 <div className="footer-location-wrapper">
                     <div className="paragraph-style-body">
-                        North America
+                        KSA OFFICE:
                         <br />
-                        <a href="mailto:us@humbleteam.com" className="is-link">
-                            us@humbleteam.com
-                        </a>
+                        <p className="is-link">
+                           Al Rabi District,<br/>Riyadh 13316,<br/>P.O. Box 12389
+                        </p>
                     </div>
-                    <div className="paragraph-style-body">
-                        <a
-                            href="https://www.google.com/maps/place/81+Prospect+St,+Brooklyn,+NY+11201,+Spojen%C3%A9+st%C3%A1ty+americk%C3%A9/@40.7008018,-73.9895525,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25a340d3b3a0f:0x36d9482b5ac3177a!8m2!3d40.7008018!4d-73.9873638!16s%2Fg%2F11c2bsfrx3?entry=ttu"
-                            target="_blank"
-                            className="is-link_alt"
-                        />
-                        81 Prospect St, Brooklyn, NY
-                        <a />
-                    </div>
+                    
                 </div>
                 <div className="footer-location-wrapper">
                     <div className="paragraph-style-body">

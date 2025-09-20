@@ -19,6 +19,7 @@ import homeText from "@/utils/homeText.json";
 import CaseStudies from "@/components/Product1Page/CaseStudies";
 import {blogs} from "@/utils/blogs/blogs.js"
 import {pressReleases} from "@/utils/press/press.js"
+import  PageFooter  from "@/components/common/PageFooter";
 
 export default function Home() {
   return (
@@ -50,7 +51,6 @@ export default function Home() {
       {/* <ClientSays /> */}
       {/* <WorkFlowSectionCases/> */}
       {/* <ContactUs/> */}
-
       <Footer />
     </div>
   );

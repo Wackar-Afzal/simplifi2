@@ -218,6 +218,13 @@
           "horizontal": true
         }
       ]
+    },
+    "footer":{
+      "bg-dark":false,
+      "heading":"Plug in and go live in days!",
+      "subheading":"You bring the use case. We’ll handle the infrastructure.",
+      "buttonText":"Book a Demo",
+      "buttonLink":"/"
     }
   }
 }

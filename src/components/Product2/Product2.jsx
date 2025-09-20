@@ -8,6 +8,7 @@ import  embedreadytouse  from "@/utils/EmbedReadytouse.json";
 import CareerList from "../Career/CareerList";
 import ProductOverviewH from "../Home/ProductOverview/ProductOverviewH";
 import WhatWeDo from "@/components/Home/WhatWeDo";
+import PageFooter from "../common/PageFooter";
 
 const Product2 = () => {
   return (
@@ -25,7 +26,8 @@ const Product2 = () => {
       
       
       {/* <Features /> */}
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <PageFooter data={embedreadytouse.embedreadytouse.footer} />
       <Footer />
     </div>
   );

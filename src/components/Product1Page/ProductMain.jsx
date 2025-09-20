@@ -8,6 +8,7 @@ import CareerList from "../Career/CareerList";
 import ClientsMarquee from "../Product2/ClientsMargquee";
 import Ai from "../Product2/Ai2";
 import HeroSection from "../Product2/HeroSection";
+import PageFooter from "../common/PageFooter";
 
 export const ProductMain = () => {
 
@@ -30,7 +31,7 @@ export const ProductMain = () => {
       {/* <CaseStudies /> */}
       {/* <Brags /> */}
       {/* <ClientSays /> */}
-      <ContactUs />
+      <PageFooter data={cardAsService.cardAsService.footer} />
       <Footer />
     </div>
   );

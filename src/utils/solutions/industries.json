@@ -122,6 +122,13 @@
           "descrip": "Auto-expiring cards designed for one-time transactions. Great for secure payouts, vendor payments, or limited-use cases."
         }
       ]
+    },
+    "footer":{
+      "bg-dark":true,
+      "heading":"Let’s tailor the solution for your industry.",
+      "subheading":"No matter your vertical, we’ll help you embed smarter payments and cards.",
+      "buttonText":"Book a Demo",
+      "buttonLink":"/"
     }
   }
 }

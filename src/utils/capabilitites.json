@@ -100,6 +100,13 @@
 
         }
     ]
+    },
+       "footer":{
+      "bg-dark":true,
+      "heading":"Power your card program with enterprise-grade infrastructure",
+      "subheading":"Our platform does the heavy lifting behind the scenes, so you can focus on growth.",
+      "buttonText":"Book a Demo",
+      "buttonLink":"/"
     }
   }
 }

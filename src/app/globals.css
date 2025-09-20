@@ -95,6 +95,25 @@ body {
   /* Firefox */
 }
 
+
+.input {
+  padding: 0.75rem;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #fff;
+  border-color:var(--primary--light) !important;
+  outline: none;
+  border-radius: 0.375rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3b82f6; /* Tailwind's blue-500 */
+  border-color: #fee2e2; /* Tailwind's red-100 */
+}
 .contained-button {
   border: 0.0625rem solid var(--primary--secondary);
   background-color: var(--primary--main);
@@ -635,14 +654,6 @@ body {
   display: flex;
 }
 
-.button-social {
-  filter: brightness(15%) saturate(0%);
-  transition: all 0.25s;
-}
-
-.button-social:hover {
-  filter: brightness() saturate();
-}
 
 .is-link_alt {
   color: var(--grey--100);

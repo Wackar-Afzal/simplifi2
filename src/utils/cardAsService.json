@@ -138,6 +138,13 @@
         }
       ],
       "cta": "Learn more"
+    },
+       "footer":{
+      "bg-dark":true,
+      "heading":"Ready to build your own card program?",
+      "subheading":"We’ll provide the infrastructure, APIs, and compliance support. You build what matters.",
+      "buttonText":"Book a Demo",
+      "buttonLink":"/"
     }
   }
 }

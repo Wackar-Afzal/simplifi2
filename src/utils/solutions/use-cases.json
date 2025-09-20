@@ -253,6 +253,13 @@
           "descrip": "Auto-expiring cards designed for one-time transactions. Great for trial subscriptions, one-time vendor payments, or other limited-use cases."
         }
       ]
+    },
+       "footer":{
+      "bg-dark":true,
+      "heading":"Have a use case in mind? Let’s build it together.",
+      "subheading":"We’ll help you set up the right flow, card type, and controls for your business.",
+      "buttonText":"Book a Demo",
+      "buttonLink":"/"
     }
   }
 }

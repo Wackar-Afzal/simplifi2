@@ -5,6 +5,8 @@ import React from "react";
 import industries from "@/utils/solutions/industries"
 import CareerList from "@/components/Career/CareerList";
 import Ai from "@/components/Product2/Ai2";
+import { Footer } from "@/components/layouts/Footer";
+import PageFooter from "@/components/common/PageFooter";
 
 const Page = () => {
   return (
@@ -16,6 +18,8 @@ const Page = () => {
 
       </div>
       <CareerList data={industries.industries.careerList}/>
+      <PageFooter data={industries.industries.footer}/>
+      <Footer />
     </>
   );
 };

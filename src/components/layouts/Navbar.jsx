@@ -181,68 +181,6 @@ const NAV_ITEMS = [
   {
     name: "Resources",
     path: "/resources",
-    dropdown: [
-      {
-        name: "API Documentation",
-        path: "/resources/api-docs",
-        icon: "📚",
-        descrip: "Complete API reference and integration guides",
-      },
-      {
-        name: "Developer Sandbox",
-        path: "/resources/sandbox",
-        icon: "🧪",
-        descrip: "Test and build in a secure, private environment",
-      },
-      {
-        name: "SDKs & Tools",
-        path: "/resources/sdks",
-        icon: "🛠️",
-        descrip: "PCI-compliant SDKs for iOS and Android apps",
-      },
-      {
-        name: "Support Center",
-        path: "/resources/support",
-        icon: "🎧",
-        descrip: "24/7 multilingual support and technical assistance",
-      },
-      {
-        name: "Blog",
-        path: "/resources/blog",
-        icon: "✍️",
-        descrip: "Latest insights on fintech and payments",
-      },
-      {
-        name: "Press & Media",
-        path: "/resources/press",
-        icon: "📰",
-        descrip: "Media coverage and company news",
-      },
-    ],
-    blogPosts: [
-      {
-        title:
-          "The Future of Embedded Finance in MENA: Trends and Opportunities",
-        image: "/placeholder.svg?height=200&width=300",
-        path: "/blog/embedded-finance-mena",
-      },
-      {
-        title:
-          "Building Compliant Card Programs: A Developer's Guide to KYC and AML",
-        image: "/placeholder.svg?height=200&width=300",
-        path: "/blog/compliant-card-programs",
-      },
-      {
-        title: "Multi-Currency Cards: Optimizing FX for Global Businesses",
-        image: "/placeholder.svg?height=200&width=300",
-        path: "/blog/multi-currency-optimization",
-      },
-      {
-        title: "From Startup to Scale: How SimpliFi Powers Growing Businesses",
-        image: "/placeholder.svg?height=200&width=300",
-        path: "/blog/startup-to-scale",
-      },
-    ],
   },
   {
     name: "About",
@@ -286,6 +224,10 @@ const NAV_ITEMS = [
         descrip: "Insights and trends in fintech and payment solutions",
       },
     ],
+  },
+    {
+    name: "Contact Us",
+    path: "/contact-us",
   },
 ];
 
@@ -336,7 +278,7 @@ export default function Navbar() {
                       onMouseLeave={() => handleDropdownToggle(null)}
                       onClick={() => handleDropdownToggle(!openDropdown)}
                     >
-                      <div className="flex items-center gap-2">
+                      <div className="flex  items-center gap-2">
                         {name}
                         <ChevronDown className="h-3 w-3" />
                       </div>
@@ -358,7 +300,7 @@ export default function Navbar() {
                   ) : (
                     <Link
                       href={path}
-                      className={`!w-[7rem] h-[3.27rem] flex items-center justify-center text-center px-6 py-3 text-black rounded-[6.25rem] ${
+                      className={` h-[3.27rem] flex items-center justify-center text-center px-6 py-3 text-black rounded-[6.25rem] ${
                         pathname === path
                           ? "bg-lightPurple text-black"
                           : "bg-transparent text-black hover:bg-gray-100"
