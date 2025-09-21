@@ -7,8 +7,8 @@ export const pressReleases = {
       "mobVideo": "https://files.asad.digital/video/humbleteam/hero.mp4"
     },
     "pressReleases": {
-      "heading": "Latest Announcements",
-      "descrip": "Recent press releases and company updates",
+      "heading": "Press Releases",
+      "descrip": "Latest press releases and company announcements",
       "slides": [
         {
           "id": 1,
@@ -48,13 +48,7 @@ export const pressReleases = {
           "slug": "simplifi-partners-wth-yabx",
           "path": "/press/simplifi-partners-wth-yabx",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        }
-      ]
-    },
-    "pressReleases2": {
-      "heading": "Strategic Partnerships",
-      "descrip": "Key partnerships and collaborations driving our growth",
-      "slides": [
+        },
         {
           "id": 4,
           "src": "https://simplifipay.com/images/news/014.jpg",
@@ -93,13 +87,7 @@ export const pressReleases = {
           "slug": "simplifi-partners-with-mastercard",
           "path": "/press/simplifi-partners-with-mastercard",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        }
-      ]
-    },
-    "pressReleases3": {
-      "heading": "Regional Expansion",
-      "descrip": "Expanding our footprint across key markets",
-      "slides": [
+        },
         {
           "id": 7,
           "src": "https://simplifipay.com/images/news/011.jpg",
@@ -138,13 +126,7 @@ export const pressReleases = {
           "slug": "adib-egypt-and-simplifi-partner-to-expand-the-digital-payments-ecosystem-in-egypt",
           "path": "/press/adib-egypt-and-simplifi-partner-to-expand-the-digital-payments-ecosystem-in-egypt",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        }
-      ]
-    },
-    "pressReleases4": {
-      "heading": "Banking Partnerships",
-      "descrip": "Collaborations with leading financial institutions",
-      "slides": [
+        },
         {
           "id": 10,
           "src": "https://simplifipay.com/images/news/008.jpg",
@@ -183,13 +165,7 @@ export const pressReleases = {
           "slug": "simplifi-partners-with-gate-to-pay-to-fast-track-card-issuance-in-jordan",
           "path": "/press/simplifi-partners-with-gate-to-pay-to-fast-track-card-issuance-in-jordan",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        }
-      ]
-    },
-    "pressReleases5": {
-      "heading": "Technology Partnerships",
-      "descrip": "Collaborations with technology providers and platforms",
-      "slides": [
+        },
         {
           "id": 13,
           "src": "https://simplifipay.com/images/news/005.jpg",
@@ -205,7 +181,7 @@ export const pressReleases = {
         },
         {
           "id": 14,
-            "src": "https://simplifipay.com/images/news/004.jpg",
+          "src": "https://simplifipay.com/images/news/004.jpg",
           "alt": "Toppan FutureCard and SimpliFi collaboration",
           "subtitle": "Toppan FutureCard, a Toppan Company, and UAE-based global end-to-end card solutions provider, collaborates with SimpliFi, a Card as a Service...",
           "title": "Toppan FutureCard and Fintech start-up SimpliFi collaborate to enable fast and flexible card Issuance",
@@ -228,13 +204,7 @@ export const pressReleases = {
           "slug": "veriff-partners-with-simplifi-to-provide-trusted-and-secure-identity-verification-for-instant-card-issuance",
           "path": "/press/veriff-partners-with-simplifi-to-provide-trusted-and-secure-identity-verification-for-instant-card-issuance",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        }
-      ]
-    },
-    "pressReleases6": {
-      "heading": "Funding & Milestones",
-      "descrip": "Investment rounds and company milestones",
-      "slides": [
+        },
         {
           "id": 16,
           "src": "https://simplifipay.com/images/news/002.jpg",
@@ -261,7 +231,8 @@ export const pressReleases = {
           "path": "/press/simplifi-emerges-from-stealth-mode-to-democratize-card-issuance-in-menap",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         }
-      ]
+      ],
+      "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
     }
   }
 };
