@@ -213,15 +213,9 @@ const NAV_ITEMS = [
       // },
       {
         name: "Press Releases",
-        path: "/press",
+        path: "/press-releases",
         icon: "📰",
         descrip: "Latest press releases and company announcements",
-      },
-      {
-        name: "Blogs",
-        path: "/blogs",
-        icon: "📝",
-        descrip: "Insights and trends in fintech and payment solutions",
       },
     ],
   },

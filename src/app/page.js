@@ -16,10 +16,14 @@ import Features from "@/components/Product2/Features";
 import Services from "@/components/Product2/Services";
 import UXSection from "@/components/Product2/UXSection";
 import homeText from "@/utils/homeText.json";
-import CaseStudies from "@/components/Product1Page/CaseStudies";
+import Cases from "@/components/Product1Page/Cases";
 import {blogs} from "@/utils/blogs/blogs.js"
+<<<<<<< HEAD
 import {pressReleases} from "@/utils/press/press.js"
 import  PageFooter  from "@/components/common/PageFooter";
+=======
+import Link from "next/link";
+>>>>>>> news-sec
 
 export default function Home() {
   return (
@@ -45,8 +49,20 @@ export default function Home() {
       <ClientsMargquee data={homeText.homepage.clientMarquee1} />
 
       <WhatWeDo data={homeText.homepage.whatwedo} />
-      <CaseStudies data={blogs.blogs.blogs}/>
-      <CaseStudies data={pressReleases.pressReleases.pressReleases}/>
+
+      <Cases data={{
+        ...blogs.blogs,
+        slides: blogs.blogs.slides.slice(0, 3)
+      }}/>
+      
+      {/* See More Button */}
+      <section className="py-8">
+        <div className="container-global text-center">
+          <Link href="/press-releases" className="outlined-button inline-block">
+            See More
+          </Link>
+        </div>
+      </section>
 
       {/* <ClientSays /> */}
       {/* <WorkFlowSectionCases/> */}

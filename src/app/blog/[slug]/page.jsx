@@ -2,32 +2,32 @@
 
 import Navbar from "@/components/layouts/Navbar";
 import { Footer } from "@/components/layouts/Footer";
-import { pressReleases } from "@/utils/press/press-combined.js";
+import { blogs } from "@/utils/blogs/blogs.js";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { motion } from "framer-motion";
 
-function getPressReleaseBySlug(slug) {
-  const allPressReleases = pressReleases.pressReleases.pressReleases.slides;
-  return allPressReleases.find(pr => pr.slug === slug);
+function getBlogBySlug(slug) {
+  const allBlogs = blogs.blogs.slides;
+  return allBlogs.find(blog => blog.slug === slug);
 }
 
-export default function PressReleaseDetailPage({ params }) {
-  const pressRelease = getPressReleaseBySlug(params.slug);
+export default function BlogDetailPage({ params }) {
+  const blog = getBlogBySlug(params.slug);
 
-  if (!pressRelease) {
+  if (!blog) {
     notFound();
   }
 
-  const allPressReleases = pressReleases.pressReleases.pressReleases.slides.filter(pr => pr.slug !== params.slug);
-  const relatedPressReleases = allPressReleases.sort(() => 0.5 - Math.random()).slice(0, 3);
+  const allBlogs = blogs.blogs.slides.filter(b => b.slug !== params.slug);
+  const relatedBlogs = allBlogs.sort(() => 0.5 - Math.random()).slice(0, 3);
 
   return (
     <>
       <Navbar />
 
-      {/* Press Release Header */}
+      {/* Blog Header */}
       <section className="section_hero pt-32 pb-8">
         <div className="container-global max-w-4xl">
           {/* Back Button */}
@@ -42,21 +42,21 @@ export default function PressReleaseDetailPage({ params }) {
               className="inline-flex items-center gap-2 text-primary hover:text-primary-secondary transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Press Releases
+              Back to Articles
             </Link>
           </motion.div>
 
-          {/* Press Release Title */}
+          {/* Blog Title */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="heading-style-h1 mb-8"
           >
-            {pressRelease.title}
+            {blog.title}
           </motion.h1>
 
-          {/* Press Release Meta */}
+          {/* Blog Meta */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,15 +65,15 @@ export default function PressReleaseDetailPage({ params }) {
           >
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              <span>{pressRelease.date}</span>
+              <span>{blog.date}</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
-              <span>3 min read</span>
+              <span>5 min read</span>
             </div>
             <button className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors ml-auto">
               <Share2 className="w-4 h-4" />
-              Share
+              Share Article
             </button>
           </motion.div>
         </div>
@@ -89,15 +89,15 @@ export default function PressReleaseDetailPage({ params }) {
             className="rounded-2xl overflow-hidden shadow-lg"
           >
             <img
-              src={pressRelease.src}
-              alt={pressRelease.alt}
+              src={blog.src}
+              alt={blog.alt}
               className="w-full h-[400px] object-cover"
             />
           </motion.div>
         </div>
       </section>
 
-      {/* Press Release Subtitle */}
+      {/* Blog Subtitle */}
       <section className="mb-8">
         <div className="container-global max-w-4xl">
           <motion.p
@@ -106,12 +106,12 @@ export default function PressReleaseDetailPage({ params }) {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="paragraph-style-body text-gray-600 text-lg leading-relaxed"
           >
-            {pressRelease.subtitle}
+            {blog.subtitle}
           </motion.p>
         </div>
       </section>
 
-      {/* Press Release Content */}
+      {/* Blog Content */}
       <section className="mb-20">
         <div className="container-global max-w-4xl">
           <motion.article
@@ -122,44 +122,65 @@ export default function PressReleaseDetailPage({ params }) {
           >
             <div className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed">
               <p>
-                This press release represents another significant milestone in SimpliFi's journey to transform 
-                the financial services landscape across MENA and Pakistan. Our continued innovation and strategic 
-                partnerships enable businesses to access cutting-edge payment solutions with unprecedented ease and flexibility.
+                The fintech landscape is rapidly evolving, and staying ahead of the curve requires understanding
+                the latest trends, technologies, and regulatory changes that shape the industry. In this comprehensive
+                guide, we'll explore the key insights that every fintech professional should know.
               </p>
 
               <p>
-                Through our comprehensive Cards-as-a-Service platform, we're democratizing access to advanced 
-                payment infrastructure, allowing businesses of all sizes to launch sophisticated card programs 
-                without the traditional barriers and complexities.
+                Modern payment infrastructure has transformed the way businesses and consumers interact with financial
+                services. From embedded finance solutions to advanced card issuing platforms, the tools available
+                today enable unprecedented flexibility and control over financial operations.
               </p>
 
-              <h2 className="heading-style-h3 mt-12 mb-6">Key Highlights</h2>
+              <h2 className="heading-style-h3 mt-12 mb-6">Understanding the Fundamentals</h2>
 
               <p>
-                This announcement underscores our commitment to driving financial inclusion and innovation 
-                across the region. By partnering with leading financial institutions and technology providers, 
-                we continue to expand our capabilities and reach.
+                When implementing new fintech solutions, several factors must be carefully evaluated to ensure
+                success and compliance. These include regulatory requirements, technical integration capabilities,
+                scalability considerations, and user experience optimization.
               </p>
 
               <p>
-                Our platform's flexibility and scalability ensure that businesses can adapt quickly to changing 
-                market demands while maintaining the highest standards of security and compliance.
+                The key to successful fintech implementation lies in understanding both the technical and business
+                aspects of financial services. This includes knowledge of payment processing, regulatory compliance,
+                security protocols, and customer experience design.
               </p>
 
-              <h2 className="heading-style-h3 mt-12 mb-6">Looking Forward</h2>
+              <h2 className="heading-style-h3 mt-12 mb-6">Best Practices and Implementation</h2>
 
               <p>
-                As we continue to grow and evolve, SimpliFi remains focused on our mission to simplify and 
-                democratize financial services. This development is just one of many exciting initiatives 
-                we have planned for the coming months.
+                Industry best practices emphasize the importance of security, scalability, and user experience.
+                Modern fintech solutions must be designed with these principles in mind from the ground up,
+                rather than as afterthoughts.
+              </p>
+
+              <p>
+                Successful implementation requires careful planning, thorough testing, and ongoing monitoring.
+                Organizations must also ensure they have the right team and processes in place to support
+                their fintech initiatives.
+              </p>
+
+              <h2 className="heading-style-h3 mt-12 mb-6">The Future of Fintech</h2>
+
+              <p>
+                Looking ahead, the fintech industry continues to innovate with emerging technologies like blockchain,
+                artificial intelligence, and advanced analytics. These technologies are reshaping how financial
+                services are delivered and consumed across global markets.
+              </p>
+
+              <p>
+                As we move forward, the focus remains on creating seamless, secure, and scalable financial solutions
+                that meet the evolving needs of businesses and consumers alike. The key to success lies in understanding
+                these trends and adapting quickly to market changes.
               </p>
             </div>
           </motion.article>
         </div>
       </section>
 
-      {/* Related Press Releases */}
-      {relatedPressReleases.length > 0 && (
+      {/* Related Articles */}
+      {relatedBlogs.length > 0 && (
         <section className="section_services bg-gray-50 py-20">
           <div className="container-global max-w-6xl">
             <motion.div
@@ -168,36 +189,36 @@ export default function PressReleaseDetailPage({ params }) {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="heading-style-h2_fintech mb-4">More Press Releases</h2>
+              <h2 className="heading-style-h2_fintech mb-4">Related Articles</h2>
               <p className="paragraph-style-body text-gray-600">
-                Stay informed with our latest company news
+                Discover more insights and trends in fintech
               </p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {relatedPressReleases.map((relatedPr, index) => (
+              {relatedBlogs.map((relatedBlog, index) => (
                 <motion.div
-                  key={relatedPr.id}
+                  key={relatedBlog.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
                 >
-                  <Link href={`/press/${relatedPr.slug}`} className="group block">
+                  <Link href={`/blog/${relatedBlog.slug}`} className="group block">
                     <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
                       <div className="aspect-video overflow-hidden">
                         <img
-                          src={relatedPr.src}
-                          alt={relatedPr.alt}
+                          src={relatedBlog.src}
+                          alt={relatedBlog.alt}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                       </div>
                       <div className="p-6">
-                        <div className="text-sm text-gray-500 mb-2">{relatedPr.date}</div>
+                        <div className="text-sm text-gray-500 mb-2">{relatedBlog.date}</div>
                         <h3 className="heading-style-h4 mb-3 group-hover:text-primary transition-colors">
-                          {relatedPr.title}
+                          {relatedBlog.title}
                         </h3>
                         <p className="paragraph-style-body text-gray-600 text-sm line-clamp-3">
-                          {relatedPr.subtitle}
+                          {relatedBlog.subtitle}
                         </p>
                       </div>
                     </div>
@@ -213,7 +234,7 @@ export default function PressReleaseDetailPage({ params }) {
               className="text-center mt-12"
             >
               <Link href="/press-releases" className="contained-button">
-                View All Press Releases
+                View All Articles
               </Link>
             </motion.div>
           </div>

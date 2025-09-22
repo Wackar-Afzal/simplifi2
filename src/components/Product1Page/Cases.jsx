@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function Cases({ data }) {
   return (
@@ -25,8 +26,10 @@ export default function Cases({ data }) {
                 <img src={data.image} alt="" />
                 {slide.title}
               </p>
-              <h2 className="body-medium is-case-desc ">{slide.subtitle}</h2>
-              {/* <button className="case-button">{slide.buttonText}</button> */}
+              <h2 className="body-medium is-case-desc mb-4">{slide.subtitle}</h2>
+              <Link href={slide.buttonLink || slide.path || '#'} className="case-button mt-auto text-center no-underline">
+                {slide.buttonText}
+              </Link>
             </div>
           </div>
         ))}
