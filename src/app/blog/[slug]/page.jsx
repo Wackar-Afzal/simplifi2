@@ -1,26 +1,31 @@
 "use client";
-
+import React from "react";
 import Navbar from "@/components/layouts/Navbar";
 import { Footer } from "@/components/layouts/Footer";
 import { blogs } from "@/utils/blogs/blogs.js";
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { motion } from "framer-motion";
+import Page from "@/app/Embed-Ready-To-Use-Card/page";
+import PageFooter from "@/components/common/PageFooter";
 
 function getBlogBySlug(slug) {
-  const allBlogs = blogs.blogs.slides;
+  const allBlogs = blogs.blogs.posts.slides;
   return allBlogs.find(blog => blog.slug === slug);
 }
 
-export default function BlogDetailPage({ params }) {
-  const blog = getBlogBySlug(params.slug);
+export default function BlogDetailPage() {
+   const params = useParams();
+   console.log(params,"paramssssss")
+  const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
+  const blog = getBlogBySlug(slug);
 
   if (!blog) {
     notFound();
   }
 
-  const allBlogs = blogs.blogs.slides.filter(b => b.slug !== params.slug);
+  const allBlogs = blogs.blogs.posts.slides.filter(b => b.slug !== params.slug);
   const relatedBlogs = allBlogs.sort(() => 0.5 - Math.random()).slice(0, 3);
 
   return (
@@ -233,14 +238,14 @@ export default function BlogDetailPage({ params }) {
               transition={{ duration: 0.5, delay: 1.1 }}
               className="text-center mt-12"
             >
-              <Link href="/press-releases" className="contained-button">
+              <Link href="/blogs" className="contained-button">
                 View All Articles
               </Link>
             </motion.div>
           </div>
         </section>
       )}
-
+      <PageFooter />
       <Footer />
     </>
   );

@@ -189,9 +189,7 @@ const NAV_ITEMS = [
       {
         name: "Our Story",
         path: "/about-us",
-        icon: "📖",
-        descrip:
-          "Founded by Ali Amin Sattar to simplify financial infrastructure across MENA and Pakistan",
+        icon: "📖"
       },
       // {
       //   name: "Our Team",
@@ -215,20 +213,22 @@ const NAV_ITEMS = [
         name: "Press Releases",
         path: "/press-releases",
         icon: "📰",
-        descrip: "Latest press releases and company announcements",
+  
+      },
+            {
+        name: "Blogs",
+        path: "/blogs",
+        icon: "📰",
+   
       },
     ],
   },
-    {
-    name: "Contact Us",
-    path: "/contact-us",
-  },
+
 ];
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
-  const [contactdrop, setContactdrop] = useState(false);
   const pathname = usePathname();
 
   const handleDropdownToggle = (path) => {
@@ -309,15 +309,14 @@ export default function Navbar() {
             {/* Right Buttons */}
             <div className="pr-[0.5rem] md:pr-[2rem] flex gap-4 items-center">
               <div className="flex gap-4 items-center">
-                <div className="relative hidden md:block lg:hidden xl:block">
-                  <button
-                    onMouseEnter={() => setContactdrop(true)}
-                    onMouseLeave={() => setContactdrop(false)}
-                    onClick={() => setContactdrop(!openDropdown)}
+                <div className="relative  md:block  xl:block">
+                  <Link
+                  href="/contact-us"
+                  className="outlined-button"
                   >
-                    Sales:+12 34 56789 1
-                  </button>
-                  {contactdrop && (
+                    Contact Us
+                  </Link>
+                  {/* {contactdrop && (
                     <div
                       className="absolute bg-white right-0 top-[1.5rem] py-8 shadow-lg px-4 rounded-2xl flex flex-col gap-4"
                       onMouseLeave={() => setContactdrop(false)}
@@ -329,8 +328,11 @@ export default function Navbar() {
                       <div className="flex items-center w-max gap-2">
                         <List className="w-4 h-4" /> Request Support
                       </div>
-                    </div>
-                  )}
+                    </div> */}
+                
+
+                   
+  
                 </div>
                 <button className="nav-contained-button !px-6 !py-3">
                   Login

@@ -1,7 +1,12 @@
 export const blogs = {
   "blogs": {
+    "hero":{
     "heading": "Latest Insights & Blogs",
     "descrip": "Stay updated with the latest trends and insights in fintech and payment solutions",
+    },
+        "posts": {
+      "heading": "Blogs",
+      "descrip": "Latest press releases and company announcements",
     "slides": [
       {
         "id": 1,
@@ -159,7 +164,7 @@ export const blogs = {
         "path": "/blog/modern-card-issuance-for-gig-payments",
         "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
       }
-    ],
+    ]},
     "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
   }
 };

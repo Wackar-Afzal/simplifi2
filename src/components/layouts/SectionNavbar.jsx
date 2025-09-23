@@ -11,7 +11,6 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
       const features = [
         { name: "Multi-Currency Cards", icon: "🌍" },
         { name: "Real-Time Notifications", icon: "🔔" },
-        { name: "Fully Programmable Card Controls", icon: "⚙️" },
         { name: "Instant Issuance", icon: "⚡" },
         { name: "Bulk Load Management", icon: "📦" },
         { name: "Role-Based Access", icon: "👥" },
@@ -22,8 +21,10 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
         { name: "Webhooks", icon: "🔗" },
         { name: "Web Hosted Pages", icon: "🌐" },
         { name: "Custom KYC Flows", icon: "🪪" },
-        { name: "Maker-Checker & Two-Factor Authentication", icon: "🔐" },
         { name: "Reports & Insights", icon: "📊" },
+        { name: "Maker-Checker & Two-Factor Authentication", icon: "🔐" },
+        { name: "Fully Programmable Card Controls", icon: "⚙️" },
+
       ];
 
       const capabilites = [
@@ -39,7 +40,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
       ];
 
       return (
-        <div className="flex w-full   mx-auto overflow-y-scroll h-[80vh] no-scrollbar ">
+        <div className="flex w-full   mx-auto overflow-y-scroll h-auto no-scrollbar ">
           {/* Left Sidebar */}
           <div className=" bg-gray-50 text-left p-6 rounded-l-lg">
             {/* <div className="mb-6">
@@ -48,7 +49,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
               </span>
             </div> */}
 
-            <div className="min-w-[28vw]">
+            <div className="max-w-[25vw] ">
               {productsData.slice(0,2).map(({ name, path, icon, descrip }) => (
                 <Link
                   key={path}
@@ -74,7 +75,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
           </div>
 
           {/* Right Content Area */}
-          <div className="ml-2 !mb-8 pb-8">
+          <div className="flex ml-2 !mb-8 pb-8">
             <div className="flex-1 p-2 bg-white rounded-r-lg">
               <div className="mb-0">
                  <Link href="/features" className="text-xl font-semibold text-gray-900 ">
@@ -86,21 +87,21 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
               </div>
 
               <div className="mb-2">
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 ">
                   {features.map(({ name, icon }) => (
-                     <Link href="/features"
+                     <p
                       key={name}
-                      className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors"
+                      className="flex items-center  p-2  rounded-lg transition-colors"
                     >
                       <span className="text-lg">{icon}</span>
-                      <span className="text-gray-700 text-sm">{name}</span>
-                    </Link>
+                      <span className="text-gray-700 text-[0.8rem]">{name}</span>
+                    </p>
                   ))}
                 </div>
               </div>
             </div>
 
-            <div className="flex-1 p-6 bg-primarylight rounded-r-lg">
+            <div className="flex-1 p-2 bg-primarylight rounded-r-lg">
               <div className="mb-6">
                 <Link href="/capabilities" className="text-xl font-semibold text-gray-900 mb-2">
                   Capabilities
@@ -109,15 +110,15 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
               </div>
 
               <div className="mb-6">
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 ">
                   {capabilites.map(({ name, icon }) => (
-                    <Link href="/capabilities"
+                    <p 
                       key={name}
-                      className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg transition-colors"
+                      className="flex items-center gap-0 p-1  rounded-lg transition-colors"
                     >
                       <span className="text-lg">{icon}</span>
                       <span className="text-gray-700 text-sm">{name}</span>
-                    </Link>
+                    </p>
                   ))}
                 </div>
               </div>
@@ -223,145 +224,18 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
         </div>
       );
 
-    case "Resources":
-      const blogPosts = [
-        {
-          title:
-            "The Future of Embedded Finance in MENA: Trends and Opportunities",
-          image: "/placeholder.svg?height=200&width=300",
-          path: "/blog/embedded-finance-mena",
-        },
-        {
-          title:
-            "Building Compliant Card Programs: A Developer's Guide to KYC and AML",
-          image: "/placeholder.svg?height=200&width=300",
-          path: "/blog/compliant-card-programs",
-        },
-        {
-          title: "Multi-Currency Cards: Optimizing FX for Global Businesses",
-          image: "/placeholder.svg?height=200&width=300",
-          path: "/blog/multi-currency-optimization",
-        },
-        {
-          title:
-            "From Startup to Scale: How SimpliFi Powers Growing Businesses",
-          image: "/placeholder.svg?height=200&width=300",
-          path: "/blog/startup-to-scale",
-        },
-      ];
-
-      return (
-        <div className="w-full max-w-6xl mx-auto p-6 overflow-y-auto max-h-[80vh]">
-          <div className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Developer Resources & Support
-            </h2>
-            <p className="text-gray-600">
-              Everything you need to integrate, build, and scale with SimpliFi's
-              platform
-            </p>
-          </div>
-
-          {/* Resource Links Grid */}
-          <div className="grid grid-cols-3 gap-6 mb-12">
-            {dropdown.map(({ name, path, icon, descrip }) => (
-              <Link
-                key={path}
-                href={path}
-                className={`flex flex-col gap-3 p-6 border rounded-lg transition-colors ${
-                  pathname.includes(path)
-                    ? "border-blue-500 bg-blue-50"
-                    : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"
-                }`}
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{icon}</span>
-                  <span className="font-semibold text-gray-900">{name}</span>
-                </div>
-                <p className="text-sm text-gray-600">{descrip}</p>
-              </Link>
-            ))}
-          </div>
-
-          {/* Recent Blog Posts */}
-          <div>
-            <div className="flex justify-between items-center mb-6">
-              <h3 className="text-xl font-semibold text-gray-900">
-                Latest Insights
-              </h3>
-              <Link
-                href="/blog"
-                className="text-blue-600 hover:text-blue-700 font-medium"
-              >
-                All blog posts →
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6">
-              {blogPosts.map(({ title, image, path }) => (
-                <Link key={path} href={path} className="group">
-                  <div className="bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all">
-                    <img
-                      src={image || "/placeholder.svg"}
-                      alt={title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform"
-                    />
-                    <div className="p-4">
-                      <h4 className="font-medium text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
-                        {title}
-                      </h4>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      );
-
-    case "Developers":
-      return (
-        <div className="p-6 max-w-2xl">
-          <h3 className="text-xl font-semibold mb-6">Developer Resources</h3>
-          <div className="grid grid-cols-2 gap-4">
-            {dropdown.map(({ name, path, icon, descrip }) => (
-              <Link
-                key={path}
-                href={path}
-                className={`p-4 border rounded-lg transition-colors ${
-                  pathname.includes(path)
-                    ? "border-blue-500 bg-blue-50"
-                    : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"
-                }`}
-              >
-                <div className="text-2xl mb-2">{icon}</div>
-                <p className="font-semibold text-gray-900 mb-1">{name}</p>
-                <p className="text-sm text-gray-600">{descrip}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      );
 
     case "About":
       return (
         <div className="p-6 max-w-4xl">
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Powering the Future of Finance in GCC
-            </h2>
-            <p className="text-gray-600">
-              Based in Dubai, SimpliFi was founded to simplify financial
-              infrastructure across MENA and Pakistan
-            </p>
-          </div>
+        
 
-          <div className="grid grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 gap-2 ">
             {dropdown.map(({ name, path, icon, descrip }) => (
               <Link
                 key={path}
                 href={path}
-                className={`p-6 border rounded-lg transition-colors ${
+                className={` rounded-lg transition-colors ${
                   pathname.includes(path)
                     ? "border-blue-500 bg-blue-50"
                     : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"

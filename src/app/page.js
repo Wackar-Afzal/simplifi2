@@ -12,8 +12,9 @@ import Services from "@/components/Product2/Services";
 import UXSection from "@/components/Product2/UXSection";
 import homeText from "@/utils/homeText.json";
 import Cases from "@/components/Product1Page/Cases";
-import {blogs} from "@/utils/blogs/blogs.js"
+import { pressReleases } from "@/utils/press/press-combined";
 import Link from "next/link";
+import PageFooter from "@/components/common/PageFooter";
 
 export default function Home() {
   return (
@@ -41,8 +42,8 @@ export default function Home() {
       <WhatWeDo data={homeText.homepage.whatwedo} />
 
       <Cases data={{
-        ...blogs.blogs,
-        slides: blogs.blogs.slides.slice(0, 3)
+        ...pressReleases.pressReleases.media,
+        slides: pressReleases.pressReleases.media.slides.slice(0, 3)
       }}/>
       
       {/* See More Button */}
@@ -57,6 +58,7 @@ export default function Home() {
       {/* <ClientSays /> */}
       {/* <WorkFlowSectionCases/> */}
       {/* <ContactUs/> */}
+      <PageFooter/>
       <Footer />
     </div>
   );

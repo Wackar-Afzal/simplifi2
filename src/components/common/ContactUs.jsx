@@ -22,8 +22,8 @@ export const ContactUs = () => {
         }}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
-                    <h1 className="heading-style-h2_big is-cta-title">
-                        Humbleteam is <br /> ready for you
+                    <h1 className="heading-style-h2_big is-cta-title text-black">
+                        SimpliFi is ready <br/> for you
                     </h1>
                 </div>
 
@@ -35,9 +35,9 @@ export const ContactUs = () => {
                                 onClick={() => setOpen(!open)}
                                 className="w-full flex items-center justify-between custom-select"
                             >
-                                <span>{selected}</span>
+                                <span className="!text-black">{selected}</span>
                                 <ChevronDown
-                                    className={`h-5 w-5 transition-transform ${open ? "rotate-180" : ""
+                                    className={`h-5 w-5 transition-transform !text-black ${open ? "rotate-180" : ""
                                         }`}
                                 />
                             </button>
@@ -51,7 +51,7 @@ export const ContactUs = () => {
                                                 setSelected(opt);
                                                 setOpen(false);
                                             }}
-                                            className={`px-4 py-2 cursor-pointer  link ${selected === opt ? "  " : " link-active"
+                                            className={`px-4 py-2 cursor-pointer !text-black  link ${selected === opt ? "  " : " link-active text-black"
                                                 }`}
                                         >
                                             {opt}
@@ -68,17 +68,17 @@ export const ContactUs = () => {
                         </div>
                     </div>
                     <div className="from-group mt-8">
-                        <label htmlFor="" className="form-label">A few words about your project
+                        <label htmlFor="" className="form-label">Tell us about your business
                         </label>
                         <div className="mt-3">
                             <textarea type="text" maxLength="5000" placeholder="Your Text" className="custom-input is-textarea  w-full" />
                         </div>
                     </div>
                     <div className="from-group py-8">
-                        <label htmlFor="" className="form-label">We'll respond within 24 hours with relevant case studies, a cost estimate, <br /> and a possible timeline.</label>
+                        <label htmlFor="" className="form-label">We’ll respond within 24 hours with the right card solution for your needs, a cost estimate, and a clear timeline.</label>
                     </div>
-                    <button className="button-submit w-full mb-8">Get Touch</button>
-                    <div className="form-info">Prefer email? Reach out at <a href="mailto:hi@humbleteam.com" className="is-link_alt text-color-accent">hi@humbleteam.com</a></div>
+                    <button className="button-submit w-full mb-8">Get in Touch</button>
+                    {/* <div className="form-info">Prefer email? Reach out at <a href="mailto:hi@humbleteam.com" className="is-link_alt text-color-accent">hi@humbleteam.com</a></div> */}
                 </div>
             </div>
         </div>

@@ -68,7 +68,7 @@
         },
         {
           "number": "08",
-          "label": "Banking Partners"
+          "label": "Banking partnerns"
         },
         {
           "number": "13",
@@ -233,12 +233,23 @@
     "clientMarquee1": {
       "heading": "Trusted by banks, platforms, and businesses building the future of payments",
       "clientLogos": [
-        { "name": "Floward", "logo": "/Logosweb/1.png" },
-        { "name": "Walaplus", "logo": "/Logosweb/2.png" },
-        { "name": "NQOODLET", "logo": "/Logosweb/3.png" },
-        { "name": "Kamel Pay", "logo": "/Logosweb/4.png" },
-        { "name": "Transportr", "logo": "/Logosweb/5.png" },
-        { "name": "jisr", "logo": "/Logosweb/Jisr.png" }
+        { "name": "Floward", "logo": "/partnerns/48-485402_saudi-post-logo-hd-png-download.png" },
+        { "name": "Walaplus", "logo": "/partnerns/Alinma_Bank_logo.svg.png" },
+        { "name": "NQOODLET", "logo": "/partnerns/aramex-logo.svg" },
+        { "name": "Kamel Pay", "logo": "/partnerns/Ibex-global-logo.png" },
+        { "name": "Transportr", "logo": "/partnerns/IDWise-Logo-1.png" },
+        { "name": "jisr", "logo": "/partnerns/images (1).jpeg" },
+        { "name": "jisr", "logo": "/partnerns/images (2).png" },
+        { "name": "jisr", "logo": "/partnerns/images (3).png" },
+        { "name": "jisr", "logo": "/partnerns/images.jpeg" },
+        { "name": "jisr", "logo": "/partnerns/Infinios.com_blog_img.png" },
+        { "name": "jisr", "logo": "/partnerns/logo-en.png" },
+        { "name": "jisr", "logo": "/partnerns/logo.png" },
+        { "name": "jisr", "logo": "/partnerns/logo.svg" },
+        { "name": "jisr", "logo": "/partnerns/lune-logo-converted-webp.webp" },
+        { "name": "jisr", "logo": "/partnerns/Mastercard-Logo-PNG-HD.png" },
+        { "name": "jisr", "logo": "/partnerns/MDP_Logo.png" },
+        { "name": "jisr", "logo": "/partnerns/purepng.com-visa-logologobrand-logoiconslogos-251519938794uqvcz.png" }
       ]
     },
     "features": {
@@ -271,7 +282,7 @@
       "cta": "Learn more "
     },
 
-    "section8_partners": {
+    "section8_partnerns": {
       "title": "Trusted by banks, platforms, and businesses building the future of payments"
     },
 

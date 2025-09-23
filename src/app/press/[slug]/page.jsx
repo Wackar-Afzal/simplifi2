@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { motion } from "framer-motion";
+import PageFooter from "@/components/common/PageFooter";
 
 function getPressReleaseBySlug(slug) {
   const allPressReleases = pressReleases.pressReleases.pressReleases.slides;
@@ -219,7 +220,7 @@ export default function PressReleaseDetailPage({ params }) {
           </div>
         </section>
       )}
-
+      <PageFooter/>
       <Footer />
     </>
   );

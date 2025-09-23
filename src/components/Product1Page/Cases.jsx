@@ -7,7 +7,7 @@ export default function Cases({ data }) {
   return (
     <section className="relative w-full slider-section overflow-hidden p-5 py-20">
       <div className="flex items-center justify-between mb-10">
-        <h1 className="h2">{data.heading}</h1>
+        <h1 className="h2 !text-center mx-auto">{data.heading}</h1>
         {/* Removed carousel arrows */}
       </div>
 
@@ -22,8 +22,8 @@ export default function Cases({ data }) {
               />
             </div>
             <div className="p-4 mb-10 flex flex-col flex-grow">
-              <p className="case-name mb-5 flex items-center gap-2">
-                <img src={data.image} alt="" />
+              <p className="case-name  mb-5 flex items-center gap-2">
+                {/* <img src={data.image} alt="" /> */}
                 {slide.title}
               </p>
               <h2 className="body-medium is-case-desc mb-4">{slide.subtitle}</h2>

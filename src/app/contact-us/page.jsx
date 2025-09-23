@@ -22,17 +22,18 @@ const page = () => {
           <div className="w-[100%] md:w-[50%] p-0 md:p-10 gap-[3rem]">
             <div className='flex flex-col gap-8 items-start justify-start mb-[2rem]'>
               <h1 className="h1 !text-[3rem] font-bold w-full md:w-[75%] mb-[1rem]">
-                We are here for you. Lets connect! 
+                Need assistance?
+
               </h1>
               <p className="p  !text-[24px] w-full md:w-[85%] mb-[1rem] !text-gray-600">
-                Connect with our team and we’ll answer all your questions!
+                Our team is ready to help you with any questions or requests.
               </p>
             </div>
             <DemoForm/>
           </div>
         </div>
       </div>
-      <PageFooter data={data.contact.footer}/>
+      {/* <PageFooter data={data.contact.footer}/> */}
       <Footer/>
     </> 
     
