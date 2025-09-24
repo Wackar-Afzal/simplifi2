@@ -70,10 +70,8 @@ export default function CaseStudies({ data }) {
                                     className="case-img"
                                 />
                             </div>
-                            <div className="p-4 flex flex-col flex-grow">
+                            <div className="py-4 flex flex-col flex-grow">
                                 <p className="case-name  mb-5">
-                                    <img src={data.image}
-                                        alt="" />
                                     {slide.title}
                                 </p>
                                 <h2 className="body-medium is-case-desc mb-5">{slide.subtitle}</h2>

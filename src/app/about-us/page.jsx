@@ -14,7 +14,7 @@ const Page = () => {
       <div className="max-w-7xl mx-auto overflow-hidden">
         <HeroSection data={about.about.hero} />
       </div>
-      <div className="container-custom !pt-20 !pb-0 ">
+      <div className="container-custom !pt-20 !pb-0 max-w-7xl  mx-auto">
         <h1 className="heading-style-h2_fintech ">{about.about.story.heading}</h1>
         <div className="flex flex-col gap-4 mt-6">
           {about.about.story.paras.map((para, index) => (
@@ -31,7 +31,7 @@ const Page = () => {
         <ClientsMarquee data={about.about.clientMarquee} />
         </div>
         <PageFooter/>
-        <Footer/>
+        <Footer/> 
     </>
   );
 };

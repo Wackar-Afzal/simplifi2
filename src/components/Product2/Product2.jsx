@@ -17,13 +17,16 @@ const Product2 = () => {
       <HeroSection  data={embedreadytouse.embedreadytouse.hero}/>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
-      <div className="mt-20"> 
+      <div className="mt-30 mb-28"> 
       <Ai data={embedreadytouse.embedreadytouse.useCases} />
       </div>
+      <div className="mb-22">
       <CareerList data={embedreadytouse.embedreadytouse.careerList}/>
+      </div>
       <ProductOverviewH/>
+      <div className="">
       <WhatWeDo data={embedreadytouse.embedreadytouse.whatwedo}/>
-      
+      </div>
       
       {/* <Features /> */}
       {/* <ContactUs /> */}

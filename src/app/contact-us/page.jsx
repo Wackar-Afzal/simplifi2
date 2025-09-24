@@ -10,7 +10,7 @@ const page = () => {
     <>
     <Navbar/>
     {/* <ContactUs/> */}
-      <div className="h-auto flex items-center justify-center w-full mb-20">
+      <div className="h-auto flex items-center justify-center w-full my-20">
         <div
     
           className="w-full gap-[1rem] bg-white overflow-hidden flex flex-col md:flex-row-reverse justify-center h-full md:h-[80vh] overflow-y-scroll !snap-y no-scrollbar"

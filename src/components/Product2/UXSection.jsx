@@ -26,7 +26,7 @@ export default function UXSection({ data }) {
             className={`flex-1  flex flex-col h-full gap-3 `}
           >
             <h2
-              className={`text-[2.8rem] font-semibold `}>
+              className={`text-[2.8rem] leading-12 font-semibold `}>
               {data.heading} <br/> {data.heading1}
             </h2>
 

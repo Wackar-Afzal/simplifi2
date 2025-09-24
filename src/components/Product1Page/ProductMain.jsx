@@ -17,14 +17,20 @@ export const ProductMain = () => {
     <div>
       <Navbar />
       <HeroSection data={cardAsService.cardAsService.hero} />
+      <div className="mt-20 mb-8">
       <ClientsMarquee data={cardAsService.cardAsService.clientMarquee} />
+
+      </div>
 
       {/* <HeroProduct /> */}
       <div className="mb-20">
       <CareerList data={cardAsService.cardAsService.careerList} />
 
       </div>
+      <div className="mb-20">
       <Ai data={cardAsService.cardAsService.useCases} />
+
+      </div>
       <div className="mt-20">
       <WhatsCookin data={cardAsService.cardAsService.whatsCookin} />
       </div>

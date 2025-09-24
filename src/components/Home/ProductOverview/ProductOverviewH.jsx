@@ -21,11 +21,11 @@ const itemVariants = {
 
 const ProductOverviewH = () => {
   return (
-    <div className=" products text-white pt-16 pb-4 px-10">
+    <div className=" products text-white pt-20 pb-4 px-10">
       <div className="w-full   mx-auto">
         <motion.div
           // className="grid md:grid-cols-2 gap-16 mb-20 w-full justify-center items-center"
-          className="grid md:grid-cols-2 gap-16 mb-4 w-full justify-center items-center"
+          className="grid md:grid-cols-2 gap-16 mb-4 w-full justify-center items-start"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

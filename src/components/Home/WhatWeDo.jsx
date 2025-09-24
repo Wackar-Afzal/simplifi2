@@ -10,7 +10,7 @@ export default function WhatWeDo({data}) {
 
   return (
     <section className="whatwedo text-white container-custom">
-      <div className="mx-auto mt-20 max-w-[1400px]">
+      <div className="mx-auto max-w-[1400px]">
         <h2 className="heading-style-h2_fintech  text-center text-color-inverted mb-20">
           {data.title}
         </h2>
