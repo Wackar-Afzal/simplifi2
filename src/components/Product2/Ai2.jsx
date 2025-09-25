@@ -8,7 +8,7 @@ const Ai = ({ data }) => {
       <div className="section-cases max-w-7xl w-full mx-auto">
         <div className={`container-global ${isFiveLayout?"!gap-y-6":""}` }>
           <div className="flex flex-col gap-4 justify-center items-center">
-            <h2 className="heading-style-h2_fintech mb-6">{data.title}</h2>
+            <h2 className="heading-style-h2_fintech !text-center mb-6">{data.title}</h2>
             <p
               className={`paragraph-style-body text-center ${
                 isFiveLayout ? "lg:mb-10" : "lg:mb-20"
