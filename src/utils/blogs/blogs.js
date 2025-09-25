@@ -5,7 +5,7 @@ export const blogs = {
     "descrip": "Stay updated with the latest trends and insights in fintech and payment solutions",
     },
         "posts": {
-      "heading": "Blogs",
+      "heading": "",
       "descrip": "Latest press releases and company announcements",
     "slides": [
       {

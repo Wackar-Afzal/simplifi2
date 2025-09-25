@@ -15,7 +15,9 @@ const Page = () => {
       <div className="mt-20 mb-10">
       <CaseStudies data={useCases.useCases.caseStudies}/>
       </div>
+      <div className="mb-10">
       <CaseStudies data={useCases.useCases.caseStudies1}/>
+      </div>
       <div className=" mb-10">
       <CaseStudies data={useCases.useCases.caseStudies2}/>
       </div>
