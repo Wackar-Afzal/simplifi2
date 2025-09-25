@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/layouts/Navbar";
-import { Footer } from "@/components/layouts/Footer";
+// Navbar and Footer provided by root layout
 import { blogs } from "@/utils/blogs/blogs.js";
 import { notFound, useParams } from "next/navigation";
 import Link from "next/link";
@@ -46,8 +45,7 @@ function getRelatedBlogs(currentSlug, limit = 3) {
 }
 
 export default function BlogDetailPage() {
-  const params = React.use(useParams());
-  console.log(params, "paramssssss");
+  const params = useParams();
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const blog = getBlogBySlug(slug);
 
@@ -212,8 +210,7 @@ export default function BlogDetailPage() {
         </div>
       </section>
 
-      <PageFooter />
-      <Footer />
+  <PageFooter />
     </>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/layouts/Navbar";
-import { Footer } from "@/components/layouts/Footer";
+// Navbar and Footer provided by root layout
 import { blogs } from "@/utils/blogs/blogs.js";
 import { notFound, useParams } from "next/navigation";
 import Link from "next/link";
@@ -30,7 +29,6 @@ export default function BlogDetailPage() {
 
   return (
     <>
-      <Navbar />
 
       {/* Blog Header */}
       <section className="section_hero pt-32 pb-8">
@@ -245,8 +243,7 @@ export default function BlogDetailPage() {
           </div>
         </section>
       )}
-      <PageFooter />
-      <Footer />
+  <PageFooter />
     </>
   );
 }

@@ -2,8 +2,7 @@ import { Clients } from "@/components/Home/Clients";
 import Hero from "@/components/Home/Hero/Hero";
 import ProductOverview from "@/components/Home/ProductOverview/ProductOverview";
 import WhatWeDo from "@/components/Home/WhatWeDo";
-import { Footer } from "@/components/layouts/Footer";
-import Navbar from "@/components/layouts/Navbar";
+// Navbar and Footer are provided by root layout
 import WhatsCookin from "@/components/Product1Page/WhatsCookin";
 import Ai from "@/components/Product2/Ai2";
 import ClientsMargquee from "@/components/Product2/ClientsMargquee";
@@ -19,7 +18,6 @@ import PageFooter from "@/components/common/PageFooter";
 export default function Home() {
   return (
     <div className="mx-auto">
-      <Navbar />
       <Hero />
       <ClientsMargquee data={homeText.homepage.clientMarquee} />
       <ProductOverview />
@@ -70,8 +68,7 @@ export default function Home() {
       {/* <ClientSays /> */}
       {/* <WorkFlowSectionCases/> */}
       {/* <ContactUs/> */}
-      <PageFooter />
-      <Footer />
+  <PageFooter />
     </div>
   );
 }

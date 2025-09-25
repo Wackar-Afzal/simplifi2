@@ -1,8 +1,8 @@
 import React from "react";
 import HeroSection from "./HeroSection";
-import Navbar from "../layouts/Navbar";
+// Navbar provided by root layout
 import { ContactUs } from "../common/ContactUs";
-import { Footer } from "../layouts/Footer";
+// Footer provided by root layout
 import Ai from "./Ai2";
 import  embedreadytouse  from "@/utils/EmbedReadytouse.json";
 import CareerList from "../Career/CareerList";
@@ -13,7 +13,6 @@ import PageFooter from "../common/PageFooter";
 const Product2 = () => {
   return (
     <div>
-      <Navbar />
       <HeroSection  data={embedreadytouse.embedreadytouse.hero}/>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
@@ -31,7 +30,6 @@ const Product2 = () => {
       {/* <Features /> */}
       {/* <ContactUs /> */}
       <PageFooter data={embedreadytouse.embedreadytouse.footer} />
-      <Footer />
     </div>
   );
 };

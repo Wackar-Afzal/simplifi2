@@ -1,7 +1,6 @@
 "use client";
 
-import Navbar from "@/components/layouts/Navbar";
-import { Footer } from "@/components/layouts/Footer";
+// Navbar and Footer imports removed
 import { pressReleases } from "@/utils/press/press-combined.js";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -197,8 +196,8 @@ export default function PressReleaseDetailPage({ params }) {
           </div>
         </section>
       )} */}
-      <PageFooter/>
-      <Footer />
+        <PageFooter />
+        {/* Footer moved to root layout */}
     </>
   );
 }

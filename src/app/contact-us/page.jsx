@@ -1,14 +1,12 @@
 import { ContactUs } from '@/components/common/ContactUs'
 import PageFooter from '@/components/common/PageFooter'
 import DemoForm from '@/components/ContactUs/DemoForm'
-import { Footer } from '@/components/layouts/Footer'
-import Navbar from '@/components/layouts/Navbar'
+// Navbar and Footer provided by root layout
 import React from 'react'
 import data from '@/utils/contact/contact.json'
 const page = () => {
   return (
-    <>
-    <Navbar/>
+  <>
     {/* <ContactUs/> */}
       <div className="h-auto flex items-center justify-center w-full my-20">
         <div
@@ -34,7 +32,7 @@ const page = () => {
         </div>
       </div>
       {/* <PageFooter data={data.contact.footer}/> */}
-      <Footer/>
+      {/* Footer provided by root layout */}
     </> 
     
   )

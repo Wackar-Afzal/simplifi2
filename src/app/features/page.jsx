@@ -1,16 +1,15 @@
-import Navbar from "@/components/layouts/Navbar";
+// Navbar provided by root layout
 import CaseStudies from "@/components/Product1Page/CaseStudies";
 import HeroProduct from "@/components/Product1Page/HeroProduct";
 import React from "react";
 import features from "@/utils/features.json"
 import Cases from "@/components/Product1Page/Cases";
 import PageFooter from "@/components/common/PageFooter";
-import { Footer } from "@/components/layouts/Footer";
+// Footer provided by root layout
 
 const Features = () => {
   return (
     <>
-      <Navbar />
       <HeroProduct data={features.features.hero} />
       <div className="mt-20">
       <Cases data={features.features.caseStudies}/>
@@ -20,7 +19,7 @@ const Features = () => {
       <PageFooter data={features.features.footer} />
 
       </div>
-      <Footer/>
+      {/* Footer provided by root layout */}
     </>
   );
 };

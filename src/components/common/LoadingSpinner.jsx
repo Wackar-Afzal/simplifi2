@@ -5,7 +5,8 @@ const LoadingSpinner = ({ isVisible }) => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-white/90 backdrop-blur-sm flex items-center justify-center transition-opacity duration-150">
+    // spinner sits under header/footer (header/footer use z-40)
+    <div className="fixed inset-0 z-20 bg-white/90 backdrop-blur-sm flex items-center justify-center transition-opacity duration-150">
       <div className="flex flex-col items-center gap-4">
         {/* Modern spinner with site colors */}
         <div className="relative">

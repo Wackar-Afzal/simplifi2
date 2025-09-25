@@ -24,7 +24,7 @@ export const LoadingProvider = ({ children }) => {
     // Hide loading after exactly 300ms (0.3 seconds)
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 400);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [pathname]);

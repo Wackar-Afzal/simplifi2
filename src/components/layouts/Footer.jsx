@@ -4,7 +4,7 @@ import React from "react";
 export const Footer = () => {
     return (
         <div className="footer-wrapper py-20 px-5 max-w-7xl mx-auto mt-0">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center flex-wrap gap-8">
                 <div>
                      <h3 className="heading-style-h2_fintech">SimpliFi Card Solutions</h3>
                          <div className="paragraph-style-body">
@@ -102,21 +102,21 @@ export const Footer = () => {
                     /> */}
                     <div
                         id="w-node-d48fe428-e64b-1aa8-c2fc-d1ed84b7a195-2da5785d"
-                        className="paragraph-style-body is-bold"
+                        className="paragraph-style-body is-bold flex flex-col gap-2"
                     >
                           <a
-                            href="https://podcast.humbleteam.com/?utm_source=humbleteam-website&amp;utm_medium=website&amp;utm_content=footer-link"
-                            className="paragraph-style-body is-bold"
+                            href="/terms-and-conditions"
+                            className="paragraph-style-body is-bold hover:text-blue-600 transition-colors"
                         >
-                             Terms and Conditions ↗
+                             Terms and Conditions
                         </a>
                        
-                        <br />
+                        
                         <a
-                            href="https://podcast.humbleteam.com/?utm_source=humbleteam-website&amp;utm_medium=website&amp;utm_content=footer-link"
-                            className="paragraph-style-body is-bold"
+                            href="/privacy-policy"
+                            className="paragraph-style-body is-bold hover:text-blue-600 transition-colors"
                         >
-                            Privacy Policy ↗
+                            Privacy Policy
                         </a>
                     </div>
                     {/* <img

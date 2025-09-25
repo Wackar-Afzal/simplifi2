@@ -40,32 +40,34 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
       ];
 
       return (
-        <div className="flex w-full   mx-auto overflow-y-scroll h-auto no-scrollbar ">
-          {/* Left Sidebar */}
-          <div className=" bg-gray-50 text-left p-6 rounded-l-lg">
-            {/* <div className="mb-6">
+        <div className="flex w-full mx-auto overflow-y-scroll h-auto no-scrollbar max-w-7xl bg-white shadow-lg rounded-lg">
+          {/* Left Sidebar - Products */}
+          <div className="flex-1 bg-gradient-to-br from-blue-50 to-indigo-50 text-left p-6 rounded-l-xl border-r border-gray-100 max-w-[300px]">
+            <div className="mb-6">
               <span className="text-xs font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
                 READY-TO-USE
               </span>
-            </div> */}
+            </div>
 
-            <div className="max-w-[25vw] ">
+            <div className="space-y-3">
               {productsData.slice(0,2).map(({ name, path, icon, descrip }) => (
                 <Link
                   key={path}
                   href={path}
-                  className={`flex justify-center !items-start gap-3 p-4 rounded-lg transition-colors ${
+                  className={`group flex items-start gap-3 p-4 rounded-lg transition-all duration-30 ${
                     pathname.includes(path)
-                      ? "bg-white shadow-sm border border-gray-200"
-                      : "hover:bg-white hover:shadow-sm"
+                      ? " shadow-lg border border-blue-200 transform scale-[1.02] -translate-y-1"
+                      : "hover: hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 border border-transparent"
                   }`}
                 >
-                  <div className="w-full">
-                    <div className="flex items-center justify-items-start gap-3 mb-2">
-                      <CreditCard color="grey" />
-                      <p className="font-semibold text-gray-900 !m-0">{name}</p>
-                    </div>
-                    <p className="text-sm text-gray-600 line-clamp-2">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-md flex items-center justify-center  transition-colors">
+                    <CreditCard className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-medium text-gray-900 mb-1  transition-colors text-sm">
+                      {name}
+                    </h3>
+                    <p className="text-xs text-gray-600 leading-tight">
                       {descrip}
                     </p>
                   </div>
@@ -75,61 +77,71 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
           </div>
 
           {/* Right Content Area */}
-          <div className="flex ml-2 !mb-8 pb-8">
-            <div className="flex-1 p-2 bg-white rounded-r-lg">
-              <div className="mb-0">
-                 <Link href="/features" className="text-xl font-semibold text-gray-900 ">
-                  Features
-                </Link>
-                {/* <p className="text-gray-600">
-                Discover our features
-              </p> */}
-              </div>
-
-              <div className="mb-2">
-                <div className="grid grid-cols-2 ">
-                  {features.map(({ name, icon }) => (
-                     <p
-                      key={name}
-                      className="flex items-center  p-2  rounded-lg transition-colors"
-                    >
-                      <span className="text-lg">{icon}</span>
-                      <span className="text-gray-700 text-[0.8rem]">{name}</span>
-                    </p>
-                  ))}
+          <div className="flex flex-1 bg-white rounded-r-xl">
+            {/* Features Section */}
+            <Link 
+              href="/features" 
+              className="flex-1 p-6 border-r border-gray-100 group hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-30 cursor-pointer"
+            >
+              <div className="mb-6">
+                <div className="group inline-flex items-center gap-2 text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <span>Features</span>
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </div>
               </div>
-            </div>
 
-            <div className="flex-1 p-2 bg-primarylight rounded-r-lg">
-              <div className="mb-6">
-                <Link href="/capabilities" className="text-xl font-semibold text-gray-900 mb-2">
-                  Capabilities
-                </Link>
-                <p className="text-gray-600"></p>
+              <div className="grid grid-cols-2 gap-1">
+                {features.map(({ name, icon }) => (
+                  <div
+                    key={name}
+                    className="flex items-center gap-1 p-1 rounded-lg"
+                  >
+                    <span className="text-xl">{icon}</span>
+                    <span className="text-gray-700 !text-left text-sm font-medium">
+                      {name}
+                    </span>
+                  </div>
+                ))}
               </div>
+            </Link>
 
+            {/* Capabilities Section */}
+            <Link 
+              href="/capabilities" 
+              className="flex-1 p-6 bg-gradient-to-br from-gray-50 to-blue-50 group hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-30 cursor-pointer"
+            >
               <div className="mb-6">
-                <div className="grid grid-cols-2 ">
-                  {capabilites.map(({ name, icon }) => (
-                    <p 
-                      key={name}
-                      className="flex items-center gap-0 p-1  rounded-lg transition-colors"
-                    >
-                      <span className="text-lg">{icon}</span>
-                      <span className="text-gray-700 text-sm">{name}</span>
-                    </p>
-                  ))}
+                <div className="group inline-flex items-center gap-2 text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  <span>Capabilities</span>
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </div>
               </div>
-            </div>
+
+              <div className="grid grid-cols-2 gap-1">
+                {capabilites.map(({ name, icon }) => (
+                  <div
+                    key={name}
+                    className="flex items-center gap-2 p-1 rounded-lg"
+                  >
+                    <span className="text-xl">{icon}</span>
+                    <span className="text-gray-700 text-sm font-medium !text-left">
+                      {name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </Link>
           </div>
         </div>
       );
 
     case "Cards":
       return (
-        <div className="w-full max-w-6xl mx-auto p-6">
+        <div className="w-full max-w-6xl mx-auto p-6 max-w-7xl bg-white shadow-lg rounded-lg">
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Cards</h2>
             <p className="text-gray-600 mb-6">
@@ -187,7 +199,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
       const cardTypes = dropdown[0]?.cardTypes || [];
 
       return (
-        <div className="w-[max-content] max-w-7xl mx-auto p-6 overflow-y-auto max-h-[80vh] flex">
+        <div className="w-[max-content] max-w-7xl mx-auto p-6 overflow-y-auto max-h-[80vh] flex max-w-7xl bg-white shadow-lg rounded-lg">
                  <div className="flex flex-col ">
             {/* Use Cases Column */}
             <div>
@@ -225,9 +237,10 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
       );
 
 
+
     case "About":
       return (
-        <div className="p-6 max-w-4xl">
+        <div className="p-6 max-w-4xl max-w-7xl bg-white shadow-lg rounded-lg">
         
 
           <div className="grid grid-cols-1 gap-2 ">
@@ -257,7 +270,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
     default:
       // Generic fallback renderer
       return (
-        <div className="flex flex-wrap gap-4 p-4">
+        <div className="flex flex-wrap gap-4 p-4 max-w-7xl bg-white shadow-lg rounded-lg">
           {dropdown.map(({ name, path }) => (
             <Link
               key={path}

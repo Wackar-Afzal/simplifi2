@@ -1,16 +1,15 @@
-import Navbar from "@/components/layouts/Navbar";
+// Navbar provided by root layout
 import React from "react";
 import HeroSection from "@/components/Product2/HeroSection";
 import about  from "@/utils/About/about.json";
 import  {Clients} from "@/components/about/Clients";
 import ClientsMarquee from "@/components/Product2/ClientsMargquee";
 import PageFooter from "@/components/common/PageFooter";
-import { Footer } from "@/components/layouts/Footer";
+// Footer provided by root layout
 const Page = () => {
   console.log(about.about, "about");
   return (
     <>
-      <Navbar />
       <div className="max-w-7xl mx-auto overflow-hidden">
         <HeroSection data={about.about.hero} />
       </div>
@@ -30,8 +29,8 @@ const Page = () => {
       <div>
         <ClientsMarquee data={about.about.clientMarquee} />
         </div>
-        <PageFooter/>
-        <Footer/> 
+    <PageFooter/>
+    {/* Footer provided by root layout */}
     </>
   );
 };

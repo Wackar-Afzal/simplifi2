@@ -1,9 +1,9 @@
 import cardAsService  from "@/utils/cardAsService.json";
 
-import Navbar from "../layouts/Navbar";
+// Navbar provided by root layout
 import WhatsCookin from "./WhatsCookin";
 import { ContactUs } from "../common/ContactUs";
-import { Footer } from "../layouts/Footer";
+// Footer provided by root layout
 import CareerList from "../Career/CareerList";
 import ClientsMarquee from "../Product2/ClientsMargquee";
 import Ai from "../Product2/Ai2";
@@ -15,7 +15,6 @@ export const ProductMain = () => {
   console.log(cardAsService,"cardAsService")
   return (
     <div>
-      <Navbar />
       <HeroSection data={cardAsService.cardAsService.hero} />
       <div className="mt-5 mb-8">
       <ClientsMarquee data={cardAsService.cardAsService.clientMarquee} />
@@ -38,7 +37,6 @@ export const ProductMain = () => {
       {/* <Brags /> */}
       {/* <ClientSays /> */}
       <PageFooter data={cardAsService.cardAsService.footer} />
-      <Footer />
     </div>
   );
 };

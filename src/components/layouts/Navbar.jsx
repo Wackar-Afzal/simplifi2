@@ -180,7 +180,7 @@ const NAV_ITEMS = [
   },
   {
     name: "Resources",
-    path: "/resources",
+    path: "https://apidoc.simplifipay.com/",
   },
   {
     name: "About",
@@ -243,7 +243,7 @@ export default function Navbar() {
       >
         <div className="relative">
           {/* Main Navbar */}
-          <div className="flex flex-wrap max-w-7xl justify-between items-center py-2 md:py-2 px-1 m-auto  bg-primarylight  rounded-4xl ">
+          <div className="flex gap-4 flex-wrap max-w-7xl justify-between items-center py-2 md:py-2 px-1 m-auto  bg-primarylight  rounded-4xl ">
             {/* Logo */}
             <div className="flex items-center gap-[2rem]">
               <Link
@@ -279,8 +279,8 @@ export default function Navbar() {
                       <AnimatePresence>
                         {openDropdown == path && (
                           // {true && (
-                          <div className={`absolute no-scrollbar overflow-scroll  ${i==0?" w-full right-0":"w-[max-content]"}   top-[2rem] mt-2   py-8 px-6 z-0`}>
-                            <div className="bg-white shadow-lg rounded-lg">
+                          <div className={`absolute no-scrollbar overflow-scroll  ${i==0?" w-full right-0":"w-[max-content]"}   top-[2rem] mt-2   py-8 px-6 z-0 `}>
+                            <div className="">
                               <SectionNavbar
                                 sectionName={name}
                                 dropdown={dropdown}
