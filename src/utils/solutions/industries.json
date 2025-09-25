@@ -3,8 +3,8 @@
     "hero": {
       "heading": "Designed for Your Industry, Ready for Every Workflow",
       "descrip": "From SaaS to logistics, startups to global enterprises—our card infrastructure supports businesses of all sizes, across all sectors. Build solutions tailored to your industry’s unique spend needs, whether it’s recurring payments, campaign budgets, or regulated disbursements.",
-      "desVideo": "https://files.asad.digital/video/humbleteam/hero.mp4",
-      "mobVideo": "https://files.asad.digital/video/humbleteam/hero.mp4"
+      "desVideo": "../Videos/Banner Mobile.mp4",
+      "mobVideo": "../Videos/Banner Mobile.mp4"
     },
     "usps": {
       "title": "Industry Verticals We Support",
