@@ -929,13 +929,13 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   /* adjust height as needed */
 }
 
 .case-img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
   transition: transform 0.5s ease;
   transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
@@ -1111,7 +1111,7 @@ body {
   grid-column-gap: 1.25rem;
   grid-row-gap: 1.25rem;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr ;
   grid-auto-columns: 1fr;
   display: grid;
 }
@@ -1165,6 +1165,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   display: grid;
+  
 }
 
 .body-large {

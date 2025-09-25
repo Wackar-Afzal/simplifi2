@@ -1,89 +1,134 @@
 import React from "react";
 
 const Ai = ({ data }) => {
+  const isFiveLayout = data.features.length === 5;
+
   return (
     <div className="mb-4 flex justify-center">
-      <div className="section-cases max-w-[1400px]">
-        <div className="container-global">
+      <div className="section-cases max-w-7xl w-full mx-auto">
+        <div className={`container-global ${isFiveLayout?"!gap-y-6":""}` }>
           <div className="flex flex-col gap-4 justify-center items-center">
-            <h2 className="section-heading is-large mb-4">{data.title}</h2>
-            <p className="paragraph-style-body text-center lg:mb-20">
+            <h2 className="heading-style-h2_fintech mb-6">{data.title}</h2>
+            <p
+              className={`paragraph-style-body text-center ${
+                isFiveLayout ? "lg:mb-10" : "lg:mb-20"
+              }`}
+            >
               {data.descrip}
             </p>
           </div>
 
-          <div
-            className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 auto-cols-fr gap-x-5 gap-y-16  md:[grid-template-rows:auto]"
-          >
-{data.features.map((feature, index) => {
-  const total = data.features.length;
-  const remainder = total % 3;
-  const isLastRowStart = index >= total - remainder;
+          {/* -------- Layout for 5 cards -------- */}
+          {isFiveLayout ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-fr gap-x-5 gap-y-16">
+              {data.features.map((feature, index) => {
+                const isCenterBigCard = index === 1;
 
-  let lastRowClasses = "";
-  let isCenterColumn = index % 3 === 1;
-  let isLastCenteredCard = false;
+                // background color: center card = grey, others = black
+                const backgroundClass = isCenterBigCard
+                  ? "background-color-secondary"
+                  : "background-color-black";
 
-  // Detect if this is the single centered card in the last row
-  if (isLastRowStart) {
-    if (remainder === 1 && index === total - 1) {
-      lastRowClasses = "lg:col-start-2 lg:mt-[-8rem]";
-      isCenterColumn = true;
-      isLastCenteredCard = true;
-    } else if (remainder === 2 && index >= total - 2) {
-      lastRowClasses = "lg:mt-16";
-    }
-  }
+                return (
+                  <div
+                    key={index}
+                    className={`
+                      cases-grid-item border-radius-primary
+                      ${backgroundClass}
+                      ${
+                        isCenterBigCard
+                          ? "lg:col-start-2 lg:row-start-1 lg:row-span-2 mt-[70%]"
+                          : ""
+                      }
+                    `}
+                  >
+                    <div className="cases-card-item-content-wrapper">
+                      <div className="cases-card-itm-title">
+                        <h3 className="heading-style-h4">{feature.title}</h3>
+                        <div className="paragraph-style-body text-color-secondary">
+                          {feature.description}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="cases-card-item-image-wrapper">
+                      <img
+                        src={feature.image}
+                        loading="eager"
+                        sizes="(max-width: 816px) 100vw, 816px"
+                        className="rounded-[3rem]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            /* -------- Default layout for all other counts -------- */
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-fr gap-x-5 gap-y-16 md:[grid-template-rows:auto]">
+              {data.features.map((feature, index) => {
+                const total = data.features.length;
+                const remainder = total % 3;
+                const isLastRowStart = index >= total - remainder;
 
-  // Determine default background class (even index → no bg, odd index → dark bg)
-  const defaultHasBg = index % 2 === 1;
+                let lastRowClasses = "";
+                let isCenterColumn = index % 3 === 1;
+                let isLastCenteredCard = false;
 
-  // Flip background for last centered card based on the card above (index - 3)
-  let backgroundClass = "";
-  if (isLastCenteredCard) {
-    const aboveIndex = index - 3;
-    const aboveHasBg = aboveIndex >= 0 && aboveIndex % 2 === 1;
+                if (isLastRowStart) {
+                  if (remainder === 1 && index === total - 1) {
+                    lastRowClasses = "lg:col-start-2 lg:mt-[-8rem]";
+                    isCenterColumn = true;
+                    isLastCenteredCard = true;
+                  } else if (remainder === 2 && index >= total - 2) {
+                    lastRowClasses = "lg:mt-16";
+                  }
+                }
 
-    // Flip: if above has bg → this should not, else apply dark background
-    backgroundClass = aboveHasBg
-      ? "background-color-secondary" // no bg
-      : ""; // apply dark bg
-  } else {
-    // For all other cards: use normal alternating bg logic
-    backgroundClass = defaultHasBg ? "background-color-secondary" : "";
-  }
+                const defaultHasBg = index % 2 === 1;
 
-  // Additional center column margin if needed
-  const centerColumnMargin = isCenterColumn ? "lg:mt-[-8rem]" : "";
+                let backgroundClass = "";
+                if (isLastCenteredCard) {
+                  const aboveIndex = index - 3;
+                  const aboveHasBg = aboveIndex >= 0 && aboveIndex % 2 === 1;
+                  backgroundClass = aboveHasBg
+                    ? "background-color-secondary"
+                    : "";
+                } else {
+                  backgroundClass = defaultHasBg
+                    ? "background-color-secondary"
+                    : "";
+                }
 
-  return (
-    <div
-      key={index}
-      className={`cases-grid-item border-radius-primary ${backgroundClass} ${lastRowClasses} ${centerColumnMargin}`}
-    >
-      <div className="cases-card-item-content-wrapper">
-        <div className="cases-card-itm-title">
-          <h3 className="heading-style-h4">{feature.title}</h3>
-          <div className="paragraph-style-body text-color-secondary">
-            {feature.description}
-          </div>
-        </div>
-      </div>
-      <div className="cases-card-item-image-wrapper">
-        <img
-          src={feature.image}
-          loading="eager"
-          sizes="(max-width: 816px) 100vw, 816px"
-          className="rounded-[3rem]"
-          alt=""
-        />
-      </div>
-    </div>
-  );
-})}
+                const centerColumnMargin = isCenterColumn ? "lg:mt-[-8rem]" : "";
 
-
-          </div>
+                return (
+                  <div
+                    key={index}
+                    className={`cases-grid-item border-radius-primary ${backgroundClass} ${lastRowClasses} ${centerColumnMargin}`}
+                  >
+                    <div className="cases-card-item-content-wrapper">
+                      <div className="cases-card-itm-title">
+                        <h3 className="heading-style-h4">{feature.title}</h3>
+                        <div className="paragraph-style-body text-color-secondary">
+                          {feature.description}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="cases-card-item-image-wrapper">
+                      <img
+                        src={feature.image}
+                        loading="eager"
+                        sizes="(max-width: 816px) 100vw, 816px"
+                        className="rounded-[3rem]"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>

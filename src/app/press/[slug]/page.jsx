@@ -7,11 +7,22 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { motion } from "framer-motion";
+import Cases from "@/components/Product1Page/Cases";
 import PageFooter from "@/components/common/PageFooter";
 
 function getPressReleaseBySlug(slug) {
   const allPressReleases = pressReleases.pressReleases.pressReleases.slides;
   return allPressReleases.find(pr => pr.slug === slug);
+}
+
+function getRelatedPressReleases(currentSlug) {
+  // Get all press releases except the current one
+  const allOtherPressReleases = pressReleases.pressReleases.pressReleases.slides.filter(pr => pr.slug !== currentSlug);
+  
+  // Randomly select 3 press releases
+  return allOtherPressReleases
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3);
 }
 
 export default function PressReleaseDetailPage({ params }) {
@@ -21,8 +32,7 @@ export default function PressReleaseDetailPage({ params }) {
     notFound();
   }
 
-  const allPressReleases = pressReleases.pressReleases.pressReleases.slides.filter(pr => pr.slug !== params.slug);
-  const relatedPressReleases = allPressReleases.sort(() => 0.5 - Math.random()).slice(0, 3);
+  const relatedPressReleases = getRelatedPressReleases(params.slug);
 
   return (
     <>
@@ -160,53 +170,20 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Related Press Releases */}
-      {relatedPressReleases.length > 0 && (
+      {/* {relatedPressReleases.length > 0 && (
         <section className="section_services bg-gray-50 py-20">
-          <div className="container-global max-w-6xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="text-center mb-12"
-            >
-              <h2 className="heading-style-h2_fintech mb-4">More Press Releases</h2>
-              <p className="paragraph-style-body text-gray-600">
-                Stay informed with our latest company news
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {relatedPressReleases.map((relatedPr, index) => (
-                <motion.div
-                  key={relatedPr.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.7 + index * 0.1 }}
-                >
-                  <Link href={`/press/${relatedPr.slug}`} className="group block">
-                    <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                      <div className="aspect-video overflow-hidden">
-                        <img
-                          src={relatedPr.src}
-                          alt={relatedPr.alt}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                      </div>
-                      <div className="p-6">
-                        <div className="text-sm text-gray-500 mb-2">{relatedPr.date}</div>
-                        <h3 className="heading-style-h4 mb-3 group-hover:text-primary transition-colors">
-                          {relatedPr.title}
-                        </h3>
-                        <p className="paragraph-style-body text-gray-600 text-sm line-clamp-3">
-                          {relatedPr.subtitle}
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-
+          <div className="container-global">
+            <Cases
+              data={{
+                heading: "More Press Releases",
+                descrip: "Stay informed with our latest company news",
+                slides: relatedPressReleases.map(pr => ({
+                  ...pr,
+                  buttonLink: `/press-releases/${pr.slug}`,
+                  buttonText: "Read More"
+                }))
+              }}
+            />
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -219,7 +196,7 @@ export default function PressReleaseDetailPage({ params }) {
             </motion.div>
           </div>
         </section>
-      )}
+      )} */}
       <PageFooter/>
       <Footer />
     </>

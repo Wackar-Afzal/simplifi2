@@ -21,7 +21,7 @@ export default function WhatsCookin({data}) {
  
 
   return (
-    <section className="relative w-full slider-section   overflow-hidden p-5 py-20">
+    <section className="relative w-full slider-section   overflow-hidden p-5 py-20 max-w-7xl mx-auto">
       <div className="flex items-center justify-between mb-20">
         <h1 className="heading-style-h2_fintech text-center w-full">{data.title} <br/> {data.title1}</h1>
         {/* <div className=" text-end   gap-2 flex justify-end  ">
@@ -76,9 +76,10 @@ export default function WhatsCookin({data}) {
         <div className="pb-20">
           <p className="feed-tag mb-3 mt-3">{}</p>
           <h2 className="feed-title mb-3">{slide.title}</h2>
+          {slide?.buttonLink?
           <Link href={slide.buttonLink} className="case-button">
             {slide.buttonText}
-          </Link>
+          </Link>:null}
         </div>
       </div>
     ))}
@@ -117,9 +118,10 @@ export default function WhatsCookin({data}) {
         <div className="pb-20">
           <p className="feed-tag mb-3 mt-3">{}</p>
           <h2 className="feed-title mb-3">{slide.title}</h2>
+          {slide?.buttonLink&&
           <Link href={slide.buttonLink} className="case-button">
             {slide.buttonText}
-          </Link>
+          </Link>}
         </div>
       </SplideSlide>
     ))}

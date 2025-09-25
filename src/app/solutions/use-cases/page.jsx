@@ -12,13 +12,12 @@ const Page = () => {
     <>
       <Navbar />
       <HeroProduct data={useCases.useCases.hero} />
-      <div className="mt-20">
+      <div className="mt-20 mb-10">
       <CaseStudies data={useCases.useCases.caseStudies}/>
       </div>
       <CaseStudies data={useCases.useCases.caseStudies1}/>
-      <div className="mb-8">
+      <div className=" mb-10">
       <CaseStudies data={useCases.useCases.caseStudies2}/>
-
       </div>
       <CareerList data={useCases.useCases.careerList}/>
 

@@ -1,7 +1,7 @@
 {
   "embedreadytouse": {
     "hero": {
-      "bckgroundImage": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif",
+      "bckgroundImage": "features/Multi-Currency_Cards-removebg-preview.png",
       "heading": "Go live with ready-to-issue cards in days",
       "descrip": "Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code."
     },
@@ -13,25 +13,29 @@
           "title": "KYC and AML pre-integrated",
           "href": "/careers/communication-designer",
           "location": "Prague or remote",
-          "descrip": ""
+          "descrip": "",
+          "icon":"icons/check.png"
         },
         {
           "title": "PCI-DSS ready",
           "href": "/careers/senior-designer-product",
           "location": "Prague or remote",
-          "descrip": ""
+          "descrip": "",
+          "icon":"icons/check.png"
         },
         {
           "title": "No licensing or approvals needed",
           "href": "/careers/design-lead-product",
           "location": "Prague or remote",
-          "descrip": ""
+          "descrip": "",
+          "icon":"icons/check.png"
         },
         {
           "title": "3DS and fraud management built-in",
           "href": "/careers/creative-director-product",
           "location": "Prague or remote",
-          "descrip": ""
+          "descrip": "",
+          "icon":"icons/check.png"
         }
       ]
     },

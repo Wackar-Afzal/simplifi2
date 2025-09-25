@@ -89,37 +89,43 @@
           "title": "Physical Cards",
           "href": "/careers/communication-designer",
           "location": "Prague or remote",
-          "descrip": "Plastic cards with your brand, delivered to your team or customers. Perfect for on-the-go spending like travel, fuel, or fieldwork."
+          "descrip": "Plastic cards with your brand, delivered to your team or customers. Perfect for on-the-go spending like travel, fuel, or fieldwork.",
+          "icon":"../icons/check.png"
         },
         {
           "title": "Virtual Cards",
           "href": "/careers/design-lead-product",
           "location": "Prague or remote",
-          "descrip": " Instantly issued and ready to use online or via mobile wallets. Ideal for subscriptions, online purchases, and remote teams."
+          "descrip": " Instantly issued and ready to use online or via mobile wallets. Ideal for subscriptions, online purchases, and remote teams.",
+          "icon":"../icons/check.png"
         },
         {
           "title": " Crypto Cards",
           "href": "/careers/creative-director-product",
           "location": "Prague or remote",
-          "descrip": "Link to crypto wallets and convert on-the-fly for real-world spend. Useful for platforms operating in digital asset environments."
+          "descrip": "Link to crypto wallets and convert on-the-fly for real-world spend. Useful for platforms operating in digital asset environments.",
+          "icon":"../icons/check.png"
         },
         {
           "title": "Gift Cards",
           "href": "/careers/creative-director-product",
           "location": "Prague or remote",
-          "descrip": "Branded cards for promotions, rewards, or loyalty programs. Reloadable or one-time use—your call. "
+          "descrip": "Branded cards for promotions, rewards, or loyalty programs. Reloadable or one-time use—your call. ",
+          "icon":"../icons/check.png"
         },
         {
           "title": " Fuel Cards",
           "href": "/careers/creative-director-product",
           "location": "Prague or remote",
-          "descrip": "Tailored for transportation teams. Limit use to fuel merchants, set caps, and track every transaction in real time."
+          "descrip": "Tailored for transportation teams. Limit use to fuel merchants, set caps, and track every transaction in real time.",
+          "icon":"../icons/check.png"
         },
         {
           "title": " Single-Use Cards",
           "href": "/careers/creative-director-product",
           "location": "Prague or remote",
-          "descrip": "Auto-expiring cards designed for one-time transactions. Great for secure payouts, vendor payments, or limited-use cases."
+          "descrip": "Auto-expiring cards designed for one-time transactions. Great for secure payouts, vendor payments, or limited-use cases.",
+          "icon":"../icons/check.png"
         }
       ]
     },

@@ -17,7 +17,7 @@ export const ProductMain = () => {
     <div>
       <Navbar />
       <HeroSection data={cardAsService.cardAsService.hero} />
-      <div className="mt-20 mb-8">
+      <div className="mt-5 mb-8">
       <ClientsMarquee data={cardAsService.cardAsService.clientMarquee} />
 
       </div>

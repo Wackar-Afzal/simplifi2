@@ -5,7 +5,7 @@ export const pressReleases = {
       "descrip": "Stay updated with SimpliFi's latest announcements, partnerships, and milestones as we continue to transform the financial services landscape across MENA and Pakistan."
     },
     "pressReleases": {
-      "heading": "Press Releases",
+      "heading": "",
       "descrip": "Latest press releases and company announcements",
       "slides": [
         {

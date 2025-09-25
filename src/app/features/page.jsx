@@ -12,8 +12,14 @@ const Features = () => {
     <>
       <Navbar />
       <HeroProduct data={features.features.hero} />
+      <div className="mt-20">
       <Cases data={features.features.caseStudies}/>
+
+      </div>
+      <div className="mt-10">
       <PageFooter data={features.features.footer} />
+
+      </div>
       <Footer/>
     </>
   );

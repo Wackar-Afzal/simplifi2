@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 // JSON data for careers
 // const careerList={
 //     heading:"Why build with SimpliFi",
@@ -31,36 +31,45 @@ import React from 'react'
 // ]
 // }
 
-const CareerList = ({data}) => {
+const CareerList = ({ data }) => {
   return (
-        <section className="section slider-section is-careers-list">
-        <div className="">
-          <div className="careers-grid">
-            <div className="body-large">
-                <h2 className=''>{data.heading}</h2>
-                <p>{data.descrip}</p>
-                </div>
-            <div className="w-dyn-list">
-              <div role="list" className="careers-list w-dyn-items">
-                {data.careerPositions.map((position, index) => (
-                  <div key={index} role="listitem" className="w-dyn-item">
-                    <a href={position.href} className="careers-link w-inline-block">
-                      <h2 className='h2 pb-5'>{position.title}</h2>
-                      <div className="careers-location-wrapper">
-                        {/* <div className="body-medium">{position.location}</div> */}
-                        {/* <div className="body-small">•</div> */}
-                        <div className="body-medium">{position.descrip}</div>
-                      </div>
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
+    <section className="section slider-section max-w-7xl mx-auto">
+      <div className="">
+        <h2 className="heading-style-h2_fintech !text-center mb-6">
+          {data.heading}
+        </h2>
+        <p className="paragraph-style-body !text-center mb-12">
+          {data.descrip}
+        </p>
+      </div>
 
+      <div className="careers-grid">
+        <div className="w-dyn-list">
+          <div role="list" className="careers-list w-dyn-items">
+            {data.careerPositions.map((position, index) => (
+              <div key={index} role="listitem" className="w-dyn-item">
+                <a href={position.href} className="careers-link w-inline-block">
+                  <div className="flex items-center justify-start gap-2 mb-5">
+                    {position?.icon?
+                    <div className="w-10 flex items-center">
+                      <img src={position.icon}/>
+                    </div>:null}
+                    <h2 className="features-title !text-left ">
+                      {position.title}
+                    </h2>
+                  </div>
+                  <div className="careers-location-wrapper">
+                    {/* <div className="body-medium">{position.location}</div> */}
+                    <div className="body-medium">{position.descrip}</div>
+                  </div>
+                </a>
+              </div>
+            ))}
           </div>
         </div>
-      </section>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default CareerList
+export default CareerList;

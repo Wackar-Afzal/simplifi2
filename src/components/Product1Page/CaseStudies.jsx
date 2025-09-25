@@ -19,9 +19,9 @@ export default function CaseStudies({ data }) {
 
 
     return (
-        <section className="relative w-full slider-section   overflow-hidden p-5 py-0">
+        <section className="relative w-full  px-8 py-0 max-w-7xl mx-auto">
             <div className="flex items-center justify-between mb-10">
-                <h1 className="h2">{data.heading}</h1>
+                <h1 className="h2 text-center">{data.heading}</h1>
                 <div className="flex gap-2">
                     <button onClick={goPrev} className="splide__arrow splide__arrow--prev">
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@ export default function CaseStudies({ data }) {
             >
                 {data.slides.map((slide, index) => (
                     <SplideSlide key={index} className="relative">
-                        <div className="  overflow-hidden h-full flex flex-col">
+                        <div className="   h-full flex flex-col">
                             <div className="case-img-wrapper">
 
 
@@ -76,10 +76,10 @@ export default function CaseStudies({ data }) {
                                 </p>
                                 <h2 className="body-medium is-case-desc mb-5">{slide.subtitle}</h2>
                                 {data.date && <p className="body-small is-case-desc mb-5">{slide.date}</p>}
-
+                                {slide?.buttonLink &&
                                 <Link className="case-button" href={slide.buttonLink} target="_blank">
                                     {slide.buttonText}
-                                </Link>
+                                </Link>}
                                 {/* <button className="case-button" onClick={() => window.open(slide.buttonLink, '_blank')}>
                                     {slide.buttonText}
                                 </button> */}

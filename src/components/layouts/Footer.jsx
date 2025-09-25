@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer = () => {
     return (
-        <div className="footer-wrapper py-10 px-5 max-w-7xl mx-auto mt-20">
+        <div className="footer-wrapper py-20 px-5 max-w-7xl mx-auto mt-0">
             <div className="flex justify-between items-center">
                 <div>
                      <h3 className="heading-style-h2_fintech">SimpliFi Card Solutions</h3>

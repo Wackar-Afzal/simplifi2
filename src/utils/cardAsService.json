@@ -1,7 +1,7 @@
 {
   "cardAsService": {
     "hero": {
-      "bckgroundImage": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493229_hero-wand.avif",
+      "bckgroundImage": "USPS/5.jpg",
       "heading": " Your brand. Your logic. Our infrastructure.",
       "descrip": "Get full control with SimpliFi’s Cards as a Service solution. Whether you're a fintech building a new product or an enterprise launching custom spend tools, our infrastructure powers every layer so you can create exactly what you need. From onboarding flows to KYC, from tokenization to fraud management, we’ve got the backend covered. You own the experience."
     },
@@ -24,25 +24,29 @@
           "title": "Modular by design",
           "href": "/careers/communication-designer",
           "location": "Prague or remote",
-          "descrip": "Pick the layers you need and skip what you don’t. Build faster without compromising on your vision."
+          "descrip": "Pick the layers you need and skip what you don’t. Build faster without compromising on your vision.",
+          "icon":"icons/check.png"
         },
         {
           "title": "Made to scale",
           "href": "/careers/senior-designer-product",
           "location": "Prague or remote",
-          "descrip": "Handle millions of transactions, complex approval flows, and real-time controls without friction."
+          "descrip": "Handle millions of transactions, complex approval flows, and real-time controls without friction.",
+          "icon":"icons/check.png"
         },
         {
           "title": "Fully white-label",
           "href": "/careers/design-lead-product",
           "location": "Prague or remote",
-          "descrip": "Your branding. Your workflows. We stay invisible so your brand stays front and center."
+          "descrip": "Your branding. Your workflows. We stay invisible so your brand stays front and center.",
+          "icon":"icons/check.png"
         },
         {
           "title": "Built for compliance",
           "href": "/careers/creative-director-product",
           "location": "Prague or remote",
-          "descrip": "We handle KYC, AML, 3DS, PCI-DSS, and more so you can focus on your product."
+          "descrip": "We handle KYC, AML, 3DS, PCI-DSS, and more so you can focus on your product.",
+          "icon":"icons/check.png"
         }
       ]
     },
@@ -94,7 +98,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
           "title": "Support layer",
           "description": "Guidance from onboarding to launch. We assist with setup, integration, and daily operations.",
-          "image": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660d3810f7bfb8e31f34b5cc_cases-5.webp",
+          "image": "Embed-Ready-To-Use-Card/Built-inSecurity andcompliance.jpg",
           "dark": true,
           "horizontal": true
         }
@@ -105,46 +109,37 @@
       "subtitle": "",
       "slides": [
         {
-          "src": "Cards-As-a-Service/Fintechlaunchingproduct.jpg",
+          "src": "Cards-As-a-Service/Who it’s for Fintech launching product (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
-          "title": "Fintechs launching card products",
-          "buttonText": "Learn more",
-          "buttonLink": "/shop"
+          "title": "Fintechs launching card products"
         },
         {
-          "src": "Cards-As-a-Service/Enterprisebuilding.jpg",
+          "src": "Cards-As-a-Service/Who it’s for Enterprise building (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
-          "title": "Enterprises building internal spend tools",
-          "buttonText": "Learn more",
-          "buttonLink": "/shop"
+          "title": "Enterprises building internal spend tools"
         },
         {
-          "src": "Cards-As-a-Service/Startupsandscluping.jpg",
+          "src": "Cards-As-a-Service/Who it’s for Startups and scluping (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
-          "title": "Startups and scaleups building custom payment experiences",
-          "buttonText": "Learn more",
-          "buttonLink": "/shop"
+          "title": "Startups and scaleups building custom payment experiences"
         },
         {
-          "src": "Cards-As-a-Service/Techfirstterm_.jpg",
+          "src": "Cards-As-a-Service/Who it’s for Tech first term_ (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
-          "title": "Tech-first teams that need full control",
-          "buttonText": "Learn more",
-          "buttonLink": "/shop"
+          "title": "Tech-first teams that need full control"
         }
-      ],
-      "cta": "Learn more"
+      ]
     },
        "footer":{
       "bg-dark":true,
       "heading":"Ready to build your own card program?",
       "subheading":"We’ll provide the infrastructure, APIs, and compliance support. You build what matters.",
       "buttonText":"Book a Demo",
-      "buttonLink":"/"
+      "buttonLink":"/contact-us"
     }
   }
 }

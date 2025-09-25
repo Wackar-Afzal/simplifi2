@@ -10,32 +10,35 @@
       "heading": "",
       "descrip": "",
       "slides": [
-        {
-          "src": "/features/Multi-Currency Cards.jpg",
+             {
+          "src": "/features/Instant Issuance.jpg",
           "alt": "Landscape",
-          "subtitle": "Issue in multiple currencies and avoid FX fees.",
-          "title": "Multi-Currency Cards",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
+          "subtitle": "Create and activate virtual cards in seconds.",
+          "title": "Instant Issuance",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
+                {
+          "src": "/features/Statement Downloads.jpg",
+          "alt": "Landscape",
+          "subtitle": "Export statements by user or timeframe.",
+          "title": "Statement Downloads",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+  
         {
           "src": "/features/Real-Time Notifications.jpg",
           "alt": "Landscape",
           "subtitle": "Get alerts for every transaction instantly.",
           "title": "Real-Time Notifications",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
 
-        {
-          "src": "/features/Instant Issuance.jpg",
+   
+              {
+          "src": "/features/Multi-Currency Cards.jpg",
           "alt": "Landscape",
-          "subtitle": "Create and activate virtual cards in seconds.",
-          "title": "Instant Issuance",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
+          "subtitle": "Issue in multiple currencies and avoid FX fees.",
+          "title": "Multi-Currency Cards",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -43,8 +46,6 @@
           "alt": "Landscape",
           "subtitle": "Load funds or issue cards in batches effortlessly.",
           "title": "Bulk Load Management",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -52,26 +53,14 @@
           "alt": "Landscape",
           "subtitle": " Assign roles and permissions across your team.",
           "title": "Role-Based Access",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
-        {
-          "src": "/features/Statement Downloads.jpg",
-          "alt": "Landscape",
-          "subtitle": "Export statements by user or timeframe.",
-          "title": "Statement Downloads",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
-          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        },
+
         {
           "src": "/features/Developer Sandbox.jpg",
           "alt": "Landscape",
           "subtitle": "Test and build in a secure, private environment.",
           "title": "Developer Sandbox",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -79,8 +68,6 @@
           "alt": "Landscape",
           "subtitle": "Access detailed API docs and integration guides.",
           "title": "Developer Tools",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -88,8 +75,6 @@
           "alt": "Landscape",
           "subtitle": "Use PCI-compliant SDKs for iOS and Android apps.",
           "title": "SDKs for Mobile",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -97,8 +82,6 @@
           "alt": "Landscape",
           "subtitle": "Receive real-time event updates via webhooks.",
           "title": "Webhooks",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -106,8 +89,6 @@
           "alt": "Landscape",
           "subtitle": "Use hosted card pages as an alternative to building apps.",
           "title": "Web Hosted Pages",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -115,8 +96,6 @@
           "alt": "Landscape",
           "subtitle": "Design onboarding journeys that match your business needs.",
           "title": "Custom KYC Flows",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
 
@@ -125,8 +104,6 @@
           "alt": "Landscape",
           "subtitle": "Access pre-built dashboards for spend analysis.",
           "title": "Reports & Insights",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -134,8 +111,6 @@
           "alt": "Landscape",
           "subtitle": "Set limits, block categories, and restrict usage.",
           "title": "Fully Programmable Card Controls",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
@@ -143,8 +118,6 @@
           "alt": "Landscape",
           "subtitle": "Add layers of control with approval flows and secure logins.",
           "title": "Maker-Checker & Two-Factor Authentication",
-          "buttonText": "Coming soon",
-          "buttonLink": "/shop",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         }
       ]

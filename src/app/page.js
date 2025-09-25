@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       <WhatWeDo data={homeText.homepage.whatwedo} />
-
+      <div className="my-20">
       <Cases
         data={{
           ...pressReleases.pressReleases.media,
@@ -64,6 +64,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      </div>
+
 
       {/* <ClientSays /> */}
       {/* <WorkFlowSectionCases/> */}
