@@ -312,7 +312,7 @@ export default function Navbar() {
                 <div className="relative  md:block  xl:block">
                   <Link
                   href="/contact-us"
-                  className="nav-outlined-button hidden md:visible  !px-6 !py-3"
+                  className="nav-outlined-button hidden  md:block  !px-6 !py-3"
                   >
                     Book a demo
                   </Link>

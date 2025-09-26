@@ -2,18 +2,30 @@
 import React, { useEffect, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 import { toast } from "react-toastify";
 
 // Yup validation schema
 const validationSchema = Yup.object().shape({
-  first_name: Yup.string().required("First Name is required"),
-  last_name: Yup.string().required("Last Name is required"),
-  business_email: Yup.string().email("Invalid email").required("Business Email is required"),
+  name: Yup.string().required("Full Name is required"),
+  work_email: Yup.string().email("Invalid email").required("Work Email is required"),
+  phoneNumber: Yup.string().required("Phone Number is required"),
+  country: Yup.string().required("Country is required"),
+  company_name: Yup.string().required("Company Name is required"),
   department: Yup.string().required("Department is required"),
+  job_title: Yup.string().required("Job Title is required"),
+  number_of_employees: Yup.number()
+    .typeError("Must be a number")
+    .positive("Must be greater than zero")
+    .required("Number of Employees is required"),
   message: Yup.string().required("Message is required"),
 });
 
 const DemoForm = () => {
+  const countryOptions = React.useMemo(() => countryList().getData(), []);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -35,11 +47,11 @@ const DemoForm = () => {
         setStatus({ success: "Form submitted successfully!" });
         resetForm();
       } else {
-        toast.error(data.error || "Failed to send message.");
+        toast.error(data.error || "Failed to send email.");
         throw new Error(data.error || "Something went wrong");
       }
     } catch (error) {
-      toast.error(error.message || "Failed to send message.");
+      toast.error(error.message || "Failed to send email.");
       setStatus({ error: error.message });
     }
     setSubmitting(false);
@@ -48,31 +60,78 @@ const DemoForm = () => {
   return (
     <Formik
       initialValues={{
-        first_name: "",
-        last_name: "",
-        business_email: "",
+        name: "",
+        work_email: "",
+        phoneNumber: "",
+        country: "",
+        company_name: "",
         department: "",
+        job_title: "",
+        number_of_employees: "",
         message: "",
       }}
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
       className="w-full"
     >
-      {({ isSubmitting, status }) => (
+      {({ values, setFieldValue, isSubmitting, status }) => (
         <Form className="space-y-4 w-full">
           <div>
-            <Field type="text" name="first_name" placeholder="First Name" className="w-full input" />
-            <ErrorMessage name="first_name" component="div" className="text-red-500 text-sm" />
+            <Field type="text" name="name" placeholder="Full Name" className="w-full input" />
+            <ErrorMessage name="name" component="div" className="text-red-500 text-sm" />
           </div>
 
           <div>
-            <Field type="text" name="last_name" placeholder="Last Name" className="w-full input" />
-            <ErrorMessage name="last_name" component="div" className="text-red-500 text-sm" />
+            <Field type="email" name="work_email" placeholder="Work Email" className="w-full input" />
+            <ErrorMessage name="work_email" component="div" className="text-red-500 text-sm" />
           </div>
 
+          {isClient && (
+            <div>
+              <PhoneInput
+                country={"bh"}
+                value={values.phoneNumber || ""}
+                onChange={(phone) => {
+                  setFieldValue("phoneNumber", phone || "");
+                }}
+                inputProps={{
+                  name: "phoneNumber",
+                  required: true,
+                }}
+                containerClass="!w-[100%] input !pl-0"
+                inputClass="!w-[100%] !border-none p-3 rounded-lg !py-0 !text-[1rem] !background-white"
+              />
+              <ErrorMessage name="phoneNumber" component="div" className="text-red-500 text-sm" />
+            </div>
+          )}
+
+          {isClient && (
+            <div>
+              <Select
+                options={countryOptions}
+                value={countryOptions.find((option) => option.label === values.country)}
+                onChange={(selectedOption) => setFieldValue("country", selectedOption.label)}
+                placeholder="Select or type your country"
+                className="!w-[100%] input"
+                styles={{
+                  control: (base) => ({
+                    ...base,
+                    border: "none",
+                    width: "100%",
+                    boxShadow: "none",
+                    "&:hover": {
+                      border: "none",
+                    },
+                  }),
+                }}
+              />
+              <ErrorMessage name="country" component="div" className="text-red-500 text-sm" />
+            </div>
+          )}
+
           <div>
-            <Field type="email" name="business_email" placeholder="Business Email" className="w-full input" />
-            <ErrorMessage name="business_email" component="div" className="text-red-500 text-sm" />
+            <Field type="text" name="company_name" placeholder="Company Name" className="w-full input" />
+            <ErrorMessage name="company_name" component="div" className="text-red-500 text-sm" />
           </div>
 
           <div>
@@ -88,6 +147,16 @@ const DemoForm = () => {
               <option value="General" className="text-paragraphColor">General Inquiries</option>
             </Field>
             <ErrorMessage name="department" component="div" className="text-red-500 text-sm" />
+          </div>
+
+          <div>
+            <Field type="text" name="job_title" placeholder="Job Title" className="w-full input" />
+            <ErrorMessage name="job_title" component="div" className="text-red-500 text-sm" />
+          </div>
+
+          <div>
+            <Field type="number" name="number_of_employees" placeholder="Number of Employees" min="1" className="w-full input" />
+            <ErrorMessage name="number_of_employees" component="div" className="text-red-500 text-sm" />
           </div>
 
           <div>

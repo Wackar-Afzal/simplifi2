@@ -283,7 +283,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
                     : "border-gray-200 hover:border-blue-300 hover:bg-gray-50"
                 }`}
               >
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex !items-center justify-start gap-3 mb-3">
                   <span className="text-2xl">{icon}</span>
                   <span className="font-semibold text-gray-900">{name}</span>
                 </div>
