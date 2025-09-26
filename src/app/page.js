@@ -46,8 +46,8 @@ export default function Home() {
       <div className="my-20">
       <Cases
         data={{
-          ...pressReleases.pressReleases.media,
-          slides: pressReleases.pressReleases.media.slides.slice(0, 3),
+          ...pressReleases.pressReleases.pressReleases,
+          slides: pressReleases.pressReleases.pressReleases.slides.slice(0, 3),
         }}
       />
 
