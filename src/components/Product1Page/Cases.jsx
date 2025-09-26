@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import SkeletonImage from "@/components/common/SkeletonImage";
 
 export default function Cases({ data }) {
   return (
@@ -15,10 +16,11 @@ export default function Cases({ data }) {
         {data.slides.map((slide, index) => (
           <div key={index} className="relative overflow-hidden h-full flex flex-col shadow-lg rounded-4xl">
             <div className="case-img-wrapper">
-              <img
+              <SkeletonImage
                 src={slide.src}
                 alt={slide.alt || `Slide ${index + 1}`}
                 className="case-img"
+                backgroundColor="bg-gray-200"
               />
             </div>
             <div className="p-4 my-4 flex flex-col flex-grow justify-between ">
