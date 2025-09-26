@@ -37,7 +37,8 @@
         "Investor-ready for POCs and pilots"
       ],
       "reverse": true,
-      "buttonText": "Learn more"
+      "buttonText": "Learn more",
+      "buttonLink": "/Embed-Ready-To-Use-Card"
     },
 
     "productOverview2": {
@@ -52,7 +53,8 @@
         "Scalable infrastructure with enterprise-grade APIs",
         "End-to-end support including KYB, settlement, and compliance"
       ],
-      "buttonText": "Learn more"
+      "buttonText": "Learn more",
+      "buttonLink": "/Cards-As-a-Service"
     },
 
     "clientsCount": {
@@ -279,7 +281,8 @@
           "description": "From pilot to full rollout. We're with you at every stage."
         }
       ],
-      "cta": "Learn more "
+      "cta": "Learn more ",
+      "buttonLink": "/capabilities"
     },
 
     "section8_partnerns": {

@@ -85,6 +85,7 @@ export default function WhatsCookin({data}) {
     ))}
   </div>
 ) : (
+  
   <Splide
     ref={splideRef}
     options={{
@@ -98,6 +99,10 @@ export default function WhatsCookin({data}) {
       focus: 0,
       padding: 0,
       pauseOnHover: false,
+      drag: 'free', // Enable free drag
+      wheel: true, // Enable mouse wheel
+      wheelSleep: 500,     // debounce time (ms) between scroll actions
+      releaseWheel: true,  // allows continuous native scrolling when end is reached
       breakpoints: {
         1280: { perPage: 4.5 },
         1024: { perPage: 3 },

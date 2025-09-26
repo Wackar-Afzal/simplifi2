@@ -3,6 +3,7 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import homeText from "@/utils/homeText.json";
+import Link from "next/link";
 
 const Features = () => {
   const containerRef = useRef(null);
@@ -85,13 +86,13 @@ const Features = () => {
                 </p>
               </div>
 
-              <button
+              <Link
                 id="w-node-d881b892-6b3f-0f50-5bea-8135d7946171-8f49312d"
-                href="#request"
+                href={homeText?.homepage?.features?.buttonLink}
                 className="btn-primary w-button mt-5"
               >
                 {homeText.homepage.features.cta}
-              </button>
+              </Link>
               <motion.div
                 className="features-card lg:absolute lg:-translate-y-[90%] lg:-translate-x-[-90%]"
                 style={{

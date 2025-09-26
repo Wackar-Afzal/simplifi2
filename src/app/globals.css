@@ -167,6 +167,29 @@ body {
   /* box-shadow: 0 .0625rem .125rem 2px rgba(0, 0, 0, .15); */
 }
 
+
+.nav-outlined-button {
+  border: 0.0625rem solid #000;
+
+  background-color: var(--white);
+  font-family: var(--suisse-intl);
+  color: var(--black);
+  text-align: center;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  border-radius: 3rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1em;
+  transition: all 0.25s;
+  /* box-shadow: 0 .0625rem .125rem 2px rgba(0, 0, 0, .15); */
+}
+.nav-outlined-button:hover {
+  background-color: var(--primary--main);
+  border: 1.6px solid var(--primary--main);
+  color: var(--white);
+}
+
 .products {
   background: var(--grey--100);
 }

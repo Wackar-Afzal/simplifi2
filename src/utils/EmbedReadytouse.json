@@ -5,6 +5,17 @@
       "heading": "Go live with ready-to-issue cards in days",
       "descrip": "Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code."
     },
+    "clientMarquee": {
+      "heading": "Trusted by fintechs, startups, and  enterprises across MENA",
+      "clientLogos": [
+        { "name": "Floward", "logo": "/Logosweb/1.png" },
+        { "name": "Walaplus", "logo": "/Logosweb/2.png" },
+        { "name": "NQOODLET", "logo": "/Logosweb/3.png" },
+        { "name": "Kamel Pay", "logo": "/Logosweb/4.png" },
+        { "name": "Transportr", "logo": "/Logosweb/5.png" },
+        { "name": "jisr", "logo": "/Logosweb/Jisr.png" }
+      ]
+    },
     "careerList": {
       "heading": "Built-in security and compliance",
       "descrip": "We do the heavy lifting",

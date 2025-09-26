@@ -9,13 +9,15 @@ import CareerList from "../Career/CareerList";
 import ProductOverviewH from "../Home/ProductOverview/ProductOverviewH";
 import WhatWeDo from "@/components/Home/WhatWeDo";
 import PageFooter from "../common/PageFooter";
-
+import ClientsMarquee from "./ClientsMargquee";
 const Product2 = () => {
   return (
     <div>
       <HeroSection  data={embedreadytouse.embedreadytouse.hero}/>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
+      <ClientsMarquee data={embedreadytouse.embedreadytouse.clientMarquee} />
+
       <div className="mt-30 mb-28"> 
       <Ai data={embedreadytouse.embedreadytouse.useCases} />
       </div>

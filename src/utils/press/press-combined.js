@@ -233,7 +233,7 @@ export const pressReleases = {
       "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
     },
         "media": {
-      "heading": "Media Room",
+      "heading": "SimpliFi Headlines",
       "descrip": "Latest press releases and company announcements",
       "slides": [
         {

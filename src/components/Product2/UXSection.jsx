@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function UXSection({ data }) {
   return (
@@ -53,9 +54,9 @@ export default function UXSection({ data }) {
 
 
             <div className="w-[8rem] py-6">
-              <button className="nav-contained-button">
-                {data.buttonText}
-              </button>
+              <Link href={data?.buttonLink} className="nav-contained-button">
+                {data?.buttonText}
+              </Link>
             </div>
           </div>
         </div>

@@ -312,31 +312,16 @@ export default function Navbar() {
                 <div className="relative  md:block  xl:block">
                   <Link
                   href="/contact-us"
-                  className="outlined-button"
+                  className="nav-outlined-button hidden md:visible  !px-6 !py-3"
                   >
-                    Contact Us
+                    Book a demo
                   </Link>
-                  {/* {contactdrop && (
-                    <div
-                      className="absolute bg-white right-0 top-[1.5rem] py-8 shadow-lg px-4 rounded-2xl flex flex-col gap-4"
-                      onMouseLeave={() => setContactdrop(false)}
-                      onMouseEnter={() => setContactdrop(true)}
-                    >
-                      <div className="flex items-center w-max gap-2">
-                        <Phone className="w-4 h-4" /> Call Sales
-                      </div>
-                      <div className="flex items-center w-max gap-2">
-                        <List className="w-4 h-4" /> Request Support
-                      </div>
-                    </div> */}
-                
-
-                   
+                                
   
                 </div>
-                <button className="nav-contained-button !px-6 !py-3">
+                <Link href="https://prod-portal.simplifipay.com/simplifi-webapp/" className="nav-contained-button !px-6 !py-3 hover:shadow-2xl">
                   Login
-                </button>
+                </Link>
                 <button className="nav-contained-button hidden lg:visible">
                   Get Started
                 </button>
@@ -379,15 +364,29 @@ export default function Navbar() {
           <AnimatePresence>
             {isMenuOpen && (
               <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                className="lg:hidden bg-white text-black p-4 border-t border-gray-200 shadow-lg"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{
+                height: "auto",
+                opacity: 1,
+                transition: {
+                  height: { duration: 0.06, ease: "easeInOut" }, // fast expand
+                  opacity: { duration: 0.3, ease: "easeInOut" }, // full fade-in
+                }
+              }}
+              exit={{
+                height: 0,
+                opacity: 0, // will snap instantly
+                transition: {
+                  height: { duration: 0.2, ease: "easeInOut" },
+                  opacity: { duration: 0 }, // no fade-out, just cut
+                }
+              }}
+                className="lg:hidden bg-white text-black p-4 border-t border-gray-200 shadow-lg absolute !w-full"
               >
                 {NAV_ITEMS.map(({ name, path, dropdown }) => (
                   <div
                     key={path}
-                    className="mb-2 border-b border-gray-100 pb-2"
+                    className="mb-2 border-b border-gray-100 pb-2 !w-[vw]"
                     onClick={(e) => {
                       if (!dropdown) {
                         e.stopPropagation();
@@ -448,13 +447,16 @@ export default function Navbar() {
                     )}
                   </div>
                 ))}
-                <a
-                  href="https://prod-portal.simplifipay.com/simplifi-webapp/"
-                  target="blank"
-                  className="block w-full bg-blue text-white py-3 px-4 mt-4 rounded text-center font-medium hover:bg-blue-600"
-                >
-                  Login
-                </a>
+               
+                
+                <Link
+                  href="/contact-us"
+                  className="block w-full bg-blue text-black py-3 px-4 mt-4 rounded text-left font-medium hover:bg-blue-600"
+                  >
+                    Book a demo
+                  </Link>
+
+                
               </motion.div>
             )}
           </AnimatePresence>

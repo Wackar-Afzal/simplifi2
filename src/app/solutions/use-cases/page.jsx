@@ -20,6 +20,12 @@ const Page = () => {
       <div className=" mb-10">
       <CaseStudies data={useCases.useCases.caseStudies2}/>
       </div>
+      <div className=" mb-10">
+      <CaseStudies data={useCases.useCases.caseStudies3}/>
+      </div>
+      <div className=" mb-10">
+      <CaseStudies data={useCases.useCases.caseStudies4}/>
+      </div>
       <CareerList data={useCases.useCases.careerList}/>
 
       <PageFooter data={useCases.useCases.footer} />

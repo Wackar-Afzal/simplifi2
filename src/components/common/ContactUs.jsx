@@ -1,19 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { ChevronDown } from "lucide-react"; // nice arrow icon
 
 export const ContactUs = () => {
-    const [selected, setSelected] = useState("Clutch (TOP 20 Best UX agencies)");
-    const [open, setOpen] = useState(false);
-
-    const options = [
-        "Clutch (TOP 20 Best UX agencies)",
-        "Behance",
-        "Accelerator",
-        "Social media",
-        "Friend/Colleague",
-        "Other",
-    ];
+    const [hearAboutUs, setHearAboutUs] = useState("");
 
     return (
         <div className="py-16 px-6" >
@@ -26,42 +15,27 @@ export const ContactUs = () => {
 
                 <div>
                     <div className="form-group">
-                        <label className="form-label ">How did you hear about us?</label>
-                        <div className="relative w-full mt-3">
-                            <button
-                                onClick={() => setOpen(!open)}
-                                className="w-full flex items-center justify-between custom-select"
-                            >
-                                <span className="!text-black">{selected}</span>
-                                <ChevronDown
-                                    className={`h-5 w-5 transition-transform !text-black ${open ? "rotate-180" : ""
-                                        }`}
-                                />
-                            </button>
-
-                            {open && (
-                                <ul className="absolute z-10 mt-2 w-full custom-option ">
-                                    {options.map((opt) => (
-                                        <li
-                                            key={opt}
-                                            onClick={() => {
-                                                setSelected(opt);
-                                                setOpen(false);
-                                            }}
-                                            className={`px-4 py-2 cursor-pointer !text-black  link ${selected === opt ? "  " : " link-active text-black"
-                                                }`}
-                                        >
-                                            {opt}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
+                        <label className="form-label">How did you hear about us?</label>
+                        <div className="mt-3">
+                            <input 
+                                type="text" 
+                                placeholder="Tell us how you heard about us" 
+                                className="custom-input w-full" 
+                                value={hearAboutUs}
+                                onChange={(e) => setHearAboutUs(e.target.value)}
+                            />
                         </div>
                     </div>
                     <div className="from-group mt-8">
                         <label htmlFor="" className="form-label">Your email</label>
                         <div className="mt-3">
                             <input type="text" placeholder="Email" className="custom-input w-full" />
+                        </div>
+                    </div>
+                    <div className="from-group mt-8">
+                        <label htmlFor="" className="form-label">Your contact number</label>
+                        <div className="mt-3">
+                            <input type="tel" placeholder="Contact number" className="custom-input w-full" />
                         </div>
                     </div>
                     <div className="from-group mt-8">

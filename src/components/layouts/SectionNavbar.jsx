@@ -50,12 +50,11 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
             </div>
 
             <div className="space-y-3">
-              {productsData.slice(0,2).map(({ name, path, icon, descrip }) => (
                 <Link
-                  key={path}
-                  href={path}
+                  key={productsData[0].path}
+                  href={productsData[0].path}
                   className={`group flex items-start gap-3 p-4 rounded-lg transition-all duration-30 ${
-                    pathname.includes(path)
+                    pathname.includes(productsData[0].Arraypath)
                       ? " shadow-lg border border-blue-200 transform scale-[1.02] -translate-y-1"
                       : "hover: hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 border border-transparent"
                   }`}
@@ -65,15 +64,45 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-medium text-gray-900 mb-1  transition-colors text-sm">
-                      {name}
+                      {productsData[0].name}
                     </h3>
                     <p className="text-xs text-gray-600 leading-tight">
-                      {descrip}
+                      {productsData[0].descrip}
                     </p>
                   </div>
                 </Link>
-              ))}
             </div>
+
+            <div className="my-6">
+              <span className="text-xs font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
+              Build Your Own Program
+              </span>
+            </div>
+
+            <div className="space-y-3">
+                <Link
+                  key={productsData[1].path}
+                  href={productsData[1].path}
+                  className={`group flex items-start gap-3 p-4 rounded-lg transition-all duration-30 ${
+                    pathname.includes(productsData[1].Arraypath)
+                      ? " shadow-lg border border-blue-200 transform scale-[1.02] -translate-y-1"
+                      : "hover: hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 border border-transparent"
+                  }`}
+                >
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-md flex items-center justify-center  transition-colors">
+                    <CreditCard className="w-4 h-4 text-blue-600" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-medium text-gray-900 mb-1  transition-colors text-sm">
+                      {productsData[1].name}
+                    </h3>
+                    <p className="text-xs text-gray-600 leading-tight">
+                      {productsData[1].descrip}
+                    </p>
+                  </div>
+                </Link>
+            </div>
+
           </div>
 
           {/* Right Content Area */}
