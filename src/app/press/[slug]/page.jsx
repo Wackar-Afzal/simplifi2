@@ -8,6 +8,7 @@ import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { motion } from "framer-motion";
 import Cases from "@/components/Product1Page/Cases";
 import PageFooter from "@/components/common/PageFooter";
+import { use } from "react";
 
 function getPressReleaseBySlug(slug) {
   const allPressReleases = pressReleases.pressReleases.pressReleases.slides;
@@ -25,17 +26,17 @@ function getRelatedPressReleases(currentSlug) {
 }
 
 export default function PressReleaseDetailPage({ params }) {
-  const pressRelease = getPressReleaseBySlug(params.slug);
+  const resolvedParams = use(params);
+  const pressRelease = getPressReleaseBySlug(resolvedParams.slug);
 
   if (!pressRelease) {
     notFound();
   }
 
-  const relatedPressReleases = getRelatedPressReleases(params.slug);
+  const relatedPressReleases = getRelatedPressReleases(resolvedParams.slug);
 
   return (
     <>
-      <Navbar />
 
       {/* Press Release Header */}
       <section className="section_hero pt-32 pb-8">

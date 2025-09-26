@@ -24,7 +24,7 @@ export default function BlogDetailPage() {
     notFound();
   }
 
-  const allBlogs = blogs.blogs.posts.slides.filter(b => b.slug !== params.slug);
+  const allBlogs = blogs.blogs.posts.slides.filter(b => b.slug !== slug);
   const relatedBlogs = allBlogs.sort(() => 0.5 - Math.random()).slice(0, 3);
 
   return (

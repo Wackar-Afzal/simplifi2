@@ -4,6 +4,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { useRef } from "react";
 import Link from "next/link";
+import SkeletonImage from "@/components/common/SkeletonImage";
 
 export default function CaseStudies({ data }) {
     const splideRef = useRef(null);
@@ -62,12 +63,11 @@ export default function CaseStudies({ data }) {
                     <SplideSlide key={index} className="relative">
                         <div className="   h-full flex flex-col">
                             <div className="case-img-wrapper">
-
-
-                                <img
+                                <SkeletonImage
                                     src={slide.src}
                                     alt={slide.alt || `Slide ${index + 1}`}
                                     className="case-img"
+                                    backgroundColor="bg-gray-200"
                                 />
                             </div>
                             <div className="py-4 flex flex-col flex-grow">
