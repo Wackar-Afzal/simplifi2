@@ -49,6 +49,8 @@ export default function CaseStudies({ data }) {
                     perPage: 3, // 👈 show 3 cards
                     perMove: 1, // 👈 slide one by one
                     pauseOnHover: false,
+                    wheel:true,
+                    releaseWheel:true,
                     breakpoints: {
                         1280: { perPage: 3 }, // large tablets
                         1024: { perPage: 1 }, // tablets
