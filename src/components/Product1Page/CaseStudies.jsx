@@ -40,7 +40,7 @@ export default function CaseStudies({ data }) {
             <Splide
                 ref={splideRef}
                 options={{
-                    type: "loop",
+                    // type: "loop",
                     autoplay: false,
                     interval: 4000,
                     gap: "1rem",
