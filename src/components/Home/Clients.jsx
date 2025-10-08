@@ -16,9 +16,9 @@ export const Clients = ({data}) => {
         </div>
 
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 fintech-2-content-grid mt-20">
-        <div className="flex flex-col gap-4">
-          <BSlidingDiv className="bg-white  border-radius-primary  p-6 fintech-2-content-grid-card_small ">
+      <div className="grid grid-cols-1 md:grid-cols-4 auto-cols-fr gap-x-5 gap-y-6 mt-20">
+        <div className="flex flex-col flex-wrap gap-4">
+          <BSlidingDiv className="bg-white  border-radius-primary p-2 md:p-6 fintech-2-content-grid-card_small ">
             <div className="flex items-center gap-2">
               <span className="number-style  ">
                 {data.stats[0].number}
@@ -29,7 +29,7 @@ export const Clients = ({data}) => {
             </p>
           </BSlidingDiv>
 
-          <BSlidingDiv className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
+          <BSlidingDiv className="bg-white border-radius-primary p-2 md:p-6 fintech-2-content-grid-card_small ">
             <div className="number-style ">
               {data.stats[1].number}
             </div>
@@ -57,13 +57,14 @@ export const Clients = ({data}) => {
           </BSlidingDiv>
         </div>
 
-        <div className="hidden lg:flex justify-center items-center relative w-[60%]">
+        <div className="hidden col-span-2 md:flex justify-center items-center relative w-full md:w-[99%]">
           <img
             src="backgrounds/powerbybusiness.png"
 
             alt="A mobile phone displaying abstract 3D shapes in the background, with a financial management app on the screen"
-            className="rounded-xl  w-full h-auto object-contain max-h-[800px]
-                        misc_grid-offset-image-1
+            className="rounded-xl  !w-[120%] h-auto object-contain mt-[-0%] md:mt-[-28%] ml-[-20%] z-[-1] pointer-events-none !max-w-none
+   
+                        
                         "
           />
         </div>

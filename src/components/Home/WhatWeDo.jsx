@@ -40,6 +40,7 @@ export default function WhatWeDo({data}) {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
+                onMouseEnter={() => setActiveTab(tab.id)}
                 className={`p-4 text-left transition-all ${
                   activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"
                 }`}

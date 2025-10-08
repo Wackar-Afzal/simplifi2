@@ -25,10 +25,10 @@ export default function Home() {
       <UXSection data={homeText.homepage.productOverview1} />
       <UXSection data={homeText.homepage.productOverview2} />
 
-      <div className="pt-28 pb-18">
+      <div className="pt-12 md:pt-28 pb-4 md:pb-18">
         <Clients data={homeText.homepage.clientsCount} />
       </div>
-      <div className="lg:pb-28">
+      <div className="pb-28 lg:pb-28">
         <WhatsCookin data={homeText.homepage.whatsCookin} /> 
       </div>
       <div className="lg:pb-28">
@@ -46,8 +46,8 @@ export default function Home() {
       <div className="my-20">
       <Cases
         data={{
-          ...pressReleases.pressReleases.pressReleases,
-          slides: pressReleases.pressReleases.pressReleases.slides.slice(0, 3),
+          ...homeText.homepage.pressReleases,
+          slides: homeText.homepage.pressReleases.slides.slice(0, 3),
         }}
       />
 

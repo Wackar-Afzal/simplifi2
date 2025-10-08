@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import homeText from "@/utils/homeText.json";
+import Link from "next/link";
 
 export default function Hero() {
   const imgRef = useRef(null);
@@ -128,7 +129,7 @@ export default function Hero() {
 
   return (
     <div
-      className="relative hero w-screen h-[100vh] flex items-center justify-center overflow-hidden"
+      className="relative hero w-screen h-[100vh] md:h-[95vh] flex items-center justify-center overflow-hidden"
       onMouseEnter={() => setIsInside(true)}
       onMouseLeave={() => setIsInside(false)}
     >
@@ -170,7 +171,7 @@ export default function Hero() {
 
       {/* Center Text */}
       <motion.div
-        className="absolute text-center flex justify-between gap-1 flex-col items-center max-w-3xl "
+        className="max-w-full p-2  absolute text-center flex justify-between gap-1 flex-col items-center lg:max-w-3xl "
         initial="hidden"
         animate="visible"
         variants={{
@@ -187,23 +188,23 @@ export default function Hero() {
         }}
       >
         <motion.h2
-          className=" heading-style-h1_fintech text-white mix-blend-difference"
+          className="heading-style-h2_fintech  text-white mix-blend-difference md:max-w-[50%] lg:max-w-[80%]"
           variants={{
             hidden: { opacity: 0, y: 40 },
             visible: { opacity: 1, y: 0 },
           }}
         >
-          From Code to
+          Powering Cards for Every Business
           <br />
           <TypeAnimation
             sequence={[
-              "Cards.",
+              "Startup.",
               1000,
-              "Wallets.",
+              "Enterprise.",
               1000,
-              "Transactions.",
+              "Platform.",
               1000,
-              "Card Programs.",
+              "Fintech.",
               1000,
             ]}
             speed={50}
@@ -213,16 +214,15 @@ export default function Hero() {
         </motion.h2>
         <motion.p className="text-white  paragraph-style-body mt-4  mix-blend-difference cursor-none  ">
           {homeText.homepage.hero.description}{" "}
-          {homeText.homepage.hero.subDescription}
         </motion.p>
         <motion.p className="text-black mt-4 paragraph-style-body   mix-blend-difference cursor-none mb-6">
           <span className="text-color-secondary">
             {homeText.homepage.hero.features}
           </span>
         </motion.p>
-        <button className="contained-button">
+        <Link href={homeText.homepage.hero.ctaLink} className="contained-button">
           {homeText.homepage.hero.cta}
-        </button>
+        </Link>
       </motion.div>
     </div>
   );

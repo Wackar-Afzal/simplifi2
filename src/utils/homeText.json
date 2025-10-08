@@ -1,12 +1,13 @@
 {
   "homepage": {
     "hero": {
-      "title": "From Code to Cards - Wallets - Transactions - Card Programs",
-      "subtitle": "Powering Cards for Every Business / Startup / Enterprise / Platform / Fintech",
-      "description": "Embed off-the-shelf cards or build your own card product - SimpliFi powers it all.",
-      "subDescription": "Whether you want to launch a card product in days or customize every layer, our infrastructure adapts to your needs.",
+      "subtitle": "From Code to Cards - Wallets - Transactions - Card Programs",
+      "title": "Powering Cards for Every Business / Startup / Enterprise / Platform / Fintech",
+      "description": "From off-the-shelf to fully custom, SimpliFi powers card programs across the GCC. ",
+     
       "features": "Fully modular. PCI-compliant. Global-ready.",
-      "cta": "Let's get started"
+      "cta": "Let's get started",
+      "ctaLink": "contact-us"
     },
 
     "clients": {
@@ -42,7 +43,7 @@
     },
 
     "productOverview2": {
-      "heading": "Build Your Own: SimpliFi Enterprise",
+      "heading": "Build Your Own: Cards As A Service",
       "imageUrl": "WebImages/WebImage2.jpg",
       "title": "Launch a fully branded card program with complete control.",
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
@@ -70,10 +71,10 @@
         },
         {
           "number": "08",
-          "label": "Banking partnerns"
+          "label": "Banking Partners"
         },
         {
-          "number": "13",
+          "number": "15+",
           "label": "Currencies Supported"
         }
       ]
@@ -104,7 +105,7 @@
           "src": "WebImages/rewarding&gifting.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
-          "title": "Reward & Gifting Programs",
+          "title": "Reward & Gifting ",
           "buttonText": "Learn more",
           "buttonLink": "/solutions/use-cases"
         },
@@ -121,7 +122,7 @@
           "src": "WebImages/BNPL&creadit.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
-          "title": "BNPL & Credit",
+          "title": "BNPL",
           "buttonText": "Learn more",
           "buttonLink": "/solutions/use-cases"
         },
@@ -154,7 +155,7 @@
     },
 
     "usps": {
-      "title": "Built for Scale. Secured for Trust. Ready for any Launch.",
+      "title": "Built for Scale. Secured for Trust. Powered for the GCC.",
       "descrip": "Whether you're embedding cards or launching your own card program, we power both.",
       "features": [
         {
@@ -233,7 +234,7 @@
       ]
     },
     "clientMarquee1": {
-      "heading": "Trusted by banks, platforms, and businesses building the future of payments",
+      "heading": "In partnership with banks, platforms, and businesses building the future of payments",
       "clientLogos": [
         { "name": "Floward", "logo": "/partnerns/Logos web-10.png" },
         { "name": "Walaplus", "logo": "/partnerns/Logos web-23.png" },
@@ -273,8 +274,8 @@
           "description": "From rewards and gifting to expense and payout flows. We power it all."
         },
         {
-          "title": "Trusted by forward-thinking teams",
-          "description": "Hundreds of businesses use SimpliFi to move faster and build smarter."
+          "title": "One integration, multiple markets",
+          "description": "Go live across markets with a single integration."
         },
         {
           "title": "Support that scales with you",
@@ -286,7 +287,7 @@
     },
 
     "section8_partnerns": {
-      "title": "Trusted by banks, platforms, and businesses building the future of payments"
+      "title": "In partnership with banks, platforms, and businesses building the future of payments"
     },
 
     "whatwedo": {
@@ -335,6 +336,63 @@
 
     "mediaMentions": {
       "title": "Media & News"
-    }
+    },
+    "pressReleases": {
+      "heading": "SimpliFi Headlines",
+      "descrip": "Latest press releases and company announcements",
+      "slides": [
+        {
+          "id": 1,
+          "src": "https://simplifipay.com/images/news/017.jpg",
+          "alt": "SimpliFi Expands Multi-Currency Wallets & Cards",
+          "subtitle": "SimpliFi® Expands Multi-Currency Wallets & Cards! Now Supporting 13 Currencies! GBP, CAD, EUR, HKD, AUD, and JOD in addition to our existing suite across MENA and beyond...",
+          "title": "SimpliFi® Expands Multi-Currency Wallets & Cards!",
+          "buttonText": "READ MORE",
+          "buttonLink": "/press/simplifi-expands-multi-currency-wallets-cards",
+          "date": "August 05, 2025",
+          "slug": "simplifi-expands-multi-currency-wallets-cards",
+          "path": "/press/simplifi-expands-multi-currency-wallets-cards",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "id": 2,
+          "src": "https://simplifipay.com/images/news/016.png",
+          "alt": "SimpliFi secures DFSA license",
+          "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has received final regulatory approval from the Dubai Financial Services Authority (DFSA) for a Category 4 license....",
+          "title": "SimpliFi® secures license from DFSA strengthening its regional presence",
+          "buttonText": "READ MORE",
+          "buttonLink": "/press/dfsa-license-pr",
+          "date": "June 17, 2025",
+          "slug": "dfsa-license-pr",
+          "path": "/press/dfsa-license-pr",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "id": 3,
+          "src": "https://simplifipay.com/images/news/015.png",
+          "alt": "SimpliFi partners with Yabx",
+          "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has announced a strategic partnership with Yabx, an innovative Embedded Lending solution provider....",
+          "title": "SimpliFi® and Yabx Partner to Expand Access to Card Issuance and Credit for Businesses across the MENA Region",
+          "buttonText": "READ MORE",
+          "buttonLink": "/press/simplifi-partners-wth-yabx",
+          "date": "May 21, 2024",
+          "slug": "simplifi-partners-wth-yabx",
+          "path": "/press/simplifi-partners-wth-yabx",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "id": 4,
+          "src": "https://simplifipay.com/images/news/001.jpg",
+          "alt": "SimpliFi onboards NQOODLET",
+          "subtitle": "The Riyadh-based and \"Visa Direct Award 2022\" winner NQOODLET joins forces with Dubai-based SimpliFi to bring to market a modern...",
+          "title": "SimpliFi® and NQOODLET join forces to transform SME spend management across MENA",
+          "buttonText": "READ MORE",
+          "buttonLink": "/press/simplifi-onboards-nqoodlet",
+          "date": "January 22, 2024",
+          "slug": "simplifi-onboards-nqoodlet",
+          "path": "/press/simplifi-onboards-nqoodlet",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        }]
+  }
   }
 }
