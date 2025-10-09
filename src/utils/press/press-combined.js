@@ -237,6 +237,19 @@ export const pressReleases = {
       "descrip": "Latest press releases and company announcements",
       "slides": [
         {
+          "id": 3,
+          "src": "https://simplifipay.com/images/news/media/1-4.png",
+          "alt": "Former Careem Pay boss launches SimpliFi",
+          "subtitle": "Former Careem Pay boss launches SimpliFi, a Cards as a Service platform for MENA and Pakistan...",
+          "title": "Former Careem Pay boss launches SimpliFi, a Cards as a Service platform for MENA and Pakistan...",
+          "buttonText": "READ MORE",
+          "buttonLink": "https://www.menabytes.com/simplifi-launch/",
+          "date": "August 02, 2021",
+          "slug": "former-careem-pay-boss-launches-simplifi",
+          "path": "https://www.menabytes.com/simplifi-launch/",
+          "image": "/images/news/media/Group_748-2.png"
+        },
+        {
           "id": 1,
           "src": "https://simplifipay.com/images/news/media/4-4.png",
           "alt": "UAE FinTech SimpliFi raises $5.1m",
@@ -262,19 +275,7 @@ export const pressReleases = {
           "path": "https://www.startupmgzn.com/english/news/simplifi-and-alinma-bank-partner-to-expand-digital-payments-solutions-in-ksa/",
           "image": "/images/news/media/Group_748-2.png"
         },
-        {
-          "id": 3,
-          "src": "https://simplifipay.com/images/news/media/1-4.png",
-          "alt": "Former Careem Pay boss launches SimpliFi",
-          "subtitle": "Former Careem Pay boss launches SimpliFi, a Cards as a Service platform for MENA and Pakistan...",
-          "title": "Former Careem Pay boss launches SimpliFi, a Cards as a Service platform for MENA and Pakistan...",
-          "buttonText": "READ MORE",
-          "buttonLink": "https://www.menabytes.com/simplifi-launch/",
-          "date": "August 02, 2021",
-          "slug": "former-careem-pay-boss-launches-simplifi",
-          "path": "https://www.menabytes.com/simplifi-launch/",
-          "image": "/images/news/media/Group_748-2.png"
-        },
+      
         {
           "id": 4,
           "src": "https://simplifipay.com/images/news/media/2-4.png",

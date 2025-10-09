@@ -234,7 +234,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
             <div>
               <h3 className="text-sm font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <span className="text-xl">📋</span>
-                <Link href={"/solutions/use-cases"}>By Use Cases</Link>
+                <Link href={"/solutions/use-cases"}>By Use Case</Link>
               </h3>
          
             </div>
@@ -243,7 +243,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
             <div>
               <h3 className="text-sm font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <span className="text-xl">🏢</span>
-                <Link href="/solutions/industries">By Industries</Link>
+                <Link href="/solutions/industries">By Industry</Link>
               </h3>
           
             </div>

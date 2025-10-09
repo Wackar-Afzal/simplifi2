@@ -37,24 +37,12 @@
       "clientMarquee": {
       "heading": "Trusted by Global Investors",
       "clientLogos": [
-        { "name": "Floward", "logo": "/investors/7.png" },
-        { "name": "Walaplus", "logo": "/investors/8.png" },
-        { "name": "NQOODLET", "logo": "/investors/9.png" },
-        { "name": "Kamel Pay", "logo": "/investors/10.png" },
-        { "name": "Transportr", "logo": "/investors/11.png" },
-        { "name": "jisr", "logo": "/investors/12.png" },
-        { "name": "jisr", "logo": "/investors/13.png" },
-        { "name": "jisr", "logo": "/investors/14.png" },
-        { "name": "jisr", "logo": "/investors/15.png" },
-        { "name": "jisr", "logo": "/investors/16.png" },
-        { "name": "jisr", "logo": "/investors/17.png" },
-        { "name": "jisr", "logo": "/investors/18.png" },
-        { "name": "jisr", "logo": "/investors/19.png" },
-        { "name": "jisr", "logo": "/investors/20.png" },
-        { "name": "jisr", "logo": "/investors/21.png" },
-        { "name": "jisr", "logo": "/investors/Logos web-02.png" },
-        { "name": "jisr", "logo": "/investors/Logos web-06.png" },
-        { "name": "jisr", "logo": "/investors/Logos web-07.png" }
+        { "name": "Floward", "logo": "/investor/1.png" },
+        { "name": "Walaplus", "logo": "/investor/2.png" },
+        { "name": "NQOODLET", "logo": "/investor/3.png" },
+        { "name": "Kamel Pay", "logo": "/investor/4.png" },
+        { "name": "Transportr", "logo": "/investor/5.png" },
+        { "name": "jisr", "logo": "/investor/6.png" }
       ]
     }
   }

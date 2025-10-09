@@ -20,7 +20,10 @@ export default function Home() {
   return (
     <div className="mx-auto">
       <Hero />
+      <div className="mb-20">
       <ClientsMargquee data={homeText.homepage.clientMarquee} />
+
+      </div>
       <ProductOverview />
       {/* <Services/> */}
       <UXSection data={homeText.homepage.productOverview1} />

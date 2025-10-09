@@ -192,7 +192,7 @@ export default function BlogDetailPage() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="text-center mb-12"
             >
-              <h2 className="heading-style-h2_fintech mb-4">Related Articles</h2>
+              <h2 className="heading-style-h2_fintech mb-4 !text-white">Related Articles</h2>
               <p className="paragraph-style-body text-gray-600">
                 Discover more insights and trends in fintech
               </p>
@@ -217,7 +217,7 @@ export default function BlogDetailPage() {
                       </div>
                       <div className="p-6">
                         <div className="text-sm text-gray-500 mb-2">{relatedBlog.date}</div>
-                        <h3 className="heading-style-h4 mb-3 group-hover:text-primary transition-colors">
+                        <h3 className="heading-style-h4 !text-black mb-3 group-hover:text-primary transition-colors line-clamp-2">
                           {relatedBlog.title}
                         </h3>
                         <p className="paragraph-style-body text-gray-600 text-sm line-clamp-3">

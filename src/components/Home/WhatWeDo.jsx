@@ -41,7 +41,7 @@ export default function WhatWeDo({data}) {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 onMouseEnter={() => setActiveTab(tab.id)}
-                className={`p-4 text-left transition-all ${
+                className={` ${data?.textSize ==="sm"?"p-3":"p-4"} text-left transition-all ${
                   activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"
                 }`}
               >

@@ -188,7 +188,7 @@ export default function Hero() {
         }}
       >
         <motion.h2
-          className="heading-style-h2_fintech  text-white mix-blend-difference md:max-w-[50%] lg:max-w-[80%]"
+          className="heading-style-h1_fintech  text-white mix-blend-difference md:max-w-[50%] lg:max-w-[80%]"
           variants={{
             hidden: { opacity: 0, y: 40 },
             visible: { opacity: 1, y: 0 },

@@ -23,9 +23,9 @@ const Page = () => {
       <div className=" mb-10">
       <CaseStudies data={useCases.useCases.caseStudies3}/>
       </div>
-      <div className=" mb-10">
+      {/* <div className=" mb-10">
       <CaseStudies data={useCases.useCases.caseStudies4}/>
-      </div>
+      </div> */}
       <div className="my-20">
       <CareerList data={useCases.useCases.careerList}/>
 

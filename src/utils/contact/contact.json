@@ -5,6 +5,29 @@
       "heading": " Democratizing Card Issuance since 2020",
       "descrip": "Since 2020, we’ve been transforming the way businesses launch and scale their own card programs, removing the barriers of cost, complexity, and compliance."
     },
+    "clientMarquee": {
+      "heading": "In partnership with banks, platforms, and businesses building the future of payments",
+      "clientLogos": [
+        { "name": "Transportr", "logo": "/partnerns/Logos web-2-01.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-2-02.png" },
+        { "name": "Floward", "logo": "/partnerns/Logos web-10.png" },
+        { "name": "Walaplus", "logo": "/partnerns/Logos web-23.png" },
+        { "name": "NQOODLET", "logo": "/partnerns/Logos web-24.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-26.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-28.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-29.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-30.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-31.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-32.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-33.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-34.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-35.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-36.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-37.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-38.png" }
+     
+      ]
+    },
     "footer":{
       "bg-dark":true,
       "heading":"Need assistance?",

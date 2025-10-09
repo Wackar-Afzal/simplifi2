@@ -4,6 +4,7 @@ import DemoForm from '@/components/ContactUs/DemoForm'
 // Navbar and Footer provided by root layout
 import React from 'react'
 import data from '@/utils/contact/contact.json'
+import ClientsMarquee from '@/components/Product2/ClientsMargquee'
 const page = () => {
   return (
   <>
@@ -31,6 +32,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <ClientsMarquee data={data.contact.clientMarquee}/>
       {/* <PageFooter data={data.contact.footer}/> */}
       {/* Footer provided by root layout */}
     </> 

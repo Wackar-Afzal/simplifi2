@@ -5,6 +5,7 @@ import about  from "@/utils/About/about.json";
 import  {Clients} from "@/components/about/Clients";
 import ClientsMarquee from "@/components/Product2/ClientsMargquee";
 import PageFooter from "@/components/common/PageFooter";
+import ClientsGrid from "@/components/Product2/ClientsGrid";
 // Footer provided by root layout
 const Page = () => {
   console.log(about.about, "about");
@@ -27,7 +28,7 @@ const Page = () => {
         <Clients data={about.about.clientsCount} />
       </div>
       <div>
-        <ClientsMarquee data={about.about.clientMarquee} />
+        <ClientsGrid data={about.about.clientMarquee} />
         </div>
     <PageFooter/>
     {/* Footer provided by root layout */}

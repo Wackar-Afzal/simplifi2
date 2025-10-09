@@ -56,7 +56,7 @@ export const ContactUs = () => {
                         {({ values, setFieldValue, isSubmitting }) => (
                             <Form>
                                 <div className="form-group">
-                                    <label className="form-label">name</label>
+                                    <label className="form-label">Name</label>
                                     <div className="mt-3">
                                         <Field
                                             type="text"

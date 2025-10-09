@@ -48,7 +48,7 @@ const CareerList = ({ data }) => {
           <div role="list" className="careers-list w-dyn-items">
             {data.careerPositions.map((position, index) => (
               <div key={index} role="listitem" className="w-dyn-item">
-                <a href={position.href} className="careers-link w-inline-block">
+                <div className="careers-link w-inline-block">
                   <div className="flex items-center justify-start gap-2 mb-5">
                     {position?.icon?
                     <div className="w-10 flex items-center">
@@ -62,7 +62,7 @@ const CareerList = ({ data }) => {
                     {/* <div className="body-medium">{position.location}</div> */}
                     <div className="body-medium">{position.descrip}</div>
                   </div>
-                </a>
+                </div>
               </div>
             ))}
           </div>

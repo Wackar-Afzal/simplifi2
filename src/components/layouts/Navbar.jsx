@@ -44,7 +44,7 @@ const NAV_ITEMS = [
     path: "/solutions",
     dropdown: [
       {
-        name: "By Use Cases",
+        name: "By Use Case",
         path: "/solutions/use-cases",
         icon: "📋",
         descrip:
@@ -97,7 +97,7 @@ const NAV_ITEMS = [
         ],
       },
       {
-        name: "By Industries",
+        name: "By Industry",
         path: "/solutions/industries",
         icon: "🏢",
         descrip:
