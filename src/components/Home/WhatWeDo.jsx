@@ -45,7 +45,7 @@ export default function WhatWeDo({data}) {
                   activeTab === tab.id ? "active-tabs-btn" : "tabs-btn"
                 }`}
               >
-                <p className="heading-style-h2 !leading-11 !text-[2.2rem] !pb-0 ">{tab.title}</p>
+                <p className={`heading-style-h2 !leading-11 ${data?.textSize ==="sm"?"!text-[1.5rem]":"!text-[2.2rem]"} !pb-0 `}>{tab.title}</p>
                 {activeTab === tab.id && tab.description?.trim() && (
                   <p className="paragraph-style-body text-color-inverted">
                     {tab.description}

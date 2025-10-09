@@ -6,7 +6,7 @@
       "descrip": "Get full control with SimpliFi’s Cards as a Service solution. Whether you're a fintech building a new product or an enterprise launching custom spend tools, our infrastructure powers every layer so you can create exactly what you need. From onboarding flows to KYC, from tokenization to fraud management, we’ve got the backend covered. You own the experience."
     },
     "clientMarquee": {
-      "heading": "Trusted by banks, platforms, and businesses building the future of payments",
+      "heading": "Trusted by fintechs, startups, and enterprises across MENA",
       "clientLogos": [
         { "name": "Floward", "logo": "/Logosweb/1.png" },
         { "name": "Walaplus", "logo": "/Logosweb/2.png" },
@@ -17,7 +17,7 @@
       ]
     },
     "careerList": {
-      "heading": "Why build with SimpliFi",
+      "heading": "Future-proofing your card program",
       "descrip": "",
       "careerPositions": [
         {
@@ -51,7 +51,7 @@
       ]
     },
     "useCases": {
-      "title": "Our layered stack",
+      "title": "Our stack",
       "descrip": " Choose the layers you need. We’ll handle the rest.",
 
       "features": [
@@ -59,7 +59,7 @@
           "id": 1,
           "company": "ING",
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp",
-          "title": "Frontend layer",
+          "title": "Frontend",
           "description": "Build your own cardholder and admin interfaces using our APIs. Enable real-time controls, card management, and custom workflows within your platform.",
           "image": "Cards-As-a-Service/Frontendlayer.jpg",
           "dark": false
@@ -68,7 +68,7 @@
           "id": 2,
           "company": "Société Générale Group",
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e2c46c7f5de93e2b0176_sgg-userpic.svg",
-          "title": "Backend layer",
+          "title": "Backend",
           "description": "Powerful APIs and webhooks for issuing, managing, and tracking cards. Easy integration with your systems.",
           "image": "Cards-As-a-Service/Backendlayer.jpg",
           "dark": true
@@ -77,7 +77,7 @@
           "id": 3,
           "company": "Moka",
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg",
-          "title": "Regulatory layer",
+          "title": "Regulatory",
           "description": "KYC, AML, and ongoing compliance covered. Stay compliant from day one.",
           "image": "Cards-As-a-Service/Regulatorylayer.jpg",
           "dark": false
@@ -86,7 +86,7 @@
           "id": 4,
           "company": "Oxygen",
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
-          "title": "Banking layer",
+          "title": " Card Operations",
           "description": "We handle BIN sponsorship, funds management, and settlement. You focus on the experience.",
           "image": "Cards-As-a-Service/Bankinglayer.jpg",
           "dark": true,
@@ -96,7 +96,7 @@
           "id": 5,
           "company": "Oxygen",
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
-          "title": "Support layer",
+          "title": "Support",
           "description": "Guidance from onboarding to launch. We assist with setup, integration, and daily operations.",
           "image": "Embed-Ready-To-Use-Card/Built-inSecurity andcompliance.jpg",
           "dark": true,
@@ -105,7 +105,7 @@
       ]
     },
     "whatsCookin": {
-      "title": "Who it’s for",
+      "title": "Who we power",
       "subtitle": "",
       "slides": [
         {

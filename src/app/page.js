@@ -14,6 +14,7 @@ import Cases from "@/components/Product1Page/Cases";
 import { pressReleases } from "@/utils/press/press-combined";
 import Link from "next/link";
 import PageFooter from "@/components/common/PageFooter";
+import ClientsGrid from "@/components/Product2/ClientsGrid";
 
 export default function Home() {
   return (
@@ -25,9 +26,13 @@ export default function Home() {
       <UXSection data={homeText.homepage.productOverview1} />
       <UXSection data={homeText.homepage.productOverview2} />
 
-      <div className="pt-12 md:pt-28 pb-4 md:pb-18">
+      <div className="pt-12 md:pt-28 ">
         <Clients data={homeText.homepage.clientsCount} />
       </div>
+      <div className="pb-15 lg:pb-15">
+      <ClientsGrid data={homeText.homepage.clientMarquee2} />
+      </div>
+
       <div className="pb-28 lg:pb-28">
         <WhatsCookin data={homeText.homepage.whatsCookin} /> 
       </div>

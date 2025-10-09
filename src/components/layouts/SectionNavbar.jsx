@@ -75,7 +75,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
 
             <div className="my-6">
               <span className="text-xs font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">
-              Build Your Own Program
+              BUILD YOUR OWN PROGRAM
               </span>
             </div>
 
@@ -232,7 +232,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
                  <div className="flex flex-col ">
             {/* Use Cases Column */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+              <h3 className="text-sm font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <span className="text-xl">📋</span>
                 <Link href={"/solutions/use-cases"}>By Use Cases</Link>
               </h3>
@@ -241,7 +241,7 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
 
             {/* Industries Column */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+              <h3 className="text-sm font-semibold text-gray-900 mb-4 flex items-center gap-2">
                 <span className="text-xl">🏢</span>
                 <Link href="/solutions/industries">By Industries</Link>
               </h3>
@@ -285,9 +285,9 @@ const SectionNavbar = ({ sectionName, dropdown = [], pathname = "" }) => {
               >
                 <div className="flex !items-center justify-start gap-3 mb-3">
                   <span className="text-2xl">{icon}</span>
-                  <span className="font-semibold text-gray-900">{name}</span>
+                  <span className="font-semibold text-gray-900 text-sm">{name}</span>
                 </div>
-                <p className="text-sm text-gray-600">{descrip}</p>
+                <p className="text-xs text-gray-600">{descrip}</p>
               </Link>
             ))}
           </div>

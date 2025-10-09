@@ -1,4 +1,4 @@
-import { Linkedin, Mail, MessageCircleMore, MessageCircleMoreIcon, Phone } from "lucide-react";
+import { Linkedin, Mail, MessageCircleMore, Facebook, Phone } from "lucide-react";
 import React from "react";
 
 export const Footer = () => {
@@ -6,9 +6,9 @@ export const Footer = () => {
         <div className="footer-wrapper py-20 px-5 max-w-7xl mx-auto mt-0">
             <div className="flex justify-between items-center flex-wrap gap-8">
                 <div>
-                     <h3 className="heading-style-h2_fintech">SimpliFi Card Solutions</h3>
+                     <h3 className="tracking-[-0.04em] text-[2.8rem] font-normal leading-[1.06em]">SimpliFi Card Solutions</h3>
                          <div className="paragraph-style-body">
-                        We power the cards behind <span className="text-color-accent">your brand.</span>
+                         We power the cards that drive your brand and platform.
                     </div>
                 
                 </div>
@@ -20,33 +20,32 @@ export const Footer = () => {
                     className="footer-grid-social mt-2"
                 >
                     <a
-                        href="https://www.instagram.com/humbleteam.agency/"
+                        href="https://www.facebook.com/Simplifipay/"
                         target="_blank"
                         className="hover:text-primary w-inline-block"
                     >
-                      <MessageCircleMoreIcon />
+                      <Facebook />
                     </a>
                     <a
-                        href="https://clutch.co/profile/humbleteam"
-                        target="_blank"
+                        href="mailto:sales@simplifipay.com"
                         className="hover:text-primary w-inline-block"
                     >
                          <Mail />
                     </a>
                     <a
-                        href="https://www.linkedin.com/company/humbleteam/"
+                        href="https://www.linkedin.com/company/simplifipay/"
                         target="_blank"
                         className="hover:text-primary w-inline-block"
                     >
                           <Linkedin />
                     </a>
-                     <a
-                        href="https://www.linkedin.com/company/humbleteam/"
+                     {/* <a
+                        href="tel:+971566010001"
                         target="_blank"
                         className="hover:text-primary w-inline-block"
                     >
                           <Phone />
-                    </a>
+                    </a> */}
                 </div>
                 </div>
             </div>
@@ -56,40 +55,39 @@ export const Footer = () => {
             ></div>
             <div className="footer-grid">
                 <div className="footer-location-wrapper">
-                      Bahrain
-                        <br />
-                    <div className="paragraph-style-body">
-                        Flat No. 1390, Building 2102,
-                        <br />
-                        Road/Street 2825, Block 428, 
-                        <br />
-                       Bahrain, AL SEEF
+                    Bahrain
+                    <div className="paragraph-style-body text-gray-500">
+                        Building 2102, Road/Street 2825, Block 428,
+                        Al Seef, Manama
                     </div>
                 </div>
+
                 <div className="footer-location-wrapper">
-                      UAE
-                        <br />
-                     <div className="paragraph-style-body">
+                    UAE
+                    <div className="paragraph-style-body text-gray-500">
                         Unit 208, Level 1, 
-                        <br />
                         Gate Avenue - South Zone,
-                        <br />
-                         DIFC, Dubai
+                        DIFC, Dubai
                     </div>
-                    
                 </div>
                 <div className="footer-location-wrapper">
-                    <div className="paragraph-style-body">
-                        Pakistan
-                        <br />
-                        
+                    Egypt
+                    <div className="paragraph-style-body text-gray-500">
+                        22 Sheikh Rihan Street, Founder Spaces Abdeen, Cairo
                     </div>
-                    <div className="paragraph-style-body">
+                </div>
+                <div className="footer-location-wrapper">
+                    Pakistan
+                    <div className="paragraph-style-body text-gray-500">
                         Workhall, Plot No.32/75, 
-                        <br />
                         Tipu Sultan,
-                        <br />
-                         Karachi
+                        Karachi
+                    </div>
+                </div>
+                <div className="footer-location-wrapper">
+                    Saudi Arabia
+                    <div className="paragraph-style-body text-gray-500">
+                        Al Rabi District, 13316 Riyadh
                     </div>
                 </div>
                 <div className="">
@@ -119,12 +117,12 @@ export const Footer = () => {
                             Privacy Policy
                         </a>
                         
-                        <a
+                        {/* <a
                             href="/download"
                             className="paragraph-style-body is-bold hover:text-blue-600 transition-colors"
                         >
                             Download App
-                        </a>
+                        </a> */}
                     </div>
                     {/* <img
                         src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660ab79e0b6882c961ae5447_footer-banner-mic.svg"
@@ -133,6 +131,18 @@ export const Footer = () => {
                         alt=""
                         className="image"
                     /> */}
+                </div>
+            </div>
+            
+            {/* Copyright and Regulatory Information */}
+            <div className="mt-12 pt-8 border-t border-gray-300">
+                <div className="text-left">
+                    <p className="text-sm font-semibold mb-4">
+                        © 2025 SimpliFi. All rights reserved.
+                    </p>
+                    <p className="text-xs text-gray-600 !text-left max-w-5xl leading-relaxed">
+                        SimpliFi is regulated by the Dubai Financial Services Authority (DFSA). It holds a Category 4 license allowing it to advise on and arrange money services products and provide account information and payment initiation services. All products and services are offered in accordance with applicable laws and regulations. The information provided on this website is for general informational purposes only and does not constitute an offer, solicitation, or financial advice.
+                    </p>
                 </div>
             </div>
         </div>

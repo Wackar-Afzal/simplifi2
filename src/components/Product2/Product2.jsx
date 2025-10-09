@@ -21,10 +21,11 @@ const Product2 = () => {
       <div className="mt-30 mb-28"> 
       <Ai data={embedreadytouse.embedreadytouse.useCases} />
       </div>
+      <ProductOverviewH/>
+
       <div className="mb-22">
       <CareerList data={embedreadytouse.embedreadytouse.careerList}/>
       </div>
-      <ProductOverviewH/>
       <div className="">
       <WhatWeDo data={embedreadytouse.embedreadytouse.whatwedo}/>
       </div>

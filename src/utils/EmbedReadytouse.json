@@ -2,7 +2,7 @@
   "embedreadytouse": {
     "hero": {
       "bckgroundImage": "features/Multi-Currency_Cards-removebg-preview.png",
-      "heading": "Go live with ready-to-issue cards in days",
+      "heading": "Embed ready-to-issue cards and go live fast",
       "descrip": "Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code."
     },
     "clientMarquee": {
@@ -144,6 +144,7 @@
       "title": "Discover SimpliFi APIs",
       "description": "We're PCI DSS compliant and follow strict AML/KYC protocols. All card data is tokenized and monitored in real time to prevent fraud.",
       "highlightsTitle": "Security & Compliance Highlights",
+      "textSize":"sm",
       "highlights": [
         {
           "id": 1,
@@ -191,7 +192,7 @@
       "footer": "We invest in security, privacy, and compliance so you can focus on growing your business."
     },
     "useCases": {
-      "title": "Why embedded cards",
+      "title": "Everything an embedded solution can do for you",
       "descrip": " With our embedded cards, you’re not launching your branded cards. You're leveraging our off the shelf cards. Get everything prebuilt and ready to go - card issuance, compliance, spend controls, and  real-time tracking. You control the user experience without the investment. From employee expenses to supplier payments, you stay in           control while we do the heavy lifting.",
 
       "features": [

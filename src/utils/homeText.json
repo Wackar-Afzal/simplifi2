@@ -31,11 +31,13 @@
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
       "includedTitle": "What’s included",
       "includedItems": [
-        "Pre-configured workflows",
-        "Instant virtual card issuance",
-        "Real-time controls and spend tracking",
-        "Coverage across GCC currencies",
-        "Investor-ready for POCs and pilots"
+        "Instant virtual card Issuance",
+        "Role Based access and Budget Control",
+        "Card life cycle Management and spend controls",
+        "Multi Currency Cards",
+        "AI powered Auto Loads",
+        "AI based spend reconciliation",
+        "Connected with Your ERP"
       ],
       "reverse": true,
       "buttonText": "Learn more",
@@ -49,10 +51,12 @@
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
       "includedTitle": "What’s included",
       "includedItems": [
-        "Fully branded cards, portals, SMS, and APIs",
-        "Flexible and configurable workflows",
-        "Scalable infrastructure with enterprise-grade APIs",
-        "End-to-end support including KYB, settlement, and compliance"
+        "Complete end-to-end program management -  including KYC, regulatory compliance, and data privacy - across all major card schemes",
+        "Scalable, enterprise-grade infrastructure with modular APIs for seamless integration",
+        "Instant issuance of multi-currency virtual cards and iBans",
+        "Tokenized cards compatible with Apple Pay and Samsung Pay",
+        "On-demand physical card issuance",
+        "3DS 2.0 for enhanced security and compliance"
       ],
       "buttonText": "Learn more",
       "buttonLink": "/Cards-As-a-Service"
@@ -80,6 +84,42 @@
       ]
     },
 
+    "clientMarquee2": {
+      "heading": "Trusted by Global Investors",
+      "clientLogos": [
+     
+        { "name": "jisr", "logo": "/investors/7.png" },
+        { "name": "jisr", "logo": "/investors/8.png" },
+        { "name": "jisr", "logo": "/investors/9.png" },
+
+        { "name": "jisr", "logo": "/investors/10.png" },
+        { "name": "jisr", "logo": "/investors/11.png" },
+        { "name": "jisr", "logo": "/investors/12.png" },
+
+        { "name": "jisr", "logo": "/investors/13.png" },
+        { "name": "jisr", "logo": "/investors/14.png" },
+        { "name": "jisr", "logo": "/investors/15.png" },
+
+        { "name": "jisr", "logo": "/investors/16.png" },
+        { "name": "jisr", "logo": "/investors/17.png" },
+        { "name": "jisr", "logo": "/investors/18.png" },
+
+        { "name": "jisr", "logo": "/investors/19.png" },
+        { "name": "jisr", "logo": "/investors/20.png" },
+        { "name": "jisr", "logo": "/investors/21.png" },
+
+        { "name": "jisr", "logo": "/investors/Logos web-02.png" },
+        { "name": "jisr", "logo": "/investors/Logos web-06.png" },
+        { "name": "jisr", "logo": "/investors/Logos web-07.png" }
+       
+
+       
+
+   
+     
+ 
+      ]
+    },
     "whatsCookin": {
       "title": "What you can power",
       "title1": " with SimpliFi",
@@ -239,9 +279,7 @@
         { "name": "Floward", "logo": "/partnerns/Logos web-10.png" },
         { "name": "Walaplus", "logo": "/partnerns/Logos web-23.png" },
         { "name": "NQOODLET", "logo": "/partnerns/Logos web-24.png" },
-        { "name": "Kamel Pay", "logo": "/partnerns/Logos web-25.png" },
         { "name": "Transportr", "logo": "/partnerns/Logos web-26.png" },
-        { "name": "Transportr", "logo": "/partnerns/Logos web-27.png" },
         { "name": "Transportr", "logo": "/partnerns/Logos web-28.png" },
         { "name": "Transportr", "logo": "/partnerns/Logos web-29.png" },
         { "name": "Transportr", "logo": "/partnerns/Logos web-30.png" },
