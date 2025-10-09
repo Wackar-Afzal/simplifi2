@@ -15,7 +15,7 @@ const ClientsGrid = ({ data }) => {
           <div
             key={index}
             className="flex items-center justify-center bg-[#f4f4f4] p-4 rounded-2xl shadow-sm hover:shadow-lg hover:translate-y-[-5px] transition-all duration-300"
-            style={{ width: "calc(20% - 2rem)", minWidth: "150px" }}
+            style={{ width: "calc(20% - 2rem)", minWidth: "100px" }}
           >
             <img
               src={client.logo}

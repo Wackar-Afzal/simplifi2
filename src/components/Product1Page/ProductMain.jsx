@@ -22,11 +22,11 @@ export const ProductMain = () => {
       </div>
 
       {/* <HeroProduct /> */}
-      <div className="mb-20">
+      <div className="mt-20 mb-40">
       <CareerList data={cardAsService.cardAsService.careerList} />
 
       </div>
-      <div className="mb-20">
+      <div className="mb-30">
       <Ai data={cardAsService.cardAsService.useCases} />
 
       </div>

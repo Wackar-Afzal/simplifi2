@@ -15,7 +15,10 @@ const Page = () => {
       <div className="mt-30 mb-30">
         <Ai data={industries.industries.usps} />
       </div>
+      <div className="mb-20">
       <CareerList data={industries.industries.careerList} />
+
+      </div>
       <PageFooter data={industries.industries.footer} />
       {/* Footer provided by root layout */}
     </>

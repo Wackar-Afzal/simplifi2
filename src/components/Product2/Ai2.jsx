@@ -11,7 +11,7 @@ const Ai = ({ data }) => {
             <h2 className="heading-style-h2_fintech !text-center mb-6">{data.title}</h2>
             <p
               className={`paragraph-style-body text-center ${
-                isFiveLayout ? "lg:mb-10" : "lg:mb-20"
+                isFiveLayout ? "mb-10 lg:mb-10" : "lg:mb-20"
               }`}
             >
               {data.descrip}
@@ -37,7 +37,7 @@ const Ai = ({ data }) => {
                       ${backgroundClass}
                       ${
                         isCenterBigCard
-                          ? "lg:col-start-2 lg:row-start-1 lg:row-span-2 mt-[70%]"
+                          ? "lg:col-start-2 lg:row-start-1 lg:row-span-2  md:mt-[70%]"
                           : ""
                       }
                     `}
