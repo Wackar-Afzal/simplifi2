@@ -34,8 +34,8 @@ export const ContactUs = () => {
     };
 
     return (
-        <div className="py-16 px-6" >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="w-full" >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
                 <div>
                     <h1 className="heading-style-h2_big is-cta-title text-black">
                     We're here to support you

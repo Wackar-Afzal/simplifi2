@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 import { ContactUs } from "../common/ContactUs";
 // Footer provided by root layout
 import Ai from "./Ai2";
-import  embedreadytouse  from "@/utils/EmbedReadytouse.json";
+import embedreadytouse from "@/utils/EmbedReadytouse.json";
 import CareerList from "../Career/CareerList";
 import ProductOverviewH from "../Home/ProductOverview/ProductOverviewH";
 import WhatWeDo from "@/components/Home/WhatWeDo";
@@ -13,26 +13,38 @@ import ClientsMarquee from "./ClientsMargquee";
 const Product2 = () => {
   return (
     <div>
-      <HeroSection  data={embedreadytouse.embedreadytouse.hero}/>
+      <div className="px-2 my-20 md:my-30">
+        <HeroSection data={embedreadytouse.embedreadytouse.hero} />
+
+      </div>
       {/* <UXSection data={embedreadytouse.productOverview1} /> */}
       {/* <Ai data={embedreadytouse.usps} /> */}
-      <ClientsMarquee data={embedreadytouse.embedreadytouse.clientMarquee} />
+      <div className="my-20 md:my-40">
+        <ClientsMarquee data={embedreadytouse.embedreadytouse.clientMarquee} />
 
-      <div className="mt-30 mb-28"> 
-      <Ai data={embedreadytouse.embedreadytouse.useCases} />
       </div>
-      <ProductOverviewH/>
 
-      <div className="mb-22">
-      <CareerList data={embedreadytouse.embedreadytouse.careerList}/>
+      <div className="px-2 my-20 md:my-30">
+        <Ai data={embedreadytouse.embedreadytouse.useCases} />
       </div>
-      <div className="">
-      <WhatWeDo data={embedreadytouse.embedreadytouse.whatwedo}/>
+      <div className="my-20 md:my-30">
+        <ProductOverviewH />
+
       </div>
-      
+
+      <div className="px-8 my-20 md:my-30">
+        <CareerList data={embedreadytouse.embedreadytouse.careerList} />
+      </div>
+      <div className="my-20 md:my-30">
+        <WhatWeDo data={embedreadytouse.embedreadytouse.whatwedo} />
+      </div>
+
       {/* <Features /> */}
       {/* <ContactUs /> */}
-      <PageFooter data={embedreadytouse.embedreadytouse.footer} />
+      <div className="my-20 md:my-30">
+        <PageFooter data={embedreadytouse.embedreadytouse.footer} />
+
+      </div>
     </div>
   );
 };

@@ -8,11 +8,11 @@ const HeroSection = ({data}) => {
     <>
       <section className=" max-w-7xl mx-auto">
       
-        <div className="container-global is-small">
+        <div className=" is-small">
           <div className="hero-wrapper">
             <div className="hero-left flex-1">
-              <h1 className="heading-style-h1">{data.heading}</h1>
-              <p className=" paragraph-style-body">
+              <h1 className="heading-style-h1 text-center lg:!text-left">{data.heading}</h1>
+              <p className=" paragraph-style-body !text-center lg:!text-left">
                 {data.descrip}
               </p>
             </div>

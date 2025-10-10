@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const ClientsMarquee = ({data}) => {
   return (
-    <section className="section_clients ">
+    <section className="">
       <div className="flex justify-center flex-col !w-full">
       <h2 className="heading-style-h2_fintech  max-w-6xl !text-center mx-auto">
         {data.heading}
@@ -25,7 +25,7 @@ const ClientsMarquee = ({data}) => {
               <img
                 src={client.logo}
                 alt={client.name}
-                className=" object-contain h-[8vh] mx-10 "
+                className=" object-contain h-[8vh] mx-2 md:mx-10 "
               />
               {/* <span className="text-black sr-only z-10">jk</span> */}
             </div>

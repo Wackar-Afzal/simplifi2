@@ -10,28 +10,29 @@ import PageFooter from "@/components/common/PageFooter";
 const Page = () => {
   return (
     <>
-      <HeroProduct data={useCases.useCases.hero} />
-      <div className="mt-20 mb-10">
-      <CaseStudies data={useCases.useCases.caseStudies}/>
+      <div className="my-20 md:my-30">
+        <HeroProduct data={useCases.useCases.hero} />
       </div>
-      <div className="mb-10">
-      <CaseStudies data={useCases.useCases.caseStudies1}/>
+      <div className="my-20 md:my-30">
+        <CaseStudies data={useCases.useCases.caseStudies} />
       </div>
-      <div className=" mb-10">
-      <CaseStudies data={useCases.useCases.caseStudies2}/>
+      <div className="my-20 md:my-30">
+        <CaseStudies data={useCases.useCases.caseStudies1} />
       </div>
-      <div className=" mb-10">
-      <CaseStudies data={useCases.useCases.caseStudies3}/>
+      <div className=" my-20 md:my-30">
+        <CaseStudies data={useCases.useCases.caseStudies2} />
       </div>
-      {/* <div className=" mb-10">
-      <CaseStudies data={useCases.useCases.caseStudies4}/>
-      </div> */}
-      <div className="my-20">
-      <CareerList data={useCases.useCases.careerList}/>
+      <div className=" my-20 md:my-30">
+        <CaseStudies data={useCases.useCases.caseStudies3} />
+      </div>
+   
+      <div className="px-2 my-20 md:my-30">
+        <CareerList data={useCases.useCases.careerList} />
+      </div>
 
+      <div className="px-2 my-20 md:my-30">
+        <PageFooter data={useCases.useCases.footer} />
       </div>
-
-      <PageFooter data={useCases.useCases.footer} />
       {/* Footer provided by root layout */}
     </>
   );

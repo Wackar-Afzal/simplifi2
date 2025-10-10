@@ -21,7 +21,7 @@ export default function WhatsCookin({data}) {
  
 
   return (
-    <section className="relative w-full slider-section   overflow-hidden p-5 py-20 max-w-7xl mx-auto">
+    <section className="relative w-full    overflow-hidden  max-w-7xl mx-auto">
       <div className="flex items-center justify-between mb-20">
         <h1 className="heading-style-h2_fintech max-w-7xl !text-center mx-auto  w-full">{data.title}{data.title1}</h1>
         {/* <div className=" text-end   gap-2 flex justify-end  ">
@@ -63,9 +63,9 @@ export default function WhatsCookin({data}) {
       </div>
 
   {data.slides.length < 5 ? (
-  <div className="flex justify-center gap-8 flex-wrap">
+  <div className="flex justify-center gap-16 flex-wrap pb-4">
     {data.slides.map((slide, index) => (
-      <div key={index} className="relative feed-link w-full lg:w-[250px]"> {/* Adjust width as needed */}
+      <div key={index} className="relative feed-link w-full lg:w-[250px] "> {/* Adjust width as needed */}
         <div className="feed-img-wrapper">
           <img
             src={slide.src}
@@ -73,7 +73,7 @@ export default function WhatsCookin({data}) {
             className="feed-img"
           />
         </div>
-        <div className="pb-20">
+        <div className="my-0">
           <p className="feed-tag mb-3 mt-3">{}</p>
           <h2 className="feed-title mb-3">{slide.title}</h2>
           {slide?.buttonLink?

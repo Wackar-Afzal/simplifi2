@@ -4,7 +4,7 @@ const Ai = ({ data }) => {
   const isFiveLayout = data.features.length === 5;
 
   return (
-    <div className="mb-4 flex justify-center">
+    <div className=" flex justify-center">
       <div className="section-cases max-w-7xl w-full mx-auto">
         <div className={`container-global ${isFiveLayout?"!gap-y-6":""}` }>
           <div className="flex flex-col gap-4 justify-center items-center max-w-5xl !text-center mx-auto">

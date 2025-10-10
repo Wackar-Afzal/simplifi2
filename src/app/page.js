@@ -20,38 +20,39 @@ export default function Home() {
   return (
     <div className="mx-auto">
       <Hero />
-      <div className="mb-20">
+      <div className="mb-20 lg:mb-30">
       <ClientsMargquee data={homeText.homepage.clientMarquee} />
-
       </div>
       <ProductOverview />
       {/* <Services/> */}
       <UXSection data={homeText.homepage.productOverview1} />
       <UXSection data={homeText.homepage.productOverview2} />
 
-      <div className="pt-12 md:pt-28 ">
+      <div className="my-20 md:my-30 ">
         <Clients data={homeText.homepage.clientsCount} />
       </div>
-      <div className="pb-15 lg:pb-15">
+      <div className="my-40 lg:my-40">
       <ClientsGrid data={homeText.homepage.clientMarquee2} />
       </div>
 
-      <div className="pb-28 lg:pb-28">
+      <div className="my-20 lg:my-30">
         <WhatsCookin data={homeText.homepage.whatsCookin} /> 
       </div>
-      <div className="lg:pb-28">
+      <div className="my-20 lg:my-30">
         <Ai data={homeText.homepage.usps} />
       </div>
       <Features />
       {/* <Testimonials/> */}
       {/* <Partners/> */}
-      <div className="pt-12 pb-18">
+      <div className="my-20 mx-2 md:mx-0 md:my-30">
       <ClientsMargquee data={homeText.homepage.clientMarquee1} />
-
       </div>
 
-      <WhatWeDo data={homeText.homepage.whatwedo} />
-      <div className="my-20">
+<div className="my-20  md:my-30">
+<WhatWeDo data={homeText.homepage.whatwedo} />
+
+</div>
+      <div className="my-20 md:my-30">
       <Cases
         data={{
           ...homeText.homepage.pressReleases,
@@ -76,7 +77,10 @@ export default function Home() {
       {/* <ClientSays /> */}
       {/* <WorkFlowSectionCases/> */}
       {/* <ContactUs/> */}
-  <PageFooter />
+      <div className="my-20 md:my-30">
+      <PageFooter />
+
+      </div>
     </div>
   );
 }

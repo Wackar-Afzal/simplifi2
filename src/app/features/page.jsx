@@ -10,12 +10,15 @@ import PageFooter from "@/components/common/PageFooter";
 const Features = () => {
   return (
     <>
-      <HeroProduct data={features.features.hero} />
-      <div className="mt-20">
+    <div className="my-20 md:my-30">
+    <HeroProduct data={features.features.hero} />
+
+    </div>
+      <div className="my-20 md:my-30">
       <Cases data={features.features.caseStudies}/>
 
       </div>
-      <div className="mt-10">
+      <div className="my-20 md:my-30">
       <PageFooter data={features.features.footer} />
 
       </div>

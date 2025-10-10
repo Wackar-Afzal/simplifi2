@@ -10,10 +10,16 @@ import PageFooter from "@/components/common/PageFooter";
 const Features = () => {
   return (
     <>
-      <HeroProduct data={capabilities.capabilities.hero} />
+      <div className="my-20 md:my-30">
+        <HeroProduct data={capabilities.capabilities.hero} />
+      </div>
       {/* <CaseStudies data={capabilities.caseStudies}/> */}
-      <Cases data={capabilities.capabilities.caseStudies}/>
-      <PageFooter data={capabilities.capabilities.footer} />
+      <div className="my-20 md:my-30">
+        <Cases data={capabilities.capabilities.caseStudies} />
+      </div>
+      <div className="my-20 md:my-30">
+        <PageFooter data={capabilities.capabilities.footer} />
+      </div>
       {/* Footer provided by root layout */}
     </>
   );

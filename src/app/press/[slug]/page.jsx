@@ -18,7 +18,7 @@ function getPressReleaseBySlug(slug) {
 function getRelatedPressReleases(currentSlug) {
   // Get all press releases except the current one
   const allOtherPressReleases = pressReleases.pressReleases.pressReleases.slides.filter(pr => pr.slug !== currentSlug);
-  
+
   // Randomly select 3 press releases
   return allOtherPressReleases
     .sort(() => 0.5 - Math.random())
@@ -39,8 +39,8 @@ export default function PressReleaseDetailPage({ params }) {
     <>
 
       {/* Press Release Header */}
-      <section className="section_hero pt-32 pb-8">
-        <div className="container-global max-w-4xl">
+      <section className=" my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           {/* Back Button */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -91,8 +91,8 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Featured Image */}
-      <section className="mb-12">
-        <div className="container-global max-w-4xl">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -109,8 +109,8 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Press Release Subtitle */}
-      <section className="mb-8">
-        <div className="container-global max-w-4xl">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -123,8 +123,8 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Press Release Content */}
-      <section className="mb-20">
-        <div className="container-global max-w-4xl">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           <motion.article
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -133,35 +133,35 @@ export default function PressReleaseDetailPage({ params }) {
           >
             <div className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed">
               <p>
-                This press release represents another significant milestone in SimpliFi's journey to transform 
-                the financial services landscape across MENA and Pakistan. Our continued innovation and strategic 
+                This press release represents another significant milestone in SimpliFi's journey to transform
+                the financial services landscape across MENA and Pakistan. Our continued innovation and strategic
                 partnerships enable businesses to access cutting-edge payment solutions with unprecedented ease and flexibility.
               </p>
 
               <p>
-                Through our comprehensive Cards-as-a-Service platform, we're democratizing access to advanced 
-                payment infrastructure, allowing businesses of all sizes to launch sophisticated card programs 
+                Through our comprehensive Cards-as-a-Service platform, we're democratizing access to advanced
+                payment infrastructure, allowing businesses of all sizes to launch sophisticated card programs
                 without the traditional barriers and complexities.
               </p>
 
               <h2 className="heading-style-h3 mt-12 mb-6">Key Highlights</h2>
 
               <p>
-                This announcement underscores our commitment to driving financial inclusion and innovation 
-                across the region. By partnering with leading financial institutions and technology providers, 
+                This announcement underscores our commitment to driving financial inclusion and innovation
+                across the region. By partnering with leading financial institutions and technology providers,
                 we continue to expand our capabilities and reach.
               </p>
 
               <p>
-                Our platform's flexibility and scalability ensure that businesses can adapt quickly to changing 
+                Our platform's flexibility and scalability ensure that businesses can adapt quickly to changing
                 market demands while maintaining the highest standards of security and compliance.
               </p>
 
               <h2 className="heading-style-h3 mt-12 mb-6">Looking Forward</h2>
 
               <p>
-                As we continue to grow and evolve, SimpliFi remains focused on our mission to simplify and 
-                democratize financial services. This development is just one of many exciting initiatives 
+                As we continue to grow and evolve, SimpliFi remains focused on our mission to simplify and
+                democratize financial services. This development is just one of many exciting initiatives
                 we have planned for the coming months.
               </p>
             </div>
@@ -197,8 +197,10 @@ export default function PressReleaseDetailPage({ params }) {
           </div>
         </section>
       )} */}
+      <div className="my-20 md:my-30 max-w-7xl mx-auto">
         <PageFooter />
-        {/* Footer moved to root layout */}
+      </div>
+      {/* Footer moved to root layout */}
     </>
   );
 }

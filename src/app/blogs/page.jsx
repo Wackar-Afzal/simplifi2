@@ -9,9 +9,15 @@ export default function BlogsPage() {
   const blogSlides = blogs.blogs.slides;
   return (
     <>
-      <HeroProduct data={blogs.blogs.hero} />
-      <Cases data={blogs?.blogs?.posts }/>
-      <PageFooter/>
+      <div className="mt-20 md:mt-30">
+        <HeroProduct data={blogs.blogs.hero} />
+      </div>
+      <div className="">
+        <Cases data={blogs?.blogs?.posts} />
+      </div>
+      <div className="my-20 md:my-30">
+        <PageFooter />
+      </div>
     </>
   );
 }

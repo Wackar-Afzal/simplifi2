@@ -4,7 +4,7 @@ import BSlidingDiv from "../common/BSliding";
 export const Clients = ({ data }) => {
   return (
     <div className="flex justify-center">
-      <div className="container-custom  !max-w-[1400px]">
+      <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 md:gap-10 items-start ">
           <div className="!w-full !text-center lg:w-auto md:col-span-6">
             <h2 className="heading-style-h2_fintech !w-full !text-center lg:!text-left">

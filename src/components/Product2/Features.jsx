@@ -70,7 +70,7 @@ const Features = () => {
   return (
     // <div className="transform-none">
     <div
-      className=" relative overflow-x-hidden lg:overflow-x-visible h-auto lg:h-[300vh] mt-20 "
+      className=" relative overflow-x-hidden lg:overflow-x-visible h-auto lg:h-[300vh]  "
       ref={containerRef}
     >
       <div className=" sticky top-0 h-auto lg:h-screen ">

@@ -9,7 +9,7 @@ export default function WhatWeDo({data}) {
   const activeTabData = highlights.find((t) => t.id === activeTab);
 
   return (
-    <section className="whatwedo text-white container-custom">
+    <section className="whatwedo text-white py-20 md:py-30 !px-3 md:px-0">
       <div className="mx-auto max-w-[1400px]">
         <h2 className="heading-style-h2_fintech  text-center text-color-inverted mb-20">
           {data.title}
@@ -57,7 +57,7 @@ export default function WhatWeDo({data}) {
         </div>
 
         {/* Mobile layout */}
-        <div className="md:hidden space-y-8 mt-12">
+        <div className="md:hidden space-y-12 mt-12">
           {highlights.map((tab) => (
             <motion.div
               key={tab.id}
@@ -66,12 +66,13 @@ export default function WhatWeDo({data}) {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <p className="paragraph-style-body text-color-inverted">
-                {tab.description}
-              </p>
+           
               <h3 className="heading-style-h3 text-color-inverted">
                 {tab.title}
               </h3>
+              <p className="paragraph-style-body text-color-inverted">
+                {tab.description}
+              </p>
               <motion.img
                 src={tab.img}
                 alt={tab.alt}

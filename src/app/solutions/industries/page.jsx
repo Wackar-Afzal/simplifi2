@@ -11,15 +11,18 @@ import PageFooter from "@/components/common/PageFooter";
 const Page = () => {
   return (
     <>
-      <HeroProduct data={industries.industries.hero} />
-      <div className="mt-30 mb-30">
+      <div className="my-20 md:my-30">
+        <HeroProduct data={industries.industries.hero} />
+      </div>
+      <div className="my-20 md:my-30">
         <Ai data={industries.industries.usps} />
       </div>
-      <div className="mb-20">
-      <CareerList data={industries.industries.careerList} />
-
+      <div className="px-4 my-20 md:my-30">
+        <CareerList data={industries.industries.careerList} />
       </div>
-      <PageFooter data={industries.industries.footer} />
+      <div className="px-4 my-20 md:my-30">
+        <PageFooter data={industries.industries.footer} />
+      </div>
       {/* Footer provided by root layout */}
     </>
   );

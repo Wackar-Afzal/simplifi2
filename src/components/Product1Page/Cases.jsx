@@ -6,7 +6,7 @@ import SkeletonImage from "@/components/common/SkeletonImage";
 
 export default function Cases({ data }) {
   return (
-    <section className="relative w-full slider-section overflow-hidden p-5 py-10 max-w-7xl mx-auto">
+    <section className="relative w-full  overflow-hidden px-5 pb-4 max-w-7xl mx-auto">
       <div className="flex items-center justify-between mb-10">
         {data.heading&&<h1 className="h2 !text-center mx-auto pb-10">{data.heading}</h1>}
         {/* Removed carousel arrows */}

@@ -60,8 +60,8 @@ export default function BlogDetailPage() {
       <Navbar />
 
       {/* Blog Header */}
-      <section className="section_hero pt-32 pb-8">
-        <div className="container-global max-w-4xl">
+      <section className="">
+        <div className=" max-w-4xl">
           <div className="flex flex-col gap-4">
             {/* Back Button */}
             <motion.div
@@ -148,7 +148,7 @@ export default function BlogDetailPage() {
       </section>
 
       {/* Blog Content */}
-      <section className="mb-20">
+      <section className="">
         <div className="container-global max-w-4xl">
           <motion.article
             initial={{ opacity: 0, y: 20 }}
@@ -209,8 +209,9 @@ export default function BlogDetailPage() {
           </motion.article>
         </div>
       </section>
-
-  <PageFooter />
+      <div className="my-20 md:my-30">
+        <PageFooter />
+      </div>
     </>
   );
 }

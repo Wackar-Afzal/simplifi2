@@ -1,8 +1,8 @@
 // Navbar provided by root layout
 import React from "react";
 import HeroSection from "@/components/Product2/HeroSection";
-import about  from "@/utils/About/about.json";
-import  {Clients} from "@/components/about/Clients";
+import about from "@/utils/About/about.json";
+import { Clients } from "@/components/about/Clients";
 import ClientsMarquee from "@/components/Product2/ClientsMargquee";
 import PageFooter from "@/components/common/PageFooter";
 import ClientsGrid from "@/components/Product2/ClientsGrid";
@@ -10,11 +10,11 @@ import ClientsGrid from "@/components/Product2/ClientsGrid";
 const Page = () => {
   console.log(about.about, "about");
   return (
-    <>
-      <div className="max-w-7xl mx-auto overflow-hidden">
+    <div className="px-4">
+      <div className="max-w-7xl mx-auto overflow-hidden my-20 md:my-30">
         <HeroSection data={about.about.hero} />
       </div>
-      <div className="container-custom !pt-20 !pb-0 max-w-7xl  mx-auto">
+      <div className=" max-w-7xl  mx-auto my-20 md:my-30">
         <h1 className="heading-style-h2_fintech ">{about.about.story.heading}</h1>
         <div className="flex flex-col gap-4 mt-6">
           {about.about.story.paras.map((para, index) => (
@@ -24,15 +24,17 @@ const Page = () => {
           ))}
         </div>
       </div>
-      <div className="lg:pb-18 max-w-7xl mx-auto overflow-hidden">
+      <div className="py-20 md:py-30 max-w-7xl mx-auto overflow-hidden">
         <Clients data={about.about.clientsCount} />
       </div>
-      <div>
+      <div className="my-20 md:my-30">
         <ClientsGrid data={about.about.clientMarquee} />
-        </div>
-    <PageFooter/>
-    {/* Footer provided by root layout */}
-    </>
+      </div>
+      <div className="my-20 md:my-30">
+        <PageFooter />
+      </div>
+      {/* Footer provided by root layout */}
+    </div>
   );
 };
 

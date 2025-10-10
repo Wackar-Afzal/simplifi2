@@ -33,7 +33,7 @@ import React from "react";
 
 const CareerList = ({ data }) => {
   return (
-    <section className="section slider-section max-w-7xl mx-auto">
+    <section className="max-w-7xl mx-auto">
       <div className="">
         <h2 className="heading-style-h2_fintech !text-center mb-6">
           {data.heading}

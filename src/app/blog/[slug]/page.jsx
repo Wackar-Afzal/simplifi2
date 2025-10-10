@@ -15,8 +15,8 @@ function getBlogBySlug(slug) {
 }
 
 export default function BlogDetailPage() {
-   const params = useParams();
-   console.log(params,"paramssssss")
+  const params = useParams();
+  console.log(params, "paramssssss")
   const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const blog = getBlogBySlug(slug);
 
@@ -31,14 +31,14 @@ export default function BlogDetailPage() {
     <>
 
       {/* Blog Header */}
-      <section className="section_hero pt-32 pb-8">
-        <div className="container-global max-w-4xl">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           {/* Back Button */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-8"
+            className="mb-4"
           >
             <Link
               href="/press-releases"
@@ -54,7 +54,7 @@ export default function BlogDetailPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="heading-style-h1 mb-8"
+            className="heading-style-h1 mb-4"
           >
             {blog.title}
           </motion.h1>
@@ -83,8 +83,8 @@ export default function BlogDetailPage() {
       </section>
 
       {/* Featured Image */}
-      <section className="mb-12">
-        <div className="container-global max-w-4xl">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -101,8 +101,8 @@ export default function BlogDetailPage() {
       </section>
 
       {/* Blog Subtitle */}
-      <section className="mb-8">
-        <div className="container-global max-w-4xl">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -115,8 +115,8 @@ export default function BlogDetailPage() {
       </section>
 
       {/* Blog Content */}
-      <section className="mb-20">
-        <div className="container-global max-w-4xl">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+        <div className="">
           <motion.article
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -185,7 +185,7 @@ export default function BlogDetailPage() {
       {/* Related Articles */}
       {relatedBlogs.length > 0 && (
         <section className="section_services bg-gray-50 py-20">
-          <div className="container-global max-w-6xl">
+          <div className="my-20 md:my-30 max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -243,7 +243,10 @@ export default function BlogDetailPage() {
           </div>
         </section>
       )}
-  <PageFooter />
+
+      <div className="my-20 md:my-30 max-w-7xl mx-auto">
+        <PageFooter />
+      </div>
     </>
   );
 }

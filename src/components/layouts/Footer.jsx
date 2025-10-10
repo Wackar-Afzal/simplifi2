@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer = () => {
     return (
-        <div className="footer-wrapper py-20 px-5 max-w-7xl mx-auto mt-0">
+        <div className="footer-wrapper pb-20 px-4 max-w-7xl mx-auto mt-0">
             <div className="flex justify-between items-center flex-wrap gap-8">
                 <div>
                      <h3 className="tracking-[-0.04em] text-[2.8rem] font-normal leading-[1.06em]">SimpliFi Card Solutions</h3>

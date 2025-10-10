@@ -10,12 +10,18 @@ import PageFooter from "@/components/common/PageFooter";
 const PressReleasesPage = () => {
   return (
     <>
-      <HeroProduct data={pressReleases.pressReleases.hero} />
-      <Cases data={pressReleases.pressReleases.pressReleases} />
-      <div className="mt-20 mb-20">
-      <Cases data={pressReleases.pressReleases.media} />
+      <div className="mt-20 md:mt-30">
+        <HeroProduct data={pressReleases.pressReleases.hero} />
       </div>
-      <PageFooter />
+      <div className="">
+        <Cases data={pressReleases.pressReleases.pressReleases} />
+      </div>
+      <div className="mt-20 mb-30">
+        <Cases data={pressReleases.pressReleases.media} />
+      </div>
+      <div className="my-20 md:my-30">
+        <PageFooter />
+      </div>
       {/* Footer provided by root layout */}
     </>
   );

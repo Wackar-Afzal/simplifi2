@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ClientsGrid = ({ data }) => {
   return (
-    <section className="section_clients max-w-7xl mx-auto">
+    <section className=" max-w-7xl mx-auto">
       <div className="flex justify-center flex-col !w-full">
         <h2 className="heading-style-h2_fintech max-w-6xl !text-center mx-auto">
           {data.heading}

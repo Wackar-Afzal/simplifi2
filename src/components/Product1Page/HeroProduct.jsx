@@ -3,11 +3,11 @@ import React from "react";
 export default function HeroProduct({data}) {
   return (
     <div className="">
-    <div className={`px-8 product-hero ${data.desVideo?"py-30":"py-10"} max-w-5xl mx-auto`}>
+    <div className={`px-8 my-20 md:my-30 max-w-5xl mx-auto`}>
       <h1 className="h1 hero-heading !text-center mx-auto">{data.heading}</h1>
       <p className="mt-8  !text-center mx-auto">{data.descrip}</p>
     </div>
- <section className="section is-fluid">
+ <section className="">
       <div className="hero-img-wrapper">
         {/* Lottie Animation */}
         <div
