@@ -31,7 +31,7 @@ export default function BlogDetailPage() {
     <>
 
       {/* Blog Header */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
         <div className="">
           {/* Back Button */}
           <motion.div
@@ -83,7 +83,7 @@ export default function BlogDetailPage() {
       </section>
 
       {/* Featured Image */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
         <div className="">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -101,7 +101,7 @@ export default function BlogDetailPage() {
       </section>
 
       {/* Blog Subtitle */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
         <div className="">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ export default function BlogDetailPage() {
       </section>
 
       {/* Blog Content */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
         <div className="">
           <motion.article
             initial={{ opacity: 0, y: 20 }}
@@ -184,7 +184,7 @@ export default function BlogDetailPage() {
 
       {/* Related Articles */}
       {relatedBlogs.length > 0 && (
-        <section className="section_services bg-gray-50 py-20">
+        <section className="px-2 section_services bg-gray-50 py-20">
           <div className="my-20 md:my-30 max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
