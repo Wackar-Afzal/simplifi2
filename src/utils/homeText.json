@@ -164,7 +164,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321b_Icons-3.png",
           "title": "Compliance, sorted",
           "description": "KYC, AML, and regulatory approvals to ensure end to end compliance.",
-          "image": "WebImages/Compliancesorted.jpg",
+          "image": "WebImages/Security at the core.jpg",
           "style": "dark",
           "extraStats": {
             "duration": "2 weeks",
@@ -237,8 +237,11 @@
         { "name": "Transportr", "logo": "/partnerns/Logos web-35.png" },
         { "name": "Transportr", "logo": "/partnerns/Logos web-36.png" },
         { "name": "Transportr", "logo": "/partnerns/Logos web-37.png" },
-        { "name": "Transportr", "logo": "/partnerns/Logos web-38.png" }
-     
+        { "name": "Transportr", "logo": "/partnerns/Logos web-38.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-2-03.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-2-04.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-2-05.png" },
+        { "name": "Transportr", "logo": "/partnerns/Logos web-2-06.png" }
       ]
     },
     "features": {

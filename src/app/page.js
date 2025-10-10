@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="mx-auto">
       <Hero />
-      <div className="mb-20 lg:mb-30">
+      <div className="my-20 lg:mb-30 lg:mt-15">
       <ClientsMargquee data={homeText.homepage.clientMarquee} />
       </div>
       <ProductOverview />
@@ -35,7 +35,7 @@ export default function Home() {
       <ClientsGrid data={homeText.homepage.clientMarquee2} />
       </div>
 
-      <div className="my-20 lg:my-30">
+      <div className="px-4 my-20 lg:my-30">
         <WhatsCookin data={homeText.homepage.whatsCookin} /> 
       </div>
       <div className="my-20 lg:my-30">

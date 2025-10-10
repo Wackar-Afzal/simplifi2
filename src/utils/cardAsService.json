@@ -1,7 +1,7 @@
 {
   "cardAsService": {
     "hero": {
-      "bckgroundImage": "USPS/5.jpg",
+      "bckgroundImage": "USPS/Slider Mockup5.jpg",
       "heading": " Your brand. Your logic. Our infrastructure.",
       "descrip": "Get full control with SimpliFi’s Cards as a Service solution. Whether you're a fintech building a new product or an enterprise launching custom spend tools, our infrastructure powers every layer so you can create exactly what you need. From onboarding flows to KYC, from tokenization to fraud management, we’ve got the backend covered. You own the experience."
     },
@@ -61,7 +61,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp",
           "title": "Frontend",
           "description": "Build your own cardholder and admin interfaces using our APIs. Enable real-time controls, card management, and custom workflows within your platform.",
-          "image": "Cards-As-a-Service/Frontendlayer.jpg",
+          "image": "Cards-As-a-Service/Frontend layer.jpg",
           "dark": false
         },
         {
@@ -79,7 +79,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg",
           "title": "Regulatory",
           "description": "KYC, AML, and ongoing compliance covered. Stay compliant from day one.",
-          "image": "Cards-As-a-Service/Regulatorylayer.jpg",
+          "image": "Cards-As-a-Service/Regulatory layer.jpg",
           "dark": false
         },
         {
@@ -98,7 +98,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
           "title": "Support",
           "description": "Guidance from onboarding to launch. We assist with setup, integration, and daily operations.",
-          "image": "Embed-Ready-To-Use-Card/Built-inSecurity andcompliance.jpg",
+          "image": "Cards-As-a-Service/Slider Mockup1.jpg",
           "dark": true,
           "horizontal": true
         }

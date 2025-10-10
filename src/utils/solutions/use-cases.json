@@ -124,7 +124,7 @@
       "descrip": "",
       "slides": [
         {
-          "src": "../Ready to Use Card/consumer wallet card.png",
+          "src": "../Ready to Use Card/consumer wallet card.jpg",
       
           "alt": "Landscape",
           "subtitle": "Link branded cards to digital wallets for easy spend.",
@@ -133,7 +133,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "../Ready to Use Card/cash back rewards.png",
+          "src": "../Ready to Use Card/cash back rewards.jpg",
           "alt": "Landscape",
           "subtitle": "Issue cards that enable users to earn cashback or perks.",
           "title": "Cashback & Rewards Cards",
@@ -141,7 +141,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "../Ready to Use Card/consumer wallet card1.png",
+          "src": "../Ready to Use Card/Travel Card.png",
           "alt": "Landscape",
           "subtitle": "Multi-currency cards with FX savings and smart controls.",
           "title": "Travel Cards",
@@ -149,7 +149,7 @@
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "../Ready to Use Card/Crypto Card.png",
+          "src": "../Ready to Use Card/Crypto Card.jpg",
           "alt": "Landscape",
           "subtitle": "Allow spending directly from crypto wallets.",
           "title": "Crypto Cards",
