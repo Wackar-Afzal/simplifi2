@@ -100,13 +100,12 @@ const gridItems = [
   },
 ]
 
-export default function ProductOverview() {
+export default function ProductOverview({data}) {
   return (
     <div className=" !w-full products text-white pt-24 pb-4 px-10  " >
       <div className="!w-full   flex justify-center ">
 
         <motion.div
-          // className="grid md:grid-cols-2 gap-16 mb-20 w-full justify-center items-center"
           className="flex flex-col gap-4 text-center   justify-center items-center  max-w-6xl"
           variants={containerVariants}
           initial="hidden"
@@ -115,40 +114,16 @@ export default function ProductOverview() {
         >
           <motion.div variants={itemVariants} className="">
             <h1 className="heading-style-h2_fintech ">
-              The fastest way to go live, your way
+              {data.heading}
             </h1>
           </motion.div>
 
           <motion.div variants={itemVariants} className="">
             <p className="paragraph-style-body !text-gray-400">
-              Whether you want to go live in days or build something truly custom, we’ve got you covered.
+             {data.description}
             </p>
-            {/* <p className="paragraph-style-body text-color-inverted">
-              Humbleteam is specifically geared for this, aiming to boost your product from within, not just on the
-              surface.
-            </p> */}
           </motion.div>
         </motion.div>
-
-
-        {/* <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
-        >
-          <div className="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-4 w-full  mx-auto">
-            {gridItems.map((item, idx) => (
-              <BSlidingDiv 
-                key={idx}
-                className={`${item.col} rounded-4xl flex flex-col items-center justify-center h-full w-full text-center`}
-              >
-          
-                {item.content}
-              </BSlidingDiv>
-            ))}
-          </div>
-        </motion.div> */}
       </div>
     </div>
   )

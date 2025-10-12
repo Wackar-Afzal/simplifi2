@@ -12,7 +12,7 @@ export default function UXSection({ data }) {
           <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-start mb-4">
             <div className="overflow-hidden  rounded-[2.5rem]">
               <motion.img
-                src={data.imageUrl}
+                src={data.image}
                 className="flex-1 h-full object-cover"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -28,10 +28,10 @@ export default function UXSection({ data }) {
           >
             <h2
               className={`text-[2.8rem] leading-12 font-semibold `}>
-              {data.heading} <br/> {data.heading1}
+              {data.title}
             </h2>
 
-            <h2 className="paragraph-style-body !text-gray-400">{data.title}</h2>
+            <h2 className="paragraph-style-body !text-gray-400">{data.subTitle}</h2>
 
             <motion.p
               className="paragraph-style-body !text-gray-400"

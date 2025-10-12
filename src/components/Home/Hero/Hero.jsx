@@ -4,15 +4,16 @@ import { TypeAnimation } from "react-type-animation";
 import homeText from "@/utils/homeText.json";
 import Link from "next/link";
 
-export default function Hero() {
+export default function Hero({data}) {
   const leftImage = "HoverImages/Left Side Powering Cards for Every Business.png";
   const rightImage = "HoverImages/Right side Powering Cards for Every Business.png";
-
+  const typeSequence = data.repeatingWords.flatMap(word => [`${word}.`, 1000]);
+  console.log(typeSequence,"typeSequence")
   return (
     <div className="relative hero w-screen h-[100vh] md:h-[95vh] flex items-center justify-center overflow-hidden">
       {/* Left Side Image - Slides in from left, then wavy motion */}
       <motion.img
-        src={leftImage}
+        src={data.left}
         alt="Left decoration"
         className="hidden md:block absolute left-0 top-1/2 h-[50%] md:h-[55vh] lg:h-[70vh] w-auto object-contain pointer-events-none z-10"
         initial={{ x: -500, opacity: 0, y: "-50%" }}
@@ -35,7 +36,7 @@ export default function Hero() {
 
       {/* Right Side Image - Slides in from right, then wavy motion */}
       <motion.img
-        src={rightImage}
+        src={data.right}
         alt="Right decoration"
         className="hidden md:block absolute right-0 top-1/2 h-[50%] md:h-[55vh] lg:h-[70vh] w-auto object-contain pointer-events-none z-10"
         initial={{ x: 500, opacity: 0, y: "-50%" }}
@@ -79,16 +80,7 @@ export default function Hero() {
           Powering Cards for Every Business
           <br />
           <TypeAnimation
-            sequence={[
-              "Startup.",
-              1000,
-              "Enterprise.",
-              1000,
-              "Platform.",
-              1000,
-              "Fintech.",
-              1000,
-            ]}
+            sequence={typeSequence}
             speed={50}
             className="block"
             repeat={Infinity}
@@ -105,7 +97,7 @@ export default function Hero() {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          {homeText.homepage.hero.description}
+          {homeText.homepage.hero.subtitle}
         </motion.p>
         
         <motion.p
@@ -119,7 +111,7 @@ export default function Hero() {
           }}
         >
           <span className="text-color-secondary">
-            {homeText.homepage.hero.features}
+            {homeText.homepage.hero.description}
           </span>
         </motion.p>
         

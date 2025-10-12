@@ -11,14 +11,14 @@
       "descrip": "",
       "slides": [
              {
-          "src": "/features/Instant Issuance.jpg",
+          "img": "/features/Instant Issuance.jpg",
           "alt": "Landscape",
           "subtitle": "Create and activate virtual cards in seconds.",
           "title": "Instant Issuance",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
                 {
-          "src": "/features/Statement Downloads.jpg",
+          "img": "/features/Statement Downloads.jpg",
           "alt": "Landscape",
           "subtitle": "Export statements by user or timeframe.",
           "title": "Statement Downloads",
@@ -26,7 +26,7 @@
         },
   
         {
-          "src": "/features/Real-Time Notifications.jpg",
+          "img": "/features/Real-Time Notifications.jpg",
           "alt": "Landscape",
           "subtitle": "Get alerts for every transaction instantly.",
           "title": "Real-Time Notifications",
@@ -35,21 +35,21 @@
 
    
               {
-          "src": "/features/Multi-Currency Cards.jpg",
+          "img": "/features/Multi-Currency Cards.jpg",
           "alt": "Landscape",
           "subtitle": "Issue in multiple currencies and avoid FX fees.",
           "title": "Multi-Currency Cards",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Bulk Load Management.jpg",
+          "img": "/features/Bulk Load Management.jpg",
           "alt": "Landscape",
           "subtitle": "Load funds or issue cards in batches effortlessly.",
           "title": "Bulk Load Management",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Role-Based Access.jpg",
+          "img": "/features/Role-Based Access.jpg",
           "alt": "Landscape",
           "subtitle": " Assign roles and permissions across your team.",
           "title": "Role-Based Access",
@@ -57,42 +57,42 @@
         },
 
         {
-          "src": "/features/Developer Sandbox.jpg",
+          "img": "/features/Developer Sandbox.jpg",
           "alt": "Landscape",
           "subtitle": "Test and build in a secure, private environment.",
           "title": "Developer Sandbox",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Developer Tools.jpg",
+          "img": "/features/Developer Tools.jpg",
           "alt": "Landscape",
           "subtitle": "Access detailed API docs and integration guides.",
           "title": "Developer Tools",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/SDKs for Mobile.jpg",
+          "img": "/features/SDKs for Mobile.jpg",
           "alt": "Landscape",
           "subtitle": "Use PCI-compliant SDKs for iOS and Android apps.",
           "title": "SDKs for Mobile",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Webhooks.jpg",
+          "img": "/features/Webhooks.jpg",
           "alt": "Landscape",
           "subtitle": "Receive real-time event updates via webhooks.",
           "title": "Webhooks",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Web Hosted Pages.jpg",
+          "img": "/features/Web Hosted Pages.jpg",
           "alt": "Landscape",
           "subtitle": "Use hosted card pages as an alternative to building apps.",
           "title": "Web Hosted Pages",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Custom KYC Flows.jpg",
+          "img": "/features/Custom KYC Flows.jpg",
           "alt": "Landscape",
           "subtitle": "Design onboarding journeys that match your business needs.",
           "title": "Custom KYC Flows",
@@ -100,21 +100,21 @@
         },
 
         {
-          "src": "/features/Reports & Insights.jpg",
+          "img": "/features/Reports & Insights.jpg",
           "alt": "Landscape",
           "subtitle": "Access pre-built dashboards for spend analysis.",
           "title": "Reports & Insights",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Fully Programmable Card Controls.jpg",
+          "img": "/features/Fully Programmable Card Controls.jpg",
           "alt": "Landscape",
           "subtitle": "Set limits, block categories, and restrict usage.",
           "title": "Fully Programmable Card Controls",
           "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-          "src": "/features/Maker-Checker & Two-Factor Authentication.jpg",
+          "img": "/features/Maker-Checker & Two-Factor Authentication.jpg",
           "alt": "Landscape",
           "subtitle": "Add layers of control with approval flows and secure logins.",
           "title": "Maker-Checker & Two-Factor Authentication",
@@ -123,7 +123,7 @@
       ]
     },
     "footer": {
-      "bg-dark": true,
+      "backagroundDark": true,
       "heading": "See these features in action",
       "subheading": "We’ll walk you through how our platform fits your workflows and solves your headaches.",
       "buttonText": "Book a Demo",

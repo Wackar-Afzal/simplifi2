@@ -17,7 +17,7 @@ export default function Cases({ data }) {
           <div key={index} className="relative overflow-hidden h-full flex flex-col shadow-lg rounded-4xl">
             <div className="case-img-wrapper">
               <SkeletonImage
-                src={slide.src}
+                src={slide.img}
                 alt={slide.alt || `Slide ${index + 1}`}
                 className="case-img"
                 backgroundColor="bg-gray-200"

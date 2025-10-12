@@ -19,66 +19,59 @@ import ClientsGrid from "@/components/Product2/ClientsGrid";
 export default function Home() {
   return (
     <div className="mx-auto">
-      <Hero />
+      <Hero data={homeText.homepage.hero} />
       <div className="my-20 lg:mb-30 lg:mt-15">
-      <ClientsMargquee data={homeText.homepage.clientMarquee} />
+        <ClientsMargquee data={homeText.homepage.clientMarquee} />
       </div>
-      <ProductOverview />
+      <ProductOverview data={homeText.homepage.ProductOverview1} />
       {/* <Services/> */}
-      <UXSection data={homeText.homepage.productOverview1} />
       <UXSection data={homeText.homepage.productOverview2} />
+      <UXSection data={homeText.homepage.productOverview3} />
 
       <div className="my-20 md:my-30 ">
         <Clients data={homeText.homepage.clientsCount} />
       </div>
       <div className="my-40 lg:my-40">
-      <ClientsGrid data={homeText.homepage.clientMarquee2} />
+        <ClientsGrid data={homeText.homepage.clientMarquee2} />
       </div>
 
       <div className="px-4 my-20 lg:my-30">
-        <WhatsCookin data={homeText.homepage.whatsCookin} /> 
+        <WhatsCookin data={homeText.homepage.whatsCookin} />
       </div>
       <div className="my-20 lg:my-30">
         <Ai data={homeText.homepage.usps} />
       </div>
-      <Features />
-      {/* <Testimonials/> */}
-      {/* <Partners/> */}
+      <Features data={homeText.homepage.features} />
       <div className="my-20 mx-2 md:mx-0 md:my-30">
-      <ClientsMargquee data={homeText.homepage.clientMarquee1} />
+        <ClientsMargquee data={homeText.homepage.clientMarquee1} />
       </div>
 
-<div className="my-20  md:my-30">
-<WhatWeDo data={homeText.homepage.whatwedo} />
-
-</div>
+      <div className="my-20  md:my-30">
+        <WhatWeDo data={homeText.homepage.whatwedo} />
+      </div>
       <div className="my-20 md:my-30">
-      <Cases
-        data={{
-          ...homeText.homepage.pressReleases,
-          slides: homeText.homepage.pressReleases.slides.slice(0, 3),
-        }}
-      />
+        <Cases
+          data={{
+            ...homeText.homepage.pressReleases,
+            slides: homeText.homepage.pressReleases.slides.slice(0, 3),
+          }}
+        />
 
-      {/* See More Button */}
-      <section className="py-8">
-        <div className="container-global text-center ">
-          <Link
-            href="/press-releases"
-            className="contained-button inline-block max-w-[max-content] mx-auto "
-          >
-            See More
-          </Link>
-        </div>
-      </section>
+        {/* See More Button */}
+        <section className="py-8">
+          <div className="container-global text-center ">
+            <Link
+              href="/press-releases"
+              className="contained-button inline-block max-w-[max-content] mx-auto "
+            >
+              See More
+            </Link>
+          </div>
+        </section>
       </div>
 
-
-      {/* <ClientSays /> */}
-      {/* <WorkFlowSectionCases/> */}
-      {/* <ContactUs/> */}
       <div className="my-20 md:my-30">
-      <PageFooter />
+        <PageFooter />
 
       </div>
     </div>

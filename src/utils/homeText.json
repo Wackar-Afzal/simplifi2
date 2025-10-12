@@ -1,13 +1,15 @@
 {
   "homepage": {
     "hero": {
-      "subtitle": "From Code to Cards - Wallets - Transactions - Card Programs",
-      "title": "Powering Cards for Every Business / Startup / Enterprise / Platform / Fintech",
-      "description": "From off-the-shelf to fully custom, SimpliFi powers card programs across the GCC. ",
+      "title": "Powering Cards for Every Business",
+      "repeatingWords":["Startup","Enterprise","Platform","Fintech"],
+      "subtitle": "From off-the-shelf to fully custom, SimpliFi powers card programs across the GCC. ",
      
-      "features": "Fully modular. PCI-compliant. Global-ready.",
+      "description": "Fully modular. PCI-compliant. Global-ready.",
       "cta": "Let's get started",
-      "ctaLink": "contact-us"
+      "ctaLink": "contact-us",
+      "left":"HoverImages/Left Side Powering Cards for Every Business.png",
+      "right":"HoverImages/Right side Powering Cards for Every Business.png"
     },
 
     "clients": {
@@ -22,12 +24,14 @@
         "Kamel Pay"
       ]
     },
-
-    "productOverview1": {
-      "heading": "Embed: Off-the-shelf cards,",
-      "heading1": "ready to go",
-      "imageUrl": "WebImages/WebImage1.jpg",
-      "title": "Add live card functionality to your platform with zero setup hassle.",
+    "ProductOverview1":{
+      "heading": "The fastest way to go live, your way",
+      "description": "Whether you want to go live in days or build something truly custom, we’ve got you covered."
+    },
+    "productOverview2": {
+      "title": "Embed: Off-the-shelf cards, ready to go",
+      "image": "WebImages/WebImage1.jpg",
+      "subTitle": "Add live card functionality to your platform with zero setup hassle.",
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
       "includedTitle": "What’s included",
       "includedItems": [
@@ -44,10 +48,10 @@
       "buttonLink": "/Embed-Ready-To-Use-Card"
     },
 
-    "productOverview2": {
-      "heading": "Build Your Own: Cards As A Service",
-      "imageUrl": "WebImages/WebImage2.jpg",
-      "title": "Launch a fully branded card program with complete control.",
+    "productOverview3": {
+      "title": "Build Your Own: Cards As A Service",
+      "image": "WebImages/WebImage2.jpg",
+      "subtitle": "Launch a fully branded card program with complete control.",
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
       "includedTitle": "What’s included",
       "includedItems": [
@@ -99,12 +103,11 @@
       ]
     },
     "whatsCookin": {
-      "title": "What you can power",
-      "title1": " with SimpliFi",
+      "title": "What you can power with SimpliFi",
       "subtitle": "Our platform supports multiple payment and spend use cases through a single integration.",
       "slides": [
         {
-          "src": "WebImages/corperatepayout.jpg",
+          "img": "WebImages/corperatepayout.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Corporate Payouts",
@@ -112,7 +115,7 @@
           "buttonLink": "/solutions/use-cases"
         },
         {
-          "src": "WebImages/corperatespend.jpg",
+          "img": "WebImages/corperatespend.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Corporate Spend",
@@ -120,7 +123,7 @@
           "buttonLink": "/solutions/use-cases"
         },
         {
-          "src": "WebImages/rewarding&gifting.jpg",
+          "img": "WebImages/rewarding&gifting.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Reward & Gifting ",
@@ -128,7 +131,7 @@
           "buttonLink": "/solutions/use-cases"
         },
         {
-          "src": "WebImages/consumerspend.jpg",
+          "img": "WebImages/consumerspend.jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Consumer Spend",
@@ -156,7 +159,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321a_Icons-2.png",
           "title": "One integration, multiple markets",
           "description": "Go live across markets with a single integration.",
-          "image": "USPS/2.png",
+          "image": "WebImages/Slider Mockup2.jpg",
           "style": "light"
         },
         {
@@ -184,7 +187,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493215_Icons-5.png",
           "title": "Infrastructure that grows with you",
           "description": "Handle high volumes, custom logic, and complex workflows with ease.",
-          "image": "WebImages/Infrastructurethatgrowswithyou.jpg",
+          "image": "WebImages/Infrastructure that grows with you.jpg",
           "style": "dark"
         },
         {
@@ -192,7 +195,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493218_Icons-8.png",
           "title": "Made for developers",
           "description": "Get started faster with detailed API documentation and sandbox access.",
-          "image": "WebImages/Madefordevelopers.jpg",
+          "image": "WebImages/Slider Mockup1.jpg",
           "style": "light"
         }
       ],
@@ -247,8 +250,6 @@
     "features": {
       "title": "Why Teams Build with SimpliFi",
       "subtitle": "Speed when you want it. Control when you need it.",
-      "mainTitle": "Cards, Compliance, and everything in Between",
-      "description": "SimpliFi gives you the tools, tech, and support to go live and grow.",
       "features": [
         {
           "title": "Fast-track your launch",
@@ -332,7 +333,7 @@
       "slides": [
         {
           "id": 1,
-          "src": "https://simplifipay.com/images/news/017.jpg",
+          "img": "https://simplifipay.com/images/news/017.jpg",
           "alt": "SimpliFi Expands Multi-Currency Wallets & Cards",
           "subtitle": "SimpliFi® Expands Multi-Currency Wallets & Cards! Now Supporting 13 Currencies! GBP, CAD, EUR, HKD, AUD, and JOD in addition to our existing suite across MENA and beyond...",
           "title": "SimpliFi® Expands Multi-Currency Wallets & Cards!",
@@ -345,7 +346,7 @@
         },
         {
           "id": 2,
-          "src": "https://simplifipay.com/images/news/016.png",
+          "img": "https://simplifipay.com/images/news/016.png",
           "alt": "SimpliFi secures DFSA license",
           "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has received final regulatory approval from the Dubai Financial Services Authority (DFSA) for a Category 4 license....",
           "title": "SimpliFi® secures license from DFSA strengthening its regional presence",
@@ -358,7 +359,7 @@
         },
         {
           "id": 3,
-          "src": "https://simplifipay.com/images/news/015.png",
+          "img": "https://simplifipay.com/images/news/015.png",
           "alt": "SimpliFi partners with Yabx",
           "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has announced a strategic partnership with Yabx, an innovative Embedded Lending solution provider....",
           "title": "SimpliFi® and Yabx Partner to Expand Access to Card Issuance and Credit for Businesses across the MENA Region",
@@ -371,7 +372,7 @@
         },
         {
           "id": 4,
-          "src": "https://simplifipay.com/images/news/001.jpg",
+          "img": "https://simplifipay.com/images/news/001.jpg",
           "alt": "SimpliFi onboards NQOODLET",
           "subtitle": "The Riyadh-based and \"Visa Direct Award 2022\" winner NQOODLET joins forces with Dubai-based SimpliFi to bring to market a modern...",
           "title": "SimpliFi® and NQOODLET join forces to transform SME spend management across MENA",

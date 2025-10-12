@@ -1,35 +1,5 @@
 import React from "react";
-// JSON data for careers
-// const careerList={
-//     heading:"Why build with SimpliFi",
-//     descrip:"",
-//      careerPositions:[
-//   {
-//     title: "Modular by design",
-//     href: "/careers/communication-designer",
-//     location: "Prague or remote",
-//     descrip: "Pick the layers you need and skip what you don’t. Build faster without compromising on your vision."
-//   },
-//   {
-//     title: "Made to scale",
-//     href: "/careers/senior-designer-product",
-//     location: "Prague or remote",
-//     descrip: "Handle millions of transactions, complex approval flows, and real-time controls without friction."
-//   },
-//   {
-//     title: "Fully white-label",
-//     href: "/careers/design-lead-product",
-//     location: "Prague or remote",
-//     descrip: "Your branding. Your workflows. We stay invisible so your brand stays front and center."
-//   },
-//   {
-//     title: "Built for compliance",
-//     href: "/careers/creative-director-product",
-//     location: "Prague or remote",
-//     descrip: "We handle KYC, AML, 3DS, PCI-DSS, and more so you can focus on your product."
-//   }
-// ]
-// }
+
 
 const CareerList = ({ data }) => {
   return (
@@ -59,7 +29,6 @@ const CareerList = ({ data }) => {
                     </h2>
                   </div>
                   <div className="careers-location-wrapper">
-                    {/* <div className="body-medium">{position.location}</div> */}
                     <div className="body-medium">{position.descrip}</div>
                   </div>
                 </div>

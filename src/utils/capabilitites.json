@@ -11,7 +11,7 @@
         "descrip":"",
         "slides": [
         {
-            "src": "capabilities/Security & Compliance.jpg",
+            "img": "capabilities/Security & Compliance.jpg",
             "alt": "Landscape",
             "subtitle": "Meet regulatory requirements including PCI-DSS, local hosting, and secure data archiving.",
             "title": "Security & Compliance",
@@ -20,7 +20,7 @@
 
         },
         {
-            "src": "capabilities/Identity Verification In-a-Box.jpg",
+            "img": "capabilities/Identity Verification In-a-Box.jpg",
             "alt": "Landscape",
             "subtitle": "We manage third-party orchestration for end-to-end KYC flows and sanctions screening.",
             "title": "Identity Verification In-a-Box",
@@ -28,7 +28,7 @@
             "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
         },
         {
-            "src": "capabilities/Card Fulfillment & Delivery.jpg",
+            "img": "capabilities/Card Fulfillment & Delivery.jpg",
             "alt": "Landscape",
             "subtitle": "Artwork design, profile setup, testing, printing, personalization, and delivery handled end to end.",
             "title": "Card Fulfillment & Delivery",
@@ -37,7 +37,7 @@
 
         },
          {
-            "src": "capabilities/3DS and Tokenization.jpg",
+            "img": "capabilities/3DS and Tokenization.jpg",
             "alt": "Landscape",
             "subtitle": "Access the latest online transaction standards and enable push provisioning for iOS and Android.",
             "title": "3DS and Tokenization",
@@ -46,7 +46,7 @@
 
         },
                  {
-            "src": "capabilities/Collateral Management.jpg",
+            "img": "capabilities/Collateral Management.jpg",
             "alt": "Landscape",
             "subtitle": "Continuous float monitoring to ensure smooth and uninterrupted program operations.",
             "title": "Collateral Management",
@@ -55,7 +55,7 @@
 
         },
                  {
-            "src": "capabilities/Card Fulfillment & Delivery.jpg",
+            "img": "capabilities/Card Fulfillment & Delivery.jpg",
             "alt": "Landscape",
             "subtitle": "Full chargeback and dispute management with regular follow-ups and updates.",
             "title": "Chargebacks & Disputes",
@@ -64,7 +64,7 @@
 
         },
                  {
-            "src": "capabilities/Partner Management.jpg",
+            "img": "capabilities/Partner Management.jpg",
             "alt": "Landscape",
             "subtitle": " We handle all partner relationships seamlessly, from contracting to operations.",
             "title": "Partner Management",
@@ -73,7 +73,7 @@
 
         },
                  {
-            "src": "capabilities/Settlement & Reconciliation.jpg",
+            "img": "capabilities/Settlement & Reconciliation.jpg",
             "alt": "Landscape",
             "subtitle": "Daily settlements and reconciliation with full reporting and transparency.",
             "title": "Settlement & Reconciliation",
@@ -82,7 +82,7 @@
 
         },
                          {
-            "src": "capabilities/Cardholder & Technical Support.jpg",
+            "img": "capabilities/Cardholder & Technical Support.jpg",
             "alt": "Landscape",
             "subtitle": "Multilingual 24/7 live agent support for cardholders along with L2/L3 technical assistance.",
             "title": "Cardholder & Technical Support",

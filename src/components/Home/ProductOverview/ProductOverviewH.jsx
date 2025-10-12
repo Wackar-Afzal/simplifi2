@@ -19,7 +19,7 @@ const itemVariants = {
   },
 };
 
-const ProductOverviewH = () => {
+const ProductOverviewH = ({data}) => {
   return (
     <div className=" products text-white pt-20 pb-4 px-10 ">
       <div className="w-full   mx-auto max-w-7xl">
@@ -34,12 +34,12 @@ const ProductOverviewH = () => {
           <div className="flex flex-col gap-4">
             <motion.div variants={itemVariants} className="max-w-xl">
               <h1 className="heading-style-h2_fintech">
-                Add cards to your stack instantly
+                {data.title}
               </h1>
             </motion.div>
             <motion.div variants={itemVariants} className="max-w-xl">
               <p className="">
-                Our easy-to-implement APIs let you issue cards and connect them to your systems with minimal effort.
+              {data.description}
               </p>
             </motion.div>
           </div>
@@ -48,19 +48,12 @@ const ProductOverviewH = () => {
             variants={itemVariants}
             className="max-w-md flex flex-col gap-6"
           >
-            <h1 className="heading-style-h2_fintech">What you can do</h1>
+            <h1 className="heading-style-h2_fintech">{data.whatsIncluded}</h1>
             <ul className="flex flex-col list-disc list-outside gap-2">
-                <li className="paragraph-style-body text-color-inverted">Embed card issuance into your existing web or mobile portals</li>
-                <li className="paragraph-style-body text-color-inverted">Custom-build your own experience with direct integration into your ERP or expense management software</li>
-                <li className="paragraph-style-body text-color-inverted">Offer both virtual and physical cards to your customers as part of your own platform</li>
+              {data.includedItems.map((item,i)=>{
+                return <li key={i} className="paragraph-style-body text-color-inverted">{item}</li>
+              })}
             </ul>
-            <p className="paragraph-style-body text-color-inverted">
-              
-            </p>
-            {/* <p className="paragraph-style-body text-color-inverted">
-              Humbleteam is specifically geared for this, aiming to boost your product from within, not just on the
-              surface.
-            </p> */}
           </motion.div>
         </motion.div>
       </div>

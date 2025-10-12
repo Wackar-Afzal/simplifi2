@@ -5,7 +5,7 @@ import { useRef } from "react";
 import homeText from "@/utils/homeText.json";
 import Link from "next/link";
 
-const Features = () => {
+const Features = ({data}) => {
   const containerRef = useRef(null);
 
   // Track scroll progress of this specific section
@@ -79,10 +79,10 @@ const Features = () => {
             <div className="features-wrapper text-center">
               <div className="flex flex-col gap-4">
                 <h2 className="heading-style-h2_fintech text-center">
-                  {homeText.homepage.features.title}
+                  {data.title}
                 </h2>
                 <p className="paragraph-style-body">
-                  {homeText.homepage.features.subtitle}
+                  {data.subtitle}
                 </p>
               </div>
 
@@ -91,7 +91,7 @@ const Features = () => {
                 href={homeText?.homepage?.features?.buttonLink}
                 className="btn-primary w-button mt-5"
               >
-                {homeText.homepage.features.cta}
+                {data.cta}
               </Link>
               <motion.div
                 className="features-card lg:absolute lg:-translate-y-[90%] lg:-translate-x-[-90%]"
@@ -105,10 +105,10 @@ const Features = () => {
               >
                 <div className="features-card-number">01</div>
                 <div className="features-title">
-                  {homeText.homepage.features.features[0].title}
+                  {data.features[0].title}
                 </div>
                 <p className="features-desc">
-                  {homeText.homepage.features.features[0].description}
+                  {data.features[0].description}
                 </p>
               </motion.div>
               <motion.div
@@ -123,10 +123,10 @@ const Features = () => {
               >
                 <div className="features-card-number">02</div>
                 <div className="features-title">
-                  {homeText.homepage.features.features[1].title}
+                  {data.features[1].title}
                 </div>
                 <p className="features-desc">
-                  {homeText.homepage.features.features[1].description}
+                  {data.features[1].description}
                 </p>
               </motion.div>
               <motion.div
@@ -141,10 +141,10 @@ const Features = () => {
               >
                 <div className="features-card-number">03</div>
                 <div className="features-title">
-                  {homeText.homepage.features.features[2].title}
+                  {data.features[2].title}
                 </div>
                 <p className="features-desc">
-                  {homeText.homepage.features.features[2].description}
+                  {data.features[2].description}
                 </p>
               </motion.div>
               <motion.div
@@ -159,31 +159,14 @@ const Features = () => {
               >
                 <div className="features-card-number">04</div>
                 <div className="features-title">
-                  {homeText.homepage.features.features[3].title}
+                  {data.features[3].title}
                 </div>
                 <p className="features-desc">
-                  {homeText.homepage.features.features[3].description}
+                  {data.features[3].description}
                 </p>
               </motion.div>
             </div>
           </div>
-          {/* <img
-              src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif"
-              loading="lazy"
-              width="538"
-              sizes="(max-width: 767px) 100vw, 538px"
-              alt=""
-              srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493209_circle%201.avif 1076w"
-              className="features-bg1"
-            />
-            <img
-              src="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif"
-              loading="lazy"
-              sizes="100vw"
-              srcSet="https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 500w, https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493235_01.avif 2000w"
-              alt=""
-              className="features-bg2"
-            /> */}
         </section>
       </div>
     </div>
