@@ -3,6 +3,7 @@ import "./globals.css";
 import { LoadingProvider } from "@/components/common/LoadingProvider";
 import Navbar from "@/components/layouts/Navbar";
 import { Footer } from "@/components/layouts/Footer";
+import MainWrapper from "@/components/common/MainWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,9 +32,9 @@ export default function RootLayout({ children }) {
               <Navbar />
             </header>
 
-            <main className="flex-1 w-full">
+            <MainWrapper>
               {children}
-            </main>
+            </MainWrapper>
 
             <footer className="w-full relative z-50">
               <Footer />
