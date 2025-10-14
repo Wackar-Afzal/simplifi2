@@ -1,7 +1,7 @@
 {
   "about": {
     "hero": {
-      "bckgroundImage": "https://simplifi-cms.fra1.digitaloceanspaces.com/hero_banner3_9117b5b1f9.png",
+      "bckgroundImage": "HoverImages/Slider-Side-2.png",
       "heading": " Democratizing Card Issuance since 2020",
       "descrip": "Since 2020, we’ve been transforming the way businesses launch and scale their own card programs, removing the barriers of cost, complexity, and compliance."
     },
@@ -32,7 +32,8 @@
           "number": "People first",
           "label": "We lead with empathy, support, and collaboration."
         }
-      ]
+      ],
+       "img": "/backgrounds/power by business.png"
     },
       "clientMarquee": {
       "heading": "Trusted by Global Investors",

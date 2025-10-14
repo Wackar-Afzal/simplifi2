@@ -1,7 +1,7 @@
 {
   "homepage": {
     "hero": {
-      "title": "Powering Cards for Every Business",
+      "title": "Powering Cards for Every Business jsn",
       "repeatingWords":["Startup","Enterprise","Platform","Fintech"],
       "subtitle": "From off-the-shelf to fully custom, SimpliFi powers card programs across the GCC. ",
      
@@ -25,12 +25,12 @@
       ]
     },
     "ProductOverview1":{
-      "heading": "The fastest way to go live, your way",
+      "heading": "jsn The fastest way to go live, your way",
       "description": "Whether you want to go live in days or build something truly custom, we’ve got you covered."
     },
     "productOverview2": {
       "title": "Embed: Off-the-shelf cards, ready to go",
-      "image": "WebImages/WebImage1.jpg",
+      "image": "WebImages/01 Web Image 1.png",
       "subTitle": "Add live card functionality to your platform with zero setup hassle.",
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
       "includedTitle": "What’s included",
@@ -50,7 +50,7 @@
 
     "productOverview3": {
       "title": "Build Your Own: Cards As A Service",
-      "image": "WebImages/WebImage2.jpg",
+      "image": "WebImages/02 Web Image 2.png",
       "subtitle": "Launch a fully branded card program with complete control.",
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
       "includedTitle": "What’s included",
@@ -85,7 +85,8 @@
           "number": "50+",
           "label": "Currencies Supported"
         }
-      ]
+      ],
+      "img": "/backgrounds/power by business.png"
     },
 
     "clientMarquee2": {
@@ -151,7 +152,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
           "title": "One contract for everything",
           "description": "Work with just one provider to get technology, compliance, operational support, and more.",
-          "image": "WebImages/Onecontractforeverything.jpg",
+          "image": "WebImages/01 One contract for everything.png",
           "style": "dark"
         },
         {
@@ -159,13 +160,13 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321a_Icons-2.png",
           "title": "One integration, multiple markets",
           "description": "Go live across markets with a single integration.",
-          "image": "WebImages/Slider Mockup2.jpg",
+          "image": "WebImages/02 One integration multiple markets.png",
           "style": "light"
         },
         {
           "company": "NASA",
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321b_Icons-3.png",
-          "title": "Compliance, sorted",
+          "title": "Compliance sorted",
           "description": "KYC, AML, and regulatory approvals to ensure end to end compliance.",
           "image": "WebImages/Security at the core.jpg",
           "style": "dark",
@@ -179,7 +180,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493219_Icons-4.png",
           "title": "Security at the core",
           "description": "PCI-DSS compliant with encryption, tokenization, and secure APIs.",
-          "image": "USPS/3.jpg",
+          "image": "WebImages/06 Security at the core.png",
           "style": "light"
         },
         {
@@ -187,7 +188,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493215_Icons-5.png",
           "title": "Infrastructure that grows with you",
           "description": "Handle high volumes, custom logic, and complex workflows with ease.",
-          "image": "WebImages/Infrastructure that grows with you.jpg",
+          "image": "WebImages/04 Infrastructure that grows with you.png",
           "style": "dark"
         },
         {
@@ -195,7 +196,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493218_Icons-8.png",
           "title": "Made for developers",
           "description": "Get started faster with detailed API documentation and sandbox access.",
-          "image": "WebImages/Slider Mockup1.jpg",
+          "image": "WebImages/05 Made for developers.png",
           "style": "light"
         }
       ],
@@ -289,35 +290,35 @@
           "id": 1,
           "title": "Global security compliance",
           "description": "We follow international standards to ensure safe and compliant payment processing.",
-          "img": "WebImages/globalsecuritycompilance.jpg",
+          "img": "WebImages/01 Global Security.jpg",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 2,
           "title": "End-to-end encryption",
           "description": "Financial and personal data is encrypted at every stage of the transaction.",
-          "img": "WebImages/endtoendencribtion.png",
+          "img": "WebImages/02 End to End.jpg",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 3,
           "title": "Advanced access controls",
           "description": "Role-based permissions and multi-factor authentication ensure only authorized access.",
-          "img": "WebImages/Advanceaccesscontrol.png",
+          "img": "WebImages/03 Advance Access.png",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 4,
           "title": "Compliant data privacy practices",
           "description": "We adhere to local and international data privacy laws across all markets we operate in.",
-          "img": "WebImages/compilantdateprivacy.jpg",
+          "img": "WebImages/04 compilant date privacy copy.png",
           "alt": "Competitor analysis in Figma"
         },
         {
           "id": 5,
           "title": "Data residency compliance",
           "description": "Your data is stored securely within compliant cloud environments, meeting local data residency requirements.",
-          "img": "WebImages/dataresidencecomplance.jpg",
+          "img": "WebImages/05 Data Residency.jpg",
           "alt": "Competitor analysis in Figma"
         }
       ],

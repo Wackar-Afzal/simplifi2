@@ -109,25 +109,25 @@
       "subtitle": "",
       "slides": [
         {
-          "src": "Cards-As-a-Service/Who it’s for Fintech launching product (2).jpg",
+          "img": "/Cards-As-a-Service/Who for Fintech launching product (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Fintechs launching card products"
         },
         {
-          "src": "Cards-As-a-Service/Who it’s for Enterprise building (2).jpg",
+          "img": "/Cards-As-a-Service/Who it’s for Enterprise building (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Enterprises building internal spend tools"
         },
         {
-          "src": "Cards-As-a-Service/Who it’s for Startups and scluping (2).jpg",
+          "img": "/Cards-As-a-Service/Who it’s for Startups and scluping (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Startups and scaleups building custom payment experiences"
         },
         {
-          "src": "Cards-As-a-Service/Who it’s for Tech first term_ (2).jpg",
+          "img": "/Cards-As-a-Service/Who it’s for Tech first term_ (2).jpg",
           "alt": "Landscape",
           "subtitle": "New research",
           "title": "Tech-first teams that need full control"

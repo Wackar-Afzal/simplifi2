@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function UXSection({ data }) {
   return (
-    <section className={`section_services text-white is-xsmall `}>
+    <section className={`section_services text-white py-10 lg:py-15 px-4`}>
       <div className="mx-auto flex justify-center">
         <div className={`md:flex flex-col ${ data.reverse ? "lg:flex-row-reverse" : "lg:flex-row"} gap-8 max-w-[1400px] !w-full`}
         >

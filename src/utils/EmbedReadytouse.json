@@ -1,7 +1,7 @@
 {
   "embedreadytouse": {
     "hero": {
-      "bckgroundImage": "features/Multi-Currency_Cards-removebg-preview.png",
+      "bckgroundImage": "features/Multi-Currency Cards.jpg",
       "heading": "Embed ready-to-issue cards and go live fast",
       "descrip": "Launch ready-to-use, compliant multi-currency corporate cards without writing a single line of code."
     },
@@ -195,7 +195,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e275076f072678348406_ing-userpic.webp",
           "title": "Multi-currency wallets",
           "description": "Fund, hold, and move money in USD, AED, SAR, BHD, KWD, QAR, and OMR. Avoid FX loss and streamline regional and international spend.",
-          "image": "Embed-Ready-To-Use-Card/Multi-currencyWallets.jpg",
+          "image": "Embed-Ready-To-Use-Card/01 Multi-currency wallets.jpg",
           "dark": false
         },
         {
@@ -204,7 +204,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634e2c46c7f5de93e2b0176_sgg-userpic.svg",
           "title": "Multi-currency cards",
           "description": "Issue and manage cards across currencies using a single integration. Enable seamless spend across markets with built-in currency controls.",
-          "image": "Embed-Ready-To-Use-Card/Multi-currencyCards.jpg",
+          "image": "Embed-Ready-To-Use-Card/02 Multi-currency Card.jpg",
           "dark": true
         },
         {
@@ -213,7 +213,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d315afb58424918a0b62_moka-userpick.svg",
           "title": "Card management features",
           "description": "Let your users issue cards, set spend limits, track transactions, and freeze cards in real time through your own interface.",
-          "image": "Embed-Ready-To-Use-Card/Cardmanagementfeatures.jpg",
+          "image": "Embed-Ready-To-Use-Card/03 Card management features.jpg",
           "dark": false
         },
         {
@@ -222,7 +222,7 @@
           "logo": "https://cdn.prod.website-files.com/660582dbf65d24242da5782d/6634d35d4c5d6a3a3dd9bff9_oxygen-userpic.svg",
           "title": "Budget controls",
           "description": "Support company-wide budgets and keep spend aligned with business goals.",
-          "image": "Embed-Ready-To-Use-Card/Budgetcontrols.jpg",
+          "image": "Embed-Ready-To-Use-Card/04 Budget controls.jpg",
           "dark": true,
           "horizontal": true
         }

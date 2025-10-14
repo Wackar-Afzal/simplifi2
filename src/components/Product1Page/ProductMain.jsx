@@ -1,5 +1,3 @@
-import cardAsService  from "@/utils/cardAsService.json";
-
 // Navbar provided by root layout
 import WhatsCookin from "./WhatsCookin";
 import { ContactUs } from "../common/ContactUs";
@@ -10,34 +8,30 @@ import Ai from "../Product2/Ai2";
 import HeroSection from "../Product2/HeroSection";
 import PageFooter from "../common/PageFooter";
 
-export const ProductMain = () => {
-
-  console.log(cardAsService,"cardAsService")
+export const ProductMain = ({ data }) => {
   return (
     <div>
-      <div className="px-2 my-20 md:my-30">
-      <HeroSection data={cardAsService.cardAsService.hero} />
+      <div className="px-2 my-5 md:my-10">
+        <HeroSection data={data.cardAsService.hero} />
       </div>
       <div className="my-20 md:my-30">
-      <ClientsMarquee data={cardAsService.cardAsService.clientMarquee} />
+        <ClientsMarquee data={data.cardAsService.clientMarquee} />
       </div>
       {/* <HeroProduct /> */}
-      <div className="px-4 md:px-8 my-20 md:my-30">
-      <CareerList data={cardAsService.cardAsService.careerList} />
+      <div className="px-4 md:px-8 my-20 md:my-30 ">
+        <CareerList data={data.cardAsService.careerList} />
       </div>
-      <div className="my-20 md:my-30">
-      <Ai data={cardAsService.cardAsService.useCases} />
-
+      <div className="my-20 md:my-30 px-4">
+        <Ai data={data.cardAsService.useCases} />
       </div>
       <div className="px-4 md:px-0 my-20 md:my-30">
-      <WhatsCookin data={cardAsService.cardAsService.whatsCookin} />
+        <WhatsCookin data={data.cardAsService.whatsCookin} />
       </div>
       {/* <CaseStudies /> */}
       {/* <Brags /> */}
       {/* <ClientSays /> */}
       <div className="my-20 md:my-30">
-      <PageFooter data={cardAsService.cardAsService.footer} />
-
+        <PageFooter data={data.cardAsService.footer} />
       </div>
     </div>
   );

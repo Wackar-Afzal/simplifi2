@@ -11,7 +11,7 @@ const Page = () => {
   console.log(about.about, "about");
   return (
     <div className="px-4">
-      <div className="max-w-7xl mx-auto overflow-hidden my-20 md:my-30">
+      <div className="max-w-7xl mx-auto  my-2 md:my-5">
         <HeroSection data={about.about.hero} />
       </div>
       <div className=" max-w-7xl  mx-auto my-20 md:my-30">

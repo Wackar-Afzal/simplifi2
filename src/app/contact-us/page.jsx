@@ -9,13 +9,13 @@ const page = () => {
   return (
   <>
     {/* <ContactUs/> */}
-      <div className="h-auto flex items-center justify-center w-full my-20">
+      <div className="h-auto flex items-center justify-center w-full my-10 p-4">
         <div
     
           className="w-full gap-[1rem] bg-white overflow-hidden flex flex-col md:flex-row-reverse justify-center h-full md:h-[80vh] overflow-y-scroll !snap-y no-scrollbar"
         >
           <div className="static md:sticky top-0 w-[100%] md:w-[40%] text-white rounded-2xl overflow-hidden">
-            <img className="m-auto rounded-2xl" src="/01.png" alt="" />
+            <img className="m-auto rounded-2xl" src="HoverImages/Slider-1.png" alt="" />
           </div>
 
           <div className="w-[100%] md:w-[50%] p-0 md:p-10 gap-[3rem]">
@@ -32,7 +32,9 @@ const page = () => {
           </div>
         </div>
       </div>
+      <div className='p-4 lg:p-0 my-10 md:my-30'>
       <ClientsMarquee data={data.contact.clientMarquee}/>
+      </div>
       {/* <PageFooter data={data.contact.footer}/> */}
       {/* Footer provided by root layout */}
     </> 

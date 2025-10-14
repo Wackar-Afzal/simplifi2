@@ -94,7 +94,7 @@ export default function HeroProduct({data}) {
 
         {/* Desktop Video */}
         {data.desVideo &&
-        <div className="hero-video w-embed">
+        <div className="hero-video w-embed !bg-white">
           <video width="100%" height="auto" autoPlay muted playsInline loop>
             <source
               src={data.desVideo}

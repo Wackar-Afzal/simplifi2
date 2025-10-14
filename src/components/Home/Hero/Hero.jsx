@@ -1,14 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import homeText from "@/utils/homeText.json";
 import Link from "next/link";
 
 export default function Hero({data}) {
-  const leftImage = "HoverImages/Left Side Powering Cards for Every Business.png";
-  const rightImage = "HoverImages/Right side Powering Cards for Every Business.png";
   const typeSequence = data.repeatingWords.flatMap(word => [`${word}.`, 1000]);
-  console.log(typeSequence,"typeSequence")
   return (
     <div className="relative hero w-screen h-[100vh] md:h-[95vh] flex items-center justify-center overflow-hidden">
       {/* Left Side Image - Slides in from left, then wavy motion */}
@@ -77,7 +73,7 @@ export default function Hero({data}) {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          Powering Cards for Every Business
+          {data.title}
           <br />
           <TypeAnimation
             sequence={typeSequence}
@@ -97,7 +93,7 @@ export default function Hero({data}) {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          {homeText.homepage.hero.subtitle}
+          {data.subtitle}
         </motion.p>
         
         <motion.p
@@ -111,7 +107,7 @@ export default function Hero({data}) {
           }}
         >
           <span className="text-color-secondary">
-            {homeText.homepage.hero.description}
+            {data.description}
           </span>
         </motion.p>
         
@@ -125,8 +121,8 @@ export default function Hero({data}) {
           }}
           className="mt-6"
         >
-          <Link href={homeText.homepage.hero.ctaLink} className="contained-button">
-            {homeText.homepage.hero.cta}
+          <Link href={data.ctaLink} className="contained-button">
+            {data.cta}
           </Link>
         </motion.div>
       </motion.div>

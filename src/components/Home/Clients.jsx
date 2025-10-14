@@ -1,6 +1,5 @@
 import React from "react";
 import BSlidingDiv from "../common/BSliding";
-import homeText from "@/utils/homeText.json";
 
 export const Clients = ({data}) => {
   return (
@@ -17,57 +16,42 @@ export const Clients = ({data}) => {
 
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 auto-cols-fr gap-x-5 gap-y-6 mt-20">
-        <div className="flex flex-col flex-wrap gap-4">
-          <BSlidingDiv className="bg-white  border-radius-primary p-2 md:p-6 fintech-2-content-grid-card_small ">
-            <div className="flex items-center gap-2">
-              <span className="number-style  ">
-                {data.stats[0].number}
-              </span>
-            </div>
-            <p className="mt-2 text-gray-600">
-              {data.stats[0].label}
-            </p>
-          </BSlidingDiv>
+        {[0, 1].map((colIndex) => (
+          <div key={colIndex} className="flex flex-col gap-4 items-start">
+            {data.stats
+              .slice(0, 4)
+              .filter((_, index) => Math.floor(index / 2) === colIndex)
+              .map((stat, index) => (
+                <BSlidingDiv 
+                  key={index} 
+                  className={`w-full !max-w-[250px] bg-white border-radius-primary ${colIndex === 0 && index === 0 ? 'p-2 md:p-6' : 'p-6'} fintech-2-content-grid-card_small`}
+                >
+                  <div className={colIndex === 0 && index === 0 ? "flex items-center gap-2" : ""}>
+                    <span className="number-style">
+                      {stat.number}
+                    </span>
+                  </div>
+                  <p className="mt-2 text-gray-600">
+                    {stat.label}
+                  </p>
+                </BSlidingDiv>
+              ))}
+          </div>
+        ))}
 
-          <BSlidingDiv className="bg-white border-radius-primary p-2 md:p-6 fintech-2-content-grid-card_small ">
-            <div className="number-style ">
-              {data.stats[1].number}
-            </div>
-            <p className="mt-2 text-gray-600">
-              {data.stats[1].label}
-            </p>
-          </BSlidingDiv>
-        </div>
-        <div className="flex flex-col gap-4">
-          <BSlidingDiv className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
-            <div className="number-style ">
-              {data.stats[2].number}
-            </div>
-            <p className="mt-2 text-gray-600">
-              {data.stats[2].label}
-            </p>
-          </BSlidingDiv>
-          <BSlidingDiv className="bg-white border-radius-primary p-6 fintech-2-content-grid-card_small ">
-            <div className="number-style ">
-              {data.stats[3].number}
-            </div>
-            <p className="mt-2 text-gray-600">
-              {data.stats[3].label}
-            </p>
-          </BSlidingDiv>
-        </div>
+        {data.img && (
+          <div className="hidden col-span-2 md:flex justify-center items-center relative w-full md:w-[99%]">
+            <img
+              src={data.img}
 
-        <div className="hidden col-span-2 md:flex justify-center items-center relative w-full md:w-[99%]">
-          <img
-            src="backgrounds/powerbybusiness.png"
-
-            alt="A mobile phone displaying abstract 3D shapes in the background, with a financial management app on the screen"
-            className="rounded-xl  !w-[120%] h-auto object-contain mt-[-0%] md:mt-[-28%] ml-[-20%] z-[-1] pointer-events-none !max-w-none
+              alt="A mobile phone displaying abstract 3D shapes in the background, with a financial management app on the screen"
+              className="rounded-xl  !w-[120%] h-auto object-contain mt-[-0%] md:mt-[-28%] ml-[-20%] z-[-1] pointer-events-none !max-w-none
    
                         
                         "
-          />
-        </div>
+            />
+          </div>
+        )}
       </div>
     </div>
     </div>

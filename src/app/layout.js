@@ -4,6 +4,7 @@ import { LoadingProvider } from "@/components/common/LoadingProvider";
 import Navbar from "@/components/layouts/Navbar";
 import { Footer } from "@/components/layouts/Footer";
 import MainWrapper from "@/components/common/MainWrapper";
+import ToastProvider from "@/components/common/ToastProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,10 +37,11 @@ export default function RootLayout({ children }) {
               {children}
             </MainWrapper>
 
-            <footer className="w-full relative z-50">
+            <footer className="w-full relative z-50 ">
               <Footer />
             </footer>
           </div>
+          <ToastProvider />
         </LoadingProvider>
       </body>
     </html>

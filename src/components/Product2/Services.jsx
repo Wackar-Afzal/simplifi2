@@ -49,7 +49,7 @@ export default function WhatWeDo() {
     ];
 
     return (
-        <section className="section_services text-white is-xsmall">
+        <section className="section_services text-white">
             <div className="services-wrapper mx-auto">
                 <h2 className="section-heading is-services mb-10">
                     Embed: Off-the-shelf cards, ready to go
