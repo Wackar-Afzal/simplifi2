@@ -131,12 +131,18 @@ export default function PressReleaseDetailPage({ params }) {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="prose prose-lg max-w-none"
           >
-            <div className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed">
-              <p>
-                This press release represents another significant milestone in SimpliFi's journey to transform
-                the financial services landscape across MENA and Pakistan. Our continued innovation and strategic
-                partnerships enable businesses to access cutting-edge payment solutions with unprecedented ease and flexibility.
-              </p>
+            {pressRelease.content ? (
+              <div 
+                className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: pressRelease.content }}
+              />
+            ) : (
+              <div className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed">
+                <p>
+                  This press release represents another significant milestone in SimpliFi's journey to transform 
+                  the financial services landscape across MENA and Pakistan. Our continued innovation and strategic 
+                  partnerships enable businesses to access cutting-edge payment solutions with unprecedented ease and flexibility.
+                </p>
 
               <p>
                 Through our comprehensive Cards-as-a-Service platform, we're democratizing access to advanced
@@ -144,7 +150,7 @@ export default function PressReleaseDetailPage({ params }) {
                 without the traditional barriers and complexities.
               </p>
 
-              <h2 className="heading-style-h3 mt-12 mb-6">Key Highlights</h2>
+                <h2 className="heading-style-h3 mt-12 mb-6">Key Highlights</h2>
 
               <p>
                 This announcement underscores our commitment to driving financial inclusion and innovation
@@ -157,14 +163,14 @@ export default function PressReleaseDetailPage({ params }) {
                 market demands while maintaining the highest standards of security and compliance.
               </p>
 
-              <h2 className="heading-style-h3 mt-12 mb-6">Looking Forward</h2>
+                <h2 className="heading-style-h3 mt-12 mb-6">Looking Forward</h2>
 
               <p>
                 As we continue to grow and evolve, SimpliFi remains focused on our mission to simplify and
                 democratize financial services. This development is just one of many exciting initiatives
                 we have planned for the coming months.
               </p>
-            </div>
+            </div>)}
           </motion.article>
         </div>
       </section>

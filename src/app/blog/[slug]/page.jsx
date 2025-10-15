@@ -123,61 +123,68 @@ export default function BlogDetailPage() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="prose prose-lg max-w-none"
           >
-            <div className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed">
-              <p>
-                The fintech landscape is rapidly evolving, and staying ahead of the curve requires understanding
-                the latest trends, technologies, and regulatory changes that shape the industry. In this comprehensive
-                guide, we'll explore the key insights that every fintech professional should know.
-              </p>
+            {blog.content ? (
+              <div 
+                className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: blog.content }}
+              />
+            ) : (
+              <div className="paragraph-style-body space-y-6 text-gray-800 leading-relaxed">
+                <p>
+                  The fintech landscape is rapidly evolving, and staying ahead of the curve requires understanding
+                  the latest trends, technologies, and regulatory changes that shape the industry. In this comprehensive
+                  guide, we'll explore the key insights that every fintech professional should know.
+                </p>
 
-              <p>
-                Modern payment infrastructure has transformed the way businesses and consumers interact with financial
-                services. From embedded finance solutions to advanced card issuing platforms, the tools available
-                today enable unprecedented flexibility and control over financial operations.
-              </p>
+                <p>
+                  Modern payment infrastructure has transformed the way businesses and consumers interact with financial
+                  services. From embedded finance solutions to advanced card issuing platforms, the tools available
+                  today enable unprecedented flexibility and control over financial operations.
+                </p>
 
-              <h2 className="heading-style-h3 mt-12 mb-6">Understanding the Fundamentals</h2>
+                <h2 className="heading-style-h3 mt-12 mb-6">Understanding the Fundamentals</h2>
 
-              <p>
-                When implementing new fintech solutions, several factors must be carefully evaluated to ensure
-                success and compliance. These include regulatory requirements, technical integration capabilities,
-                scalability considerations, and user experience optimization.
-              </p>
+                <p>
+                  When implementing new fintech solutions, several factors must be carefully evaluated to ensure
+                  success and compliance. These include regulatory requirements, technical integration capabilities,
+                  scalability considerations, and user experience optimization.
+                </p>
 
-              <p>
-                The key to successful fintech implementation lies in understanding both the technical and business
-                aspects of financial services. This includes knowledge of payment processing, regulatory compliance,
-                security protocols, and customer experience design.
-              </p>
+                <p>
+                  The key to successful fintech implementation lies in understanding both the technical and business
+                  aspects of financial services. This includes knowledge of payment processing, regulatory compliance,
+                  security protocols, and customer experience design.
+                </p>
 
-              <h2 className="heading-style-h3 mt-12 mb-6">Best Practices and Implementation</h2>
+                <h2 className="heading-style-h3 mt-12 mb-6">Best Practices and Implementation</h2>
 
-              <p>
-                Industry best practices emphasize the importance of security, scalability, and user experience.
-                Modern fintech solutions must be designed with these principles in mind from the ground up,
-                rather than as afterthoughts.
-              </p>
+                <p>
+                  Industry best practices emphasize the importance of security, scalability, and user experience.
+                  Modern fintech solutions must be designed with these principles in mind from the ground up,
+                  rather than as afterthoughts.
+                </p>
 
-              <p>
-                Successful implementation requires careful planning, thorough testing, and ongoing monitoring.
-                Organizations must also ensure they have the right team and processes in place to support
-                their fintech initiatives.
-              </p>
+                <p>
+                  Successful implementation requires careful planning, thorough testing, and ongoing monitoring.
+                  Organizations must also ensure they have the right team and processes in place to support
+                  their fintech initiatives.
+                </p>
 
-              <h2 className="heading-style-h3 mt-12 mb-6">The Future of Fintech</h2>
+                <h2 className="heading-style-h3 mt-12 mb-6">The Future of Fintech</h2>
 
-              <p>
-                Looking ahead, the fintech industry continues to innovate with emerging technologies like blockchain,
-                artificial intelligence, and advanced analytics. These technologies are reshaping how financial
-                services are delivered and consumed across global markets.
-              </p>
+                <p>
+                  Looking ahead, the fintech industry continues to innovate with emerging technologies like blockchain,
+                  artificial intelligence, and advanced analytics. These technologies are reshaping how financial
+                  services are delivered and consumed across global markets.
+                </p>
 
-              <p>
-                As we move forward, the focus remains on creating seamless, secure, and scalable financial solutions
-                that meet the evolving needs of businesses and consumers alike. The key to success lies in understanding
-                these trends and adapting quickly to market changes.
-              </p>
-            </div>
+                <p>
+                  As we move forward, the focus remains on creating seamless, secure, and scalable financial solutions
+                  that meet the evolving needs of businesses and consumers alike. The key to success lies in understanding
+                  these trends and adapting quickly to market changes.
+                </p>
+              </div>
+            )}
           </motion.article>
         </div>
       </section>
