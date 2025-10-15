@@ -8,7 +8,7 @@ export const revalidate = 2;
 // Fetch data from Strapi
 async function getData() {
   try {
-    const queryParams = "?populate[hero][populate]=*&populate[clientMarquee][populate]=*&populate[whatsCookin][populate][slides][populate]=*&populate[useCases][populate][feature][populate]=*&populate[careerList][populate][careerPositions][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
+    const queryParams = "?populate[hero][populate]=*&populate[clientMarquee][populate]=*&populate[whatsCookin][populate][slides][populate][img][populate]=*&populate[whatsCookin][populate][slides][populate][image][populate]=*&populate[useCases][populate][feature][populate]=*&populate[careerList][populate][careerPositions][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
 
     const response = await fetch(`${API_ENDPOINTS.CARD_AS_SERVICE}${queryParams}`, {
       next: { revalidate: 2 },
@@ -29,6 +29,8 @@ async function getData() {
 
 export default async function Page() {
   const strapiData = await getData();
+  console.log("Strapi whatsCookin slides:", strapiData?.whatsCookin?.slides);
+  console.log("Local JSON slides:", cardAsService.cardAsService.whatsCookin.slides);
 
   // Merge hero data with fallback
   const heroData = {
@@ -51,8 +53,8 @@ export default async function Page() {
     title: strapiData?.whatsCookin?.title || cardAsService.cardAsService.whatsCookin.title,
     subtitle: strapiData?.whatsCookin?.subtitle || cardAsService.cardAsService.whatsCookin.subtitle,
     slides: strapiData?.whatsCookin?.slides?.map((slide, index) => ({
-      img: slide.img?.url || slide.src || cardAsService.cardAsService.whatsCookin.slides[index]?.src,
-      alt: slide.alt || slide.title || cardAsService.cardAsService.whatsCookin.slides[index]?.alt,
+      img: slide.img?.url || slide.image?.url || cardAsService.cardAsService.whatsCookin.slides[index]?.img,
+      alt: slide.img?.alternativeText || slide.alt || slide.title || cardAsService.cardAsService.whatsCookin.slides[index]?.alt,
       subtitle: slide.subtitle || cardAsService.cardAsService.whatsCookin.slides[index]?.subtitle,
       title: slide.title,
       buttonText: slide.buttonText || cardAsService.cardAsService.whatsCookin.slides[index]?.buttonText,

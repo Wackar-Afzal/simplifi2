@@ -23,11 +23,12 @@ export const revalidate = 2;
 // Fetch data from Strapi
 async function getData() {
   try {
-    const queryParams = "?populate[hero][populate]=*&populate[ClientsMargquee][populate]=*&populate[productOverview1][populate]=*&populate[productOverview2][populate]=*&populate[productOverview3][populate]=*&populate[clientsCount][populate]=*&populate[clientMarquee2][populate]=*&populate[WhatsCookin][populate]=*&populate[usps][populate]=*&populate[features][populate]=*&populate[clientMarquee1][populate]=*&populate[whatwedo][populate]=*&populate[pressReleases][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
+    const queryParams = "?populate[hero][populate]=*&populate[ClientsMargquee][populate]=*&populate[productOverview1][populate]=*&populate[productOverview2][populate]=*&populate[productOverview3][populate]=*&populate[clientsCount][populate]=*&populate[clientMarquee2][populate]=*&populate[WhatsCookin][populate][slides][populate]=*&populate[usps][populate][feature][populate]=*&populate[features][populate]=*&populate[clientMarquee1][populate]=*&populate[whatwedo][populate][highlights][populate]=*&populate[pressReleases][populate][slides][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
 
     const response = await fetch(`${API_ENDPOINTS.HOME}${queryParams}`, {
       next: { revalidate: 2 }, // Revalidate every 2 seconds for testing
     });
+
 
     if (!response.ok) {
       console.error("Strapi API fetch failed:", response.status);
@@ -35,6 +36,9 @@ async function getData() {
     }
 
     const jsonResponse = await response.json();
+
+    console.log(jsonResponse?.data?.[0].WhatsCookin.slides,"response")
+
     return jsonResponse?.data?.[0] || null;
   } catch (error) {
     console.error("Error fetching Strapi data:", error);
@@ -119,14 +123,29 @@ export default async function Home() {
   const whatsCookinData = {
     title: strapiData?.WhatsCookin?.title || homeText.homepage.whatsCookin.title,
     subtitle: strapiData?.WhatsCookin?.subtitle || homeText.homepage.whatsCookin.subtitle,
-    slides: strapiData?.WhatsCookin?.slides || homeText.homepage.whatsCookin.slides,
+    slides: strapiData?.WhatsCookin?.slides?.map((slide, index) => ({
+      img: slide.img?.url || homeText.homepage.whatsCookin.slides[index]?.img,
+      alt: slide.img?.alternativeText || slide.title || homeText.homepage.whatsCookin.slides[index]?.alt,
+      subtitle: slide.subtitle || homeText.homepage.whatsCookin.slides[index]?.subtitle,
+      title: slide.title,
+      buttonText: slide.buttonText || homeText.homepage.whatsCookin.slides[index]?.buttonText,
+      buttonLink: slide.buttonLink || homeText.homepage.whatsCookin.slides[index]?.buttonLink,
+    })) || homeText.homepage.whatsCookin.slides,
   };
 
   // Merge USPs data with fallback
   const uspsData = {
     title: strapiData?.usps?.title || homeText.homepage.usps.title,
     descrip: strapiData?.usps?.descrip || homeText.homepage.usps.descrip,
-    features: strapiData?.usps?.feature || homeText.homepage.usps.features,
+    features: strapiData?.usps?.feature?.map((feature, index) => ({
+      company: feature.company || homeText.homepage.usps.features[index]?.company,
+      logo: feature.logo?.url || homeText.homepage.usps.features[index]?.logo,
+      title: feature.title,
+      description: feature.description,
+      image: feature.image?.url || homeText.homepage.usps.features[index]?.image,
+      style: feature.style || homeText.homepage.usps.features[index]?.style,
+      extraStats: feature.extraStats || homeText.homepage.usps.features[index]?.extraStats,
+    })) || homeText.homepage.usps.features,
   };
 
   // Merge Features data with fallback
@@ -153,14 +172,32 @@ export default async function Home() {
     description: strapiData?.whatwedo?.description || homeText.homepage.whatwedo.description,
     highlightsTitle: strapiData?.whatwedo?.highlightsTitle || homeText.homepage.whatwedo.highlightsTitle,
     textSize: strapiData?.whatwedo?.textSize || homeText.homepage.whatwedo.textSize,
-    highlights: strapiData?.whatwedo?.highlights || homeText.homepage.whatwedo.highlights,
+    highlights: strapiData?.whatwedo?.highlights?.map((highlight, index) => ({
+      id: highlight.id,
+      title: highlight.title,
+      description: highlight.description,
+      img: highlight.img?.url || homeText.homepage.whatwedo.highlights[index]?.img,
+      alt: highlight.img?.alternativeText || highlight.alt || homeText.homepage.whatwedo.highlights[index]?.alt,
+    })) || homeText.homepage.whatwedo.highlights,
   };
 
   // Merge PressReleases data with fallback
   const pressReleasesData = {
     heading: strapiData?.pressReleases?.heading || homeText.homepage.pressReleases.heading,
     descrip: strapiData?.pressReleases?.descrip || homeText.homepage.pressReleases.descrip,
-    slides: (strapiData?.pressReleases?.slides || homeText.homepage.pressReleases.slides).slice(0, 3),
+    slides: strapiData?.pressReleases?.slides?.map((slide, index) => ({
+      id: slide.id,
+      img: slide.img?.url || homeText.homepage.pressReleases.slides[index]?.img,
+      alt: slide.img?.alternativeText || slide.alt || homeText.homepage.pressReleases.slides[index]?.alt,
+      subtitle: slide.subtitle,
+      title: slide.title,
+      buttonText: slide.buttonText || homeText.homepage.pressReleases.slides[index]?.buttonText,
+      buttonLink: slide.buttonLink || homeText.homepage.pressReleases.slides[index]?.buttonLink,
+      date: slide.date || homeText.homepage.pressReleases.slides[index]?.date,
+      slug: slide.slug || homeText.homepage.pressReleases.slides[index]?.slug,
+      path: slide.path || homeText.homepage.pressReleases.slides[index]?.path,
+      image: slide.image?.url || homeText.homepage.pressReleases.slides[index]?.image,
+    })).slice(0, 3) || homeText.homepage.pressReleases.slides.slice(0, 3),
   };
 
   return (

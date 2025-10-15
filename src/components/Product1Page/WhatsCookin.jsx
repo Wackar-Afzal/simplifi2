@@ -3,13 +3,10 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import homeText from "@/utils/homeText.json";
 import Link from "next/link";
 
 export default function WhatsCookin({ data }) {
 
-  console.log(data,"datata")
   const splideRef = useRef(null);
 
   const goNext = () => {
@@ -81,7 +78,7 @@ export default function WhatsCookin({ data }) {
             <SplideSlide key={index} className="relative feed-link">
               <div className="feed-img-wrapper">
                 <img
-                  src={slide.src}
+                  src={slide.img}
                   alt={slide.alt || `Slide ${index + 1}`}
                   className="feed-img"
                 />
