@@ -9,7 +9,7 @@ export default function BlogsPage() {
   const blogSlides = blogs.blogs.slides;
   return (
     <>
-      <div className="mt-20 md:mt-30">
+      <div className="mt-5 md:mt-10">
         <HeroProduct data={blogs.blogs.hero} />
       </div>
       <div className="">

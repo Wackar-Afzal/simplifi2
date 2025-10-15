@@ -10,7 +10,7 @@ import PageFooter from "@/components/common/PageFooter";
 const PressReleasesPage = () => {
   return (
     <>
-      <div className="mt-20 md:mt-30">
+      <div className="mt-5 md:mt-10">
         <HeroProduct data={pressReleases.pressReleases.hero} />
       </div>
       <div className="">

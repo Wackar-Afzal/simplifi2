@@ -10,7 +10,7 @@ export const blogs = {
     "slides": [
       {
         "id": 1,
-        "src": "https://simplifipay.com/images/blogs/001.png",
+        "img": "https://simplifipay.com/images/blogs/001.png",
         "alt": "Components of launching your own branded cards",
         "subtitle": "Spending across virtually all markets and use cases is increasingly migrating to digital means with cards accounting for the lion's...",
         "title": "Launching your own card program – SimpliFied",
@@ -23,7 +23,7 @@ export const blogs = {
       },
       {
         "id": 2,
-        "src": "https://simplifipay.com/images/blogs/002.jpg",
+        "img": "https://simplifipay.com/images/blogs/002.jpg",
         "alt": "Global Compliance SimpliFied",
         "subtitle": "Compliance refers to the adherence to a set of regulations and industry standards designed to protect consumers and ensure the...",
         "title": "Global Compliance SimpliFied",
@@ -36,7 +36,7 @@ export const blogs = {
       },
       {
         "id": 3,
-        "src": "https://simplifipay.com/images/blogs/003.jpg",
+        "img": "https://simplifipay.com/images/blogs/003.jpg",
         "alt": "What is a Virtual Card",
         "subtitle": "A Virtual Card is a payment card that exists solely in electronic form. It consists of a unique, randomly- generated...",
         "title": "What is a Virtual Card | Fintech explained by SimpliFi",
@@ -49,7 +49,7 @@ export const blogs = {
       },
       {
         "id": 4,
-        "src": "https://simplifipay.com/images/blogs/004.jpg",
+        "img": "https://simplifipay.com/images/blogs/004.jpg",
         "alt": "What is KYC",
         "subtitle": "KYC is one of the most important terms in Fintech, and the financial ecosystem at large.What is KYC, you ask...",
         "title": "What is KYC? – Fintech Explained by SimpliFi",
@@ -62,7 +62,7 @@ export const blogs = {
       },
       {
         "id": 5,
-        "src": "https://simplifipay.com/images/blogs/005.png",
+        "img": "https://simplifipay.com/images/blogs/005.png",
         "alt": "Open Loop Payment System",
         "subtitle": "Open-loop means any payment method can be used to make payments without having to be part of the system itself...",
         "title": "What is an Open Loop Payment System? Fintech Explained by SimpliFi",
@@ -75,7 +75,7 @@ export const blogs = {
       },
       {
         "id": 6,
-        "src": "https://simplifipay.com/images/blogs/006.jpg",
+        "img": "https://simplifipay.com/images/blogs/006.jpg",
         "alt": "Designing Modern Card Offering",
         "subtitle": "In 2022, people and businesses continue to use payment cards every day – if not several times a day...",
         "title": "9 Things to Consider When Designing a Modern Card Offering",
@@ -88,7 +88,7 @@ export const blogs = {
       },
       {
         "id": 7,
-        "src": "https://simplifipay.com/images/blogs/007.png",
+        "img": "https://simplifipay.com/images/blogs/007.png",
         "alt": "Modern Card Issuing Vs Legacy Systems",
         "subtitle": "The magic of seamless, nearly invisible payments is spreading everywhere – on e-commerce sites...",
         "title": "Modern Card Issuing Vs. Legacy Systems: What is the difference?",
@@ -101,7 +101,7 @@ export const blogs = {
       },
       {
         "id": 8,
-        "src": "https://simplifipay.com/images/blogs/008.jpg",
+        "img": "https://simplifipay.com/images/blogs/008.jpg",
         "alt": "Payment Tokenization",
         "subtitle": "Tokenization has become a major buzzword these days and is often mentioned in the same breath as data security, blockchain...",
         "title": "What is Payment Tokenization? – Fintech Explained By SimpliFi",
@@ -114,7 +114,7 @@ export const blogs = {
       },
       {
         "id": 9,
-        "src": "https://simplifipay.com/images/blogs/009.jpg",
+        "img": "https://simplifipay.com/images/blogs/009.jpg",
         "alt": "Card Scheme",
         "subtitle": "In any given payment card transaction there are multiple entities involved in the processing of those transactions...",
         "title": "Card Scheme: Fintech Explained by SimpliFi",
@@ -127,7 +127,7 @@ export const blogs = {
       },
       {
         "id": 10,
-        "src": "https://simplifipay.com/images/blogs/010.jpg",
+        "img": "https://simplifipay.com/images/blogs/010.jpg",
         "alt": "Modern Card Issuing",
         "subtitle": "For decades, legacy payment infrastructure has enabled the payment of goods and services globally, reliably and securely...",
         "title": "How is Modern Card Issuing Enabling Innovative Payment Experiences?",
@@ -140,7 +140,7 @@ export const blogs = {
       },
       {
         "id": 11,
-        "src": "https://simplifipay.com/images/blogs/011.png",
+        "img": "https://simplifipay.com/images/blogs/011.png",
         "alt": "On-Demand Food Delivery Payments",
         "subtitle": "The global market for on-demand food delivery services is projected to reach $259.7 billion by 2027, growing at a global...",
         "title": "Streamlining Payments For The On-Demand Food Delivery Market",
@@ -153,7 +153,7 @@ export const blogs = {
       },
       {
         "id": 12,
-        "src": "https://simplifipay.com/images/blogs/012.png",
+        "img": "https://simplifipay.com/images/blogs/012.png",
         "alt": "Gig Payments",
         "subtitle": "According to a study carried out by Visa, 77% of the surveyed gig workers endure times where they need money...",
         "title": "Modern Card Issuance – A Game-changer for Gig Payments",

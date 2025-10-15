@@ -31,7 +31,7 @@ export default function BlogDetailPage() {
     <>
 
       {/* Blog Header */}
-      <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="px-2 mt-5 md:mt-10 max-w-7xl mx-auto">
         <div className="">
           {/* Back Button */}
           <motion.div

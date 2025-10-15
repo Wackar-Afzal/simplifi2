@@ -14,7 +14,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493216_Icons.png",
           "title": "SaaS",
           "description": "Empower tech teams with spend controls, usage insights, and multi-currency cards.",
-          "image": "../USPS/01 SaaS.jpg",
+          "image": "../USPS/saas.jpg",
           "style": "light"
         },
         {
@@ -22,7 +22,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493217_Icons-1.png",
           "title": "Ecommerce",
           "description": "Manage ad spend, fulfillment payouts, and supplier transactions from one platform.",
-          "image": "../USPS/02 Ecommerce.png",
+          "image": "../USPS/e-commerce.jpg",
           "style": "dark"
         },
         {
@@ -30,7 +30,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321a_Icons-2.png",
           "title": "Marketing",
           "description": "Run campaign cards, manage influencer budgets, or issue merchant specific cards.",
-          "image": "../USPS/03 Marketing.jpg",
+          "image": "../USPS/marketing.jpg",
           "style": "light"
         },
         {
@@ -38,7 +38,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f49321b_Icons-3.png",
           "title": "Logistics",
           "description": "Issue fuel cards and driver per diem cards, complete with real-time tracking.",
-          "image": "../USPS/04 Logistics.jpg",
+          "image": "../USPS/logistics.jpg",
           "style": "dark",
           "extraStats": {
             "duration": "2 weeks",
@@ -50,7 +50,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493219_Icons-4.png",
           "title": "Travel",
           "description": "Issue mutli-currency cards for travelers to optimize on FX, manage spend limits and enforce region-specific rules.",
-          "image": "../USPS/05 Travel.png",
+          "image": "../USPS/Travel.jpg",
           "style": "light"
         },
         {
@@ -58,7 +58,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493215_Icons-5.png",
           "title": "Insurance",
           "description": "Disburse funds for claims via instantly issued cards to streamline insurance payments.",
-          "image": "../USPS/06 Insurance.png",
+          "image": "../USPS/insurance.jpg",
           "style": "dark"
         },
         {
@@ -66,7 +66,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493218_Icons-8.png",
           "title": "Startups & Scaleups",
           "description": "Keep team spend in check while moving fast - Issue, track, and reconcile with ease.",
-          "image": "../USPS/07 Startups & Scaleups.png",
+          "image": "../USPS/startup.jpg",
           "style": "light"
         }
       ],

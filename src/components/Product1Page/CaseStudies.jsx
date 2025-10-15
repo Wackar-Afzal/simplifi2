@@ -66,7 +66,7 @@ export default function CaseStudies({ data }) {
                         <div className="   h-full flex flex-col">
                             <div className="case-img-wrapper">
                                 <SkeletonImage
-                                    src={slide.src}
+                                    src={slide.img}
                                     alt={slide.alt || `Slide ${index + 1}`}
                                     className="case-img"
                                     backgroundColor="bg-gray-200"

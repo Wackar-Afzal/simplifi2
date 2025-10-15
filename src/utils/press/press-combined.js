@@ -10,7 +10,7 @@ export const pressReleases = {
       "slides": [
         {
           "id": 1,
-          "src": "https://simplifipay.com/images/news/017.jpg",
+          "img": "https://simplifipay.com/images/news/017.jpg",
           "alt": "SimpliFi Expands Multi-Currency Wallets & Cards",
           "subtitle": "SimpliFi® Expands Multi-Currency Wallets & Cards! Now Supporting 13 Currencies! GBP, CAD, EUR, HKD, AUD, and JOD in addition to our existing suite across MENA and beyond...",
           "title": "SimpliFi® Expands Multi-Currency Wallets & Cards!",
@@ -23,7 +23,7 @@ export const pressReleases = {
         },
         {
           "id": 2,
-          "src": "https://simplifipay.com/images/news/016.png",
+          "img": "https://simplifipay.com/images/news/016.png",
           "alt": "SimpliFi secures DFSA license",
           "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has received final regulatory approval from the Dubai Financial Services Authority (DFSA) for a Category 4 license....",
           "title": "SimpliFi® secures license from DFSA strengthening its regional presence",
@@ -36,7 +36,7 @@ export const pressReleases = {
         },
         {
           "id": 3,
-          "src": "https://simplifipay.com/images/news/015.png",
+          "img": "https://simplifipay.com/images/news/015.png",
           "alt": "SimpliFi partners with Yabx",
           "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has announced a strategic partnership with Yabx, an innovative Embedded Lending solution provider....",
           "title": "SimpliFi® and Yabx Partner to Expand Access to Card Issuance and Credit for Businesses across the MENA Region",
@@ -49,7 +49,7 @@ export const pressReleases = {
         },
         {
           "id": 4,
-          "src": "https://simplifipay.com/images/news/001.jpg",
+          "img": "https://simplifipay.com/images/news/001.jpg",
           "alt": "SimpliFi onboards NQOODLET",
           "subtitle": "The Riyadh-based and \"Visa Direct Award 2022\" winner NQOODLET joins forces with Dubai-based SimpliFi to bring to market a modern...",
           "title": "SimpliFi® and NQOODLET join forces to transform SME spend management across MENA",
@@ -62,7 +62,7 @@ export const pressReleases = {
         },
         {
           "id": 5,
-          "src": "https://simplifipay.com/images/news/002.jpg",
+          "img": "https://simplifipay.com/images/news/002.jpg",
           "alt": "SimpliFi partners with Lune",
           "subtitle": "SimpliFi, a Cards as a Service (CaaS) platform for MENA and Pakistan, and Lune, a transaction data enrichment and analytics...",
           "title": "SimpliFi® and Hub71 startup Lune partner to drive transformative data enrichment and analytics services to businesses in MENAP",
@@ -75,7 +75,7 @@ export const pressReleases = {
         },
         {
           "id": 6,
-          "src": "https://simplifipay.com/images/news/003.png",
+          "img": "https://simplifipay.com/images/news/003.png",
           "alt": "SimpliFi partners with Mastercard",
           "subtitle": "SimpliFi has partnered with Mastercard to enhance digital payment adoption across the MENAP region. With demand for efficient digital payment...",
           "title": "SimpliFi® and Mastercard join forces to enable innovative payment solutions across Middle East, North Africa & Pakistan",
@@ -88,7 +88,7 @@ export const pressReleases = {
         },
         {
           "id": 7,
-          "src": "https://simplifipay.com/images/news/004.png",
+          "img": "https://simplifipay.com/images/news/004.png",
           "alt": "SimpliFi and Alinma Bank partnership",
           "subtitle": "SimpliFi, the leading Cards as a Service (CaaS) platform in MENA and Pakistan, and Alinma Bank, amongst the most innovative...",
           "title": "SimpliFi and Alinma Bank partner to expand digital payments solutions in KSA",
@@ -101,7 +101,7 @@ export const pressReleases = {
         },
         {
           "id": 8,
-          "src": "https://simplifipay.com/images/news/005.png",
+          "img": "https://simplifipay.com/images/news/005.png",
           "alt": "SimpliFi and IDWise partnership",
           "subtitle": "SimpliFi and Gate to Pay, have joined forces to enable businesses to issue scheme-enabled payment cards in Jordan...",
           "title": "SimpliFi and IDWise® partner to enable global standard AI-driven identity verification and e-KYC solutions in MENA and Pakistan",
@@ -114,7 +114,7 @@ export const pressReleases = {
         },
         {
           "id": 9,
-          "src": "https://simplifipay.com/images/news/006.jpg",
+          "img": "https://simplifipay.com/images/news/006.jpg",
           "alt": "ADIB-Egypt and SimpliFi partnership",
           "subtitle": "This partnership extends SimpliFi's footprint into 5 markets across MENA & Pakistan.  August 22, 2022– SimpliFi, the leading Cards as...",
           "title": "ADIB-Egypt and SimpliFi partner to expand the digital payments ecosystem in Egypt",
@@ -127,7 +127,7 @@ export const pressReleases = {
         },
         {
           "id": 10,
-          "src": "https://simplifipay.com/images/news/007.jpg",
+          "img": "https://simplifipay.com/images/news/007.jpg",
           "alt": "Faysal Bank and SimpliFi Pakistan partnership",
           "subtitle": "Fintech Express Program from Faysal Bank is focused on identifying and fostering Fintechs and Startups with promising, high-potential innovative...",
           "title": "Faysal Bank & SimpliFi Pakistan partner to offer Innovative Digital Financial Services",
@@ -140,7 +140,7 @@ export const pressReleases = {
         },
         {
           "id": 11,
-          "src": "https://simplifipay.com/images/news/008.jpg",
+          "img": "https://simplifipay.com/images/news/008.jpg",
           "alt": "SimpliFi & Infinios partnership",
           "subtitle": "SimpliFi, the leading Cards as a Service (CaaS) platform for MENA and Pakistan, and Infinios Financial Services B.S.C (c) (Infinios)...",
           "title": "SimpliFi & Infinios partner to support the growing Fintech ecosystem in MENA",
@@ -153,7 +153,7 @@ export const pressReleases = {
         },
         {
           "id": 12,
-          "src": "https://simplifipay.com/images/news/009.jpg",
+          "img": "https://simplifipay.com/images/news/009.jpg",
           "alt": "SimpliFi partners with gate to pay",
           "subtitle": "SimpliFi, the leading Cards as a Service (CaaS) platform for MENA and Pakistan, and Gate to Pay, a regional Fintech...",
           "title": "SimpliFi partners with gate to pay to fast-track card issuance in Jordan",
@@ -166,7 +166,7 @@ export const pressReleases = {
         },
         {
           "id": 13,
-          "src": "https://simplifipay.com/images/news/010.jpg",
+          "img": "https://simplifipay.com/images/news/010.jpg",
           "alt": "MDP and SimpliFi collaboration",
           "subtitle": "MDP, the leading payments & card issuing platform signed a partnership with SimpliFi to accelerate expansion into the MIDDLE EAST...",
           "title": "MDP and SimpliFi collaborate to accelerate the expansion of payment solutions into the Middle East and Africa region",
@@ -179,7 +179,7 @@ export const pressReleases = {
         },
         {
           "id": 14,
-          "src": "https://simplifipay.com/images/news/011.jpg",
+          "img": "https://simplifipay.com/images/news/011.jpg",
           "alt": "Toppan FutureCard and SimpliFi collaboration",
           "subtitle": "Toppan FutureCard, a Toppan Company, and UAE-based global end-to-end card solutions provider, collaborates with SimpliFi, a Card as a Service...",
           "title": "Toppan FutureCard and Fintech start-up SimpliFi collaborate to enable fast and flexible card Issuance",
@@ -192,7 +192,7 @@ export const pressReleases = {
         },
         {
           "id": 15,
-          "src": "https://simplifipay.com/images/news/012.jpg",
+          "img": "https://simplifipay.com/images/news/012.jpg",
           "alt": "SimpliFi seals funding",
           "subtitle": "New investors, Global Founders Capital and 4DX Ventures, are joined by existing investors, Raed Ventures and Rally Cap Ventures   UAE...",
           "title": "SimpliFi seals $5.1 million in funding to expand its CaaS platform across MENAP",
@@ -205,7 +205,7 @@ export const pressReleases = {
         },
         {
           "id": 16,
-          "src": "https://simplifipay.com/images/news/013.jpg",
+          "img": "https://simplifipay.com/images/news/013.jpg",
           "alt": "Veriff Partners with SimpliFi",
           "subtitle": "Identity verification technology enables SimpliFi customers to seamlessly issue virtual or physical payment cards in MENA and Pakistan Veriff, a...",
           "title": "Veriff Partners with SimpliFi to Provide Trusted and Secure Identity Verification for Instant Card Issuance",
@@ -218,7 +218,7 @@ export const pressReleases = {
         },
         {
           "id": 17,
-          "src": "https://simplifipay.com/images/news/014.jpg",
+          "img": "https://simplifipay.com/images/news/014.jpg",
           "alt": "SimpliFi emerges from stealth mode",
           "subtitle": "Backing from Raed Ventures along with a number of regional and global investors puts SimpliFi in a strong position for....",
           "title": "SimpliFi emerges from stealth mode to democratize card issuance in MENAP",
@@ -238,7 +238,7 @@ export const pressReleases = {
       "slides": [
         {
           "id": 3,
-          "src": "https://simplifipay.com/images/news/media/1-4.png",
+          "img": "https://simplifipay.com/images/news/media/1-4.png",
           "alt": "Former Careem Pay boss launches SimpliFi",
           "subtitle": "Former Careem Pay boss launches SimpliFi, a Cards as a Service platform for MENA and Pakistan...",
           "title": "Former Careem Pay boss launches SimpliFi, a Cards as a Service platform for MENA and Pakistan...",
@@ -251,7 +251,7 @@ export const pressReleases = {
         },
         {
           "id": 1,
-          "src": "https://simplifipay.com/images/news/media/4-4.png",
+          "img": "https://simplifipay.com/images/news/media/4-4.png",
           "alt": "UAE FinTech SimpliFi raises $5.1m",
           "subtitle": "UAE FinTech SimpliFi raises $5.1m to expand across Mena and Pakistan...",
           "title": "UAE FinTech SimpliFi raises $5.1m to expand across Mena and Pakistan...",
@@ -264,7 +264,7 @@ export const pressReleases = {
         },
         {
           "id": 2,
-          "src": "https://simplifipay.com/images/news/media/01.png",
+          "img": "https://simplifipay.com/images/news/media/01.png",
           "alt": "SimpliFi and Alinma Bank partner",
           "subtitle": "SimpliFi and Alinma Bank partner to expand digital payments solutions in KSA...",
           "title": "SimpliFi and Alinma Bank partner to expand digital payments solutions in KSA...",
@@ -278,7 +278,7 @@ export const pressReleases = {
       
         {
           "id": 4,
-          "src": "https://simplifipay.com/images/news/media/2-4.png",
+          "img": "https://simplifipay.com/images/news/media/2-4.png",
           "alt": "Why Cards As A Service Has The Potential",
           "subtitle": "Why Cards As A Service Has The Potential To Revolutionize The Digital Payments Ecosystem In The MENAP...",
           "title": "Why Cards As A Service Has The Potential To Revolutionize The Digital Payments Ecosystem In The MENAP...",
@@ -291,7 +291,7 @@ export const pressReleases = {
         },
         {
           "id": 5,
-          "src": "https://simplifipay.com/images/news/media/5-3.png",
+          "img": "https://simplifipay.com/images/news/media/5-3.png",
           "alt": "ADIB Bank to introduce cards as a service",
           "subtitle": "ADIB Bank to introduce cards as a service in Egypt...",
           "title": "ADIB Bank to introduce cards as a service in Egypt...",
@@ -304,7 +304,7 @@ export const pressReleases = {
         },
         {
           "id": 6,
-          "src": "https://simplifipay.com/images/news/media/08.png",
+          "img": "https://simplifipay.com/images/news/media/08.png",
           "alt": "UAE-Based Fintech Startup SimpliFi Secures $5.1M",
           "subtitle": "UAE-Based Fintech Startup SimpliFi Secures $5.1M To Expand Its CaaS Platform Across MENAP...",
           "title": "UAE-Based Fintech Startup SimpliFi Secures $5.1M To Expand Its CaaS Platform Across MENAP...",
@@ -317,7 +317,7 @@ export const pressReleases = {
         },
         {
           "id": 7,
-          "src": "https://simplifipay.com/images/news/media/Press-release-banner1-2-1024x536.jpg",
+          "img": "https://simplifipay.com/images/news/media/Press-release-banner1-2-1024x536.jpg",
           "alt": "SimpliFi and Lune Partner",
           "subtitle": "SimpliFi and Lune Partner to Drive Data-Driven Transformation for MENAP Businesses...",
           "title": "SimpliFi and Lune Partner to Drive Data-Driven Transformation for MENAP Businesses...",
@@ -330,7 +330,7 @@ export const pressReleases = {
         },
         {
           "id": 8,
-          "src": "https://simplifipay.com/images/news/media/03.png",
+          "img": "https://simplifipay.com/images/news/media/03.png",
           "alt": "SimpliFi raises $5.1 million in funding",
           "subtitle": "SimpliFi raises $5.1 million in funding to enhance its technology...",
           "title": "SimpliFi raises $5.1 million in funding to enhance its technology...",
@@ -343,7 +343,7 @@ export const pressReleases = {
         },
         {
           "id": 9,
-          "src": "https://simplifipay.com/images/news/media/Issuing-Enabling-Innovative-Payment-Experiences-1-1024x576.jpg",
+          "img": "https://simplifipay.com/images/news/media/Issuing-Enabling-Innovative-Payment-Experiences-1-1024x576.jpg",
           "alt": "ADIB, Simplifi partner to expand Egypt's digital payment ecosystem",
           "subtitle": "ADIB, Simplifi partner to expand Egypt's digital payment ecosystem...",
           "title": "ADIB, Simplifi partner to expand Egypt's digital payment ecosystem...",

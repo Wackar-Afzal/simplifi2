@@ -2,11 +2,11 @@
   "contact": {
     "hero": {
       "bckgroundImage": "HoverImages/Slider-1.png",
-      "heading": " Democratizing Card Issuance since 2020",
-      "descrip": "Since 2020, we’ve been transforming the way businesses launch and scale their own card programs, removing the barriers of cost, complexity, and compliance."
+      "heading": " Book a demo",
+      "descrip": "Our team is ready to help you with any questions or requests."
     },
     "clientMarquee": {
-      "heading": "In partnership with banks, regulators, and governments building the future of payments",
+      "heading": "In partnership with banks, regulators, and governments building the future of payments.",
       "clientLogos": [
         { "name": "Transportr", "logo": "/partnerns/Logos web-2-01.png" },
         { "name": "Transportr", "logo": "/partnerns/Logos web-2-02.png" },

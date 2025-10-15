@@ -3,101 +3,84 @@
     "hero": {
       "heading": "Core Capabilities that power your Card Product",
       "descrip": "What powers your card product should be invisible but never basic. Our core capabilities give you the compliance, security, and scale of a global platform, so you can focus on building your business, not your backend.",
-      "desVideo":"Videos/Banner Laptop 1.mp4",
-      "mobVideo":"Videos/Banner Laptop 1.mp4"
-      },
-    "caseStudies":{
-        "heading":"",
-        "descrip":"",
-        "slides": [
-        {
-            "img": "capabilities/Security & Compliance.jpg",
-            "alt": "Landscape",
-            "subtitle": "Meet regulatory requirements including PCI-DSS, local hosting, and secure data archiving.",
-            "title": "Security & Compliance",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        },
-        {
-            "img": "capabilities/Identity Verification In-a-Box.jpg",
-            "alt": "Landscape",
-            "subtitle": "We manage third-party orchestration for end-to-end KYC flows and sanctions screening.",
-            "title": "Identity Verification In-a-Box",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-        },
-        {
-            "img": "capabilities/Card Fulfillment & Delivery.jpg",
-            "alt": "Landscape",
-            "subtitle": "Artwork design, profile setup, testing, printing, personalization, and delivery handled end to end.",
-            "title": "Card Fulfillment & Delivery",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        },
-         {
-            "img": "capabilities/3DS and Tokenization.jpg",
-            "alt": "Landscape",
-            "subtitle": "Access the latest online transaction standards and enable push provisioning for iOS and Android.",
-            "title": "3DS and Tokenization",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        },
-                 {
-            "img": "capabilities/Collateral Management.jpg",
-            "alt": "Landscape",
-            "subtitle": "Continuous float monitoring to ensure smooth and uninterrupted program operations.",
-            "title": "Collateral Management",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        },
-                 {
-            "img": "capabilities/Card Fulfillment & Delivery.jpg",
-            "alt": "Landscape",
-            "subtitle": "Full chargeback and dispute management with regular follow-ups and updates.",
-            "title": "Chargebacks & Disputes",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        },
-                 {
-            "img": "capabilities/Partner Management.jpg",
-            "alt": "Landscape",
-            "subtitle": " We handle all partner relationships seamlessly, from contracting to operations.",
-            "title": "Partner Management",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        },
-                 {
-            "img": "capabilities/Settlement & Reconciliation.jpg",
-            "alt": "Landscape",
-            "subtitle": "Daily settlements and reconciliation with full reporting and transparency.",
-            "title": "Settlement & Reconciliation",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        },
-                         {
-            "img": "capabilities/Cardholder & Technical Support.jpg",
-            "alt": "Landscape",
-            "subtitle": "Multilingual 24/7 live agent support for cardholders along with L2/L3 technical assistance.",
-            "title": "Cardholder & Technical Support",
-
-            "image":"https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
-
-        }
-    ]
+      "desVideo": "Videos/Banner Laptop 1.mp4",
+      "mobVideo": "Videos/Banner Laptop 1.mp4"
     },
-       "footer":{
-      "bg-dark":true,
-      "heading":"Power your card program with enterprise-grade infrastructure",
-      "subheading":"Our platform does the heavy lifting behind the scenes, so you can focus on growth.",
-      "buttonText":"Book a Demo",
-      "buttonLink":"/"
+    "caseStudies": {
+      "heading": "",
+      "descrip": "",
+      "slides": [
+        {
+          "img": "capabilities/Security & Compliance.jpg",
+          "alt": "Landscape",
+          "subtitle": "Meet regulatory requirements including PCI-DSS, local hosting, and secure data archiving.",
+          "title": "Security & Compliance",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/Identity Verification In-a-Box.jpg",
+          "alt": "Landscape",
+          "subtitle": "We manage third-party orchestration for end-to-end KYC flows and sanctions screening.",
+          "title": "Identity Verification In-a-Box",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/Partner Management.jpg",
+          "alt": "Landscape",
+          "subtitle": " We handle all partner relationships seamlessly, from contracting to operations.",
+          "title": "Partner Management",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/Settlement & Reconciliation.jpg",
+          "alt": "Landscape",
+          "subtitle": "Daily settlements and reconciliation with full reporting and transparency.",
+          "title": "Settlement & Reconciliation",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/Card Fulfillment & Delivery.jpg",
+          "alt": "Landscape",
+          "subtitle": "Artwork design, profile setup, testing, printing, personalization, and delivery handled end to end.",
+          "title": "Card Fulfillment & Delivery",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/Collateral Management.jpg",
+          "alt": "Landscape",
+          "subtitle": "Continuous float monitoring to ensure smooth and uninterrupted program operations.",
+          "title": "Collateral Management",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/Card Fulfillment & Delivery.jpg",
+          "alt": "Landscape",
+          "subtitle": "Full chargeback and dispute management with regular follow-ups and updates.",
+          "title": "Chargebacks & Disputes",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/3DS and Tokenization.jpg",
+          "alt": "Landscape",
+          "subtitle": "Access the latest online transaction standards and enable push provisioning for iOS and Android.",
+          "title": "3DS and Tokenization",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        },
+        {
+          "img": "capabilities/Cardholder & Technical Support.jpg",
+          "alt": "Landscape",
+          "subtitle": "Multilingual 24/7 live agent support for cardholders along with L2/L3 technical assistance.",
+          "title": "Cardholder & Technical Support",
+          "image": "https://cdn.prod.website-files.com/678e5f1a1f6220b154b30471/67922d0f5a3a9c3a856ec2d1_Tinder.svg"
+        }
+      ]
+    },
+    "footer": {
+      "bg-dark": true,
+      "heading": "Power your card program with enterprise-grade infrastructure",
+      "subheading": "Our platform does the heavy lifting behind the scenes, so you can focus on growth.",
+      "buttonText": "Book a Demo",
+      "buttonLink": "/"
     }
   }
 }
