@@ -3,8 +3,10 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function WhatWeDo({data}) {
-  const [activeTab, setActiveTab] = useState(1);
   const highlights = data.highlights;
+
+  // const [activeTab, setActiveTab] = useState(1);
+  const [activeTab, setActiveTab] = useState(highlights[0]?.id || 1);
 
   const activeTabData = highlights.find((t) => t.id === activeTab);
 
