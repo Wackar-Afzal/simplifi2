@@ -41,11 +41,11 @@ export default function BlogDetailPage() {
             className="mb-4"
           >
             <Link
-              href="/press-releases"
+              href="/blogs"
               className="inline-flex items-center gap-2 text-primary hover:text-primary-secondary transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to Articles
+              Back to Blogs
             </Link>
           </motion.div>
 
@@ -92,8 +92,8 @@ export default function BlogDetailPage() {
             className="rounded-2xl overflow-hidden shadow-lg"
           >
             <img
-              src={blog.src}
-              alt={blog.alt}
+              src={`../${blog.img}`}
+              alt="twst"
               className="w-full h-[400px] object-cover"
             />
           </motion.div>
@@ -217,7 +217,7 @@ export default function BlogDetailPage() {
                     <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
                       <div className="aspect-video overflow-hidden">
                         <img
-                          src={relatedBlog.src}
+                          src={`../${relatedBlog.img}`}
                           alt={relatedBlog.alt}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />

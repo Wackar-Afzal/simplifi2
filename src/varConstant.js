@@ -1,5 +1,5 @@
 // Strapi CMS API Base URL
-export const STRAPI_BASE_URL = "https://cms.simplifigo.com/api";
+export const STRAPI_BASE_URL = "https://cms.simplifigoo.com/api";
 // export const STRAPI_BASE_URL = "https://cms.simplifigo.com/api";
 
 // API Endpoints
@@ -13,6 +13,10 @@ export const API_ENDPOINTS = {
   INDUSTRIES: `${STRAPI_BASE_URL}/simplifipay-industries`,
   ABOUT: `${STRAPI_BASE_URL}/simplifipay-abouts`,
   CONTACT: `${STRAPI_BASE_URL}/simplifipay-contacts`,
+  BLOGS: `${STRAPI_BASE_URL}/blogs`,
+  BLOGS_NEW: `${STRAPI_BASE_URL}/simplifipay-blogs`,
+  PRESS_RELEASES: `${STRAPI_BASE_URL}/press-releasess`,
+  PRESS_RELEASES_NEW: `${STRAPI_BASE_URL}/simplifipay-pressrelases`,
   SLACK: "/api/slack",
 };
 

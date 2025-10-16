@@ -1,7 +1,7 @@
 "use client";
 
-// Navbar and Footer imports removed
-import { pressReleases } from "@/utils/press/press-combined.js";
+import React, { useState, useEffect } from "react";
+import { pressService } from "@/services/contentService";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
@@ -10,36 +10,59 @@ import Cases from "@/components/Product1Page/Cases";
 import PageFooter from "@/components/common/PageFooter";
 import { use } from "react";
 
-function getPressReleaseBySlug(slug) {
-  const allPressReleases = pressReleases.pressReleases.pressReleases.slides;
-  return allPressReleases.find(pr => pr.slug === slug);
-}
-
-function getRelatedPressReleases(currentSlug) {
-  // Get all press releases except the current one
-  const allOtherPressReleases = pressReleases.pressReleases.pressReleases.slides.filter(pr => pr.slug !== currentSlug);
-
-  // Randomly select 3 press releases
-  return allOtherPressReleases
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 3);
-}
-
 export default function PressReleaseDetailPage({ params }) {
   const resolvedParams = use(params);
-  const pressRelease = getPressReleaseBySlug(resolvedParams.slug);
+  const slug = Array.isArray(resolvedParams.slug) ? resolvedParams.slug[0] : resolvedParams.slug;
+  const [pressRelease, setPressRelease] = useState(null);
+  const [relatedPressReleases, setRelatedPressReleases] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function loadPressData() {
+      try {
+        setLoading(true);
+        
+        // Load press release and related press releases in parallel
+        const [pressData, relatedData] = await Promise.all([
+          pressService.getPressReleaseBySlug(slug),
+          pressService.getRelatedPressReleases(slug)
+        ]);
+
+        if (!pressData) {
+          notFound();
+        }
+
+                setPressRelease(pressData);
+                setRelatedPressReleases(relatedData);
+        
+      } catch (error) {
+        console.error('Error loading press release:', error);
+        notFound();
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadPressData();
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
 
   if (!pressRelease) {
     notFound();
   }
 
-  const relatedPressReleases = getRelatedPressReleases(resolvedParams.slug);
-
   return (
     <>
 
       {/* Press Release Header */}
-      <section className=" my-20 md:my-30 max-w-7xl mx-auto">
+      <section className=" my-20 md:my-30 max-w-7xl mx-auto px-4">
         <div className="">
           {/* Back Button */}
           <motion.div
@@ -91,7 +114,7 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Featured Image */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto px-4">
         <div className="">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -100,8 +123,8 @@ export default function PressReleaseDetailPage({ params }) {
             className="rounded-2xl overflow-hidden shadow-lg"
           >
             <img
-              src={pressRelease.src}
-              alt={pressRelease.alt}
+              src={`../${pressRelease.img}`}
+              alt="photo-press"
               className="w-full h-[400px] object-cover"
             />
           </motion.div>
@@ -109,7 +132,7 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Press Release Subtitle */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto px-4">
         <div className="">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -123,7 +146,7 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Press Release Content */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto">
+      <section className="my-20 md:my-30 max-w-7xl mx-auto px-4">
         <div className="">
           <motion.article
             initial={{ opacity: 0, y: 20 }}
@@ -144,33 +167,35 @@ export default function PressReleaseDetailPage({ params }) {
                   partnerships enable businesses to access cutting-edge payment solutions with unprecedented ease and flexibility.
                 </p>
 
-              <p>
-                Through our comprehensive Cards-as-a-Service platform, we're democratizing access to advanced
-                payment infrastructure, allowing businesses of all sizes to launch sophisticated card programs
-                without the traditional barriers and complexities.
-              </p>
+                <p>
+                  Through our comprehensive Cards-as-a-Service platform, we're democratizing access to advanced
+                  payment infrastructure, allowing businesses of all sizes to launch sophisticated card programs
+                  without the traditional barriers and complexities.
+                </p>
 
                 <h2 className="heading-style-h3 mt-12 mb-6">Key Highlights</h2>
 
-              <p>
-                This announcement underscores our commitment to driving financial inclusion and innovation
-                across the region. By partnering with leading financial institutions and technology providers,
-                we continue to expand our capabilities and reach.
-              </p>
+                <p>
+                  This announcement underscores our commitment to driving financial inclusion and innovation
+                  across the region. By partnering with leading financial institutions and technology providers,
+                  we continue to expand our capabilities and reach.
+                </p>
 
-              <p>
-                Our platform's flexibility and scalability ensure that businesses can adapt quickly to changing
-                market demands while maintaining the highest standards of security and compliance.
-              </p>
+                <p>
+                  Our platform's flexibility and scalability ensure that businesses can adapt quickly to changing
+                  market demands while maintaining the highest standards of security and compliance.
+                </p>
 
                 <h2 className="heading-style-h3 mt-12 mb-6">Looking Forward</h2>
 
-              <p>
-                As we continue to grow and evolve, SimpliFi remains focused on our mission to simplify and
-                democratize financial services. This development is just one of many exciting initiatives
-                we have planned for the coming months.
-              </p>
-            </div>)}
+                <p>
+                  As we continue to grow and evolve, SimpliFi remains focused on our mission to simplify and
+                  democratize financial services. This development is just one of many exciting initiatives
+                  we have planned for the coming months.
+                </p>
+              </div>
+            )}
+            
           </motion.article>
         </div>
       </section>
@@ -203,7 +228,7 @@ export default function PressReleaseDetailPage({ params }) {
           </div>
         </section>
       )} */}
-      <div className="my-20 md:my-30 max-w-7xl mx-auto">
+      <div className="my-20 md:my-30 max-w-7xl mx-auto px-4">
         <PageFooter />
       </div>
       {/* Footer moved to root layout */}

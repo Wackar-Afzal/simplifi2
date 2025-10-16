@@ -334,7 +334,7 @@
       "slides": [
         {
           "id": 1,
-          "img": "https://simplifipay.com/images/news/017.jpg",
+          "img": "/news/017.jpg",
           "alt": "SimpliFi Expands Multi-Currency Wallets & Cards",
           "subtitle": "SimpliFi® Expands Multi-Currency Wallets & Cards! Now Supporting 13 Currencies! GBP, CAD, EUR, HKD, AUD, and JOD in addition to our existing suite across MENA and beyond...",
           "title": "SimpliFi® Expands Multi-Currency Wallets & Cards!",
@@ -347,7 +347,7 @@
         },
         {
           "id": 2,
-          "img": "https://simplifipay.com/images/news/016.png",
+          "img": "/news/016.png",
           "alt": "SimpliFi secures DFSA license",
           "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has received final regulatory approval from the Dubai Financial Services Authority (DFSA) for a Category 4 license....",
           "title": "SimpliFi® secures license from DFSA strengthening its regional presence",
@@ -360,7 +360,7 @@
         },
         {
           "id": 3,
-          "img": "https://simplifipay.com/images/news/015.png",
+          "img": "/news/015.png",
           "alt": "SimpliFi partners with Yabx",
           "subtitle": "SimpliFi®, a leading Cards-as-a-Service (CaaS) platform for MENA and Pakistan, has announced a strategic partnership with Yabx, an innovative Embedded Lending solution provider....",
           "title": "SimpliFi® and Yabx Partner to Expand Access to Card Issuance and Credit for Businesses across the MENA Region",
@@ -373,7 +373,7 @@
         },
         {
           "id": 4,
-          "img": "https://simplifipay.com/images/news/001.jpg",
+          "img": "/news/001.jpg",
           "alt": "SimpliFi onboards NQOODLET",
           "subtitle": "The Riyadh-based and \"Visa Direct Award 2022\" winner NQOODLET joins forces with Dubai-based SimpliFi to bring to market a modern...",
           "title": "SimpliFi® and NQOODLET join forces to transform SME spend management across MENA",
