@@ -109,6 +109,7 @@ export default async function Page() {
     title: strapiData?.whatwedo?.title || embedreadytouse.embedreadytouse.whatwedo.title,
     description: strapiData?.whatwedo?.description || embedreadytouse.embedreadytouse.whatwedo.description,
     highlightsTitle: strapiData?.whatwedo?.highlightsTitle || embedreadytouse.embedreadytouse.whatwedo.highlightsTitle,
+    textSize:"sm",
     highlights: strapiData?.whatwedo?.highlights?.map((highlight, index) => ({
       id: highlight.id,
       title: highlight.title,
