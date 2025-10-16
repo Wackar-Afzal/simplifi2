@@ -21,8 +21,6 @@ async function getData() {
     }
 
     const jsonResponse = await response.json();
-    console.log(jsonResponse.data[0].hero,"jsonresponse hero ")
-    console.log(jsonResponse.data[0].clientMarquee,"jsonresponse clientMarquee ")
     return jsonResponse?.data?.[0] || null;
   } catch (error) {
     console.error("Error fetching Strapi data:", error);

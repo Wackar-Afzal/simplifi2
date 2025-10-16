@@ -8,18 +8,21 @@ export const revalidate = 2;
 // Fetch data from Strapi
 async function getData() {
   try {
-    const queryParams = "?populate[hero][populate]=*&populate[clientMarquee][populate]=*&populate[whatsCookin][populate][slides][populate][img][populate]=*&populate[whatsCookin][populate][slides][populate][image][populate]=*&populate[useCases][populate][feature][populate]=*&populate[careerList][populate][careerPositions][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
+    const queryParams = "?populate[hero][populate]=*&populate[clientMarquee][populate]=*&populate[whatsCookin][populate][slides][populate]=*&populate[useCases][populate][feature][populate]=*&populate[careerList][populate][careerPositions][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
 
     const response = await fetch(`${API_ENDPOINTS.CARD_AS_SERVICE}${queryParams}`, {
       next: { revalidate: 2 },
     });
 
+    console.log(response,"response")
     if (!response.ok) {
       console.error("Strapi API fetch failed:", response.status);
       return null;
     }
 
     const jsonResponse = await response.json();
+    console.log(jsonResponse?.data?.[0],"jsonResponse?.data?.[0]")
+
     return jsonResponse?.data?.[0] || null;
   } catch (error) {
     console.error("Error fetching Strapi data:", error);
@@ -29,8 +32,6 @@ async function getData() {
 
 export default async function Page() {
   const strapiData = await getData();
-  console.log("Strapi whatsCookin slides:", strapiData?.whatsCookin?.slides);
-  console.log("Local JSON slides:", cardAsService.cardAsService.whatsCookin.slides);
 
   // Merge hero data with fallback
   const heroData = {

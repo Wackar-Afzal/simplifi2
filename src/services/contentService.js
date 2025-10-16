@@ -16,15 +16,12 @@ const cache = new Map();
  * Following your existing pattern from page.js
  */
 async function fetchWithFallback(endpoint, fallbackData, cacheKey, populateParams = '') {
-  console.log(`=== FETCH WITH FALLBACK: ${cacheKey} ===`);
-  console.log('Endpoint:', endpoint);
-  console.log('Populate Params:', populateParams);
+
   
   // Check cache first
   if (cache.has(cacheKey)) {
     const cached = cache.get(cacheKey);
     if (Date.now() - cached.timestamp < CACHE_DURATION) {
-      console.log('Using cached data for:', cacheKey);
       return cached.data;
     }
   }
@@ -33,13 +30,7 @@ async function fetchWithFallback(endpoint, fallbackData, cacheKey, populateParam
     // Try to fetch from Strapi using your existing pattern
     const queryParams = populateParams ? `?${populateParams}` : '';
     const fullUrl = `${endpoint}${queryParams}`;
-    console.log('=== FULL URL DEBUG ===');
-    console.log('Endpoint:', endpoint);
-    console.log('Query Params:', queryParams);
-    console.log('Full URL:', fullUrl);
-    console.log('URL Length:', fullUrl.length);
-    console.log('========================');
-    
+   
     const response = await fetch(fullUrl, {
       next: { revalidate: 300 }, // 5 minutes revalidation
       headers: STRAPI_API_TOKEN ? {
@@ -48,18 +39,14 @@ async function fetchWithFallback(endpoint, fallbackData, cacheKey, populateParam
       } : {}
     });
 
-    console.log('Response status:', response.status);
-    console.log('Response ok:', response.ok);
-
+  
     if (!response.ok) {
       throw new Error(`Strapi API error: ${response.status}`);
     }
 
     const jsonResponse = await response.json();
-    console.log('Raw JSON response:', JSON.stringify(jsonResponse, null, 2));
     
     const data = jsonResponse?.data || jsonResponse;
-    console.log('Processed data:', JSON.stringify(data, null, 2));
     
     // Cache the successful response
     cache.set(cacheKey, {
@@ -69,10 +56,7 @@ async function fetchWithFallback(endpoint, fallbackData, cacheKey, populateParam
 
     return data;
   } catch (error) {
-    console.error(`=== STRAPI FETCH FAILED: ${cacheKey} ===`);
-    console.error('Error:', error);
-    console.error('Error message:', error.message);
-    console.error('Using fallback data instead');
+  
     console.error('==========================================');
     
     // Use fallback data
@@ -328,15 +312,11 @@ export const blogService = {
    * Get all blogs from new Strapi endpoint
    */
   async getAllBlogsNew() {
-    console.log('=== BLOGS API CALL ===');
-    console.log('API Endpoint:', API_ENDPOINTS.BLOGS_NEW);
-    console.log('STRAPI_BASE_URL:', 'https://cms.simplifigo.com/api');
-    console.log('Expected URL:', 'https://cms.simplifigo.com/api/simplifipay-blogs');
+  
     
     // Test if base URL is accessible
     try {
       const baseTest = await fetch('https://cms.simplifigo.com/api');
-      console.log('Base URL test status:', baseTest.status);
     } catch (error) {
       console.error('Base URL test failed:', error);
     }
@@ -352,8 +332,6 @@ export const blogService = {
 
     // Use the new Strapi endpoint with proper population parameters
     const populateParams = 'populate[hero][populate]=*&populate[posts][populate][slides][populate]=*&sort=publishedAt:desc&pagination[limit]=100';
-    console.log('Populate Params:', populateParams);
-    console.log('Full URL:', `${API_ENDPOINTS.BLOGS_NEW}?${populateParams}`);
     
     const data = await fetchWithFallback(API_ENDPOINTS.BLOGS_NEW, fallbackData, 'all-blogs-new', populateParams);
     

@@ -18,13 +18,6 @@ export default function BlogsPage() {
         // Use the new Strapi function
         const data = await blogService.getAllBlogsNew();
         
-        // Debug: Console log the Strapi data
-        console.log('=== BLOGS STRAPI DATA ===');
-        console.log('blogData:', JSON.stringify(data, null, 2));
-        console.log('blogData.blogs:', data.blogs);
-        console.log('blogData.blogs.posts:', data.blogs?.posts);
-        console.log('blogData.blogs.posts.slides:', data.blogs?.posts?.slides);
-        console.log('========================');
         
         // Fallback to local data if Strapi data is not available
         const finalData = data?.blogs || blogs.blogs;

@@ -37,7 +37,6 @@ async function getData() {
 
     const jsonResponse = await response.json();
 
-    console.log(jsonResponse?.data?.[0].WhatsCookin.slides,"response")
 
     return jsonResponse?.data?.[0] || null;
   } catch (error) {

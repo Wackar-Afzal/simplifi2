@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 const HeroSection = ({data}) => {
-  console.log(data,"datataat")
   const [activeTab, setActiveTab] = useState("Tab 1");
 
   return (
