@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://simplifipay.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow important pages
+Allow: /products
+Allow: /features
+Allow: /capabilities
+Allow: /solutions
+Allow: /about
+Allow: /contact-us
+Allow: /blogs
+Allow: /press-releases

@@ -3,21 +3,21 @@
     "title": "Product Main Menu",
     "products": [
       {
-        "title": "Embed Ready-to-Use Cards",
-        "description": "Go live in days with prebuilt, compliant multi-currency cards."
+        "title": "Embedded Card Issuance",
+        "description": "Go live in days with prebuilt, compliant multi-currency cards. Virtual cards API with real-time spend control."
       },
       {
-        "title": "Cards-as-a-Service",
-        "description": "Build your own branded card program with full control."
+        "title": "Cards as a Service",
+        "description": "Build your own branded card program with full control. Modern card issuing platform with embedded card issuance."
       }
     ],
     "features": {
       "title": "Features",
       "items": [
         "Multi-Currency Cards",
-        "Real-Time Notifications",
-        "Fully Programmable Card Controls",
-        "Instant Issuance",
+        "Real-Time Spend Control",
+        "Virtual Cards API",
+        "Instant Card Issuance",
         "Bulk Load Management",
         "Role-Based Access",
         "Statement Downloads",
@@ -26,7 +26,7 @@
         "SDKs for Mobile",
         "Webhooks",
         "Web Hosted Pages",
-        "Custom KYC Flows",
+        "KYC KYB Compliance for Fintech",
         "Maker-Checker & Two-Factor Authentication",
         "Reports & Insights"
       ]
@@ -34,7 +34,8 @@
     "capabilities": {
       "title": "Capabilities",
       "items": [
-        "Security & Compliance",
+        "PCI Compliant Card Platform",
+        "KYC KYB Compliance for Fintech",
         "Identity Verification In-a-Box",
         "Card Fulfillment & Delivery",
         "3DS and Tokenization",

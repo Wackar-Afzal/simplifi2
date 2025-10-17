@@ -17,8 +17,13 @@ import PageFooter from "@/components/common/PageFooter";
 import ClientsGrid from "@/components/Product2/ClientsGrid";
 import { API_ENDPOINTS } from "@/varConstant";
 
+import { seoMetadata, structuredData } from "@/utils/seoMetadata";
+
 // Revalidate every 2 hours (7200 seconds)
 export const revalidate = 2;
+
+// SEO metadata for homepage
+export const metadata = seoMetadata.home;
 
 // Fetch data from Strapi
 async function getData() {
@@ -201,6 +206,26 @@ export default async function Home() {
 
   return (
     <div className="mx-auto">
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.organization),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.product),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData.service),
+        }}
+      />
+      
       <Hero data={heroData} />
       <div className="my-20 lg:mb-30 lg:mt-15">
         <ClientsMargquee data={clientsMarqueeData} />
