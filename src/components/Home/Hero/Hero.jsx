@@ -64,7 +64,7 @@ export default function Hero({data}) {
         }}
       >
         <motion.h2
-          className="heading-style-h1_fintech text-black  md:max-w-[70%] lg:max-w-[70%]"
+          className="heading-style-h1_fintech text-black  md:max-w-[70%] lg:max-w-[80%]"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
@@ -73,12 +73,10 @@ export default function Hero({data}) {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          {data.title}
-          <br />
+          {data.title}{" "}
           <TypeAnimation
             sequence={typeSequence}
             speed={50}
-            className="block"
             repeat={Infinity}
           />
         </motion.h2>
