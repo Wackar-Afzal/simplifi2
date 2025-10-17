@@ -1,31 +1,62 @@
 "use client";
-import React from "react";
-// Navbar and Footer provided by root layout
+import React, { useState, useEffect } from "react";
+import { blogService } from "@/services/contentService";
 import { blogs } from "@/utils/blogs/blogs.js";
-import { notFound, useParams } from "next/navigation";
+import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2 } from "lucide-react";
 import { motion } from "framer-motion";
 import Page from "@/app/Embed-Ready-To-Use-Card/page";
 import PageFooter from "@/components/common/PageFooter";
+import { use } from "react";
 
-function getBlogBySlug(slug) {
-  const allBlogs = blogs.blogs.posts.slides;
-  return allBlogs.find(blog => blog.slug === slug);
-}
+export default function BlogDetailPage({ params }) {
+  const resolvedParams = use(params);
+  const slug = Array.isArray(resolvedParams.slug) ? resolvedParams.slug[0] : resolvedParams.slug;
+  const [blog, setBlog] = useState(null);
+  const [relatedBlogs, setRelatedBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-export default function BlogDetailPage() {
-  const params = useParams();
-  console.log(params, "paramssssss")
-  const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
-  const blog = getBlogBySlug(slug);
+  useEffect(() => {
+    async function loadBlogData() {
+      try {
+        setLoading(true);
+        
+        // Use the new Strapi function that returns both blog post and related posts
+        const blogData = await blogService.getBlogBySlugNew(slug);
+        
+        if (!blogData) {
+          notFound();
+        }
+
+        // Extract the main blog post and related posts
+        const { relatedPosts, ...mainBlog } = blogData;
+        
+        setBlog(mainBlog);
+        setRelatedBlogs(relatedPosts || []);
+        
+      } catch (error) {
+        console.error('Error loading blog:', error);
+        notFound();
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadBlogData();
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
 
   if (!blog) {
     notFound();
   }
-
-  const allBlogs = blogs.blogs.posts.slides.filter(b => b.slug !== slug);
-  const relatedBlogs = allBlogs.sort(() => 0.5 - Math.random()).slice(0, 3);
 
   return (
     <>
@@ -92,9 +123,13 @@ export default function BlogDetailPage() {
             className="rounded-2xl overflow-hidden shadow-lg"
           >
             <img
-              src={`../${blog.img}`}
-              alt="twst"
+              src={blog.image || blog.img || '/blogs/default-blog.jpg'}
+              alt={blog.alt || blog.title || "Blog image"}
               className="w-full h-[400px] object-cover"
+              onError={(e) => {
+                console.error('Image failed to load:', blog.image || blog.img);
+                e.target.src = '/blogs/default-blog.jpg';
+              }}
             />
           </motion.div>
         </div>
@@ -217,9 +252,12 @@ export default function BlogDetailPage() {
                     <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
                       <div className="aspect-video overflow-hidden">
                         <img
-                          src={`../${relatedBlog.img}`}
-                          alt={relatedBlog.alt}
+                          src={relatedBlog.image || relatedBlog.img || '/blogs/default-blog.jpg'}
+                          alt={relatedBlog.alt || relatedBlog.title || "Related blog image"}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          onError={(e) => {
+                            e.target.src = '/blogs/default-blog.jpg';
+                          }}
                         />
                       </div>
                       <div className="p-6">
