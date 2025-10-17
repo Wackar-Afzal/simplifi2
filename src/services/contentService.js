@@ -80,8 +80,10 @@ function transformStrapiBlog(strapiBlog) {
   return {
     id: strapiBlog.id,
     img: isFallbackData 
-      ? `${strapiBlog.img}` 
-      : (strapiBlog.featured_image?.url ? `${STRAPI_URL}${strapiBlog.featured_image.url}` : '/images/default-blog.jpg'),
+      ? (strapiBlog.img.startsWith('/images/') 
+          ? strapiBlog.img.replace('/images/', '/') 
+          : strapiBlog.img)
+      : (strapiBlog.featured_image?.url ? `${STRAPI_URL}${strapiBlog.featured_image.url}` : '/blogs/default-blog.jpg'),
     alt: isFallbackData 
       ? strapiBlog.alt || strapiBlog.title 
       : (strapiBlog.featured_image?.alternativeText || strapiBlog.title),
@@ -117,9 +119,12 @@ function transformStrapiBlogNew(strapiBlog) {
   const isNewStrapiData = strapiBlog.img && typeof strapiBlog.img === 'object' && strapiBlog.img.url;
   
   // Determine image URL based on data source
-  let imgUrl = '/images/default-blog.jpg';
+  let imgUrl = '/blogs/default-blog.jpg'; // Use correct path
   if (isFallbackData) {
-    imgUrl = `${strapiBlog.img}`;
+    // Fix the path - remove /images/ prefix if it exists
+    imgUrl = strapiBlog.img.startsWith('/images/') 
+      ? strapiBlog.img.replace('/images/', '/') 
+      : strapiBlog.img;
   } else if (isNewStrapiData) {
     imgUrl = strapiBlog.img.url;
   }
@@ -160,9 +165,12 @@ function transformStrapiMediaItem(strapiMedia) {
   const isNewStrapiData = strapiMedia.img && typeof strapiMedia.img === 'object' && strapiMedia.img.url;
   
   // Determine image URL based on data source
-  let imgUrl = '/images/default-media.jpg';
+  let imgUrl = '/news/default-media.jpg'; // Use correct path
   if (isFallbackData) {
-    imgUrl = `${strapiMedia.img}`;
+    // Fix the path - remove /images/ prefix if it exists
+    imgUrl = strapiMedia.img.startsWith('/images/') 
+      ? strapiMedia.img.replace('/images/', '/') 
+      : strapiMedia.img;
   } else if (isNewStrapiData) {
     imgUrl = strapiMedia.img.url;
   }
@@ -204,9 +212,12 @@ function transformStrapiPressRelease(strapiPress) {
   const isNewStrapiData = strapiPress.img && typeof strapiPress.img === 'object' && strapiPress.img.url;
   
   // Determine image URL based on data source
-  let imgUrl = '/images/default-press.jpg';
+  let imgUrl = '/news/default-press.jpg'; // Use correct path
   if (isFallbackData) {
-    imgUrl = `${strapiPress.img}`;
+    // Fix the path - remove /images/ prefix if it exists
+    imgUrl = strapiPress.img.startsWith('/images/') 
+      ? strapiPress.img.replace('/images/', '/') 
+      : strapiPress.img;
   } else if (isNewStrapiData) {
     imgUrl = strapiPress.img.url;
   } else if (strapiPress.featured_image?.url) {
@@ -355,21 +366,28 @@ export const blogService = {
    * Get blog by slug from new Strapi endpoint
    */
   async getBlogBySlugNew(slug) {
-    const fallbackBlog = blogs.blogs.posts.slides.find(blog => blog.slug === slug);
-    if (!fallbackBlog) { return null; }
-    const fallbackData = [transformStrapiBlogNew({ ...fallbackBlog, id: fallbackBlog.id })];
+    // Fetch all blogs data first
+    const allBlogsData = await this.getAllBlogsNew();
     
-    const populateParams = `filters[slug][$eq]=${slug}&populate[hero][populate]=*&populate[posts][populate][slides][populate]=*`;
-    const data = await fetchWithFallback(API_ENDPOINTS.BLOGS_NEW, fallbackData, `blog-new-${slug}`, populateParams);
+    // Find the specific blog post
+    const allSlides = allBlogsData.blogs?.posts?.slides || [];
+    const targetBlog = allSlides.find(blog => blog.slug === slug);
     
-    if (Array.isArray(data) && data.length > 0) {
-      const strapiData = data[0];
-      const matchingSlide = strapiData.posts?.slides?.find(slide => slide.slug === slug);
-      if (matchingSlide) {
-        return transformStrapiBlogNew(matchingSlide);
-      }
+    if (!targetBlog) {
+      // Fallback to local data
+      const fallbackBlog = blogs.blogs.posts.slides.find(blog => blog.slug === slug);
+      return fallbackBlog || null;
     }
-    return fallbackBlog;
+    
+    // Get related posts (exclude current post, limit to 3)
+    const relatedPosts = allSlides
+      .filter(blog => blog.slug !== slug)
+      .slice(0, 3);
+    
+    return {
+      ...targetBlog,
+      relatedPosts: relatedPosts
+    };
   }
 };
 
@@ -444,6 +462,7 @@ export const pressService = {
    * Get all press releases from new Strapi endpoint
    */
   async getAllPressReleasesNew() {
+    
     const fallbackData = {
       pressReleases: {
         hero: pressReleases.pressReleases.hero,
@@ -459,15 +478,18 @@ export const pressService = {
       }
     };
 
+
     // Use the new Strapi endpoint with proper population parameters including media
     const populateParams = 'populate[hero][populate]=*&populate[pressReleases][populate][slides][populate]=*&populate[media][populate][slides][populate]=*&sort=publishedAt:desc&pagination[limit]=100';
+    
     const data = await fetchWithFallback(API_ENDPOINTS.PRESS_RELEASES_NEW, fallbackData, 'all-press-new', populateParams);
+    
     
     if (Array.isArray(data) && data.length > 0) {
       const strapiData = data[0]; // Get the first (and likely only) item
       
       // Transform the Strapi data structure to match your existing structure
-      return {
+      const transformedData = {
         pressReleases: {
           hero: strapiData.hero || pressReleases.pressReleases.hero,
           pressReleases: {
@@ -475,12 +497,13 @@ export const pressService = {
           }
         },
         media: {
-          hero: strapiData.media?.hero || strapiData.hero || pressReleases.pressReleases.hero,
-          media: {
-            slides: strapiData.media?.slides?.map(transformStrapiMediaItem) || []
-          }
+          heading: strapiData.media?.heading || "SimpliFi in the media",
+          slides: strapiData.media?.slides?.map(transformStrapiMediaItem) || []
         }
       };
+      
+      
+      return transformedData;
     }
 
     return fallbackData;
@@ -490,27 +513,42 @@ export const pressService = {
    * Get press release by slug from new Strapi endpoint
    */
   async getPressReleaseBySlugNew(slug) {
-    const fallbackPress = pressReleases.pressReleases.pressReleases.slides.find(pr => pr.slug === slug);
+    const allPressData = await this.getAllPressReleasesNew();
     
-    if (!fallbackPress) {
-      return null;
+    
+    // Find the specific press release
+    const allSlides = allPressData.pressReleases?.pressReleases?.slides || [];
+    
+    const targetPress = allSlides.find(press => press.slug === slug);
+    
+    if (targetPress) {
+      console.log('Step 6: Target press data:', JSON.stringify(targetPress, null, 2));
     }
-
-    const fallbackData = [transformStrapiPressRelease({ ...fallbackPress, id: fallbackPress.id })];
     
-    // Use the new Strapi endpoint with filters
-    const populateParams = `filters[slug][$eq]=${slug}&populate[hero][populate]=*&populate[pressReleases][populate][slides][populate]=*`;
-    const data = await fetchWithFallback(API_ENDPOINTS.PRESS_RELEASES_NEW, fallbackData, `press-new-${slug}`, populateParams);
-    
-    if (Array.isArray(data) && data.length > 0) {
-      const strapiData = data[0];
-      const matchingSlide = strapiData.pressReleases?.slides?.find(slide => slide.slug === slug);
-      if (matchingSlide) {
-        return transformStrapiPressRelease(matchingSlide);
+    if (!targetPress) {
+      console.log('Step 7: Target press not found, trying fallback...');
+      // Fallback to local data
+      const fallbackPress = pressReleases.pressReleases.pressReleases.slides.find(pr => pr.slug === slug);
+      console.log('Step 8: Fallback press found:', !!fallbackPress);
+      if (fallbackPress) {
+        console.log('Step 9: Fallback press data:', JSON.stringify(fallbackPress, null, 2));
       }
+      return fallbackPress || null;
     }
-
-    return fallbackPress;
+    
+    // Get related press releases (exclude current press, limit to 3)
+    const relatedPress = allSlides
+      .filter(press => press.slug !== slug)
+      .slice(0, 3);
+    
+    
+    const result = {
+      ...targetPress,
+      relatedPress: relatedPress
+    };
+    
+    
+    return result;
   },
 
   /**

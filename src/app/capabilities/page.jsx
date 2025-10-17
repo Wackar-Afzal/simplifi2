@@ -14,7 +14,7 @@ export const revalidate = 2;
 // Fetch data from Strapi
 async function getData() {
   try {
-    const queryParams = "?populate[hero][populate]=*&populate[caseStudies][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
+    const queryParams = "?populate[hero][populate]=*&populate[caseStudies][populate][slides][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
 
     const response = await fetch(`${API_ENDPOINTS.CAPABILITIES}${queryParams}`, {
       next: { revalidate: 2 },
@@ -26,6 +26,8 @@ async function getData() {
     }
 
     const jsonResponse = await response.json();
+    console.log(jsonResponse?.data?.[0].caseStudies.slides,"jsonResponse?.data?.[0] capbilities")
+
     return jsonResponse?.data?.[0] || null;
   } catch (error) {
     console.error("Error fetching Strapi data:", error);

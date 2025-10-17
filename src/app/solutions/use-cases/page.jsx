@@ -14,7 +14,7 @@ export const revalidate = 2;
 // Fetch data from Strapi
 async function getData() {
   try {
-    const queryParams = "?populate[hero][populate]=*&populate[caseStudies][populate]=*&populate[caseStudies1][populate]=*&populate[caseStudies2][populate]=*&populate[caseStudies3][populate]=*&populate[careerList][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
+    const queryParams = "?populate[hero][populate]=*&populate[caseStudies][populate][slides][populate]=*&populate[caseStudies1][populate][slides][populate]=*&populate[caseStudies2][populate][slides][populate]=*&populate[caseStudies3][populate][slides][populate]=*&populate[careerList][populate][careerPositions][populate]=*&populate[footer][populate]=*&sort=publishedAt:desc&pagination[limit]=1";
 
     const response = await fetch(`${API_ENDPOINTS.USE_CASES}${queryParams}`, {
       next: { revalidate: 2 },

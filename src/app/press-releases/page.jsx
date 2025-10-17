@@ -12,13 +12,14 @@ const PressReleasesPage = async () => {
   const pressData = await pressService.getAllPressReleasesNew();
   
   
+  
   // Fallback to local data if Strapi data is not available
   const finalData = pressData?.pressReleases || pressReleases.pressReleases;
   
   // Ensure we have the correct data structure for Cases component
   const pressReleasesData = finalData.pressReleases || { heading: "", slides: [] };
-  // Always use local media data as fallback since it exists
-  const mediaData = finalData.media || pressReleases.pressReleases.media || { heading: "SimpliFi in the media", slides: [] };
+  // Use Strapi media data if available, otherwise fallback to local media data
+  const mediaData = pressData?.media || pressReleases.pressReleases.media || { heading: "SimpliFi in the media", slides: [] };
   
   
   

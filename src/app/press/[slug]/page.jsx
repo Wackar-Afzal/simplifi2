@@ -20,20 +20,26 @@ export default function PressReleaseDetailPage({ params }) {
   useEffect(() => {
     async function loadPressData() {
       try {
+      
+        
         setLoading(true);
         
-        // Load press release and related press releases in parallel
-        const [pressData, relatedData] = await Promise.all([
-          pressService.getPressReleaseBySlug(slug),
-          pressService.getRelatedPressReleases(slug)
-        ]);
+        // Use the new Strapi function that returns both press release and related posts
+        const pressData = await pressService.getPressReleaseBySlugNew(slug);
+        
 
         if (!pressData) {
+          console.log('No press data found, calling notFound()');
           notFound();
         }
 
-                setPressRelease(pressData);
-                setRelatedPressReleases(relatedData);
+        // Extract the main press release and related posts
+        const { relatedPress, ...mainPressRelease } = pressData;
+        
+
+        setPressRelease(mainPressRelease);
+        setRelatedPressReleases(relatedPress || []);
+        
         
       } catch (error) {
         console.error('Error loading press release:', error);
@@ -122,11 +128,25 @@ export default function PressReleaseDetailPage({ params }) {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="rounded-2xl overflow-hidden shadow-lg"
           >
-            <img
-              src={`../${pressRelease.img}`}
-              alt="photo-press"
-              className="w-full h-[400px] object-cover"
-            />
+            {(() => {
+      
+              
+              // Use the correct image property
+              const imageSrc = pressRelease.image || pressRelease.img || '/news/default-press.jpg';
+            
+              
+              return (
+                <img
+                  src={imageSrc}
+                  alt={pressRelease.alt || pressRelease.title || "Press release image"}
+                  className="w-full h-[400px] object-cover"
+                  onError={(e) => {
+                    console.error('Image failed to load:', imageSrc);
+                    e.target.src = '/news/default-press.jpg';
+                  }}
+                />
+              );
+            })()}
           </motion.div>
         </div>
       </section>
