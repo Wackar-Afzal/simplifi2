@@ -14,14 +14,12 @@ async function getData() {
       next: { revalidate: 2 },
     });
 
-    console.log(response,"response")
     if (!response.ok) {
       console.error("Strapi API fetch failed:", response.status);
       return null;
     }
 
     const jsonResponse = await response.json();
-    console.log(jsonResponse?.data?.[0],"jsonResponse?.data?.[0]")
 
     return jsonResponse?.data?.[0] || null;
   } catch (error) {
