@@ -35,6 +35,19 @@ const DemoForm = () => {
 
   const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
     try {
+      // Check for personal email domains
+      const personalDomains = new Set([
+        "gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "aol.com",
+        "icloud.com", "zoho.com", "protonmail.com", "yandex.com", "gmx.com",
+        "mail.com", "tutanota.com", "fastmail.com", "naver.com"
+      ]);
+      const domain = values.work_email.split("@")[1]?.toLowerCase();
+      if (personalDomains.has(domain)) {
+        toast.error("Please provide work email");
+        setSubmitting(false);
+        return;
+      }
+
       const response = await fetch(API_ENDPOINTS.SLACK, {
         method: "POST",
         headers: { "Content-Type": "application/json" },

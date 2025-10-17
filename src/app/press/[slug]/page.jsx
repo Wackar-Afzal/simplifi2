@@ -139,7 +139,7 @@ export default function PressReleaseDetailPage({ params }) {
                 <img
                   src={imageSrc}
                   alt={pressRelease.alt || pressRelease.title || "Press release image"}
-                  className="w-full h-[400px] object-cover"
+                  className="w-full  object-cover"
                   onError={(e) => {
                     console.error('Image failed to load:', imageSrc);
                     e.target.src = '/news/default-press.jpg';

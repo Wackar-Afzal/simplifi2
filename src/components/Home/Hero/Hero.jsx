@@ -64,7 +64,7 @@ export default function Hero({data}) {
         }}
       >
         <motion.h2
-          className="heading-style-h1_fintech text-black  md:max-w-[70%] lg:max-w-[80%]"
+          className="heading-style-h1_fintech text-black  md:max-w-[70%] lg:max-w-[70%]"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{

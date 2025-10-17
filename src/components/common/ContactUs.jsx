@@ -10,6 +10,7 @@ import { API_ENDPOINTS } from "@/varConstant";
 // Yup validation schema
 const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
+    email: Yup.string().email("Invalid email format").required("Email is required"),
     company_name: Yup.string().required("Company Name is required"),
     country: Yup.string().required("Country is required"),
     message: Yup.string().required("Message is required"),
@@ -25,6 +26,19 @@ export const ContactUs = () => {
 
     const handleSubmit = async (values, { setSubmitting, resetForm, setStatus }) => {
         try {
+            // Check for personal email domains
+            const personalDomains = new Set([
+                "gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "aol.com",
+                "icloud.com", "zoho.com", "protonmail.com", "yandex.com", "gmx.com",
+                "mail.com", "tutanota.com", "fastmail.com", "naver.com"
+            ]);
+            const domain = values.email.split("@")[1]?.toLowerCase();
+            if (personalDomains.has(domain)) {
+                toast.error("Please provide work email");
+                setSubmitting(false);
+                return;
+            }
+
             const response = await fetch(API_ENDPOINTS.SLACK, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -61,6 +75,7 @@ export const ContactUs = () => {
                     <Formik
                         initialValues={{
                             name: "",
+                            email: "",
                             company_name: "",
                             country: "",
                             message: "",
@@ -81,6 +96,19 @@ export const ContactUs = () => {
                                         />
                                     </div>
                                     <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
+                                </div>
+                                
+                                <div className="form-group mt-4">
+                                    <label className="form-label">Email</label>
+                                    <div className="mt-3">
+                                        <Field
+                                            type="email"
+                                            name="email"
+                                            placeholder="Your email address"
+                                            className="custom-input w-full"
+                                        />
+                                    </div>
+                                    <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
                                 </div>
                                 
                                 <div className="form-group mt-4">

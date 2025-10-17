@@ -93,11 +93,7 @@ function transformStrapiBlog(strapiBlog) {
     buttonLink: `/blog/${strapiBlog.slug}`,
     date: isFallbackData 
       ? strapiBlog.date 
-      : new Date(strapiBlog.published_at || strapiBlog.created_at).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        }),
+      : strapiBlog.date,
     slug: strapiBlog.slug,
     path: `/blog/${strapiBlog.slug}`,
     image: isFallbackData 
@@ -141,11 +137,7 @@ function transformStrapiBlogNew(strapiBlog) {
     buttonLink: strapiBlog.buttonLink || `/blog/${strapiBlog.slug}`,
     date: isFallbackData 
       ? strapiBlog.date 
-      : new Date(strapiBlog.published_at || strapiBlog.created_at).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        }),
+      : strapiBlog.date ,
     slug: strapiBlog.slug,
     path: strapiBlog.path || `/blog/${strapiBlog.slug}`,
     image: imgUrl,
@@ -187,11 +179,7 @@ function transformStrapiMediaItem(strapiMedia) {
     buttonLink: strapiMedia.buttonLink || strapiMedia.path, // External link
     date: isFallbackData 
       ? strapiMedia.date 
-      : new Date(strapiMedia.published_at || strapiMedia.created_at).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        }),
+      : strapiMedia.date ,
     slug: strapiMedia.slug,
     path: strapiMedia.path, // External URL
     image: imgUrl,
@@ -236,11 +224,7 @@ function transformStrapiPressRelease(strapiPress) {
     buttonLink: `/press/${strapiPress.slug}`,
     date: isFallbackData 
       ? strapiPress.date 
-      : new Date(strapiPress.published_at || strapiPress.created_at).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        }),
+      : strapiPress.date ,
     slug: strapiPress.slug,
     path: `/press/${strapiPress.slug}`,
     image: imgUrl,
