@@ -17,6 +17,38 @@ export default function PressReleaseDetailPage({ params }) {
   const [relatedPressReleases, setRelatedPressReleases] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const handleShare = async () => {
+    const url = window.location.href;
+    const title = pressRelease?.title || 'SimpliFi Press Release';
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: title,
+          url: url,
+        });
+      } catch (error) {
+        console.log('Error sharing:', error);
+      }
+    } else {
+      // Fallback: copy URL to clipboard
+      try {
+        await navigator.clipboard.writeText(url);
+        alert('Link copied to clipboard!');
+      } catch (error) {
+        console.log('Error copying to clipboard:', error);
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = url;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('Link copied to clipboard!');
+      }
+    }
+  };
+
   useEffect(() => {
     async function loadPressData() {
       try {
@@ -111,7 +143,10 @@ export default function PressReleaseDetailPage({ params }) {
               <Clock className="w-4 h-4" />
               <span>3 min read</span>
             </div>
-            <button className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors ml-auto">
+            <button 
+              onClick={handleShare}
+              className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors ml-auto"
+            >
               <Share2 className="w-4 h-4" />
               Share
             </button>
@@ -152,7 +187,7 @@ export default function PressReleaseDetailPage({ params }) {
       </section>
 
       {/* Press Release Subtitle */}
-      <section className="my-20 md:my-30 max-w-7xl mx-auto px-4">
+      {/* <section className="my-20 md:my-30 max-w-7xl mx-auto px-4">
         <div className="">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -163,7 +198,7 @@ export default function PressReleaseDetailPage({ params }) {
             {pressRelease.subtitle}
           </motion.p>
         </div>
-      </section>
+      </section> */}
 
       {/* Press Release Content */}
       <section className="my-20 md:my-30 max-w-7xl mx-auto px-4">

@@ -17,6 +17,38 @@ export default function BlogDetailPage({ params }) {
   const [relatedBlogs, setRelatedBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const handleShare = async () => {
+    const url = window.location.href;
+    const title = blog?.title || 'SimpliFi Blog';
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: title,
+          url: url,
+        });
+      } catch (error) {
+        console.log('Error sharing:', error);
+      }
+    } else {
+      // Fallback: copy URL to clipboard
+      try {
+        await navigator.clipboard.writeText(url);
+        alert('Link copied to clipboard!');
+      } catch (error) {
+        console.log('Error copying to clipboard:', error);
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = url;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('Link copied to clipboard!');
+      }
+    }
+  };
+
   useEffect(() => {
     async function loadBlogData() {
       try {
@@ -105,7 +137,10 @@ export default function BlogDetailPage({ params }) {
               <Clock className="w-4 h-4" />
               <span>5 min read</span>
             </div>
-            <button className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors ml-auto">
+            <button 
+              onClick={handleShare}
+              className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors ml-auto"
+            >
               <Share2 className="w-4 h-4" />
               Share Article
             </button>
@@ -125,7 +160,7 @@ export default function BlogDetailPage({ params }) {
             <img
               src={blog.image || blog.img || '/blogs/default-blog.jpg'}
               alt={blog.alt || blog.title || "Blog image"}
-              className="w-full h-[400px] object-cover"
+              className="w-full  object-cover"
               onError={(e) => {
                 console.error('Image failed to load:', blog.image || blog.img);
                 e.target.src = '/blogs/default-blog.jpg';
@@ -136,7 +171,7 @@ export default function BlogDetailPage({ params }) {
       </section>
 
       {/* Blog Subtitle */}
-      <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
+      {/* <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
         <div className="">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -147,7 +182,7 @@ export default function BlogDetailPage({ params }) {
             {blog.subtitle}
           </motion.p>
         </div>
-      </section>
+      </section> */}
 
       {/* Blog Content */}
       <section className="px-2 my-20 md:my-30 max-w-7xl mx-auto">
