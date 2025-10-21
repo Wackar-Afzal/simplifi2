@@ -1,5 +1,5 @@
 // Strapi CMS API Base URL
-export const STRAPI_BASE_URL = "https://cms.simplifigo.com/api";
+export const STRAPI_BASE_URL =process.env.NEXT_PUBLIC_STRAPI_BASE_URL|| "https://cms.simplifigo.com/api";
 // export const STRAPI_BASE_URL = "https://cms.simplifigo.com/api";
 
 // API Endpoints
