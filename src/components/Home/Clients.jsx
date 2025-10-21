@@ -24,7 +24,7 @@ export const Clients = ({data}) => {
               .map((stat, index) => (
                 <BSlidingDiv 
                   key={index} 
-                  className={`w-full !max-w-[250px] bg-white border-radius-primary ${colIndex === 0 && index === 0 ? 'p-2 md:p-6' : 'p-6'} fintech-2-content-grid-card_small`}
+                  className={`w-full !max-w-none md:!max-w-[250px] bg-white border-radius-primary ${colIndex === 0 && index === 0 ? 'p-2 md:p-6' : 'p-6'} fintech-2-content-grid-card_small`}
                 >
                   <div className={colIndex === 0 && index === 0 ? "flex items-center gap-2" : ""}>
                     <span className="number-style">

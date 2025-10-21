@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Hero({data}) {
   const typeSequence = data.repeatingWords.flatMap(word => [`${word}.`, 1000]);
   return (
-    <div className="relative hero w-screen h-[100vh] md:h-[95vh] flex items-center justify-center overflow-hidden">
+    <div className="relative hero w-screen h-auto py-20 md:py-0 md:h-[95vh] flex items-center justify-center overflow-hidden">
       {/* Left Side Image - Slides in from left, then wavy motion */}
       <motion.img
         src={data.left}
@@ -77,6 +77,7 @@ export default function Hero({data}) {
           <TypeAnimation
             sequence={typeSequence}
             speed={50}
+            className="block md:inline"
             repeat={Infinity}
           />
         </motion.h2>
