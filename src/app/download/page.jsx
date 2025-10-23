@@ -71,7 +71,7 @@ export default function DownloadPage() {
 
    
       {/* CTA Section */}
-      <section className="py-10 md:py-20 px-8">
+      {/* <section className="py-10 md:py-20 px-8">
         <div className="container-global">
           <div className="text-center max-w-3xl mx-auto">
             <motion.div
@@ -116,7 +116,7 @@ export default function DownloadPage() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </div>
   );
