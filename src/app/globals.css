@@ -1470,10 +1470,7 @@ body {
   padding-left: 2.5rem;
 }
 
-.section_hero {
-  padding-top: 5rem;
-  position: relative;
-}
+
 
 .hero-bg {
   width: 60rem;
@@ -2288,9 +2285,7 @@ svg:not(:root) {
     background-color: var(--white);
   }
 
-  .section_hero {
-    min-height: calc(100vh - 6rem);
-  }
+ 
 
   .hero-desc {
     max-width: 39rem;
@@ -2655,7 +2650,7 @@ svg:not(:root) {
   }
 
   .heading-style-h1_fintech {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
   }
 
 

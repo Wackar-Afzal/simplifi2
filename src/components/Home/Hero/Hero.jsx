@@ -105,7 +105,7 @@ export default function Hero({data}) {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          <span className="text-color-secondary">
+          <span className="">
             {data.description}
           </span>
         </motion.p>
