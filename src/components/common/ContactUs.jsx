@@ -64,14 +64,14 @@ export const ContactUs = () => {
 
     return (
         <div className="w-full" >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
-                <div>
+            <div className="flex flex-col md:flex-row flex-wrap justify-between gap-10 w-full">
+                <div className="w-full md:w-[45%]">
                     <h1 className="heading-style-h2_big is-cta-title text-black">
-                    We're here to support you
+                    Ready to bring your card program to life? 
                     </h1>
                 </div>
 
-                <div>
+                <div className="w-full md:w-[40%]">
                     <Formik
                         initialValues={{
                             name: "",
@@ -91,7 +91,7 @@ export const ContactUs = () => {
                                         <Field
                                             type="text"
                                             name="name"
-                                            placeholder="Your full name"
+                                            // placeholder="Your full name"
                                             className="custom-input w-full"
                                         />
                                     </div>
@@ -104,7 +104,7 @@ export const ContactUs = () => {
                                         <Field
                                             type="email"
                                             name="email"
-                                            placeholder="Your email address"
+                                            // placeholder="Your email address"
                                             className="custom-input w-full"
                                         />
                                     </div>
@@ -117,7 +117,7 @@ export const ContactUs = () => {
                                         <Field
                                             type="text"
                                             name="company_name"
-                                            placeholder="Your company name"
+                                            // placeholder="Your company name"
                                             className="custom-input w-full"
                                         />
                                     </div>
@@ -140,7 +140,7 @@ export const ContactUs = () => {
         options={countryOptions}
         value={countryOptions.find((option) => option.label === values.country)}
         onChange={(selectedOption) => setFieldValue("country", selectedOption.label)}
-        placeholder="Select your country"
+        // placeholder="Select your country"
         className="w-full bg-transparent border-none outline-none focus:outline-none"
         styles={{
           control: (base) => ({
@@ -169,7 +169,7 @@ export const ContactUs = () => {
                                             as="textarea"
                                             name="message"
                                             type="text"
-                                            placeholder="Your Text"
+                                            // placeholder="Your Text"
                                             className="custom-input is-textarea w-full !h-[6rem] resize-none overflow-y-auto"
                                         />
                                     </div>

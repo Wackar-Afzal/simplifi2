@@ -2204,9 +2204,7 @@ svg:not(:root) {
     font-size: 3.25rem;
   }
 
-  .heading-style-h2_big.is-cta-title {
-    max-width: 25rem;
-  }
+  
 
   .paragraph-style-body {
     font-size: 1.125rem;

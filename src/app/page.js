@@ -276,7 +276,7 @@ export default async function Home() {
         </section>
       </div>
 
-      <div className="my-5 md:my-10">
+      <div className="my-5 md:my-20">
         <PageFooter />
 
       </div>

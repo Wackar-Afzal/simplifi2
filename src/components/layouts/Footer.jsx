@@ -117,12 +117,12 @@ export const Footer = () => {
                             Privacy Policy
                         </a>
                         
-                        <a
+                        {/* <a
                             href="/download"
                             className="paragraph-style-body is-bold hover:text-blue-600 transition-colors"
                         >
                             Download App
-                        </a>
+                        </a> */}
                     </div>
                     {/* <img
                         src="https://cdn.prod.website-files.com/660582dbf65d24242da5782d/660ab79e0b6882c961ae5447_footer-banner-mic.svg"
