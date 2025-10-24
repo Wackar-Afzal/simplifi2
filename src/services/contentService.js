@@ -34,7 +34,6 @@ async function fetchWithFallback(endpoint, fallbackData, cacheKey, populateParam
     const response = await fetch(fullUrl, {
       next: { revalidate: 300 }, // 5 minutes revalidation
       headers: STRAPI_API_TOKEN ? {
-        'Authorization': `Bearer ${STRAPI_API_TOKEN}`,
         'Content-Type': 'application/json',
       } : {}
     });
@@ -591,6 +590,65 @@ export const pressService = {
     }
 
     return null;
+  }
+};
+
+// Products Menu Services
+export const productsMenuService = {
+  /**
+   * Get products menu data from Strapi
+   */
+  async getProductsMenuData() {
+    const fallbackData = {
+      data: [{
+        id: 1,
+        features: [
+          { icon: "🌍", name: "Multi-Currency Cards" },
+          { icon: "🔔", name: "Real-Time Notifications" },
+          { icon: "⚡", name: "Instant Issuance" },
+          { icon: "📦", name: "Bulk Load Management" },
+          { icon: "👥", name: "Role-Based Access" },
+          { icon: "📑", name: "Statement Downloads" },
+          { icon: "🧪", name: "Developer Sandbox" },
+          { icon: "🛠️", name: "Developer Tools" },
+          { icon: "📱", name: "SDKs for Mobile" },
+          { icon: "🔗", name: "Webhooks" },
+          { icon: "🌐", name: "Web Hosted Pages" },
+          { icon: "🪪", name: "Custom KYC Flows" },
+          { icon: "📊", name: "Reports & Insights" },
+          { icon: "🔐", name: "Maker-Checker & Two-Factor Authentication" },
+          { icon: "⚙️", name: "Fully Programmable Card Controls" }
+        ],
+        capabilities: [
+          { icon: "🛡️", name: "Security & Compliance" },
+          { icon: "🪪", name: "Identity Verification In-a-Box" },
+          { icon: "📬", name: "Card Fulfillment & Delivery" },
+          { icon: "🔑", name: "3DS and Tokenization" },
+          { icon: "📂", name: "Collateral Management" },
+          { icon: "⚖️", name: "Chargebacks & Disputes" },
+          { icon: "🤝", name: "Partner Management" },
+          { icon: "💱", name: "Settlement & Reconciliation" },
+          { icon: "🎧", name: "Cardholder & Technical Support" }
+        ],
+        readyToUse: {
+          id: 4,
+          title: "OFF-THE-SHELF",
+          name: "Embed Off-the-shelf cards",
+          descrip: "Go live in days with preconfigured commercial cards"
+        },
+        buildYourOwn: {
+          id: 5,
+          title: "BUILD YOUR OWN PROGRAM",
+          name: "Cards as a Service",
+          descrip: "Build Your Own Branded Program With Full Control and Flexibility"
+        }
+      }]
+    };
+
+    // Use the new Strapi endpoint with proper population parameters
+    const populateParams = 'populate[readyToUse][populate]=*&populate[buildYourOwn][populate]=*&sort=publishedAt:desc&pagination[limit]=100';
+    const data = await fetchWithFallback(API_ENDPOINTS.PRODUCTS_MENU, fallbackData, 'products-menu', populateParams);
+    return data;
   }
 };
 

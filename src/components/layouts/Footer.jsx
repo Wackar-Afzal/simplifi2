@@ -1,52 +1,84 @@
+'use client'
 import { Linkedin, Mail, MessageCircleMore, Facebook, Phone } from "lucide-react";
 import React from "react";
+import {motion} from "framer-motion";
 
 export const Footer = () => {
+
+    
+    const flags = [
+      { name: "UAE", img: "footer/UAE.png" },
+      { name: "KSA", img: "footer/KSA.png" },
+      { name: "Oman", img: "footer/Oman.png" },
+      { name: "Kuwait", img: "footer/Kuwait.png" },
+      { name: "Bahrain", img: "footer/Bahrain.png" },
+      { name: "Qatar", img: "footer/Qatar.png" },
+    ];
     return (
         <div className="footer-wrapper pb-20 px-4 max-w-7xl mx-auto mt-0">
             <div className="flex justify-between items-center flex-wrap gap-8">
-                <div>
-                     <h3 className="tracking-[-0.04em] text-[2.8rem] font-normal leading-[1.06em]">SimpliFi Card Solutions</h3>
-                         <div className="paragraph-style-body">
-                         We power the cards that drive your brand and platform.
+                <div className="flex flex-col justify-start items-start gap-2 ">
+                    <h3 className="tracking-[-0.04em] text-[2.8rem] font-normal leading-[1.06em]">SimpliFi Card Solutions</h3>
+                    <div className="paragraph-style-body">
+                        We power the cards that drive your brand and platform.
                     </div>
-                
+                    <div className="flex flex-col justify-start items-start ">
+                    <div className="flex flex-wrap items-center gap-2 md:gap-6 ">
+                        {flags.map((flag, index) => (
+                            <motion.div
+                                key={flag.name}
+                                className="flex  items-center text-sm gap-2"
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                <img
+                                    src={flag.img}
+                                    alt={flag.name}
+                                    className="w-8 h-8 rounded-full border-gray-300 border"
+                                />
+                            </motion.div>
+                        ))}
+                    </div>
+                  
                 </div>
+
+                </div>
+             
                 <div>
                     <p className="text-[22px]">Stay connected</p>
-                    <p> Follow us on social media <br/> for updates and news:</p>
-                <div
-                    id="w-node-_5ab5dc9a-cdec-672b-b43e-39b097ff44e3-2da5785d"
-                    className="footer-grid-social mt-2"
-                >
-                    <a
-                        href="https://www.facebook.com/Simplifipay/"
-                        target="_blank"
-                        className="hover:text-primary w-inline-block"
+                    <p> Follow us on social media <br /> for updates and news:</p>
+                    <div
+                        id="w-node-_5ab5dc9a-cdec-672b-b43e-39b097ff44e3-2da5785d"
+                        className="footer-grid-social mt-2"
                     >
-                      <Facebook />
-                    </a>
-                    <a
-                        href="mailto:sales@simplifipay.com"
-                        className="hover:text-primary w-inline-block"
-                    >
-                         <Mail />
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/company/simplifipay/"
-                        target="_blank"
-                        className="hover:text-primary w-inline-block"
-                    >
-                          <Linkedin />
-                    </a>
-                     {/* <a
+                        <a
+                            href="https://www.facebook.com/Simplifipay/"
+                            target="_blank"
+                            className="hover:text-primary w-inline-block"
+                        >
+                            <Facebook />
+                        </a>
+                        <a
+                            href="mailto:sales@simplifipay.com"
+                            className="hover:text-primary w-inline-block"
+                        >
+                            <Mail />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/company/simplifipay/"
+                            target="_blank"
+                            className="hover:text-primary w-inline-block"
+                        >
+                            <Linkedin />
+                        </a>
+                        {/* <a
                         href="tel:+971566010001"
                         target="_blank"
                         className="hover:text-primary w-inline-block"
                     >
                           <Phone />
                     </a> */}
-                </div>
+                    </div>
                 </div>
             </div>
             <div
@@ -65,7 +97,7 @@ export const Footer = () => {
                 <div className="footer-location-wrapper">
                     UAE
                     <div className="paragraph-style-body text-gray-500">
-                        Unit 208, Level 1, 
+                        Unit 208, Level 1,
                         Gate Avenue - South Zone,
                         DIFC, Dubai
                     </div>
@@ -79,7 +111,7 @@ export const Footer = () => {
                 <div className="footer-location-wrapper">
                     Pakistan
                     <div className="paragraph-style-body text-gray-500">
-                        Workhall, Plot No.32/75, 
+                        Workhall, Plot No.32/75,
                         Tipu Sultan,
                         Karachi
                     </div>
@@ -102,21 +134,21 @@ export const Footer = () => {
                         id="w-node-d48fe428-e64b-1aa8-c2fc-d1ed84b7a195-2da5785d"
                         className="paragraph-style-body is-bold flex flex-col gap-2"
                     >
-                          <a
+                        <a
                             href="/terms-and-conditions"
                             className="paragraph-style-body is-bold hover:text-blue-600 transition-colors"
                         >
-                             Terms and Conditions
+                            Terms and Conditions
                         </a>
-                       
-                        
+
+
                         <a
                             href="/privacy-policy"
                             className="paragraph-style-body is-bold hover:text-blue-600 transition-colors"
                         >
                             Privacy Policy
                         </a>
-                        
+
                         {/* <a
                             href="/download"
                             className="paragraph-style-body is-bold hover:text-blue-600 transition-colors"
@@ -133,7 +165,7 @@ export const Footer = () => {
                     /> */}
                 </div>
             </div>
-            
+
             {/* Copyright and Regulatory Information */}
             <div className="mt-12 pt-8 border-t border-gray-300">
                 <div className="text-left">

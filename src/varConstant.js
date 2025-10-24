@@ -17,6 +17,7 @@ export const API_ENDPOINTS = {
   BLOGS_NEW: `${STRAPI_BASE_URL}/simplifipay-blogs`,
   PRESS_RELEASES: `${STRAPI_BASE_URL}/press-releasess`,
   PRESS_RELEASES_NEW: `${STRAPI_BASE_URL}/simplifipay-pressrelases`,
+  PRODUCTS_MENU: `${STRAPI_BASE_URL}/simplifipay-main-menu-products`,
   SLACK: "/api/slack",
 };
 

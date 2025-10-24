@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { ChevronDown, List, Phone } from "lucide-react";
 import SectionNavbar from "./SectionNavbar";
+import { productsMenuService } from "@/services/contentService";
 
 const NAV_ITEMS = [
   {
@@ -229,7 +230,29 @@ const NAV_ITEMS = [
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(false);
+  const [productsMenuData, setProductsMenuData] = useState(null);
+  const [isLoadingProducts, setIsLoadingProducts] = useState(true);
   const pathname = usePathname();
+
+  // Fetch products menu data from Strapi
+  useEffect(() => {
+    async function fetchProductsMenuData() {
+      try {
+        setIsLoadingProducts(true);
+        const data = await productsMenuService.getProductsMenuData();
+        console.log(data,"data of menu")
+        setProductsMenuData(data);
+      } catch (error) {
+        console.error('Error fetching products menu data:', error);
+        // Fallback data will be handled by the service
+        setProductsMenuData(null);
+      } finally {
+        setIsLoadingProducts(false);
+      }
+    }
+
+    fetchProductsMenuData();
+  }, []);
 
   const handleDropdownToggle = (path) => {
     setOpenDropdown(openDropdown === path ? null : path);
@@ -285,6 +308,8 @@ export default function Navbar() {
                                 sectionName={name}
                                 dropdown={dropdown}
                                 pathname={pathname}
+                                productsMenuData={productsMenuData}
+                                isLoadingProducts={isLoadingProducts}
                               />
                             </div>
                           </div>
