@@ -230,13 +230,13 @@ export default async function Home() {
       <div className="my-20 lg:mb-30 lg:mt-15">
         <ClientsMargquee data={clientsMarqueeData} />
       </div>
-      <div className="py-20 lg:pb-30 lg:pt-15">
+      <div className="my-20  lg:my-30">
       <ProductOverview data={productOverview1Data} />
-   
-      {/* <Services/> */}
+      </div>
+      <div className="my-20  lg:my-30">
       <UXSection data={productOverview2Data} />
-   
-
+      </div>
+      <div className="my-20  lg:my-30">
       <UXSection data={productOverview3Data} />
       </div>
       <div className="my-20 md:my-30 px-4">
@@ -276,7 +276,7 @@ export default async function Home() {
         </section>
       </div>
 
-      <div className="my-5 md:my-20">
+      <div className="my-5 md:my-20 px-4">
         <PageFooter />
 
       </div>

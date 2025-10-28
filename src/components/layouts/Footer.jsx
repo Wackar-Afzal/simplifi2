@@ -7,12 +7,12 @@ export const Footer = () => {
 
     
     const flags = [
-      { name: "UAE", img: "footer/UAE.png" },
-      { name: "KSA", img: "footer/KSA.png" },
-      { name: "Oman", img: "footer/Oman.png" },
-      { name: "Kuwait", img: "footer/Kuwait.png" },
-      { name: "Bahrain", img: "footer/Bahrain.png" },
-      { name: "Qatar", img: "footer/Qatar.png" },
+      { name: "UAE", img: "/footer/UAE.png" },
+      { name: "KSA", img: "/footer/KSA.png" },
+      { name: "Oman", img: "/footer/Oman.png" },
+      { name: "Kuwait", img: "/footer/Kuwait.png" },
+      { name: "Bahrain", img: "/footer/Bahrain.png" },
+      { name: "Qatar", img: "/footer/Qatar.png" },
     ];
     return (
         <div className="footer-wrapper pb-20 px-4 max-w-7xl mx-auto mt-0">

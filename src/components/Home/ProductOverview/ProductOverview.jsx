@@ -102,7 +102,7 @@ const gridItems = [
 
 export default function ProductOverview({data}) {
   return (
-    <div className=" !w-full products text-white pt-24 pb-4 px-10  " >
+    <div className=" !w-full products text-white py-16 px-10  " >
       <div className="!w-full   flex justify-center ">
 
         <motion.div
