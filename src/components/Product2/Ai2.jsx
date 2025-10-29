@@ -37,7 +37,7 @@ const Ai = ({ data }) => {
                       ${backgroundClass}
                       ${
                         isCenterBigCard
-                          ? "lg:col-start-2 lg:row-start-1 lg:row-span-2  md:mt-[70%]"
+                          ? "lg:col-start-2 lg:row-start-1 lg:row-span-2  mt-0 lg:mt-[70%]"
                           : ""
                       }
                     `}
@@ -50,12 +50,12 @@ const Ai = ({ data }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="cases-card-item-image-wrapper">
+                    <div className="cases-card-item-image-wrapper h-auto [@media(min-width:768px)]:!h-[12rem] [@media(min-width:850px)]:!h-[15rem] [@media(min-width:1024px)]:!h-[20rem]">
                       <img
                         src={feature.image}
                         loading="eager"
                         sizes="(max-width: 816px) 100vw, 816px"
-                        className="rounded-[3rem]"
+                        className="rounded-[3rem] h-auto lg:h-full object-contain lg:object-cover"
                         alt=""
                       />
                     </div>
@@ -115,12 +115,12 @@ const Ai = ({ data }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="cases-card-item-image-wrapper">
+                    <div className="cases-card-item-image-wrapper h-auto [@media(min-width:768px)]:!h-[12rem] [@media(min-width:850px)]:!h-[15rem] [@media(min-width:1024px)]:!h-[20rem]">
                       <img
-                        src={feature.image}
+                        src={feature.image} 
                         loading="eager"
                         sizes="(max-width: 816px) 100vw, 816px"
-                        className="rounded-[3rem]"
+                        className="rounded-[3rem] h-auto lg:h-full object-contain lg:object-cover"
                         alt=""
                       />
                     </div>

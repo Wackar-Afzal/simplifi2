@@ -10,12 +10,12 @@ const ClientsGrid = ({ data }) => {
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center mt-16 gap-8 px-4">
+      <div className="flex flex-wrap justify-center items-center mt-16 gap-8 px-2 md:px-4">
         {data.clientLogos.map((client, index) => (
           <div
             key={index}
             className="flex items-center justify-center  shadow-sm hover:shadow-lg hover:translate-y-[-5px] transition-all duration-300"
-            style={{ width: "calc(17% - 2rem)", minWidth: "100px" }}
+            style={{ width: "calc(17% - 2rem)", minWidth: "120px" }}
           >
             <img
               src={client.logo}

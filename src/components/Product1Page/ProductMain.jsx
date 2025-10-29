@@ -30,7 +30,7 @@ export const ProductMain = ({ data }) => {
       {/* <CaseStudies /> */}
       {/* <Brags /> */}
       {/* <ClientSays /> */}
-      <div className="my-20 md:my-30">
+      <div className="my-20 md:my-30 px-2">
         <PageFooter data={data.cardAsService.footer} />
       </div>
     </div>

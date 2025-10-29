@@ -20,7 +20,7 @@ export default function CaseStudies({ data }) {
 
 
     return (
-        <section className="relative w-full  px-8 py-0 max-w-7xl mx-auto">
+        <section className="relative w-full px-2 md:px-8 py-0 max-w-7xl mx-auto">
             <div className="flex items-center justify-between mb-10">
                 <h1 className="h2 text-center">{data.heading}</h1>
                 <div className="flex gap-2">

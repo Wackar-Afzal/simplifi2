@@ -28,7 +28,7 @@ export default function WhatsCookin({ data }) {
       {data.slides.length < 5 ? (
         <div className="flex justify-center gap-16 flex-wrap pb-4">
           {data.slides.map((slide, index) => (
-            <div key={index} className="relative feed-link w-full lg:w-[250px] "> {/* Adjust width as needed */}
+            <div key={index} className="relative feed-link w-full sm:w-[250px] "> {/* Adjust width as needed */}
               <div className="feed-img-wrapper">
                 <img
                   src={slide.img}

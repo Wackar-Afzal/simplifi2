@@ -103,7 +103,7 @@ export default async function Page() {
       <div className="px-4 my-20 md:my-30">
         <CareerList data={mergedData.industries.careerList} />
       </div>
-      <div className="px-4 my-20 md:my-30">
+      <div className="px-2 my-20 md:my-30">
         <PageFooter data={mergedData.industries.footer} />
       </div>
       {/* Footer provided by root layout */}

@@ -85,7 +85,7 @@ export default async function Features() {
       <div className="my-20 md:my-30">
         <Cases data={mergedData.features.caseStudies} />
       </div>
-      <div className="my-20 md:my-30">
+      <div className="my-20 md:my-30 px-2">
         <PageFooter data={mergedData.features.footer} />
       </div>
       {/* Footer provided by root layout */}

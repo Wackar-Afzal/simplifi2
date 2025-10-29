@@ -1879,13 +1879,11 @@ svg:not(:root) {
   align-items: stretch;
   padding-left: 1.5rem;
   display: flex;
-  height: 35vh;
+  
 }
 .cases-card-item-image-wrapper>img{
   border-radius: 2rem;
-  height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 .hflex-05rem_leftcenter {
   grid-column-gap: 0.5rem;

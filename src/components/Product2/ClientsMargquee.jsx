@@ -7,7 +7,7 @@ const ClientsMarquee = ({data}) => {
   return (
     <section className="">
       <div className="flex justify-center flex-col !w-full">
-      <h2 className="heading-style-h2_fintech  max-w-6xl !text-center mx-auto">
+      <h2 className="!px-2 heading-style-h2_fintech  max-w-6xl !text-center mx-auto  ">
         {data.heading}
       </h2>
       </div>

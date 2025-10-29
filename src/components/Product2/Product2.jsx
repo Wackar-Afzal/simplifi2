@@ -31,7 +31,7 @@ const Product2 = ({ data }) => {
       <div className="my-20 md:my-30">
         <WhatWeDo data={data.embedreadytouse.whatwedo} />
       </div>
-      <div className="my-20 md:my-30">
+      <div className="my-20 md:my-30 px-2">
         <PageFooter data={data.embedreadytouse.footer} />
       </div>
     </div>
