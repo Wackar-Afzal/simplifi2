@@ -5,6 +5,7 @@ import Navbar from "@/components/layouts/Navbar";
 import { Footer } from "@/components/layouts/Footer";
 import MainWrapper from "@/components/common/MainWrapper";
 import ToastProvider from "@/components/common/ToastProvider";
+import Cookies from "@/components/Generic/Cookies/Cookies";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
             </footer>
           </div>
           <ToastProvider />
+          <Cookies />
         </LoadingProvider>
       </body>
     </html>
