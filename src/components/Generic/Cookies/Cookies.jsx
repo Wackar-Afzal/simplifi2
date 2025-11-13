@@ -41,12 +41,12 @@ export default function CookieConsent() {
     <div className="fixed  right-4 bottom-0 md:bottom-8 px-4 py-4 flex justify-center items-center z-50 ">
       <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-4 relative border border-gray-200">
         {/* Close button */}
-        <button onClick={()=>setIsVisible(false)} className="absolute right-4 top-2 text-gray-800 hover:text-gray-600 border border-gray-300 rounded-full p-2">
+        <button onClick={()=>setIsVisible(false)} className="absolute md:right-4 md:top-2 right-2 top-2 text-gray-800 hover:text-gray-600 border border-gray-300 rounded-full p-2">
           <X className="w-4 h-4" />
         </button>
 
         {/* Title */}
-        <h2 className="text-xl font-semibold text-gray-900 mb-2">Privacy & Cookies Settings</h2>
+        <h2 className="text-xl font-semibold text-gray-900 mb-2 max-w-[80%] md:max-w-full">Privacy & Cookies Settings</h2>
 
         {/* Description */}
         <p className="text-gray-500 text-sm mb-2">
