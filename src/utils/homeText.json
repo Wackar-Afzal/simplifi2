@@ -180,7 +180,7 @@
           "logo": "https://cdn.prod.website-files.com/6894c70fdec680168f493130/6894c70fdec680168f493219_Icons-4.png",
           "title": "Security at the core",
           "description": "PCI-DSS compliant with encryption, tokenization, and secure APIs.",
-          "image": "WebImages/06 Security at the core.png",
+          "image": "WebImages/Security at the core.png",
           "style": "light"
         },
         {
@@ -297,7 +297,7 @@
           "id": 2,
           "title": "End-to-end encryption",
           "description": "Financial and personal data is encrypted at every stage of the transaction.",
-          "img": "WebImages/02 End to End.jpg",
+          "img": "WebImages/02 End to End.png",
           "alt": "Competitor analysis in Figma"
         },
         {
@@ -311,7 +311,7 @@
           "id": 4,
           "title": "Compliant data privacy practices",
           "description": "We adhere to local and international data privacy laws across all markets we operate in.",
-          "img": "WebImages/04 compilant date privacy copy.png",
+          "img": "WebImages/04 compilant date privacy.png",
           "alt": "Competitor analysis in Figma"
         },
         {
