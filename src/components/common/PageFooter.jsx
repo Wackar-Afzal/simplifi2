@@ -12,9 +12,7 @@ export default function PageFooter({ data }) {
         {/* {data?.buttonLink?<Link href={data.buttonLink} className="contained-button !max-w-[max-content ]">{data.buttonText}</Link>:null} */}
       
       </div>
-      <div className="px-2 mt-7 md:mt-15 mx-auto max-w-7xl">
-          <ContactUs />
-        </div>
+
     </section>
   );
 }

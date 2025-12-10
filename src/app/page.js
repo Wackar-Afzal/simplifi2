@@ -18,6 +18,7 @@ import ClientsGrid from "@/components/Product2/ClientsGrid";
 import { API_ENDPOINTS } from "@/varConstant";
 
 import { seoMetadata, structuredData } from "@/utils/seoMetadata";
+import { ContactUs } from "@/components/common/ContactUs";
 
 // Revalidate every 2 hours (7200 seconds)
 export const revalidate = 2;
@@ -278,7 +279,9 @@ export default async function Home() {
 
       <div className="my-5 md:my-20 px-4">
         <PageFooter />
-
+        <div className="px-2 mt-7 md:mt-15 mx-auto max-w-7xl">
+          <ContactUs />
+        </div>
       </div>
     </div>
   );

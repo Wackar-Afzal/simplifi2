@@ -16,12 +16,8 @@ const validationSchema = Yup.object().shape({
   phoneNumber: Yup.string().required("Phone Number is required"),
   country: Yup.string().required("Country is required"),
   company_name: Yup.string().required("Company Name is required"),
-  department: Yup.string().required("Department is required"),
+  company_website: Yup.string().url("Invalid website URL format").required("Company Website is required"),
   job_title: Yup.string().required("Job Title is required"),
-  number_of_employees: Yup.number()
-    .typeError("Must be a number")
-    .positive("Must be greater than zero")
-    .required("Number of Employees is required"),
   message: Yup.string().required("Message is required"),
 });
 
@@ -79,9 +75,8 @@ const DemoForm = () => {
         phoneNumber: "",
         country: "",
         company_name: "",
-        department: "",
+        company_website: "",
         job_title: "",
-        number_of_employees: "",
         message: "",
       }}
       validationSchema={validationSchema}
@@ -149,28 +144,13 @@ const DemoForm = () => {
           </div>
 
           <div>
-            <Field
-              as="select"
-              name="department"
-              className="input text-paragraphColor p-2 text-paragraphColor w-full"
-            >
-              <option value="" disabled className="paragraphColor">Select Department</option>
-              <option value="Sales" className="text-paragraphColor">Sales</option>
-              <option value="Support" className="text-paragraphColor">Support</option>
-              <option value="Marketing" className="text-paragraphColor">Marketing and Press</option>
-              <option value="General" className="text-paragraphColor">General Inquiries</option>
-            </Field>
-            <ErrorMessage name="department" component="div" className="text-red-500 text-sm" />
+            <Field type="url" name="company_website" placeholder="Company Website" className="w-full input" />
+            <ErrorMessage name="company_website" component="div" className="text-red-500 text-sm" />
           </div>
 
           <div>
             <Field type="text" name="job_title" placeholder="Job Title" className="w-full input" />
             <ErrorMessage name="job_title" component="div" className="text-red-500 text-sm" />
-          </div>
-
-          <div>
-            <Field type="number" name="number_of_employees" placeholder="Number of Employees" min="1" className="w-full input" />
-            <ErrorMessage name="number_of_employees" component="div" className="text-red-500 text-sm" />
           </div>
 
           <div>

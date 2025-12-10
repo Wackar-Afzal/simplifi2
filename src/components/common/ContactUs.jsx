@@ -12,6 +12,7 @@ const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email format").required("Email is required"),
     company_name: Yup.string().required("Company Name is required"),
+    company_website: Yup.string().url("Invalid website URL format").required("Company Website is required"),
     country: Yup.string().required("Country is required"),
     message: Yup.string().required("Message is required"),
 });
@@ -77,6 +78,7 @@ export const ContactUs = () => {
                             name: "",
                             email: "",
                             company_name: "",
+                            company_website: "",
                             country: "",
                             message: "",
                         }}
@@ -122,6 +124,19 @@ export const ContactUs = () => {
                                         />
                                     </div>
                                     <ErrorMessage name="company_name" component="div" className="text-red-500 text-sm mt-1" />
+                                </div>
+                                
+                                <div className="form-group mt-4">
+                                    <label className="form-label">Company Website</label>
+                                    <div className="mt-3">
+                                        <Field
+                                            type="url"
+                                            name="company_website"
+                                            // placeholder="https://example.com"
+                                            className="custom-input w-full"
+                                        />
+                                    </div>
+                                    <ErrorMessage name="company_website" component="div" className="text-red-500 text-sm mt-1" />
                                 </div>
                                 
                                 <div className="form-group mt-4">

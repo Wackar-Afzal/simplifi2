@@ -31,17 +31,40 @@
     "productOverview2": {
       "title": "Embed: Off-the-shelf cards, ready to go",
       "image": "WebImages/Web Image 3.png",
-      "subTitle": "Add live card functionality to your platform with zero setup hassle.",
-      "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
-      "includedTitle": "What’s included",
+      "subTitle": "Embed live commercial cards within your workflows and go to market in days. Add card issuance functionality to your payment flows to enhance user experience.",
+      "description": "",
+      "includedTitle": "What's included",
       "includedItems": [
-        "Instant virtual card Issuance",
-        "Role Based access and Budget Control",
-        "Card life cycle Management and spend controls",
-        "Multi Currency Cards",
-        "AI powered Auto Loads",
-        "AI based spend reconciliation",
-        "Connected with Your ERP"
+        {
+          "icon": "Zap",
+          "title": "Instant Issuance",
+          "description": "Instant virtual or physical card issuance"
+        },
+        {
+          "icon": "Globe",
+          "title": "Multi Currency Capability",
+          "description": "Multi currency commercial cards and treasury wallets"
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Card Management and Controls",
+          "description": "Card life cycle management and programmable controls"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "AI Reconciliation",
+          "description": "AI powered spend reconciliation"
+        },
+        {
+          "icon": "Users",
+          "title": "Access Control",
+          "description": "Roles based access"
+        },
+        {
+          "icon": "Shield",
+          "title": "Security and Compliance",
+          "description": "Compliance, fraud monitoring and card fulfillment"
+        }
       ],
       "reverse": true,
       "buttonText": "Learn more",
@@ -51,16 +74,40 @@
     "productOverview3": {
       "title": "Build Your Own: Cards As A Service",
       "image": "WebImages/Web Image 4.png",
-      "subtitle": "Launch a fully branded card program with complete control.",
+      "subTitle": "Launch a fully branded card program with complete control.",
       "description": "Design every layer of your card experience. Choose your card design, user flows, spend controls, and APIs. We provide the infrastructure, manage compliance, and support you from setup to scale.",
-      "includedTitle": "What’s included",
+      "includedTitle": "What's included",
       "includedItems": [
-        "Complete end-to-end program management -  including KYC, regulatory compliance, and data privacy - across all major card schemes",
-        "Scalable, enterprise-grade infrastructure with modular APIs for seamless integration",
-        "Instant issuance of multi-currency virtual cards and iBans",
-        "Tokenized cards compatible with Apple Pay and Samsung Pay",
-        "On-demand physical card issuance",
-        "3DS 2.0 for enhanced security and compliance"
+        {
+          "icon": "Zap",
+          "title": "Instant Issuance",
+          "description": "Instant virtual, physical or digital card issuance"
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Card Management and Controls",
+          "description": "End to end card lifecycle management and programmable controls"
+        },
+        {
+          "icon": "Settings",
+          "title": "Card Design and Custom Features",
+          "description": "Customized card features including limits and fees"
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Tokenized Cards",
+          "description": "Tokenized cards on Apple Pay, Google Pay and Samsung Pay"
+        },
+        {
+          "icon": "Building",
+          "title": "BIN Sponsorship",
+          "description": "Bin Sponsorship and regulatory approvals"
+        },
+        {
+          "icon": "Briefcase",
+          "title": "Program Management",
+          "description": "Program management across compliance, fraud, support, fulfillment, and collateral"
+        }
       ],
       "buttonText": "Learn more",
       "buttonLink": "/Cards-As-a-Service"

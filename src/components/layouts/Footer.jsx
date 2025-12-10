@@ -88,7 +88,7 @@ export const Footer = () => {
             <div className="footer-grid">
                 <div className="footer-location-wrapper">
                     Bahrain
-                    <div className="paragraph-style-body text-gray-500">
+                    <div className="paragraph-style-body !text-[0.8rem] text-gray-500">
                         Building 2102, Road/Street 2825, Block 428,
                         Al Seef, Manama
                     </div>
@@ -96,7 +96,7 @@ export const Footer = () => {
 
                 <div className="footer-location-wrapper">
                     UAE
-                    <div className="paragraph-style-body text-gray-500">
+                    <div className="paragraph-style-body !text-[0.8rem] text-gray-500">
                         Unit 208, Level 1,
                         Gate Avenue - South Zone,
                         DIFC, Dubai
@@ -104,13 +104,13 @@ export const Footer = () => {
                 </div>
                 <div className="footer-location-wrapper">
                     Egypt
-                    <div className="paragraph-style-body text-gray-500">
+                    <div className="paragraph-style-body !text-[0.8rem] text-gray-500">
                         22 Sheikh Rihan Street, Founder Spaces Abdeen, Cairo
                     </div>
                 </div>
                 <div className="footer-location-wrapper">
                     Pakistan
-                    <div className="paragraph-style-body text-gray-500">
+                    <div className="paragraph-style-body !text-[0.8rem] text-gray-500">
                         Workhall, Plot No.32/75,
                         Tipu Sultan,
                         Karachi
@@ -118,7 +118,7 @@ export const Footer = () => {
                 </div>
                 <div className="footer-location-wrapper">
                     Saudi Arabia
-                    <div className="paragraph-style-body text-gray-500">
+                    <div className="paragraph-style-body !text-[0.8rem] text-gray-500">
                         Al Rabi District, 13316 Riyadh
                     </div>
                 </div>

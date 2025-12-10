@@ -2,7 +2,7 @@ export async function POST(req) {
     try {
       const body = await req.json();
       console.log("Request body:", body);
-      const { name, work_email, email, phoneNumber, company_name, job_title, number_of_employees, country, message, department } = body;
+      const { name, work_email, email, phoneNumber, company_name, company_website, job_title, country, message } = body;
 
       // Use work_email if available, otherwise use email
       const emailAddress = work_email || email;
@@ -22,11 +22,10 @@ export async function POST(req) {
               { type: "mrkdwn", text: `*Name:*\n${name}` },
               ...(emailAddress ? [{ type: "mrkdwn", text: `*E-Mail:*\n${emailAddress}` }] : []),
               ...(company_name ? [{ type: "mrkdwn", text: `*Company:*\n${company_name}` }] : []),
+              ...(company_website ? [{ type: "mrkdwn", text: `*Company Website:*\n${company_website}` }] : []),
               ...(phoneNumber ? [{ type: "mrkdwn", text: `*Phone Number:*\n${phoneNumber}` }] : []),
               ...(country ? [{ type: "mrkdwn", text: `*Country:*\n${country}` }] : []),
               ...(job_title ? [{ type: "mrkdwn", text: `*Job Title:*\n${job_title}` }] : []),
-              ...(department ? [{ type: "mrkdwn", text: `*Department:*\n${department}` }] : []),
-              ...(number_of_employees ? [{ type: "mrkdwn", text: `*Employees:*\n${number_of_employees}` }] : []),
             ],
           },
           ...(message ? [

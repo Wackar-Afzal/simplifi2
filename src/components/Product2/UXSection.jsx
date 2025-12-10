@@ -1,6 +1,34 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { 
+  Zap, 
+  CreditCard, 
+  TrendingUp, 
+  Shield, 
+  Globe, 
+  Settings, 
+  Users, 
+  Lock,
+  Smartphone,
+  Building,
+  Briefcase
+} from "lucide-react";
+
+// Icon mapping
+const iconMap = {
+  Zap,
+  CreditCard,
+  TrendingUp,
+  Shield,
+  Globe,
+  Settings,
+  Users,
+  Lock,
+  Smartphone,
+  Building,
+  Briefcase,
+};
 
 export default function UXSection({ data }) {
   return (
@@ -43,15 +71,42 @@ export default function UXSection({ data }) {
               {data.description}
             </motion.p>
 
-            <div className="paragraph-style-body !text-gray-500">{data.includedTitle}</div>
-            <ul className="list-disc pl-5 text-white">
-            {data.includedItems.map((item, idx) => (
-              <li key={idx} className="pt-3 paragraph-style-body !text-gray-500">
-                {item}
-              </li>
-            ))}
-            </ul>
-
+            <div className="paragraph-style-body !text-gray-500 !font-semibold pt-2">{data.includedTitle}</div>
+            
+            {/* Two-column grid for features */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+              {data.includedItems.map((item, idx) => {
+                // Handle both object format (new) and string format (legacy)
+                const isObject = typeof item === 'object' && item !== null;
+                const IconComponent = isObject && item.icon ? iconMap[item.icon] : null;
+                
+                return (
+                  <div key={idx} className="flex gap-3">
+                    {IconComponent && (
+                      <div className="flex-shrink-0 w-[3rem] h-[3rem] bg-blue-100 rounded-md flex items-center justify-center  transition-colors">
+                        <IconComponent className="w-[1.5rem] h-[1.5rem] text-blue-500" />
+                      </div>
+                    )}
+                    <div className="flex-1">
+                      {isObject ? (
+                        <>
+                          <div className="!font-semibold text-gray-900 paragraph-style-body">
+                            {item.title}
+                          </div>
+                          <div className="text-gray-500 paragraph-style-body text-sm">
+                            {item.description}
+                          </div>
+                        </>
+                      ) : (
+                        <div className="paragraph-style-body !text-gray-500">
+                          {item}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
 
             <div className="w-[8rem] py-6">
               <Link href={data?.buttonLink} className="nav-contained-button">
